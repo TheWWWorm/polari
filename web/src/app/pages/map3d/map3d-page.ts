@@ -22,7 +22,7 @@ const LABEL: Partial<Record<Settlement, { far: number; rank: number; lift: numbe
 };
 const DEFAULT_LABEL = { far: 9, rank: 5, lift: .1 };
 /** Bump when map3d/ assets are re-exported, so browsers don't keep the old model. */
-const ASSETS = 'v=9';
+const ASSETS = 'v=11';
 /** Ground kept clear of trees around each settlement type. */
 const CLEARING: Partial<Record<Settlement, number>> = {
   capital: .36, city: .23, stronghold: .18, port: .17, town: .12, village: .09, steppe: .2, castle: .08, fort: .07, monastery: .07, cathedral: .1, palace: .08,

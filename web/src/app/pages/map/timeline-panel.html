@@ -19,7 +19,7 @@
       <div class="card">
         <div class="when">Маршрут: <a [routerLink]="'/' + journeySlug()">{{ title(journeySlug()) }}</a>, шаг {{ step() + 1 }} из {{ journey().length }} — <button class="place" (click)="placeClick.emit(j.key)">{{ title(j.key) }}</button></div>
         @for (it of j.items; track $index) {
-          <p class="what"><b>{{ it.c.date }}</b>. «{{ title(it.book) }}», {{ it.c.h }}: <span [innerHTML]="it.c.sum"></span></p>
+          <p class="what"><b>{{ it.c.date }}</b>. «{{ title(it.book) }}»@if (it.c.h) {, {{ it.c.h }}}{{ ': ' }}<span [innerHTML]="it.c.sum"></span></p>
         }
         <div class="nav"><button class="btn" (click)="showStep(step() - 1)" [disabled]="step() === 0">Назад</button><button class="btn" (click)="showStep(step() + 1)" [disabled]="step() >= journey().length - 1">Дальше</button></div>
       </div>

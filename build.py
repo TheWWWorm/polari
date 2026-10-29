@@ -241,6 +241,20 @@ def load_data(slugs, data):
             if r.get('a') in slugs and r.get('b') in slugs:
                 bo = data.get(r.get('book', ''), {}).get('order', 0)
                 extra['relations'].append(dict(a=r['a'], b=r['b'], t=r.get('type', ''), l=r.get('label', ''), o=bo if bo != 999 else 0))
+    # routes.tsv: a hero's travels stop by stop, including chapters told by others; on the maps it
+    # replaces the route drawn from the hero's own chapters.
+    rt = os.path.join(d, 'routes.tsv')
+    extra['routes'] = {}
+    if os.path.exists(rt):
+        for r in read_tsv(rt):
+            hero, book = r.get('hero', ''), r.get('book', '')
+            if hero not in slugs or book not in data:
+                print(f'warning: routes.tsv: unknown hero or book {hero} / {book}', file=sys.stderr)
+                continue
+            ch = next((c for c in extra['chapters'].get(book, []) if c['n'] == r.get('n')), None)
+            extra['routes'].setdefault(hero, []).append(dict(
+                book=book, n=r.get('n', ''), h=ch['h'] if ch else '', pov=hero, date=r.get('date', ''), iso=r.get('iso', ''),
+                place='', key=r.get('mapkey', ''), sum=html(r.get('note', ''))))
     if miss:
         print(f'data files: {len(miss)} missing link targets: {", ".join(sorted(miss)[:12])}')
     return extra

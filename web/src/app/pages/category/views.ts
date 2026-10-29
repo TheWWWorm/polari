@@ -322,15 +322,9 @@ export class Lexicon {
     }
     p {
       margin: 6px 0 0;
-      max-width: 64ch;
+      max-width: 120ch;
       font: 0.93rem/1.5 var(--sans);
       color: var(--ink-2);
-    }
-    li:not(.novel) p {
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
     }
     @media (max-width: 560px) {
       li.with-art,

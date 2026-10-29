@@ -111,6 +111,8 @@ export interface WikiExtra {
   families: Family[];
   houses: HouseRow[];
   relations: Relation[];
+  /** Hand-made routes: a hero's stops in order, each tied to a book and possibly a chapter. */
+  routes?: Record<string, (Chapter & { book: string })[]>;
   map: { places: Record<string, MapPlace>; events: MapEvent[] };
 }
 

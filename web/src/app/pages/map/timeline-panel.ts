@@ -63,23 +63,31 @@ export class TimelinePanel implements OnDestroy {
       if (!this.spoilers.bookVisible(b.order)) continue;
       for (const c of this.data.extra().chapters[b.slug] ?? []) if (c.pov && c.key && this.places()[c.key]) count.set(c.pov, (count.get(c.pov) ?? 0) + 1);
     }
+    for (const [hero, rows] of Object.entries(this.data.extra().routes ?? {}))
+      count.set(hero, rows.filter((r) => this.visibleBook(r.book) && this.places()[r.key]).length);
     return [...count.entries()].filter(([, n]) => n >= 3).sort((a, b) => b[1] - a[1]).map(([slug]) => slug);
   });
   readonly journey = computed<RouteStep[]>(() => {
     const slug = this.journeySlug();
     if (!slug) return [];
+    // a hand-made route wins: it follows the hero through other narrators' chapters too
+    const own = this.data.extra().routes?.[slug];
+    const rows = own
+      ? own.filter((r) => this.visibleBook(r.book)).map((c) => ({ book: c.book, c }))
+      : this.data.books().filter((b) => this.spoilers.bookVisible(b.order))
+          .flatMap((b) => (this.data.extra().chapters[b.slug] ?? []).filter((c) => c.pov === slug).map((c) => ({ book: b.slug, c })));
     const pts: RouteStep[] = [];
-    for (const b of this.data.books()) {
-      if (!this.spoilers.bookVisible(b.order)) continue;
-      for (const c of this.data.extra().chapters[b.slug] ?? []) {
-        if (c.pov !== slug || !c.key || !this.places()[c.key]) continue;
-        const last = pts[pts.length - 1];
-        if (last && last.key === c.key) last.items.push({ book: b.slug, c });
-        else pts.push({ key: c.key, items: [{ book: b.slug, c }] });
-      }
+    for (const it of rows) {
+      if (!it.c.key || !this.places()[it.c.key]) continue;
+      const last = pts[pts.length - 1];
+      if (last && last.key === it.c.key) last.items.push(it);
+      else pts.push({ key: it.c.key, items: [it] });
     }
     return pts;
   });
+  private visibleBook(slug: string): boolean {
+    return this.spoilers.bookVisible(this.data.get(slug)?.order ?? 999);
+  }
   readonly step = signal(0);
   /** Folded down to its header; remembered between visits. */
   readonly collapsed = signal(readFolded());

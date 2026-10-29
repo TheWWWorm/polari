@@ -1,0 +1,128 @@
+<div class="page">
+  <nav class="crumbs"><a routerLink="/">Заглавная</a> / <a routerLink="/stratemy">Стратемы</a> / Игра</nav>
+  <h1 class="page-title">Стратемы</h1>
+  <p class="page-sub">Военная игра знати Полари, в которую играют Адриан, Мира, Эрвин и Нави. Правила собраны по партиям, описанным в книгах; где книги молчат, числа подобраны так, чтобы игра вела себя, как в этих сценах. Подробнее об игре — в статье <a routerLink="/stratemy">«Стратемы»</a>.</p>
+
+  <div class="controls">
+    <div class="seg" role="group" aria-label="Противник">
+      <button class="btn" [attr.aria-pressed]="vsComputer()" (click)="setMode(true)">Против Адриана</button>
+      <button class="btn" [attr.aria-pressed]="!vsComputer()" (click)="setMode(false)">Вдвоём за столом</button>
+    </div>
+    <div class="seg" role="group" aria-label="Партия">
+      <button class="btn" [attr.aria-pressed]="sparks() === 2" (click)="setSparks(2)">Полная партия, две искры</button>
+      <button class="btn" [attr.aria-pressed]="sparks() === 1" (click)="setSparks(1)">Короткая, одна искра</button>
+    </div>
+    <button class="btn" (click)="newField()">Новое поле</button>
+    <button class="btn" (click)="restart()">Начать заново</button>
+  </div>
+
+  <div class="table">
+    <div class="board-wrap">
+      <p class="status ui" aria-live="polite">{{ status() }}</p>
+      <svg class="board" [attr.viewBox]="'-22 -6 ' + (cols.length * size + 28) + ' ' + (rows.length * size + 28)" role="img"
+           [attr.aria-label]="'Поле стратем №' + seed()">
+        <defs>
+          <pattern id="st-water" width="22" height="10" patternUnits="userSpaceOnUse">
+            <path d="M0 5q5.5-4 11 0t11 0" fill="none" stroke="#e9f3f7" stroke-width="1.3" opacity=".7" />
+          </pattern>
+        </defs>
+        <rect x="-6" y="-6" [attr.width]="cols.length * size + 12" [attr.height]="rows.length * size + 12" rx="6" class="rim" />
+        @for (r of rows; track r) {
+          <text class="coord" x="-14" [attr.y]="r * size + size / 2 + 4">{{ rows.length - r }}</text>
+          @for (c of cols; track c) {
+            @let t = terrainAt(r, c);
+            <g [attr.transform]="'translate(' + c * size + ' ' + r * size + ')'" (click)="clickCell(r, c)" [class.reach]="isReach(r, c)" class="cell">
+              <rect [attr.width]="size" [attr.height]="size" [attr.class]="'t-' + t" />
+              @switch (t) {
+                @case ('forest') { <circle cx="13" cy="15" r="6" class="tree" /><circle cx="29" cy="13" r="5" class="tree" /><circle cx="22" cy="28" r="6.5" class="tree" /><circle cx="35" cy="31" r="4.5" class="tree" /> }
+                @case ('hill') { <path d="M6 34q10-18 18-6q6-12 14 6" class="hill" /> }
+                @case ('stream') { <rect [attr.width]="size" [attr.height]="size" fill="url(#st-water)" /> }
+                @case ('road') { <path d="M22 0v44" class="road" /> }
+                @case ('ruins') { <path d="M9 36V18h5v4h4v-4h5v4h4v-4h5v18M17 36v-7h8v7" class="ruin" /> }
+              }
+              @if (isReach(r, c)) { <circle cx="22" cy="22" r="6" class="dot" /> }
+              <title>{{ cellName(r, c) }}: {{ terrainInfo[t].name }}</title>
+            </g>
+          }
+        }
+        @for (c of cols; track c) {
+          <text class="coord" [attr.x]="c * size + size / 2" [attr.y]="rows.length * size + 18">{{ letters[c] }}</text>
+        }
+        @for (p of pieces(); track p.id) {
+          @let at = piecePos(p);
+          <g class="piece" [class.red]="p.side === 'red'" [class.blue]="p.side === 'blue'" [class.sel]="selected() === p.id"
+             [class.spent]="used(p.id)" [class.target]="isTarget(p.id)" [class.can]="canAct(p)"
+             [attr.transform]="'translate(' + (at.c * size + size / 2) + ' ' + (at.r * size + size / 2) + ')'"
+             (click)="clickPiece(p, $event)" (mouseenter)="hover.set(p.id)" (mouseleave)="hover.set(null)"
+             role="button" [attr.aria-label]="label(p)">
+            <circle r="17" class="disc" />
+            <g transform="translate(-10.8 -10.8) scale(.9)"><path [attr.d]="glyph[p.kind]" [class.solid]="p.kind === 'iskra'" class="glyph" /></g>
+            <title>{{ label(p) }}</title>
+          </g>
+        }
+      </svg>
+      @if (hint(); as h) { <p class="hint ui" [class.good]="h.good">{{ h.text }}</p> }
+      <div class="actions">
+        @if (phase() === 'setup') {
+          <button class="btn primary" (click)="start()">Начать партию</button>
+        } @else {
+          @if (staged()) {
+            <button class="btn" (click)="settle()">Остаться без удара</button>
+            <button class="btn" (click)="cancel()">Отменить движение</button>
+          }
+          <button class="btn primary" (click)="endTurn()" [disabled]="!!view().winner || thinking()">Завершить ход</button>
+        }
+      </div>
+    </div>
+
+    <aside class="side ui">
+      @if (sel(); as p) {
+        <section class="card">
+          <h2>{{ stats[p.kind].name }}</h2>
+          <p>Удар {{ stats[p.kind].a }}, защита {{ stats[p.kind].d }}, клетка «{{ terrainInfo[terrainAt(p.r, p.c)].name }}».</p>
+        </section>
+      }
+      <section class="card">
+        <h2>Сбитые фишки</h2>
+        @for (l of lost(); track l.side) {
+          <p class="lost"><span [class]="'chip ' + l.side">{{ l.side === 'red' ? 'Алые' : 'Лазурные' }}</span>
+            @for (x of l.items; track x.k) { {{ stats[x.k].plural }} ×{{ x.n }}@if (!$last) {, } } @empty { — }</p>
+        }
+      </section>
+      <section class="card log">
+        <h2>Ходы</h2>
+        <ol>
+          @for (e of log(); track $index) { <li [class]="e.side"><b>{{ e.turn }}.</b> {{ e.text }}</li> }
+          @empty { <li class="muted">Партия ещё не началась.</li> }
+        </ol>
+      </section>
+    </aside>
+  </div>
+
+  <h2 class="section-title">Правила</h2>
+  <div class="rules">
+    <p>Каждый игрок ведёт войско одного цвета, алое или лазурное. Первый ход за алыми. За ход можно сделать <b>не больше трёх движений, и все — разными фишками</b>: так в беседке Айдену Альмере «пришлось потратить три хода», чтобы построить отряд. Движение — это шаг по полю или удар по соседней вражеской фишке. Партия выиграна, когда сбиты <b>все искры</b> противника; в короткой партии у каждого одна искра.</p>
+    <ul class="kinds">
+      @for (k of kinds; track k) {
+        <li>
+          <svg viewBox="-20 -20 40 40" width="38" height="38" aria-hidden="true" class="mini">
+            <circle r="17" class="disc" /><g transform="translate(-10.8 -10.8) scale(.9)"><path [attr.d]="glyph[k]" [class.solid]="k === 'iskra'" class="glyph" /></g>
+          </svg>
+          <div><b>{{ stats[k].plural }}</b> — удар {{ stats[k].a }}, защита {{ stats[k].d }}.
+            @switch (k) {
+              @case ('iskra') { Первородные дворяне. Искра «командует стратемой»: фишки рядом с ней сливаются в батальон и получают +1 к удару и защите. Сама искра под прикрытием «коробочки»: каждая своя фишка рядом добавляет ей +1 к защите (не больше +2). Сбить искры — цель игры. }
+              @case ('podkova') { Рыцари, самые быстрые: до трёх клеток по равнине. Подкова «пробивает броню меча» (+2 против мечей), может ударить сразу после движения и, сбив врага, занимает его клетку. В лесу и на холмах вязнет. }
+              @case ('mech') { Наёмники в доспехах — крепкая пехота. Меч не стоит рядом со своей искрой — его можно подкупить. }
+              @case ('strela') { Лучники бьют на две клетки и «не получают ответного удара». Сами хрупки. }
+              @case ('moneta') { Купцы не дерутся, зато подкупают: монета подходит к вражескому мечу, касается его — и меч переходит на её сторону. }
+              @case ('serp') { Крестьяне, живой заслон. Серп «боится отходить от регулярных войск»: не уходит дальше двух клеток от мечей, стрел, подков или искр. }
+            }
+          </div>
+        </li>
+      }
+    </ul>
+    <p><b>Удар.</b> Если удар нападающего больше защиты цели, цель сбита. Если нет, удар отбит, и цель отвечает: когда её удар больше защиты нападающего, сбит он сам. Каждая своя фишка рядом с целью добавляет нападающему +1 (не больше +2) — так работают клещи.</p>
+    <p><b>Местность.</b> «Лес замедлял продвижение конницы», холмы прикрывают фланги: в лесу и на холме защита +1. Руины замка дают «три дополнительных единицы защиты», как в задаче Адриана. Ручей задерживает пехоту — войдя в него, она останавливается, и стоять в воде опасно (защита −1). По дороге все идут вдвое быстрее. Поле каждый раз новое — «поле, изготовленное хорошим мастером, всегда уникально», — но обе половины зеркальны, чтобы никто не начинал на лучшей земле.</p>
+    <p><b>Расстановка.</b> Перед партией войско стоит «классическим порядком» Адриана: впереди искра и рыцарский клин, сзади мечи, монета и вторая искра под «коробочкой» из серпов. Свои фишки можно переставить в трёх ближних рядах — как Мира, спрятавшая искры в роще и в руинах.</p>
+  </div>
+</div>

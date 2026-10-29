@@ -50,6 +50,7 @@ export class Shell {
         ['/families', 'Родословные'],
         ['/relations', 'Связи персонажей'],
         ['/gallery', 'Иллюстрации'],
+        ['/stratemy-igra', 'Сыграть в стратемы'],
       ],
     },
     {
@@ -75,6 +76,7 @@ export class Shell {
       return 'M12 3v7M4 14v-4h16v4M12 10v4M1 14h6v7H1Zm8 0h6v7H9Zm8 0h6v7h-6Z';
     if (path.includes('event') || path.includes('khron') || path.includes('chronology'))
       return 'M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0ZM12 6v6l4 3';
+    if (path.includes('stratemy')) return 'M3 3h18v18H3ZM3 9h18M3 15h18M9 3v18M15 3v18';
     if (path === '/') return 'M3 10 12 3l9 7v11h-6v-7H9v7H3Z';
     return 'M4 4h16v16H4ZM8 8h8M8 12h8M8 16h5';
   }

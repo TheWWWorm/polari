@@ -45,6 +45,11 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/relations/relations').then((m) => m.RelationsPage),
   },
   {
+    path: 'stratemy-igra',
+    title: 'Сыграть в стратемы · Полари Вики',
+    loadComponent: () => import('./pages/stratemy/stratemy-page').then((m) => m.StratemyPage),
+  },
+  {
     path: 'chronology',
     data: { type: 'event' },
     loadComponent: () => import('./pages/category/category').then((m) => m.CategoryPage),

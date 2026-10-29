@@ -365,6 +365,12 @@
    "kind": "city",
    "title": "Леонгард"
   },
+  "bukhta-sekret": {
+   "x": 53.4,
+   "y": 51.5,
+   "kind": "site",
+   "title": "Бухта Секрет"
+  },
   "mejpl": {
    "x": 52.5,
    "y": 57,
@@ -562,6 +568,41 @@
    "y": 60,
    "kind": "site",
    "title": "Пастушьи Луга"
+  },
+  "stvorki-neba": {
+   "x": 62.8,
+   "y": 16.2,
+   "kind": "site",
+   "title": "Створки Неба"
+  },
+  "svyatoe-pole": {
+   "x": 55.3,
+   "y": 41.6,
+   "kind": "site",
+   "title": "Святое Поле"
+  },
+  "chasovnya-patrika": {
+   "x": 57.0,
+   "y": 44.3,
+   "kind": "city",
+   "title": "Часовня Патрика"
+  },
+  "myagkie-polya": {
+   "x": 77.8,
+   "y": 11.1,
+   "kind": "site",
+   "title": "Мягкие Поля"
+  },
+  "melison": {
+   "x": 53.0,
+   "y": 84.5,
+   "kind": "city",
+   "title": "Мелисон"
+  },
+  "erroubek": {
+   "x": 46.7,
+   "y": 44.8,
+   "kind": "site"
   }
  },
  "events": [
