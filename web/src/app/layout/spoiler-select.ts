@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { ALL_BOOKS, Spoilers } from '../core/spoilers';
 import { WikiData } from '../core/wiki-data';
 
@@ -10,9 +10,10 @@ import { WikiData } from '../core/wiki-data';
       [class.on]="spoilers.active()"
       title="Скрывать события книг, которые вы ещё не прочитали"
     >
-      <span class="lbl">Прочитано</span>
+      <span class="lbl">Прочитано до</span>
       <select
         class="field"
+        [class.expanded]="expanded()"
         [value]="spoilers.level()"
         (change)="spoilers.setLevel(+$any($event.target).value)"
         aria-label="Прочитано до книги"
@@ -36,6 +37,9 @@ import { WikiData } from '../core/wiki-data';
       max-width: 220px;
       min-width: 0;
     }
+    select.expanded {
+      max-width: 100%;
+    }
     label.on select {
       border-color: var(--wax);
       color: var(--wax);
@@ -51,6 +55,7 @@ import { WikiData } from '../core/wiki-data';
   `,
 })
 export class SpoilerSelect {
+  readonly expanded = input(false);
   protected readonly spoilers = inject(Spoilers);
   protected readonly data = inject(WikiData);
   protected readonly all = ALL_BOOKS;

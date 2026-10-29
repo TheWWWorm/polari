@@ -1,7 +1,9 @@
-import { Component, inject } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Component, computed, inject } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
 import { WikiData } from '../../core/wiki-data';
+import { Spoilers } from '../../core/spoilers';
 import { SpoilerSelect } from '../../layout/spoiler-select';
+
 @Component({
   selector: 'app-home-page',
   imports: [RouterLink, SpoilerSelect],
@@ -10,4 +12,22 @@ import { SpoilerSelect } from '../../layout/spoiler-select';
 })
 export class HomePage {
   protected readonly data = inject(WikiData);
+  protected readonly spoilers = inject(Spoilers);
+  private readonly router = inject(Router);
+  protected readonly novels = computed(() =>
+    this.data
+      .books()
+      .filter((b) => /Роман/.test(b.group))
+      .slice(0, 2),
+  );
+  protected readonly interludes = computed(() =>
+    this.data
+      .books()
+      .filter((b) => /Интерлюдия/.test(b.group))
+      .slice(0, 3),
+  );
+  protected search(event: Event, query: string): void {
+    event.preventDefault();
+    if (query.trim()) this.router.navigate(['/search', query.trim()]);
+  }
 }

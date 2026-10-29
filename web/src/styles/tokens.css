@@ -1,7 +1,12 @@
 :root {
-  --paper: #f4f6f5;
+  --paper: #eef2f2;
+  --accent-fill: #c6a569;
+  --accent-ink: #142334;
+  --feature: #dce7e9;
+  --feature-ink: #142334;
+  --header-height: 72px;
   --sheet: #fff;
-  --sheet-2: #e6edf1;
+  --sheet-2: #e0e9ed;
   --ink: #1d3048;
   --ink-2: #526476;
   --ink-3: #526476;
@@ -29,17 +34,17 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
-    --paper: #142131;
-    --sheet: #1c2d40;
-    --sheet-2: #24394c;
+    --paper: #101f2e;
+    --sheet: #142a3c;
+    --sheet-2: #213c50;
     --ink: #edf2f5;
     --ink-2: #b5c3cf;
     --ink-3: #b5c3cf;
-    --rule: #40566a;
+    --rule: #385367;
     --azure: #b9d9f1;
     --azure-2: #71b7f7;
-    --wax: #dfc38a;
-    --gold: #dfc38a;
+    --wax: #dfb96f;
+    --gold: #c6a569;
     --spark: #5fd0f5;
     --spark-glow: rgba(95, 208, 245, 0.25);
     --engraving-bg: #e9ebe6;
@@ -47,17 +52,17 @@
   }
 }
 :root[data-theme='dark'] {
-  --paper: #142131;
-  --sheet: #1c2d40;
-  --sheet-2: #24394c;
+  --paper: #101f2e;
+  --sheet: #142a3c;
+  --sheet-2: #213c50;
   --ink: #edf2f5;
   --ink-2: #b5c3cf;
   --ink-3: #b5c3cf;
-  --rule: #40566a;
+  --rule: #385367;
   --azure: #b9d9f1;
   --azure-2: #71b7f7;
-  --wax: #dfc38a;
-  --gold: #dfc38a;
+  --wax: #dfb96f;
+  --gold: #c6a569;
   --spark: #5fd0f5;
   --spark-glow: rgba(95, 208, 245, 0.25);
   --engraving-bg: #e9ebe6;

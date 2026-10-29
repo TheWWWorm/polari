@@ -1,15 +1,17 @@
-import { Component, ElementRef, OnDestroy, afterNextRender, inject, signal, viewChild } from '@angular/core';
+import { Component, ElementRef, OnDestroy, afterNextRender, effect, inject, signal, viewChild } from '@angular/core';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import * as THREE from 'three';
 import { MapControls } from 'three/examples/jsm/controls/MapControls.js';
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { WikiData } from '../../core/wiki-data';
+import { TimelinePanel } from '../map/timeline-panel';
 import { mergeGeometries } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 import { EXTRA, Features, HeightField, Settlement, buildSettlement, settlementOf, windmill } from './settlements';
-import { D_UNITS, SUN_DIR, W_UNITS, makeForests, makeRoutes, makeSky, makeTarns, makeWater } from './world';
+import { D_UNITS, SUN_DIR, W_UNITS, makeForests, makeRoutes, makeSky, makeTarns, makeWater, ribbon } from './world';
 
 interface Label { el: HTMLElement; pos: THREE.Vector3; type: Settlement; rank: number; w: number }
+interface Marker { el: HTMLElement; pos: THREE.Vector3 }
 interface Meta { hmin: number; hmax: number; hw: number; hh: number }
 
 /** How far away (scene units) each kind of label is still shown, its declutter rank and lift above ground. */
@@ -20,7 +22,7 @@ const LABEL: Partial<Record<Settlement, { far: number; rank: number; lift: numbe
 };
 const DEFAULT_LABEL = { far: 9, rank: 5, lift: .1 };
 /** Bump when map3d/ assets are re-exported, so browsers don't keep the old model. */
-const ASSETS = 'v=8';
+const ASSETS = 'v=9';
 /** Ground kept clear of trees around each settlement type. */
 const CLEARING: Partial<Record<Settlement, number>> = {
   capital: .36, city: .23, stronghold: .18, port: .17, town: .12, village: .09, steppe: .2, castle: .08, fort: .07, monastery: .07, cathedral: .1, palace: .08,
@@ -39,7 +41,7 @@ function inside(pts: [number, number][], x: number, z: number): boolean {
 
 @Component({
   selector: 'app-map3d-page',
-  imports: [RouterLink],
+  imports: [RouterLink, TimelinePanel],
   templateUrl: './map3d-page.html',
   styleUrl: './map3d-page.css',
 })
@@ -50,6 +52,7 @@ export class Map3dPage implements OnDestroy {
   private readonly canvas = viewChild.required<ElementRef<HTMLCanvasElement>>('canvas');
   private readonly stage = viewChild.required<ElementRef<HTMLDivElement>>('stage');
   private readonly labelLayer = viewChild.required<ElementRef<HTMLDivElement>>('labelLayer');
+  private readonly panel = viewChild(TimelinePanel);
 
   protected readonly labels = signal(true);
   protected readonly lands = signal(true);
@@ -69,11 +72,24 @@ export class Map3dPage implements OnDestroy {
   private routeGroup?: THREE.Group;
   private frame = 0;
   private items: Label[] = [];
+  private markers: Marker[] = [];
+  private routeLine?: THREE.Mesh;
+  private hf?: HeightField;
+  private scene?: THREE.Scene;
+  /** Scene positions of the mapped places, once the model has loaded. */
+  private readonly placePos = signal<Record<string, [number, number, number]> | null>(null);
   private flight: { from: THREE.Vector3; to: THREE.Vector3; tFrom: THREE.Vector3; tTo: THREE.Vector3; t: number } | null = null;
   private resizeObs?: ResizeObserver;
 
   constructor() {
     afterNextRender(() => this.init());
+    // redraw the timeline marker, its trail or the hero's route whenever the panel moves
+    effect(() => {
+      const tl = this.panel(), pos = this.placePos();
+      if (!tl || !pos) return;
+      const slug = tl.journeySlug(), route = tl.journey(), step = tl.step(), now = tl.stop(), trail = tl.trail();
+      this.drawMarkers(pos, slug ? route.map((r) => r.key) : [], step, slug ? null : now ? { key: now.p, label: now.label } : null, slug ? [] : trail.map((t) => t.p));
+    });
   }
 
   ngOnDestroy(): void {
@@ -95,6 +111,7 @@ export class Map3dPage implements OnDestroy {
     this.renderer = renderer;
 
     const scene = new THREE.Scene();
+    this.scene = scene;
     scene.fog = new THREE.Fog(0xbcd0de, 34, 95);
     scene.add(makeSky());
     const camera = new THREE.PerspectiveCamera(38, 1, 0.02, 600);
@@ -182,6 +199,7 @@ export class Map3dPage implements OnDestroy {
       fitShadow(controls.target, camera.position.distanceTo(controls.target));
       renderer.render(scene, camera);
       this.placeLabels(camera, stage.clientWidth, stage.clientHeight, v);
+      this.placeMarkers(camera, stage.clientWidth, stage.clientHeight, v);
     };
     loop();
   }
@@ -232,6 +250,7 @@ export class Map3dPage implements OnDestroy {
 
     const hf = new HeightField(new Uint16Array(heights), meta.hw, meta.hh, meta.hmin, meta.hmax, W_UNITS, D_UNITS);
     hf.wet = (x, z) => features.tarns.some((t) => inside(t.pts, x, z));
+    this.hf = hf;
     const cleared = this.addPlaces(scene, places, hf, features);
     scene.add(makeTarns(features.tarns));
     this.routeGroup = makeRoutes(features.roads, hf);
@@ -249,6 +268,7 @@ export class Map3dPage implements OnDestroy {
     this.forestGroup.visible = this.forests();
     scene.add(this.forestGroup);
     this.progress.set(100);
+    this.placePos.set(places);
     return water;
   }
 
@@ -307,6 +327,60 @@ export class Map3dPage implements OnDestroy {
       l.el.classList.toggle('hidden', hide);
       if (!hide) l.el.style.transform = `translate(${sx}px, ${sy}px) translate(-50%, -100%)`;
     }
+  }
+
+  /** HTML markers for the timeline (current stop and trail) or the numbered steps of a route, plus the route drawn on the ground. */
+  private drawMarkers(pos: Record<string, [number, number, number]>, route: string[], step: number,
+                      now: { key: string; label: string } | null, trail: string[]): void {
+    const layer = this.labelLayer().nativeElement, hf = this.hf;
+    for (const m of this.markers) m.el.remove();
+    this.markers = [];
+    const at = (k: string) => { const p = pos[k]; return p && new THREE.Vector3(p[0], Math.max(hf?.at(p[0], p[1]) ?? p[2], 0) + .03, p[1]); };
+    const add = (el: HTMLElement, k: string) => { const p = at(k); if (p) { layer.appendChild(el); this.markers.push({ el, pos: p }); } };
+    for (const k of trail) { const el = document.createElement('span'); el.className = 'trail'; add(el, k); }
+    if (now) {
+      const el = document.createElement('span');
+      el.className = 'now';
+      el.innerHTML = '<span></span>';
+      el.firstElementChild!.textContent = now.label;
+      add(el, now.key);
+    }
+    route.forEach((k, i) => {
+      const el = document.createElement('button');
+      el.className = 'jr-dot' + (i === step ? ' on' : '');
+      el.textContent = String(i + 1);
+      el.addEventListener('click', () => this.panel()?.showStep(i));
+      add(el, k);
+    });
+    // the route itself, draped over the ground
+    if (this.routeLine) { this.scene?.remove(this.routeLine); this.routeLine.geometry.dispose(); this.routeLine = undefined; }
+    const pts = route.map((k) => pos[k]).filter(Boolean).map((p) => [p[0], p[1]] as [number, number]);
+    if (hf && pts.length > 1) {
+      this.routeLine = new THREE.Mesh(ribbon(pts, .022, .012, hf), new THREE.MeshBasicMaterial({ color: 0xb8322a, transparent: true, opacity: .85, depthWrite: false, side: THREE.DoubleSide }));
+      this.routeLine.renderOrder = 3;
+      this.scene?.add(this.routeLine);
+    }
+  }
+
+  private placeMarkers(camera: THREE.Camera, w: number, h: number, v: THREE.Vector3): void {
+    for (const m of this.markers) {
+      v.copy(m.pos).project(camera);
+      const off = v.z > 1 || Math.abs(v.x) > 1.1 || Math.abs(v.y) > 1.1;
+      m.el.style.display = off ? 'none' : '';
+      if (!off) m.el.style.transform = `translate(${((v.x + 1) / 2) * w}px, ${((1 - v.y) / 2) * h}px) translate(-50%, -50%)`;
+    }
+  }
+
+  /** Fly to a place, keeping the current viewing direction and coming no closer than a regional view. */
+  protected flyToPlace(k: string): void {
+    const p = this.placePos()?.[k], cam = this.camera, ctl = this.controls;
+    if (!p || !cam || !ctl) return;
+    const tTo = new THREE.Vector3(p[0], Math.max(this.hf?.at(p[0], p[1]) ?? 0, 0), p[1]);
+    const off = cam.position.clone().sub(ctl.target);
+    off.setLength(THREE.MathUtils.clamp(off.length(), 2.2, 5));
+    this.spin.set(false);
+    ctl.autoRotate = false;
+    this.flight = { from: cam.position.clone(), to: tTo.clone().add(off), tFrom: ctl.target.clone(), tTo, t: 0 };
   }
 
   private readonly VIEWS: Record<string, [number[], number[]]> = {

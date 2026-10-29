@@ -5,8 +5,8 @@
   display: flex;
   align-items: center;
   gap: 26px;
-  min-height: 76px;
-  padding: 14px 28px;
+  min-height: var(--header-height);
+  padding: 14px 24px;
   background: var(--sheet);
   border-bottom: 1px solid var(--rule);
   font-family: var(--sans);
@@ -15,7 +15,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  flex: 0 0 166px;
+  flex: 0 0 160px;
   color: var(--ink);
   font: 25px/1 var(--serif);
 }
@@ -53,16 +53,16 @@
 }
 .frame {
   display: grid;
-  grid-template-columns: 220px minmax(0, 1fr);
-  min-height: calc(100vh - 76px);
+  grid-template-columns: 208px minmax(0, 1fr);
+  min-height: calc(100vh - var(--header-height));
 }
 .side {
   position: sticky;
-  top: 76px;
+  top: var(--header-height);
   align-self: start;
-  height: calc(100vh - 76px);
+  height: calc(100vh - var(--header-height));
   overflow-y: auto;
-  background: #1d3048;
+  background: #172d40;
   padding: 22px 12px 30px;
   color: #dde6ec;
   font-family: var(--sans);

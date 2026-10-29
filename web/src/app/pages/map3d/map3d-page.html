@@ -1,7 +1,7 @@
 <div class="page wide">
   <div class="crumbs"><a routerLink="/">Заглавная</a> / <a routerLink="/map">Карта</a></div>
   <h1 class="page-title">Полари в объёме</h1>
-  <p class="page-sub">Рельеф, реки, леса и города построены по карте из «Путеводителя»: хребты стоят там, где их нарисовал художник, леса — где нарисованы деревья, а города, порты, крепости и сёла построены каждый по-своему, а между ними проложены железные дороги и главные тракты. Тяните левой кнопкой, чтобы двигать карту, правой — чтобы поворачивать и наклонять; колёсико приближает к точке под курсором. На телефоне: один палец двигает, два — поворачивают и приближают.</p>
+  <p class="page-sub">Рельеф, реки, леса и города построены по карте из «Путеводителя»: хребты стоят там, где их нарисовал художник, леса — где нарисованы деревья, а города, порты, крепости и сёла построены каждый по-своему, а между ними проложены железные дороги и главные тракты. Тяните левой кнопкой, чтобы двигать карту, правой — чтобы поворачивать и наклонять; колёсико приближает к точке под курсором. На телефоне: один палец двигает, два — поворачивают и приближают. Шкала времени ведёт по событиям цикла, а маршрут показывает путь героя по главам.</p>
   <div class="tools ui">
     <span class="grp">
       <button class="btn" (click)="fly('overview')">Весь материк</button>
@@ -21,10 +21,13 @@
       <button class="btn" [attr.aria-pressed]="spin()" (click)="toggleSpin()">Облёт</button>
     </span>
   </div>
+  <div class="layout" [class.folded]="tl.collapsed()">
   <div class="stage" #stage [class.no-labels]="!labels()" [class.no-lands]="!lands()">
     <canvas #canvas></canvas>
     <div class="labels" #labelLayer></div>
     @if (progress() < 100 && !failed()) { <div class="loading ui"><span>Строим мир… {{ progress() }}%</span></div> }
     @if (failed()) { <div class="loading ui">Не удалось загрузить 3D-модель. <a routerLink="/map">Открыть плоскую карту</a></div> }
+  </div>
+  <app-timeline-panel #tl (focus)="flyToPlace($event)" (placeClick)="flyToPlace($event)" />
   </div>
 </div>

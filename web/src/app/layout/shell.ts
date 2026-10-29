@@ -56,7 +56,7 @@ export class Shell {
       title: 'Справочники',
       links: [
         ['/all', 'Все статьи'],
-        ['/khronologiya', 'Хронология'],
+        ['/chronology', 'Хронология'],
         ['/glossarij', 'Глоссарий'],
         ['/tsitaty', 'Цитаты'],
         ['/random', 'Случайная статья'],
@@ -73,7 +73,7 @@ export class Shell {
       return 'M19 10c0 5-7 12-7 12S5 15 5 10a7 7 0 1 1 14 0Zm-5 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z';
     if (path.includes('famil'))
       return 'M12 3v7M4 14v-4h16v4M12 10v4M1 14h6v7H1Zm8 0h6v7H9Zm8 0h6v7h-6Z';
-    if (path.includes('event') || path.includes('khron'))
+    if (path.includes('event') || path.includes('khron') || path.includes('chronology'))
       return 'M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0ZM12 6v6l4 3';
     if (path === '/') return 'M3 10 12 3l9 7v11h-6v-7H9v7H3Z';
     return 'M4 4h16v16H4ZM8 8h8M8 12h8M8 16h5';

@@ -8,8 +8,15 @@ import { WikiData } from '../core/wiki-data';
   imports: [RouterLink],
   template: `
     @if (rows().length) {
-      <h2 id="h-glavy">Главы</h2>
-      <p class="muted ui">{{ rows().length }} {{ word() }}</p>
+      <h2 id="h-glavy">Указатель глав</h2>
+      <p class="muted ui" role="status">
+        {{
+          filtered().length === rows().length
+            ? rows().length
+            : filtered().length + ' из ' + rows().length
+        }}
+        {{ word() }}
+      </p>
       <div class="filters ui">
         <label for="chapter-query"
           >Найти главу<input
@@ -92,6 +99,22 @@ import { WikiData } from '../core/wiki-data';
     }
   `,
   styles: `
+    h2 {
+      font-size: 2rem;
+      margin: 0 0 10px;
+    }
+    .table tbody tr:nth-child(even) {
+      background: var(--sheet-2);
+    }
+    .table td:first-child {
+      width: 24%;
+    }
+    .table td:nth-child(2) {
+      width: 28%;
+    }
+    .table-wrap {
+      border-color: var(--rule);
+    }
     :host {
       display: block;
     }

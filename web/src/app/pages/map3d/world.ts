@@ -195,7 +195,7 @@ export function makeForests(buf: ArrayBuffer, keepOut: (x: number, z: number) =>
 
 /* ------------------------------------------------- roads and railways ---- */
 /** A strip draped over the height field along a polyline, `lift` above the ground. */
-function ribbon(pts: [number, number][], width: number, lift: number, hf: HeightField): THREE.BufferGeometry {
+export function ribbon(pts: [number, number][], width: number, lift: number, hf: HeightField): THREE.BufferGeometry {
   const dense: [number, number][] = [];
   for (let i = 0; i < pts.length - 1; i++) {
     const [ax, az] = pts[i], [bx, bz] = pts[i + 1];

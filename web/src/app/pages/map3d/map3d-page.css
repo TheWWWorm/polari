@@ -32,3 +32,30 @@ canvas:active { cursor: grabbing; }
   .labels ::ng-deep a { font-size: 10.5px; }
   .labels ::ng-deep a.t-land { font-size: 14px; }
 }
+
+@media (min-width: 1280px) {
+  .layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 16px; align-items: start; }
+  .layout.folded { grid-template-columns: minmax(0, 1fr) auto; }
+  .stage { height: calc(100vh - 210px); min-height: 520px; }
+}
+
+/* timeline marker, its trail and the numbered steps of a hero's route */
+.labels ::ng-deep .now {
+  position: absolute; left: 0; top: 0; width: 30px; height: 30px; border-radius: 50%; pointer-events: none; z-index: 3;
+  border: 3px solid var(--spark); background: radial-gradient(circle, var(--spark) 0 5px, var(--spark-glow) 6px);
+  box-shadow: 0 0 0 6px var(--spark-glow); animation: pulse 1.8s ease-out 1;
+}
+.labels ::ng-deep .now span {
+  position: absolute; left: 50%; bottom: calc(100% + 6px); transform: translateX(-50%); padding: 2px 8px;
+  background: #1b2430; color: #eef3f8; font: 500 12px/1.3 var(--sans); white-space: nowrap;
+}
+.labels ::ng-deep .trail {
+  position: absolute; left: 0; top: 0; width: 12px; height: 12px; border-radius: 50%; pointer-events: none;
+  border: 2px solid var(--spark); background: var(--spark-glow);
+}
+.labels ::ng-deep .jr-dot {
+  position: absolute; left: 0; top: 0; min-width: 21px; height: 21px; padding: 0 4px; border: 2px solid #fff; border-radius: 11px;
+  background: var(--wax); color: #fff; font: 700 11px/17px var(--sans); cursor: pointer; pointer-events: auto; z-index: 2;
+}
+.labels ::ng-deep .jr-dot.on { background: var(--spark); z-index: 3; }
+@keyframes pulse { from { box-shadow: 0 0 0 0 var(--spark-glow); } to { box-shadow: 0 0 0 22px transparent; } }

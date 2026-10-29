@@ -1,9 +1,9 @@
-import { Component, ElementRef, OnDestroy, computed, effect, inject, input, signal, untracked, viewChild } from '@angular/core';
+import { Component, ElementRef, computed, effect, inject, input, signal, untracked, viewChild } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { MapPlace } from '../../core/models';
-import { Spoilers } from '../../core/spoilers';
 import { WikiData } from '../../core/wiki-data';
-import { Stop, byDate, chapterStops, keyStops } from './timeline';
+import { Stop } from './timeline';
+import { RouteStep, TimelinePanel } from './timeline-panel';
 
 const W0 = 3200, H0 = 2410;
 
@@ -11,16 +11,15 @@ interface View { z: number; x: number; y: number; base: number; }
 
 @Component({
   selector: 'app-map-page',
-  imports: [RouterLink],
+  imports: [RouterLink, TimelinePanel],
   templateUrl: './map-page.html',
   styleUrl: './map-page.css',
   host: { '(window:resize)': 'fit()' },
 })
-export class MapPage implements OnDestroy {
+export class MapPage {
   /** ?p=<place key> opens the map centred on that place. */
   readonly p = input<string>();
   protected readonly data = inject(WikiData);
-  private readonly spoilers = inject(Spoilers);
   private readonly router = inject(Router);
 
   protected readonly places = computed(() => this.data.extra().map.places);
@@ -28,80 +27,18 @@ export class MapPage implements OnDestroy {
 
   protected readonly showLands = signal(true);
   protected readonly showCities = signal(true);
-  protected readonly onlyKey = signal(false);
-  protected readonly journeySlug = signal('');
-
-  /** Timeline stops the reader may see, sorted by in-world date. */
-  protected readonly stops = computed<Stop[]>(() => {
-    const ex = this.data.extra();
-    const visibleBook = (slug: string) => this.spoilers.bookVisible(this.data.get(slug)?.order ?? 999);
-    const key = keyStops(ex.map.events).filter((e) => this.spoilers.eventVisible(e));
-    const chapters = this.onlyKey() ? [] : chapterStops(ex.chapters, (s) => this.data.title(s), (s) => this.data.get(s)?.order ?? 0).filter((s) => !s.book || visibleBook(s.book));
-    return [...key, ...chapters].filter((s) => this.places()[s.p]).sort(byDate);
-  });
-  protected readonly cur = signal(0);
-  protected readonly stop = computed(() => this.stops()[Math.min(this.cur(), this.stops().length - 1)]);
-  /** Stops around the current one, for the vertical list beside the map. */
-  protected readonly nearby = computed(() => {
-    const s = this.stops(), c = this.cur();
-    const from = Math.max(0, Math.min(c - 4, s.length - 14));
-    return s.slice(from, from + 14).map((x, k) => ({ s: x, i: from + k }));
-  });
-  protected readonly trail = computed(() => this.stops().slice(Math.max(0, this.cur() - 4), this.cur()));
-  protected readonly ticks = computed(() => {
-    const s = this.stops();
-    const marks = ['1774-03', '1774-07', '1774-11', '1775-03', '1775-07', '1775-11', '1776'];
-    return marks.map((m) => ({ m, i: s.findIndex((x) => x.d >= m) })).filter((t) => t.i > 0)
-      .map((t) => ({ i: t.i, left: (t.i / Math.max(s.length - 1, 1)) * 100, label: tickLabel(t.m) }));
-  });
-
-  /** Narrators with at least three mapped chapters among the books the reader has read. */
-  protected readonly narrators = computed(() => {
-    const count = new Map<string, number>();
-    for (const b of this.data.books()) {
-      if (!this.spoilers.bookVisible(b.order)) continue;
-      for (const c of this.data.extra().chapters[b.slug] ?? []) if (c.pov && c.key && this.places()[c.key]) count.set(c.pov, (count.get(c.pov) ?? 0) + 1);
-    }
-    return [...count.entries()].filter(([, n]) => n >= 3).sort((a, b) => b[1] - a[1]).map(([slug]) => slug);
-  });
-  protected readonly journey = computed(() => {
-    const slug = this.journeySlug();
-    if (!slug) return [];
-    const pts: { key: string; items: { book: string; c: import('../../core/models').Chapter }[] }[] = [];
-    for (const b of this.data.books()) {
-      if (!this.spoilers.bookVisible(b.order)) continue;
-      for (const c of this.data.extra().chapters[b.slug] ?? []) {
-        if (c.pov !== slug || !c.key || !this.places()[c.key]) continue;
-        const last = pts[pts.length - 1];
-        if (last && last.key === c.key) last.items.push({ book: b.slug, c });
-        else pts.push({ key: c.key, items: [{ book: b.slug, c }] });
-      }
-    }
-    return pts;
-  });
-  protected readonly step = signal(0);
 
   protected readonly popup = signal<string>('');
-  protected readonly popupEvents = computed(() => this.stops().map((s, i) => ({ s, i })).filter(({ s }) => s.p === this.popup() && s.key).slice(0, 8));
-  protected readonly playing = signal(false);
   protected readonly view = signal<View>({ z: 1, x: 0, y: 0, base: 0.2 });
 
   private readonly viewEl = viewChild.required<ElementRef<HTMLDivElement>>('view');
-  private timer: ReturnType<typeof setInterval> | null = null;
   private drag: [number, number] | null = null;
   private moved = false;
   private pending = '';
 
   constructor() {
     effect(() => { const p = this.p(); if (p) untracked(() => (this.pending = p)); });
-    effect(() => {
-      // Start the timeline at the opening of the first book.
-      const s = this.stops();
-      untracked(() => this.cur.set(Math.max(0, s.findIndex((x) => x.d >= '1774-03-21'))));
-    });
   }
-
-  ngOnDestroy(): void { this.stopPlay(); }
 
   /* ---------- view ---------- */
   protected imageLoaded(): void { this.fit(); }
@@ -159,43 +96,22 @@ export class MapPage implements OnDestroy {
   protected linked(k: string): boolean { return !!this.data.get(k); }
   protected goPlace(k: string): void { this.router.navigateByUrl('/' + k); }
 
-  protected show(i: number, recentre = true): void {
-    const n = this.stops().length;
-    if (!n) return;
-    this.cur.set(Math.max(0, Math.min(n - 1, i)));
+  /** Key events of the timeline that happen at the place shown in the popup. */
+  protected popupEvents(tl: TimelinePanel): { s: Stop; i: number }[] {
+    return tl.stops().map((s, i) => ({ s, i })).filter(({ s }) => s.p === this.popup() && s.key).slice(0, 8);
+  }
+  /** The timeline moved: close the popup and bring the place back into view if it drifted to the edge. */
+  protected onFocus(k: string): void {
     this.popup.set('');
-    const p = this.places()[this.stop().p];
-    if (recentre && p && this.view().z > 1.2) {
-      const el = this.viewEl().nativeElement, x = this.px(p), y = this.py(p);
-      if (x < 40 || y < 40 || x > el.clientWidth - 40 || y > el.clientHeight - 40) this.centre(p);
-    }
+    const p = this.places()[k];
+    if (!p || this.view().z <= 1.2) return;
+    const el = this.viewEl().nativeElement, x = this.px(p), y = this.py(p);
+    if (x < 40 || y < 40 || x > el.clientWidth - 40 || y > el.clientHeight - 40) this.centre(p);
   }
-  protected togglePlay(): void {
-    if (this.timer) return this.stopPlay();
-    if (this.cur() >= this.stops().length - 1) this.show(0);
-    this.playing.set(true);
-    this.timer = setInterval(() => { if (this.cur() >= this.stops().length - 1) this.stopPlay(); else this.show(this.cur() + 1); }, 2600);
-  }
-  private stopPlay(): void { if (this.timer) clearInterval(this.timer); this.timer = null; this.playing.set(false); }
-
-  protected setJourney(slug: string): void { this.stopPlay(); this.journeySlug.set(slug); this.step.set(0); }
-  protected showStep(i: number): void {
-    const j = this.journey();
-    if (!j[i]) return;
-    this.step.set(i);
-    const p = this.places()[j[i].key];
-    if (this.view().z > 1.2) this.centre(p);
-  }
-  protected journeyPoints(): string { return this.journey().map((j) => `${this.px(this.places()[j.key])},${this.py(this.places()[j.key])}`).join(' '); }
-  protected bookTitle(slug: string): string { return this.data.title(slug); }
+  protected journeyPoints(j: RouteStep[]): string { return j.map((s) => `${this.px(this.places()[s.key])},${this.py(this.places()[s.key])}`).join(' '); }
 }
 
 function zoomAt(v: View, f: number, cx: number, cy: number): View {
   const z = Math.min(Math.max(v.z * f, 1), 12);
   return { ...v, z, x: cx - (cx - v.x) * (z / v.z), y: cy - (cy - v.y) * (z / v.z) };
-}
-
-function tickLabel(m: string): string {
-  const months = ['', 'янв.', 'фев.', 'март', 'апр.', 'май', 'июнь', 'июль', 'авг.', 'сен.', 'окт.', 'нояб.', 'дек.'];
-  return m.length > 4 ? `${months[+m.slice(5)]} ${m.slice(0, 4)}` : `${m} г.`;
 }
