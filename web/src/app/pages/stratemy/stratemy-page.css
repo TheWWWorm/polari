@@ -27,7 +27,7 @@
 }
 .table {
   display: grid;
-  grid-template-columns: minmax(0, 640px) minmax(240px, 1fr);
+  grid-template-columns: minmax(0, 820px) minmax(240px, 1fr);
   gap: 28px;
   align-items: start;
 }
@@ -41,6 +41,7 @@
   display: block;
   width: 100%;
   height: auto;
+  max-height: 86vh;
   user-select: none;
   -webkit-user-select: none;
 }
@@ -57,14 +58,15 @@
   stroke-width: 1;
 }
 .t-plain { fill: var(--st-plain); }
-.t-road { fill: var(--st-road); }
+.t-road { fill: var(--st-plain); }
 .t-forest { fill: var(--st-forest); }
 .t-hill { fill: var(--st-hill); }
 .t-stream { fill: var(--st-stream); }
 .t-ruins { fill: var(--st-ruins); }
 .tree { fill: #6f8a52; stroke: #55703c; stroke-width: 1; }
 .hill { fill: none; stroke: #8f7448; stroke-width: 2; stroke-linecap: round; }
-.road { stroke: #a88c55; stroke-width: 3; stroke-dasharray: 5 5; }
+.road { stroke: #c4a46a; stroke-width: 9; stroke-linecap: round; pointer-events: none; }
+.cell polygon { stroke: rgba(70, 50, 25, 0.28); stroke-width: 1; }
 .ruin { fill: none; stroke: #6f6a60; stroke-width: 2; stroke-linejoin: round; }
 .cell.reach { cursor: pointer; }
 .cell.reach rect { fill-opacity: 0.75; }
@@ -90,6 +92,7 @@
 .piece.sel .disc { stroke: #ffe7a6; stroke-width: 4; }
 .piece.target { cursor: crosshair; }
 .piece.target .disc { stroke: #fff; stroke-width: 3.5; stroke-dasharray: 4 3; }
+.tip { margin: 8px 0 0; font-size: var(--fs-small); color: var(--ink-3); }
 .hint {
   margin: 10px 0 0;
   font-size: var(--fs-ui);

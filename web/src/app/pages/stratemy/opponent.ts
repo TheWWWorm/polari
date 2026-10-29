@@ -13,7 +13,7 @@ function score(g: Game, me: Side): number {
       // attackers want to close in on the enemy sparks
       const foes = p.side === me ? enemySparks : mySparks;
       const near = Math.min(...foes.map((f) => dist(p, f)), 20);
-      s += sign * (14 - near) * (p.kind === 'podkova' ? 1.2 : 0.6);
+      s += sign * (22 - near) * (p.kind === 'podkova' ? 1.2 : 0.6);
     }
     s += sign * g.defenceValue(p) * 0.4;
   }
@@ -21,7 +21,7 @@ function score(g: Game, me: Side): number {
   for (const sp of g.pieces.filter((p) => p.kind === 'iskra')) {
     const sign = sp.side === me ? -1 : 1;
     const threats = g.pieces.filter((q) => q.side !== sp.side && q.kind !== 'moneta' && q.kind !== 'serp'
-      && dist(q, sp) <= (q.kind === 'podkova' ? 4 : 2)).length;
+      && dist(q, sp) <= (q.kind === 'podkova' ? 5 : 3)).length;
     const guards = g.pieces.filter((q) => q.side === sp.side && q.id !== sp.id && dist(q, sp) === 1).length;
     s += sign * Math.max(0, threats - guards) * 40;
   }

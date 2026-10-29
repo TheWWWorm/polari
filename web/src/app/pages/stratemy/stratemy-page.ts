@@ -1,30 +1,28 @@
 import { Component, OnDestroy, computed, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { Action, COLS, Cell, Game, Kind, Piece, ROWS, STATS, Side, TERRAIN, Terrain, army, cellName, makeField } from './engine';
+import { Action, COLS, Cell, Game, Kind, Piece, ROWS, STATS, Side, TERRAIN, Terrain, army, cellName, makeField, roadLinks } from './engine';
 import { chooseTurn } from './opponent';
+import { GLYPH } from './glyphs';
+import { BoardPiece, StratemyBoard3d } from './board3d';
 
-const SIZE = 44;
-/** Pictograms carved on the pieces, drawn in a 24-unit box. */
-export const GLYPH: Record<Kind, string> = {
-  serp: 'M16 4.5a7.5 7.5 0 1 0 2.5 9.5A5.6 5.6 0 1 1 16 4.5ZM8.5 15.5 4.5 20',
-  mech: 'M12 3v13M7.5 16h9M12 16v5',
-  strela: 'M5 19 19 5M19 5h-6M19 5v6M5 19h3M5 19v-3',
-  podkova: 'M7 20v-8a5 5 0 0 1 10 0v8M5.5 20h3M15.5 20h3',
-  moneta: 'M12 5a7 7 0 1 1 0 14 7 7 0 0 1 0-14ZM12 8.5v7',
-  iskra: 'M12 2.5l2.3 6.6H21l-5.5 4 2.1 6.9L12 15.8 6.4 20l2.1-6.9L3 9.1h6.7Z',
-};
+/** Hex radius of the flat board; flat side up, odd columns half a cell lower. */
+const HR = 22, SQ = Math.sqrt(3);
+const hexPoints = (rad: number) => [0, 60, 120, 180, 240, 300].map((a) => `${(rad * Math.cos(a * Math.PI / 180)).toFixed(2)},${(rad * Math.sin(a * Math.PI / 180)).toFixed(2)}`).join(' ');
 const KINDS: Kind[] = ['iskra', 'podkova', 'mech', 'strela', 'moneta', 'serp'];
 
 interface Hint { text: string; good: boolean }
 
 @Component({
   selector: 'app-stratemy-page',
-  imports: [RouterLink],
+  imports: [RouterLink, StratemyBoard3d],
   templateUrl: './stratemy-page.html',
   styleUrl: './stratemy-page.css',
 })
 export class StratemyPage implements OnDestroy {
-  protected readonly size = SIZE;
+  protected readonly hexPts = hexPoints(HR * 0.97);
+  protected readonly rimPts = hexPoints(HR * 1.3);
+  protected readonly boardW = (COLS - 1) * 1.5 * HR + 2 * HR;
+  protected readonly boardH = (ROWS + 0.5) * SQ * HR;
   protected readonly rows = Array.from({ length: ROWS }, (_, i) => i);
   protected readonly cols = Array.from({ length: COLS }, (_, i) => i);
   protected readonly glyph = GLYPH;
@@ -34,6 +32,7 @@ export class StratemyPage implements OnDestroy {
   protected readonly letters = 'АБВГДЕЖЗИКЛМНО'.slice(0, COLS).split('');
 
   protected readonly vsComputer = signal(true);
+  protected readonly view3d = signal(true);
   protected readonly sparks = signal(2);
   protected readonly seed = signal(newSeed());
   protected readonly phase = signal<'setup' | 'play'>('setup');
@@ -64,6 +63,37 @@ export class StratemyPage implements OnDestroy {
     if (!p || this.phase() === 'setup' || g.used.has(p.id) || p.side !== g.side) return [];
     return g.targets(p, st?.to ?? p);
   });
+  protected readonly boardPieces = computed<BoardPiece[]>(() => {
+    const g = this.view(), sel = this.selected(), targets = this.targets();
+    this.staged();
+    return g.pieces.map((p) => {
+      const at = this.piecePos(p);
+      return { id: p.id, kind: p.kind, side: p.side, r: at.r, c: at.c, spent: g.used.has(p.id), sel: sel === p.id,
+        target: targets.some((t) => t.id === p.id), can: this.canAct(p) };
+    });
+  });
+  /** Every cell on the board with its centre. */
+  protected readonly hexes = computed(() => {
+    const f = this.field(), out = [];
+    for (let r = 0; r < ROWS; r++) for (let c = 0; c < COLS; c++) {
+      const t = f[r][c];
+      if (t === 'edge') continue;
+      const at = this.hexAt({ r, c });
+      out.push({ k: r * COLS + c, r, c, t, x: at.x, y: at.y });
+    }
+    return out;
+  });
+  protected readonly roads = computed(() => roadLinks(this.field()).map(([a, b]) => ({ a: this.hexAt(a), b: this.hexAt(b) })));
+  protected readonly colLabels = computed(() => this.cols.map((c) => {
+    const r = [...this.rows].reverse().find((r) => this.field()[r][c] !== 'edge')!;
+    const at = this.hexAt({ r, c });
+    return { text: this.letters[c], x: at.x, y: at.y + HR * 1.45 };
+  }));
+  protected readonly rowLabels = computed(() => this.rows.map((r) => {
+    const c = this.cols.find((c) => this.field()[r][c] !== 'edge')!;
+    const at = this.hexAt({ r, c });
+    return { text: String(ROWS - r), x: at.x - HR * 1.6, y: at.y };
+  }));
   protected readonly hint = computed<Hint | null>(() => {
     const p = this.sel(), h = this.hover(), g = this.view();
     if (!p || h == null) return null;
@@ -117,9 +147,10 @@ export class StratemyPage implements OnDestroy {
 
   private setupCells(side: Side): Cell[] {
     const rows = side === 'red' ? [ROWS - 3, ROWS - 2, ROWS - 1] : [0, 1, 2];
-    return rows.flatMap((r) => this.cols.map((c) => ({ r, c })));
+    return rows.flatMap((r) => this.cols.filter((c) => this.field()[r][c] !== 'edge').map((c) => ({ r, c })));
   }
 
+  protected hexAt(p: Cell): { x: number; y: number } { return { x: p.c * 1.5 * HR + HR, y: (p.r + (p.c & 1) * 0.5) * SQ * HR + SQ / 2 * HR }; }
   protected terrainAt(r: number, c: number): Terrain { return this.field()[r][c]; }
   protected isReach(r: number, c: number): boolean { return this.reach().some((x) => x.r === r && x.c === c); }
   protected isTarget(id: number): boolean { return this.targets().some((t) => t.id === id); }
@@ -135,8 +166,10 @@ export class StratemyPage implements OnDestroy {
     return `${p.side === 'red' ? 'Алая' : 'Лазурная'} фишка «${STATS[p.kind].name}» на ${cellName(p)}`;
   }
 
-  protected clickPiece(p: Piece, ev: Event): void {
-    ev.stopPropagation();
+  protected clickPieceId(id: number): void { const p = this.view().byId(id); if (p) this.clickPiece(p); }
+
+  protected clickPiece(p: Piece, ev?: Event): void {
+    ev?.stopPropagation();
     if (this.isTarget(p.id)) return this.act({ id: this.selected()!, to: this.staged()?.to, target: p.id });
     if (this.phase() === 'setup') {
       const s = this.sel();

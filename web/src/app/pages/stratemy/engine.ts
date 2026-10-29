@@ -8,7 +8,8 @@
 
 export type Side = 'red' | 'blue';
 export type Kind = 'serp' | 'mech' | 'strela' | 'podkova' | 'moneta' | 'iskra';
-export type Terrain = 'plain' | 'road' | 'forest' | 'hill' | 'stream' | 'ruins';
+/** `edge` lies off the board: a master cuts each field to its own outline. */
+export type Terrain = 'plain' | 'road' | 'forest' | 'hill' | 'stream' | 'ruins' | 'edge';
 
 export interface Piece { id: number; kind: Kind; side: Side; r: number; c: number }
 export interface Cell { r: number; c: number }
@@ -16,16 +17,17 @@ export interface Cell { r: number; c: number }
 export interface Action { id: number; to?: Cell; target?: number }
 export interface Outcome { text: string; removed: number[]; converted?: number }
 
-export const ROWS = 16;
-export const COLS = 12;
+/** Hexagonal cells, flat side up, odd columns set half a cell lower. An even column count keeps the field point-symmetric. */
+export const ROWS = 20;
+export const COLS = 14;
 export const ACTIONS_PER_TURN = 3;
 
 export const STATS: Record<Kind, { a: number; d: number; mp: number; name: string; plural: string; value: number }> = {
-  serp: { a: 1, d: 1, mp: 2, name: 'серп', plural: 'серпы', value: 1 },
-  mech: { a: 2, d: 3, mp: 2, name: 'меч', plural: 'мечи', value: 3 },
-  strela: { a: 2, d: 1, mp: 2, name: 'стрела', plural: 'стрелы', value: 3 },
-  podkova: { a: 3, d: 2, mp: 6, name: 'подкова', plural: 'подковы', value: 5 },
-  moneta: { a: 0, d: 1, mp: 4, name: 'монета', plural: 'монеты', value: 3 },
+  serp: { a: 1, d: 1, mp: 4, name: 'серп', plural: 'серпы', value: 1 },
+  mech: { a: 2, d: 3, mp: 4, name: 'меч', plural: 'мечи', value: 3 },
+  strela: { a: 2, d: 1, mp: 4, name: 'стрела', plural: 'стрелы', value: 3 },
+  podkova: { a: 3, d: 2, mp: 8, name: 'подкова', plural: 'подковы', value: 5 },
+  moneta: { a: 0, d: 1, mp: 6, name: 'монета', plural: 'монеты', value: 3 },
   iskra: { a: 1, d: 2, mp: 4, name: 'искра', plural: 'искры', value: 40 },
 };
 export const TERRAIN: Record<Terrain, { name: string; def: number }> = {
@@ -33,8 +35,9 @@ export const TERRAIN: Record<Terrain, { name: string; def: number }> = {
   road: { name: 'дорога', def: 0 },
   forest: { name: 'лес', def: 1 },
   hill: { name: 'холм', def: 1 },
-  stream: { name: 'ручей', def: -1 },
+  stream: { name: 'река', def: -1 },
   ruins: { name: 'руины замка', def: 3 },
+  edge: { name: 'край поля', def: 0 },
 };
 
 const REGULAR: Kind[] = ['mech', 'strela', 'podkova', 'iskra'];
@@ -49,10 +52,11 @@ export class Game {
   constructor(public field: Terrain[][], army: Kind[][], public sparks: number) {
     let id = 1;
     // army rows are written from the front line backwards, for the red side at the bottom
+    const off = Math.floor((COLS - army[0].length) / 2);
     army.forEach((row, k) => row.forEach((kind, c) => {
       if (kind) {
-        this.pieces.push({ id: id++, kind, side: 'red', r: ROWS - 3 + k, c });
-        this.pieces.push({ id: id++, kind, side: 'blue', r: 2 - k, c: COLS - 1 - c });
+        this.pieces.push({ id: id++, kind, side: 'red', r: ROWS - 3 + k, c: off + c });
+        this.pieces.push({ id: id++, kind, side: 'blue', r: 2 - k, c: COLS - 1 - off - c });
       }
     }));
   }
@@ -68,6 +72,8 @@ export class Game {
   at(r: number, c: number): Piece | undefined { return this.pieces.find((p) => p.r === r && p.c === c); }
   byId(id: number): Piece | undefined { return this.pieces.find((p) => p.id === id); }
   terrain(r: number, c: number): Terrain { return this.field[r][c]; }
+  /** The neighbouring cells that are on the board. */
+  around(r: number, c: number): Cell[] { return neighbours(r, c).filter((n) => this.field[n.r][n.c] !== 'edge'); }
 
   /** Movement cost in half-steps: roads speed everyone up, forest and hills slow the cavalry. */
   private cost(kind: Kind, t: Terrain): number {
@@ -90,9 +96,7 @@ export class Game {
       queue.sort((a, b) => a[2] - b[2]);
       const [r, c, spent] = queue.shift()!;
       if (spent > 0 && this.field[r][c] === 'stream' && p.kind !== 'podkova') continue;
-      for (const [dr, dc] of DIRS) {
-        const nr = r + dr, nc = c + dc;
-        if (nr < 0 || nc < 0 || nr >= ROWS || nc >= COLS) continue;
+      for (const { r: nr, c: nc } of this.around(r, c)) {
         const occ = this.at(nr, nc);
         if (occ) continue; // no passing through any piece
         const t = this.field[nr][nc];
@@ -241,8 +245,17 @@ export class Game {
   }
 }
 
-const DIRS = [[1, 0], [-1, 0], [0, 1], [0, -1], [1, 1], [1, -1], [-1, 1], [-1, -1]];
-export function dist(a: Cell, b: Cell): number { return Math.max(Math.abs(a.r - b.r), Math.abs(a.c - b.c)); }
+/** The six cells around a hex, inside the board's bounds. */
+export function neighbours(r: number, c: number): Cell[] {
+  const d = c & 1 ? [[-1, 0], [1, 0], [0, -1], [1, -1], [0, 1], [1, 1]] : [[-1, 0], [1, 0], [-1, -1], [0, -1], [-1, 1], [0, 1]];
+  return d.map(([dr, dc]) => ({ r: r + dr, c: c + dc })).filter((n) => n.r >= 0 && n.c >= 0 && n.r < ROWS && n.c < COLS);
+}
+/** Steps between two hexes. */
+export function dist(a: Cell, b: Cell): number {
+  const az = a.r - (a.c - (a.c & 1)) / 2, bz = b.r - (b.c - (b.c & 1)) / 2;
+  const dx = a.c - b.c, dz = az - bz;
+  return Math.max(Math.abs(dx), Math.abs(dz), Math.abs(dx + dz));
+}
 const LETTERS = 'АБВГДЕЖЗИКЛМНОП';
 export function cellName(c: Cell): string { return LETTERS[c.c] + (ROWS - c.r); }
 function cap(s: string): string { return s[0].toUpperCase() + s.slice(1); }
@@ -263,43 +276,89 @@ export function army(sparks: number): Kind[][] {
   ];
 }
 
-/** A unique field from a seed: point-symmetric, so neither side starts on better ground. */
+/**
+ * A unique field from a seed, like a master's carved board: its own outline, a river with fords,
+ * groves, two hills with a hollow between them, a road, and a castle at home for each side.
+ * Point-symmetric, so neither side starts on better ground.
+ */
 export function makeField(seed: number): Terrain[][] {
   let s = seed >>> 0 || 1;
   const rnd = () => ((s = (s * 1664525 + 1013904223) >>> 0) / 2 ** 32);
+  const pick = (n: number) => Math.floor(rnd() * n);
   const f: Terrain[][] = Array.from({ length: ROWS }, () => Array<Terrain>(COLS).fill('plain'));
+  const H = ROWS / 2;
   const set = (r: number, c: number, t: Terrain) => {
     if (r < 0 || c < 0 || r >= ROWS || c >= COLS) return;
     f[r][c] = t; f[ROWS - 1 - r][COLS - 1 - c] = t;
   };
+  // the outline: rounded back corners and a bay or two along the sides
+  const k = 2 + pick(2);
+  for (let r = 0; r < k; r++) for (let c = 0; c < k - r; c++) { set(r, c, 'edge'); set(r, COLS - 1 - c, 'edge'); }
+  for (let i = 0; i < 2; i++) {
+    const r = 5 + pick(H - 5), side = rnd() < 0.5 ? 0 : COLS - 1;
+    set(r, side, 'edge');
+    if (rnd() < 0.5) set(r + 1, side, 'edge');
+  }
+  const free = (r: number, c: number) => f[r]?.[c] === 'plain';
   const blob = (t: Terrain, r0: number, c0: number, n: number) => {
     let r = r0, c = c0;
     for (let i = 0; i < n; i++) {
-      set(r, c, t);
-      r += Math.round(rnd() * 2 - 1); c += Math.round(rnd() * 2 - 1);
-      r = Math.max(3, Math.min(ROWS / 2 - 1, r)); c = Math.max(0, Math.min(COLS - 1, c));
+      if (free(r, c)) set(r, c, t);
+      const nb = neighbours(r, c).filter((x) => x.r >= 3 && x.r < H);
+      if (nb.length) ({ r, c } = nb[pick(nb.length)]);
     }
   };
-  // a stream across one half, wandering, with the middle rows left open
-  let c = Math.floor(rnd() * 3);
-  const sr = 5 + Math.floor(rnd() * 2);
-  for (let k = 0; k < COLS; k++) {
-    if (k === c) set(sr + Math.round(rnd() - .3), k, 'stream'); else set(sr, k, 'stream');
+  // a river across each half, wandering, with two fords
+  const sr = 6 + pick(2);
+  let rr = sr;
+  for (let c = 0; c < COLS; c++) {
+    if (f[rr][c] !== 'edge') set(rr, c, 'stream');
+    const go = rnd();
+    if (go < 0.25 && rr > sr - 1) rr--; else if (go > 0.75 && rr < sr + 1) rr++;
   }
-  // fords: a couple of gaps in the stream
-  for (let i = 0; i < 2; i++) set(sr, 1 + Math.floor(rnd() * (COLS - 2)), 'plain');
-  blob('forest', 3 + Math.floor(rnd() * 4), Math.floor(rnd() * 4), 6 + Math.floor(rnd() * 4));
-  blob('forest', 4 + Math.floor(rnd() * 2), 7 + Math.floor(rnd() * 4), 4 + Math.floor(rnd() * 3));
-  blob('hill', 6 + Math.floor(rnd() * 2), 3 + Math.floor(rnd() * 6), 3 + Math.floor(rnd() * 3));
-  // a road from one side to the other through the centre
-  c = 2 + Math.floor(rnd() * (COLS - 4));
-  for (let r = 0; r < ROWS / 2; r++) {
-    if (f[r][c] !== 'stream' || r === sr) set(r, c, 'road');
-    if (rnd() < .35) c = Math.max(1, Math.min(COLS - 2, c + (rnd() < .5 ? -1 : 1)));
+  for (let i = 0; i < 2; i++) {
+    const c = 1 + pick(COLS - 2);
+    for (let r = sr - 1; r <= sr + 1; r++) if (f[r][c] === 'stream') set(r, c, 'plain');
+  }
+  // groves
+  blob('forest', 3 + pick(3), pick(4), 7 + pick(4));
+  blob('forest', 3 + pick(3), COLS - 4 + pick(4), 5 + pick(4));
+  blob('forest', 4 + pick(4), 5 + pick(4), 3 + pick(3));
+  // two hills squeezing the plain into a hollow near the middle
+  const hc = 3 + pick(COLS - 8), hr = H - 2 + pick(2);
+  blob('hill', hr, hc, 3 + pick(2));
+  blob('hill', hr, hc + 3, 3 + pick(2));
+  // a road from the back through the middle of the field
+  let c = 3 + pick(COLS - 6);
+  for (let r = 0; r < H; r++) {
+    if (f[r][c] !== 'edge') set(r, c, 'road');
+    if (rnd() < 0.35) c = Math.max(2, Math.min(COLS - 3, c + (rnd() < 0.5 ? -1 : 1)));
     if (f[r][c] === 'plain') set(r, c, 'road');
   }
-  set(ROWS / 2 - 1, COLS / 2 - 1, 'road'); set(ROWS / 2 - 1, COLS / 2, 'road');
-  // the ruins of a castle near each rear corner
-  set(1 + Math.floor(rnd() * 2), rnd() < .5 ? 1 : COLS - 2, 'ruins');
+  // along the middle row to the centre, where it meets the other half's road
+  for (let k = Math.min(c, COLS / 2 - 1); k <= Math.max(c, COLS / 2); k++) set(H - 1, k, 'road');
+  // the home castle, in ruins, by a rear corner
+  set(1 + pick(2), rnd() < 0.5 ? k : COLS - 1 - k, 'ruins');
   return f;
+}
+
+/** The stretches of road to draw: each road cell joined to one neighbour, so the road has no loops or ladders. */
+export function roadLinks(f: Terrain[][]): [Cell, Cell][] {
+  const seen = new Set<number>(), links: [Cell, Cell][] = [];
+  for (let r0 = 0; r0 < ROWS; r0++) for (let c0 = 0; c0 < COLS; c0++) {
+    if (f[r0][c0] !== 'road' || seen.has(r0 * COLS + c0)) continue;
+    seen.add(r0 * COLS + c0);
+    const queue: Cell[] = [{ r: r0, c: c0 }];
+    while (queue.length) {
+      const a = queue.shift()!;
+      for (const b of neighbours(a.r, a.c)) {
+        const k = b.r * COLS + b.c;
+        if (f[b.r][b.c] !== 'road' || seen.has(k)) continue;
+        seen.add(k);
+        links.push([a, b]);
+        queue.push(b);
+      }
+    }
+  }
+  return links;
 }
