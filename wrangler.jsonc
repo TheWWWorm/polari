@@ -1,0 +1,13 @@
+// Cloudflare Worker serving the static Angular build at polari.wwworm.com.
+// Cloudflare reads this file on every push: `wrangler deploy` runs the build below, then uploads the assets.
+{
+  "name": "polari",
+  "compatibility_date": "2026-10-01",
+  "build": { "command": "cd web && npm ci && npm run build" },
+  "assets": {
+    "directory": "./web/dist/web/browser",
+    // the site routes with #/slug, but fall back to index.html for any other path
+    "not_found_handling": "single-page-application"
+  },
+  "routes": [{ "pattern": "polari.wwworm.com", "custom_domain": true }]
+}

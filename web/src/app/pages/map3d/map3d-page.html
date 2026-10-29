@@ -1,0 +1,30 @@
+<div class="page wide">
+  <div class="crumbs"><a routerLink="/">Заглавная</a> / <a routerLink="/map">Карта</a></div>
+  <h1 class="page-title">Полари в объёме</h1>
+  <p class="page-sub">Рельеф, реки, леса и города построены по карте из «Путеводителя»: хребты стоят там, где их нарисовал художник, леса — где нарисованы деревья, а города, порты, крепости и сёла построены каждый по-своему, а между ними проложены железные дороги и главные тракты. Тяните левой кнопкой, чтобы двигать карту, правой — чтобы поворачивать и наклонять; колёсико приближает к точке под курсором. На телефоне: один палец двигает, два — поворачивают и приближают.</p>
+  <div class="tools ui">
+    <span class="grp">
+      <button class="btn" (click)="fly('overview')">Весь материк</button>
+      <button class="btn" (click)="fly('north')">Ориджин</button>
+      <button class="btn" (click)="fly('lake')">Дымная Даль</button>
+      <button class="btn" (click)="fly('capital')">Фаунтерра</button>
+      <button class="btn" (click)="fly('south')">Шиммери</button>
+      <button class="btn" (click)="fly('steppe')">Рей-Рой</button>
+      <button class="btn" (click)="fly('beyond')">Запределье</button>
+    </span>
+    <span class="grp">
+      <button class="btn" [attr.aria-pressed]="labels()" (click)="labels.set(!labels())">Города</button>
+      <button class="btn" [attr.aria-pressed]="lands()" (click)="lands.set(!lands())">Земли</button>
+      <button class="btn" [attr.aria-pressed]="forests()" (click)="toggleForests()">Леса</button>
+      <button class="btn" [attr.aria-pressed]="roads()" (click)="toggleRoads()">Дороги</button>
+      <button class="btn" [attr.aria-pressed]="painted()" (click)="togglePainted()">Рисованная карта</button>
+      <button class="btn" [attr.aria-pressed]="spin()" (click)="toggleSpin()">Облёт</button>
+    </span>
+  </div>
+  <div class="stage" #stage [class.no-labels]="!labels()" [class.no-lands]="!lands()">
+    <canvas #canvas></canvas>
+    <div class="labels" #labelLayer></div>
+    @if (progress() < 100 && !failed()) { <div class="loading ui"><span>Строим мир… {{ progress() }}%</span></div> }
+    @if (failed()) { <div class="loading ui">Не удалось загрузить 3D-модель. <a routerLink="/map">Открыть плоскую карту</a></div> }
+  </div>
+</div>

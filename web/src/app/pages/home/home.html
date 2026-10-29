@@ -1,0 +1,71 @@
+<div class="page">
+  <header class="welcome">
+    <h1 class="page-title">Полари</h1>
+    <p class="page-sub">Энциклопедия цикла Романа Суржикова</p>
+  </header>
+  <div class="intro">
+    <section>
+      <h2>Люди, земли и история Империи Полари.</h2>
+      <p>
+        Найдите героя, проследите связи Великих Домов или вернитесь к событиям прочитанной книги.
+      </p>
+      <div class="actions">
+        <a class="btn primary" routerLink="/map"
+          >Исследовать мир <span aria-hidden="true">→</span></a
+        ><a class="btn" routerLink="/all">Все статьи</a>
+      </div>
+    </section>
+    <aside class="reading">
+      <h2>Читаете цикл?</h2>
+      <p>Выберите последнюю прочитанную книгу. Вики скроет поздние события.</p>
+      <app-spoiler-select />
+    </aside>
+  </div>
+  <div class="section-head">
+    <h2>Книги в порядке чтения</h2>
+    <a routerLink="/c/book">Все книги</a>
+  </div>
+  <ol class="reading-order">
+    @for (b of data.books().slice(0, 6); track b.slug) {
+      <li>
+        <a [routerLink]="'/' + b.slug" [class.with-art]="data.imageSrc(b)">
+          @if (data.imageSrc(b); as src) {
+            <img class="book-cover" [src]="src" alt="" loading="lazy" />
+          }
+          <span class="book-copy"
+            ><span class="book-name">{{ b.title }}</span
+            ><span class="kind">{{ b.group }}</span></span
+          ><span class="arrow" aria-hidden="true">→</span></a
+        >
+      </li>
+    }
+  </ol>
+  <div class="two">
+    <section>
+      <h2>Исследовать энциклопедию</h2>
+      <a class="explore" routerLink="/c/character"
+        ><b>Персонажи</b><span>Герои, придворные и жители Полари</span></a
+      ><a class="explore" routerLink="/c/house"
+        ><b>Великие Дома</b><span>Правители, земли и родство</span></a
+      ><a class="explore" routerLink="/c/place"
+        ><b>Земли и города</b><span>География мира Полари</span></a
+      >
+    </section>
+    <section>
+      <h2>Связать события</h2>
+      <a class="explore" routerLink="/families"
+        ><b>Родословные</b><span>Семьи главных родов</span></a
+      ><a class="explore" routerLink="/relations"
+        ><b>Связи персонажей</b><span>Родня, союзники, служба и вражда</span></a
+      ><a class="explore" routerLink="/c/event"
+        ><b>Хронология событий</b><span>Войны, заговоры и поворотные моменты</span></a
+      >
+    </section>
+  </div>
+  <h2 class="section-title">Справочники</h2>
+  <div class="references">
+    <a routerLink="/glossarij">Глоссарий</a><a routerLink="/tsitaty">Цитаты</a
+    ><a routerLink="/c/concept">Понятия и мир</a><a routerLink="/gallery">Иллюстрации</a
+    ><a routerLink="/random">Случайная статья</a>
+  </div>
+</div>

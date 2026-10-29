@@ -1,0 +1,99 @@
+<div class="page wide">
+  <div class="crumbs"><a routerLink="/">Заглавная</a></div>
+  <h1 class="page-title">Карта Полари</h1>
+  <p class="page-sub">Карта из «Путеводителя по землям Полари». Нажмите на метку, чтобы прочитать о месте. Шкала под картой ведёт по событиям цикла, а маршрут показывает путь героя по главам.</p>
+
+  <div class="tools ui">
+    <button class="btn" (click)="zoom(1.4)" aria-label="Приблизить">＋</button>
+    <button class="btn" (click)="zoom(1 / 1.4)" aria-label="Отдалить">－</button>
+    <button class="btn" (click)="fit()">Вписать</button>
+    <a class="btn" routerLink="/map3d">3D-карта</a>
+    <button class="btn" [attr.aria-pressed]="showLands()" (click)="showLands.set(!showLands())">Земли</button>
+    <button class="btn" [attr.aria-pressed]="showCities()" (click)="showCities.set(!showCities())">Города и места</button>
+    @if (narrators().length) {
+      <label class="jr">Маршрут героя
+        <select class="field" [value]="journeySlug()" (change)="setJourney($any($event.target).value)">
+          <option value="">не показывать</option>
+          @for (s of narrators(); track s) { <option [value]="s">{{ placeTitle(s) }}</option> }
+        </select>
+      </label>
+    }
+  </div>
+
+  <div class="stage">
+  <div class="view" #view [class.labels]="labelsOn()" [class.hide-lands]="!showLands()" [class.hide-cities]="!showCities()"
+    (wheel)="wheel($event)" (pointerdown)="down($event)" (pointermove)="move($event)" (pointerup)="up()" (pointerleave)="up()">
+    <img src="img/map-polari.jpg" alt="Карта Полари" draggable="false" [style.transform]="imgTransform()" (load)="imageLoaded()" />
+
+    @if (journey().length > 1) {
+      <svg class="jr-line" aria-hidden="true"><polyline [attr.points]="journeyPoints()" /></svg>
+    }
+    @for (pl of placeList(); track pl.k) {
+      <button class="pin" [class]="'pin pin-' + pl.p.kind" [class.nolink]="!pl.linked" [style.left.px]="px(pl.p)" [style.top.px]="py(pl.p)"
+        (click)="openPlace(pl.k)" [attr.aria-label]="pl.title"><i></i><span>{{ pl.title }}</span></button>
+    }
+    @if (journeySlug()) {
+      @for (j of journey(); track $index; let i = $index) {
+        <button class="jr-dot" [class.on]="i === step()" [style.left.px]="px(places()[j.key])" [style.top.px]="py(places()[j.key])" (click)="showStep(i)">{{ i + 1 }}</button>
+      }
+    } @else if (stop(); as s) {
+      @for (t of trail(); track $index) {
+        <span class="trail" [style.left.px]="px(places()[t.p])" [style.top.px]="py(places()[t.p])"></span>
+      }
+      <span class="now" [style.left.px]="px(places()[s.p])" [style.top.px]="py(places()[s.p])"><span>{{ s.label }}</span></span>
+    }
+
+    @if (popup(); as k) {
+      <div class="pop" [style.left.px]="px(places()[k])" [style.top.px]="py(places()[k])" [class.above]="py(places()[k]) > 300">
+        <button class="x" (click)="popup.set('')" aria-label="Закрыть">×</button>
+        <b>{{ placeTitle(k) }}</b>
+        @if (summary(k)) { <p>{{ summary(k) }}</p> }
+        @if (popupEvents().length) {
+          <div class="pop-ev">@for (e of popupEvents(); track e.i) {<button (click)="show(e.i, false)">{{ e.s.label }}</button>}</div>
+        }
+        @if (linked(k)) { <a [routerLink]="'/' + k">Читать статью</a> }
+      </div>
+    }
+  </div>
+
+  @if (journeySlug()) {
+    @let j = journey()[step()];
+    <section class="card">
+      <div class="when">Маршрут: <a [routerLink]="'/' + journeySlug()">{{ placeTitle(journeySlug()) }}</a>, шаг {{ step() + 1 }} из {{ journey().length }} — {{ placeTitle(j.key) }}</div>
+      @for (it of j.items; track $index) {
+        <p class="what"><b>{{ it.c.date }}</b>. «{{ bookTitle(it.book) }}», {{ it.c.h }}: <span [innerHTML]="it.c.sum"></span></p>
+      }
+      <div class="nav"><button class="btn" (click)="showStep(step() - 1)" [disabled]="step() === 0">Назад</button><button class="btn" (click)="showStep(step() + 1)" [disabled]="step() >= journey().length - 1">Дальше</button></div>
+    </section>
+  } @else {
+    <section class="timeline">
+      <div class="row">
+        <button class="btn" (click)="show(cur() - 1)" aria-label="Предыдущее событие">◀</button>
+        <button class="btn" (click)="togglePlay()" [attr.aria-label]="playing() ? 'Пауза' : 'Воспроизвести'">{{ playing() ? '❚❚' : '▶' }}</button>
+        <button class="btn" (click)="show(cur() + 1)" aria-label="Следующее событие">▶▶</button>
+        <input type="range" min="0" [max]="stops().length - 1" [value]="cur()" (input)="show(+$any($event.target).value)" aria-label="Шкала времени" />
+        <span class="count ui">{{ cur() + 1 }} из {{ stops().length }}</span>
+      </div>
+      <div class="ticks">@for (t of ticks(); track t.i) {<button [style.left.%]="t.left" (click)="show(t.i)">{{ t.label }}</button>}</div>
+      <div class="mode ui">
+        <button class="btn" [attr.aria-pressed]="!onlyKey()" (click)="onlyKey.set(false)">Все главы</button>
+        <button class="btn" [attr.aria-pressed]="onlyKey()" (click)="onlyKey.set(true)">Только ключевые события</button>
+      </div>
+      @if (stop(); as s) {
+        <div class="card">
+          <div class="when">{{ s.label }} — <button class="place" (click)="openPlace(s.p)">{{ placeTitle(s.p) }}</button></div>
+          <p class="what" [innerHTML]="s.html"></p>
+          @if (s.links.length) {
+            <p class="links ui">Подробнее: @for (l of s.links; track l; let last = $last) {@if (data.get(l)) {<a [routerLink]="'/' + l">{{ placeTitle(l) }}</a>@if (!last) {, }}}</p>
+          }
+        </div>
+      }
+      <ol class="near ui" aria-label="События рядом по времени">
+        @for (n of nearby(); track n.i) {
+          <li [class.on]="n.i === cur()"><button (click)="show(n.i)"><span class="d">{{ n.s.label }}</span><span class="p">{{ placeTitle(n.s.p) }}</span></button></li>
+        }
+      </ol>
+    </section>
+  }
+  </div>
+</div>

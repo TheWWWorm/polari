@@ -1,0 +1,65 @@
+:root {
+  --paper: #f4f6f5;
+  --sheet: #fff;
+  --sheet-2: #e6edf1;
+  --ink: #1d3048;
+  --ink-2: #526476;
+  --ink-3: #526476;
+  --rule: #ccd6dd;
+  --azure: #24577c;
+  --azure-2: #166cc1;
+  --wax: #795b22;
+  --gold: #b19861;
+  --spark: #1f8fc4;
+  --spark-glow: rgba(31, 143, 196, 0.25);
+  --engraving-bg: #fff;
+  --serif: Georgia, 'Times New Roman', serif;
+  --caps: var(--serif);
+  --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --fs-small: 0.75rem;
+  --fs-ui: 0.875rem;
+  --fs-body: 1.125rem;
+  --fs-h3: 1.35rem;
+  --fs-h2: 1.7rem;
+  --fs-h1: 2.75rem;
+  --radius-s: 4px;
+  --radius-m: 5px;
+  --measure: 68ch;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --paper: #142131;
+    --sheet: #1c2d40;
+    --sheet-2: #24394c;
+    --ink: #edf2f5;
+    --ink-2: #b5c3cf;
+    --ink-3: #b5c3cf;
+    --rule: #40566a;
+    --azure: #b9d9f1;
+    --azure-2: #71b7f7;
+    --wax: #dfc38a;
+    --gold: #dfc38a;
+    --spark: #5fd0f5;
+    --spark-glow: rgba(95, 208, 245, 0.25);
+    --engraving-bg: #e9ebe6;
+    color-scheme: dark;
+  }
+}
+:root[data-theme='dark'] {
+  --paper: #142131;
+  --sheet: #1c2d40;
+  --sheet-2: #24394c;
+  --ink: #edf2f5;
+  --ink-2: #b5c3cf;
+  --ink-3: #b5c3cf;
+  --rule: #40566a;
+  --azure: #b9d9f1;
+  --azure-2: #71b7f7;
+  --wax: #dfc38a;
+  --gold: #dfc38a;
+  --spark: #5fd0f5;
+  --spark-glow: rgba(95, 208, 245, 0.25);
+  --engraving-bg: #e9ebe6;
+  color-scheme: dark;
+}

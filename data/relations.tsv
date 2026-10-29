@@ -1,0 +1,496 @@
+a	b	type	label	book
+desmond-oridzhin	sofiya-oridzhin	супруги	муж	strela-moneta-iskra
+desmond-oridzhin	ervin-oridzhin	родня	отец	strela-moneta-iskra
+desmond-oridzhin	rikhard-oridzhin	родня	отец	strela-moneta-iskra
+desmond-oridzhin	iona-oridzhin	родня	отец	strela-moneta-iskra
+sofiya-oridzhin	ervin-oridzhin	родня	мать	strela-moneta-iskra
+sofiya-oridzhin	rikhard-oridzhin	родня	мать	strela-moneta-iskra
+sofiya-oridzhin	iona-oridzhin	родня	мать	strela-moneta-iskra
+rikhard-oridzhin	ervin-oridzhin	родня	старший брат	strela-moneta-iskra
+ervin-oridzhin	iona-oridzhin	родня	брат	strela-moneta-iskra
+rikhard-oridzhin	iona-oridzhin	родня	брат	strela-moneta-iskra
+iona-oridzhin	vittor-shejland	супруги	жена	strela-moneta-iskra
+klajv-stagfort	minerva	родня	отец	strela-moneta-iskra
+ajden-almera	alanis-almera	родня	отец	strela-moneta-iskra
+gallard-almera	ajden-almera	родня	брат	strela-moneta-iskra
+henri-farvej	laura-farvej	родня	дед	strela-moneta-iskra
+elias-nortvud	sibil-nortvud	супруги	муж	strela-moneta-iskra
+sibil-nortvud	gloriya-nortvud	родня	мать	strela-moneta-iskra
+elias-nortvud	gloriya-nortvud	родня	отец (формально)	strela-moneta-iskra
+gallard-almera	gloriya-nortvud	родня	отец (тайный)	strela-moneta-iskra
+menson	adrian	родня	дядя	strela-moneta-iskra
+minerva	adrian	родня	дальняя родственница, наследница престола	strela-moneta-iskra
+ervin-oridzhin	dzhemis-lillidej	служба	сюзерен	strela-moneta-iskra
+ervin-oridzhin	nekseya-flejm	любовь	любовник	strela-moneta-iskra
+teobart	desmond-oridzhin	служба	бывший оруженосец	strela-moneta-iskra
+teobart	ervin-oridzhin	служба	капитан эксплорады	strela-moneta-iskra
+artur-khajrok	desmond-oridzhin	служба	кастелян, «левая рука»	strela-moneta-iskra
+fleming	desmond-oridzhin	служба	прим-вассал	strela-moneta-iskra
+mark-voron	itan	служба	начальник	strela-moneta-iskra
+dzhoakin	kharmon	служба	охранник	strela-moneta-iskra
+doksett	kharmon	служба	охранник	strela-moneta-iskra
+snajp	kharmon	служба	охранник	strela-moneta-iskra
+luiza	kharmon	служба	стряпуха в обозе	strela-moneta-iskra
+polli	dzhoakin	любовь	возлюбленная	strela-moneta-iskra
+kharmon	polli	любовь	влюблён	strela-moneta-iskra
+kharmon	snajp	вражда	убийца	strela-moneta-iskra
+kharmon	polli	вражда	невольный убийца	strela-moneta-iskra
+vittor-shejland	kharmon	служба	наниматель (продажа Сферы)	strela-moneta-iskra
+garold-greta	vittor-shejland	служба	кастелян	strela-moneta-iskra
+otets-david	kharmon	союз	старый друг	strela-moneta-iskra
+derril	moris-labelin	служба	доверенное лицо	strela-moneta-iskra
+logan-katrina	kharmon	союз	постоянный покупатель	strela-moneta-iskra
+logan-katrina	ajden-almera	служба	бывший гвардеец	strela-moneta-iskra
+dzhoakin	alanis-almera	любовь	влюблён	strela-moneta-iskra
+dzhoakin	vittor-shejland	служба	воин на службе	strela-moneta-iskra
+dzhoakin	ben-vomak	вражда	противник в поединке	strela-moneta-iskra
+rebekka-litlend	minerva	союз	подруга	strela-moneta-iskra
+sibil-nortvud	minerva	союз	опекунша, устроила подмену невест	strela-moneta-iskra
+lord-klarens	sibil-nortvud	любовь	альтер, любовник	strela-moneta-iskra
+vanden	sibil-nortvud	служба	рыцарь-мечник	strela-moneta-iskra
+filipp-loufert	ervin-oridzhin	союз	имперский наблюдатель в отряде	strela-moneta-iskra
+luis-mariya	ervin-oridzhin	вражда	ранил ножом	strela-moneta-iskra
+minerva	adrian	любовь	влюблена	strela-moneta-iskra
+sibil-nortvud	ervin-oridzhin	союз	союзница по коалиции	strela-moneta-iskra
+henri-farvej	ervin-oridzhin	союз	союзник по коалиции	strela-moneta-iskra
+ajden-almera	desmond-oridzhin	союз	союзник по договору	strela-moneta-iskra
+sibil-nortvud	gallard-almera	любовь	любовница	strela-moneta-iskra
+osvald	ervin-oridzhin	служба	кайр эксплорады	strela-moneta-iskra
+valeri-grejsend	moris-labelin	служба	вассал (дом Грейсенд)	strela-moneta-iskra
+ajden-almera	adrian	служба	первый советник	strela-moneta-iskra
+lejla-talmir	ajden-almera	вражда	невеста казнённого им Корвиса	strela-moneta-iskra
+garold-greta	kharmon	союз	давний покупатель	strela-moneta-iskra
+gallard-almera	alanis-almera	родня	дядя	strela-moneta-iskra
+mark-voron	adrian	служба	глава протекции	strela-moneta-iskra
+alanis-almera	adrian	союз	претендентка в невесты	strela-moneta-iskra
+rebekka-litlend	adrian	союз	претендентка в невесты	strela-moneta-iskra
+valeri-grejsend	adrian	союз	претендентка в невесты	strela-moneta-iskra
+artur-khajrok	ervin-oridzhin	служба	кастелян	strela-moneta-iskra
+ajden-almera	menson	вражда	раскрыл его заговор	strela-moneta-iskra
+ervin-oridzhin	laura-farvej	супруги	жених по тайному договору	strela-moneta-iskra
+paul	ervin-oridzhin	вражда	враг	strela-moneta-iskra
+vittor-shejland	ervin-oridzhin	родня	зять (муж сестры)	strela-moneta-iskra
+gloriya-nortvud	minerva	вражда	соперница, заняла её место	strela-moneta-iskra
+klajv-stagfort	vittor-shejland	служба	вассал	strela-moneta-iskra
+mark-voron	minerva	союз	союзник	strela-moneta-iskra
+menson	adrian	служба	шут	strela-moneta-iskra
+luis-mariya	ervin-oridzhin	служба	механик экспедиции	strela-moneta-iskra
+itan	adrian	служба	секретарь	strela-moneta-iskra
+teobart	ervin-oridzhin	наставник	приставлен «нянькой»	strela-moneta-iskra
+gobart-sintal	kharmon	союз	несостоявшийся покупатель	strela-moneta-iskra
+derril	kharmon	союз	несостоявшийся покупатель Сферы	strela-moneta-iskra
+dzhemis-lillidej	ervin-oridzhin	вражда	поднял бунт против него	strela-moneta-iskra
+ben-vomak	kharmon	вражда	угрожал обозу	strela-moneta-iskra
+moris-labelin	valeri-grejsend	союз	добивался её брака с Адрианом	strela-moneta-iskra
+vanden	minerva	служба	охранник	strela-moneta-iskra
+ervin-oridzhin	ajden-almera	вражда	соперник в Палате	strela-moneta-iskra
+minerva	ajden-almera	вражда	раскрыла его тайну	strela-moneta-iskra
+osvald	desmond-oridzhin	служба	кайр, получивший от него плащ	strela-moneta-iskra
+fleming	ervin-oridzhin	служба	прим-вассал	strela-moneta-iskra
+lord-klarens	minerva	союз	провёл в архив	strela-moneta-iskra
+minerva	moris-labelin	вражда	подозревала в убийстве отца	strela-moneta-iskra
+sibil-nortvud	gallard-almera	союз	соучастница подмены невест	strela-moneta-iskra
+nora-plaksa	minerva	союз	напарница по монастырю	plaksa
+rebekka-litlend	moran	любовь	возлюбленная	dusha-zapada
+sibil-nortvud	krejg-nortvud	родня	мачеха	lish-odna-zvezda
+robert-oridzhin	dejmon-oridzhin	родня	брат	lish-odna-zvezda
+robert-oridzhin	ervin-oridzhin	родня	кузен	lish-odna-zvezda
+dejmon-oridzhin	ervin-oridzhin	родня	кузен	lish-odna-zvezda
+martin-shejland	vittor-shejland	родня	брат	lish-odna-zvezda
+elias-nortvud	krejg-nortvud	родня	отец	lish-odna-zvezda
+imperatritsa-ingrid	adrian	родня	мать	lish-odna-zvezda
+fleming	ervin-oridzhin	вражда	предатель	lish-odna-zvezda
+otets-david	alanis-almera	союз	спутник в бегстве	lish-odna-zvezda
+aleksis-smajl	valeri-grejsend	супруги	муж	lish-odna-zvezda
+inzhi-prajs	minerva	наставник	«наставник» в ремесле асассина	lish-odna-zvezda
+olaf-dvuborodyj	ervin-oridzhin	союз	союзник за серебро	lish-odna-zvezda
+potomok	mark-voron	союз	друг	lish-odna-zvezda
+adrian	gloriya-nortvud	союз	жених (она — под именем Минервы)	lish-odna-zvezda
+krejg-nortvud	ervin-oridzhin	союз	союзник в мятеже	lish-odna-zvezda
+ervin-oridzhin	moris-labelin	вражда	противник в войне	lish-odna-zvezda
+krojdon-bekfild	ervin-oridzhin	вражда	осаждал во дворце	lish-odna-zvezda
+mark-voron	ervin-oridzhin	вражда	подосланный убийца	lish-odna-zvezda
+ervin-oridzhin	minerva	союз	союзник по договору, лорд-канцлер	lish-odna-zvezda
+adrian	ervin-oridzhin	вражда	враг (Северная война)	lish-odna-zvezda
+brant-stil	dejmon-oridzhin	служба	помощник	lish-odna-zvezda
+inzhi-prajs	martin-shejland	служба	наёмник	lish-odna-zvezda
+krojdon-bekfild	mark-voron	вражда	соперник	lish-odna-zvezda
+krojdon-bekfild	adrian	служба	начальник протекции	lish-odna-zvezda
+ervin-oridzhin	alanis-almera	любовь	любовник	lish-odna-zvezda
+sorok-dva	ervin-oridzhin	служба	кайр-икс	lish-odna-zvezda
+otets-david	ervin-oridzhin	союз	спутник, доверенное лицо	lish-odna-zvezda
+albert-vial	adrian	служба	министр финансов	lish-odna-zvezda
+dejmon-oridzhin	iona-oridzhin	родня	кузен	lish-odna-zvezda
+vittor-shejland	adrian	служба	советник	lish-odna-zvezda
+aleksis-smajl	adrian	служба	генерал	lish-odna-zvezda
+shatterkhend	adrian	служба	лазурный гвардеец	lish-odna-zvezda
+adrian	sibil-nortvud	вражда	арестовал	lish-odna-zvezda
+dzhemis-lillidej	mark-voron	союз	охранял в походе	lish-odna-zvezda
+vittor-shejland	elias-nortvud	вражда	задержал в Уэймаре	lish-odna-zvezda
+dzhemis-lillidej	gvenda	союз	защитник	lish-odna-zvezda
+vittor-shejland	mark-voron	вражда	тюремщик	lish-odna-zvezda
+martin-shejland	minerva	вражда	похититель и мучитель	lish-odna-zvezda
+krejg-nortvud	gloriya-nortvud	родня	брат (формально)	lish-odna-zvezda
+gvenda	luis-mariya	союз	товарищ по плену	lish-odna-zvezda
+desmond-oridzhin	robert-oridzhin	родня	дядя	lish-odna-zvezda
+brant-stil	ervin-oridzhin	служба	кайр	lish-odna-zvezda
+robert-oridzhin	ervin-oridzhin	служба	казначей	lish-odna-zvezda
+dejmon-oridzhin	ervin-oridzhin	служба	командир иксов	lish-odna-zvezda
+baron-esher	adrian	служба	бургомистр столицы	lish-odna-zvezda
+dejmon-oridzhin	ervin-oridzhin	союз	любимый кузен и друг	lish-odna-zvezda
+dzhoakin	alanis-almera	служба	воин её отряда	lish-odna-zvezda
+iona-oridzhin	minerva	союз	отпустила на свободу	lish-odna-zvezda
+sibil-nortvud	adrian	служба	советница	lish-odna-zvezda
+henri-farvej	adrian	служба	советник	lish-odna-zvezda
+adrian	moran	вражда	противник в войне	lish-odna-zvezda
+martin-shejland	iona-oridzhin	родня	деверь	lish-odna-zvezda
+gallard-almera	minerva	вражда	заточил в монастырь	lish-odna-zvezda
+aleksis-smajl	ervin-oridzhin	вражда	противник в войне	lish-odna-zvezda
+fleming	adrian	союз	перешёл на его сторону	lish-odna-zvezda
+mark-voron	desmond-oridzhin	служба	агент по его поручению	lish-odna-zvezda
+krejg-nortvud	aleksis-smajl	вражда	противник в войне	lish-odna-zvezda
+gallard-almera	alanis-almera	вражда	враг (его наёмники охотились на неё)	lish-odna-zvezda
+dzhemis-lillidej	fleming	вражда	враг (предатель)	lish-odna-zvezda
+krejg-nortvud	sibil-nortvud	союз	посвящён в её планы	lish-odna-zvezda
+adrian	gallard-almera	вражда	подчинил своей воле	lish-odna-zvezda
+onoriko	kharmon	союз	друг, сват	nebesnyj-korabl-i-devushka
+kharmon	niza	союз	выкупил и освободил	nebesnyj-korabl-i-devushka
+onoriko	niza	любовь	мечтал о ней	nebesnyj-korabl-i-devushka
+moris-labelin	magda-labelin	родня	отец	poleznye-lyudi
+moger-bakli	moris-labelin	служба	агент	poleznye-lyudi
+moger-bakli	kharmon	вражда	выследил	poleznye-lyudi
+gvenda	dzhemis-lillidej	любовь	влюблена	kukla-na-trone
+shatterkhend	minerva	служба	капитан гвардии	kukla-na-trone
+drejfus-born	ervin-oridzhin	служба	министр налогов	kukla-na-trone
+albert-vial	minerva	наставник	наставник в финансах	kukla-na-trone
+liam-shele	minerva	служба	министр путей	kukla-na-trone
+lejla-talmir	minerva	служба	первая фрейлина	kukla-na-trone
+dzhoakin	salem	союз	друг	kukla-na-trone
+ganta-groza	moran	служба	правая рука	kukla-na-trone
+nejmir	moran	вражда	разрубил бедро	kukla-na-trone
+frantsisk-ilian	gektor	родня	отец	kukla-na-trone
+gektor	adrian	союз	союзник	kukla-na-trone
+iona-oridzhin	alanis-almera	союз	подруга по пансиону	kukla-na-trone
+ervin-oridzhin	baron-esher	вражда	сместил с должности	kukla-na-trone
+moran	minerva	служба	вассал	kukla-na-trone
+otets-david	iona-oridzhin	союз	собеседник, доверенное лицо	kukla-na-trone
+drejfus-born	adrian	служба	глава налоговой службы	kukla-na-trone
+dorian-ember	minerva	служба	первый секретарь	kukla-na-trone
+liam-shele	adrian	служба	министр путей	kukla-na-trone
+koldun	chara	союз	освободитель	kukla-na-trone
+ded	inzhi-prajs	вражда	осудил на галеры	kukla-na-trone
+aleksis-smajl	minerva	служба	генерал	kukla-na-trone
+adrian	koldun	вражда	пленитель	kukla-na-trone
+minerva	drejfus-born	вражда	взяла его родню в заложники	kukla-na-trone
+sorok-dva	liam-shele	вражда	держал в цепях	kukla-na-trone
+paul	luis-mariya	вражда	пленитель	kukla-na-trone
+salem	luiza	союз	земляк, названый брат	kukla-na-trone
+mat-kordeliya	minerva	союз	исповедница	kukla-na-trone
+robert-oridzhin	minerva	служба	казначей	kukla-na-trone
+drejfus-born	minerva	служба	министр налогов	kukla-na-trone
+moger-bakli	salem	союз	обещал оружие	kukla-na-trone
+ervin-oridzhin	salem	союз	пощадил под Лабелином	kukla-na-trone
+salem	minerva	союз	вожак Подснежников, принятый ею	kukla-na-trone
+salem	moris-labelin	служба	подданный	kukla-na-trone
+dorian-ember	ervin-oridzhin	служба	тайный агент	kukla-na-trone
+chara	moran	вражда	раздробила колено	kukla-na-trone
+sibil-nortvud	minerva	вражда	предала её	kukla-na-trone
+sofiya-oridzhin	minerva	союз	приятельница	kukla-na-trone
+ganta-groza	nejmir	вражда	объявил изменником	kukla-na-trone
+ganta-groza	chara	вражда	объявил изменницей	kukla-na-trone
+lejla-talmir	shatterkhend	союз	соратница при Минерве	kukla-na-trone
+dzhemis-lillidej	minerva	служба	охранник на переговорах с Мораном	kukla-na-trone
+krejg-nortvud	ervin-oridzhin	служба	главнокомандующий по его назначению	kukla-na-trone
+albert-vial	minerva	служба	министр финансов	kukla-na-trone
+kuindar	ledi-vo-tme	союз	собрат по тайному ордену	vrata-doveriya
+frantsisk-ilian	ledi-vo-tme	союз	собрат по ордену	vrata-doveriya
+kuindar	frantsisk-ilian	союз	собрат по ордену	vrata-doveriya
+hajder-lid	ervin-oridzhin	служба	капитан Лидских Волков	glas-zimy
+hajder-lid	itan	союз	напарник по расследованию	glas-zimy
+hajder-lid	aleksis-smajl	вражда	преследовал	glas-zimy
+adrian	laura-farvej	вражда	держал в заложниках	khochu-poni
+gallard-almera	henri-farvej	вражда	держал внуков заложниками	khochu-poni
+henri-farvej	ervin-oridzhin	вражда	нарушил союз	khochu-poni
+gektor	kuindar	вражда	противник в Совете Пяти	khochu-poni
+ledi-vo-tme	imperatritsa-ingrid	родня	кузина	yanmejskaya-okhota
+yuliana-velikaya	ledi-vo-tme	родня	прабабка	yanmejskaya-okhota
+ledi-vo-tme	mirej-nen-kler	родня	мать	yanmejskaya-okhota
+ledi-vo-tme	minerva	родня	двоюродная бабка	yanmejskaya-okhota
+ded	mark-voron	служба	помощник главы протекции	yanmejskaya-okhota
+ervin-oridzhin	dorian-ember	союз	покровитель, студенческий друг	yanmejskaya-okhota
+ganta-groza	niza	вражда	продал в рабство	yanmejskaya-okhota
+dzhoakin	garri-khog	союз	друг	yanmejskaya-okhota
+garri-khog	vittor-shejland	служба	цирюльник	yanmejskaya-okhota
+nejmir	chara	любовь	возлюбленный, «Спутник»	yanmejskaya-okhota
+frantsisk-ilian	menson	союз	защитник на суде	yanmejskaya-okhota
+aleksis-smajl	ledi-vo-tme	служба	тайный агент	yanmejskaya-okhota
+moger-bakli	magda-labelin	служба	агент	yanmejskaya-okhota
+moger-bakli	onoriko	вражда	заказчик убийства	yanmejskaya-okhota
+navi	karen	союз	товарищ по лечебнице	yanmejskaya-okhota
+mark-voron	ervin-oridzhin	служба	глава протекции	yanmejskaya-okhota
+koldun	kuindar	служба	слуга	yanmejskaya-okhota
+menson	adrian	вражда	ударил кинжалом	yanmejskaya-okhota
+ledi-vo-tme	adrian	родня	кузина матери	yanmejskaya-okhota
+moris-labelin	moger-bakli	вражда	убийца	yanmejskaya-okhota
+chara	adrian	союз	спутница Охотника	yanmejskaya-okhota
+alanis-almera	imperatritsa-ingrid	служба	младшая фрейлина	yanmejskaya-okhota
+mat-kordeliya	ervin-oridzhin	союз	сторонница в Палате	yanmejskaya-okhota
+frantsisk-ilian	minerva	вражда	замышлял устранить	yanmejskaya-okhota
+hajder-lid	moger-bakli	вражда	пытал на допросе	yanmejskaya-okhota
+karen	sibil-nortvud	союз	соседка по лечебнице, спутница	yanmejskaya-okhota
+kharmon	magda-labelin	вражда	враг Дома Лабелин	yanmejskaya-okhota
+mark-voron	sorok-dva	союз	соратник	yanmejskaya-okhota
+gektor	moris-labelin	вражда	вызвал на поединок	yanmejskaya-okhota
+nejmir	adrian	союз	спутник Охотника	yanmejskaya-okhota
+mirej-nen-kler	ledi-vo-tme	вражда	подсылала к ней убийц	yanmejskaya-okhota
+moris-labelin	gektor	вражда	объявил войну Шиммери	yanmejskaya-okhota
+iona-oridzhin	dzhoakin	вражда	взяла в плен	yanmejskaya-okhota
+ded	sorok-dva	союз	соратник по тайной страже	yanmejskaya-okhota
+ded	ervin-oridzhin	служба	тайная стража	yanmejskaya-okhota
+iona-oridzhin	garold-greta	вражда	убийца	yanmejskaya-okhota
+menson	imperatritsa-ingrid	вражда	поносил при дворе	yanmejskaya-okhota
+chara	kharmon	вражда	сбила его воздушный шар	yanmejskaya-okhota
+iona-oridzhin	nekseya-flejm	союз	подруга	yanmejskaya-okhota
+iona-oridzhin	khash-ejlish	союз	принимала посла в Уэймаре	yanmejskaya-okhota
+chara	adrian	любовь	влюблена в Охотника	yanmejskaya-okhota
+vittor-shejland	ervin-oridzhin	вражда	враг (Кукловод)	yanmejskaya-okhota
+mik	navi	союз	друг	teper-ty-koldun
+shatterkhend	krojdon-bekfild	вражда	враг	te-kogo-my-proshchaem
+shatterkhend	aleksis-smajl	вражда	презирал за двуличие	te-kogo-my-proshchaem
+menson	karen	супруги	муж	lyudi-i-bogi
+karen	nekseya-flejm	родня	тётка	lyudi-i-bogi
+gallard-almera	laura-farvej	супруги	муж	lyudi-i-bogi
+edgar-flejm	nekseya-flejm	родня	отец	lyudi-i-bogi
+krojdon-bekfild	sibil-nortvud	вражда	тюремщик	lyudi-i-bogi
+kharmon	adrian	служба	чашник	lyudi-i-bogi
+rikhard-oridzhin	paul	служба	правая рука («Лёд»)	lyudi-i-bogi
+rikhard-oridzhin	vittor-shejland	союз	соратник	lyudi-i-bogi
+paul	vittor-shejland	союз	союзник, командир бригады	lyudi-i-bogi
+iona-oridzhin	vittor-shejland	вражда	разоблачила Кукловода	lyudi-i-bogi
+vittor-shejland	iona-oridzhin	вражда	тюремщик	lyudi-i-bogi
+moran	rebekka-litlend	любовь	влюблён	lyudi-i-bogi
+alanis-almera	ervin-oridzhin	вражда	предала (сговор с Кукловодом)	lyudi-i-bogi
+gordon-syu	ervin-oridzhin	служба	капитан первой роты иксов	lyudi-i-bogi
+sofiya-oridzhin	mirej-nen-kler	союз	посол к ней	lyudi-i-bogi
+kuindar	adrian	союз	пленник, затем союзник	lyudi-i-bogi
+nekseya-flejm	ervin-oridzhin	вражда	покушалась (под Ульяниной Пылью)	lyudi-i-bogi
+ganta-groza	ervin-oridzhin	союз	союзник (бывший враг)	lyudi-i-bogi
+rikhard-oridzhin	dzhoakin	наставник	учил обращению с Перстами	lyudi-i-bogi
+ervin-oridzhin	gallard-almera	вражда	обвинил в ереси	lyudi-i-bogi
+chara	paul	служба	один из трёх «клинков»	lyudi-i-bogi
+edgar-flejm	henri-farvej	служба	вассал	lyudi-i-bogi
+paul	alanis-almera	вражда	пленитель, искалечил	lyudi-i-bogi
+ded	sofiya-oridzhin	союз	спутник в морском плавании	lyudi-i-bogi
+adrian	gloriya-nortvud	вражда	казнил тайно	lyudi-i-bogi
+dzhemis-lillidej	paul	вражда	враг	lyudi-i-bogi
+dzhoakin	iona-oridzhin	вражда	тюремщик	lyudi-i-bogi
+otets-david	frantsisk-ilian	союз	собрат по ордену	lyudi-i-bogi
+frantsisk-ilian	ervin-oridzhin	союз	союзник	lyudi-i-bogi
+mat-kordeliya	gallard-almera	вражда	вызвала на покаяние	lyudi-i-bogi
+robert-oridzhin	krojdon-bekfild	вражда	обвинитель	lyudi-i-bogi
+potomok	sofiya-oridzhin	служба	матрос её корабля	lyudi-i-bogi
+paul	moran	вражда	заморозил	lyudi-i-bogi
+kharmon	magda-labelin	служба	осведомитель поневоле	lyudi-i-bogi
+sibil-nortvud	klajv-stagfort	вражда	обвинена в его убийстве	lyudi-i-bogi
+khash-ejlish	vittor-shejland	союз	посол Закатного Берега	lyudi-i-bogi
+luiza	dzhoakin	союз	друг	lyudi-i-bogi
+ajden-almera	martin-shejland	вражда	занёс меч, чтобы казнить	lyudi-i-bogi
+desmond-oridzhin	vittor-shejland	союз	пощадил в 1756 году	lyudi-i-bogi
+ganta-groza	yukhan-rejs	союз	старший союзник	lyudi-i-bogi
+rikhard-oridzhin	dzhoakin	вражда	проучил за сестру	lyudi-i-bogi
+chara	alanis-almera	союз	спутница и собеседница в Степи	lyudi-i-bogi
+karen	edgar-flejm	родня	сестра	ten-velikogo-dreva
+adrian	magda-labelin	супруги	муж	ten-velikogo-dreva
+sajmon-lillidej	dzhemis-lillidej	родня	старший брат	ten-velikogo-dreva
+niza	magda-labelin	служба	фрейлина	ten-velikogo-dreva
+khash-ejlish	dzhoakin	любовь	любовница	ten-velikogo-dreva
+rikhard-oridzhin	desmond-oridzhin	вражда	убийца	ten-velikogo-dreva
+yukhan-rejs	paul	служба	правая рука	ten-velikogo-dreva
+otets-david	ledi-vo-tme	служба	агент ордена	ten-velikogo-dreva
+valeri-grejsend	magda-labelin	служба	фрейлина	ten-velikogo-dreva
+alanis-almera	gallard-almera	вражда	убийца	ten-velikogo-dreva
+dzhoakin	alanis-almera	вражда	изрезал ей лицо	ten-velikogo-dreva
+itan	minerva	любовь	влюблён	ten-velikogo-dreva
+inzhi-prajs	minerva	служба	телохранитель и слуга	ten-velikogo-dreva
+gvenda	iona-oridzhin	союз	пыталась освободить	ten-velikogo-dreva
+navi	minerva	союз	союзник	ten-velikogo-dreva
+dzhemis-lillidej	nekseya-flejm	любовь	ухажёр	ten-velikogo-dreva
+rikhard-oridzhin	gordon-syu	вражда	убийца	ten-velikogo-dreva
+ervin-oridzhin	rikhard-oridzhin	вражда	убийца	ten-velikogo-dreva
+paul	mat-kordeliya	вражда	убийца	ten-velikogo-dreva
+vittor-shejland	martin-shejland	вражда	убийца	ten-velikogo-dreva
+navi	paul	вражда	враг, намерен убить	ten-velikogo-dreva
+fleming	vittor-shejland	союз	соратник Избранного	ten-velikogo-dreva
+gallard-almera	paul	союз	союзник	ten-velikogo-dreva
+navi	sorok-dva	союз	исцелитель	ten-velikogo-dreva
+robert-oridzhin	ledi-vo-tme	вражда	убийца	ten-velikogo-dreva
+adrian	yukhan-rejs	вражда	пленитель	ten-velikogo-dreva
+frantsisk-ilian	desmond-oridzhin	союз	договор о нейтралитете	ten-velikogo-dreva
+menson	nekseya-flejm	родня	дядя	ten-velikogo-dreva
+martin-shejland	laura-farvej	любовь	ухажёр	ten-velikogo-dreva
+dzhoakin	laura-farvej	любовь	ухажёр	ten-velikogo-dreva
+paul	gvenda	вражда	убийца	ten-velikogo-dreva
+salem	kharmon	союз	товарищ	ten-velikogo-dreva
+sorok-dva	kharmon	союз	соратник-воздухоплаватель	ten-velikogo-dreva
+yukhan-rejs	magda-labelin	союз	несостоявшийся жених	ten-velikogo-dreva
+navi	paul	союз	бывший спутник, супруг «понарошку»	ten-velikogo-dreva
+paul	rebekka-litlend	вражда	обратил во тьму	ten-velikogo-dreva
+robert-oridzhin	sorok-dva	союз	соратник	ten-velikogo-dreva
+hajder-lid	otets-david	вражда	надзиратель	ten-velikogo-dreva
+laura-farvej	iona-oridzhin	вражда	насмехалась над пленницей	ten-velikogo-dreva
+derril	magda-labelin	служба	дал рыцарей в её гвардию	ten-velikogo-dreva
+yukhan-rejs	vittor-shejland	вражда	заморозил в Чреве	ten-velikogo-dreva
+alanis-almera	paul	вражда	ударила стилетом	ten-velikogo-dreva
+valeri-grejsend	magda-labelin	наставник	советчица	ten-velikogo-dreva
+sajmon-lillidej	desmond-oridzhin	служба	генерал лидского ополчения	ten-velikogo-dreva
+inzhi-prajs	chara	вражда	убийца	ten-velikogo-dreva
+robert-oridzhin	rikhard-oridzhin	родня	кузен	ten-velikogo-dreva
+frantsisk-ilian	adrian	союз	союзник	ten-velikogo-dreva
+gallard-almera	vittor-shejland	союз	союзник Кукловода	ten-velikogo-dreva
+gvenda	ervin-oridzhin	служба	лазутчица по его заданию	ten-velikogo-dreva
+shatterkhend	navi	союз	послан спасти	ten-velikogo-dreva
+ledi-vo-tme	yukhan-rejs	вражда	покорила ведовством	ten-velikogo-dreva
+dzhoakin	martin-shejland	служба	помощник и напарник	ten-velikogo-dreva
+kharmon	robert-oridzhin	служба	подрядчик (воздушные шары)	ten-velikogo-dreva
+adrian	paul	вражда	противник	ten-velikogo-dreva
+aleksis-smajl	yukhan-rejs	вражда	противник в войне	ten-velikogo-dreva
+krejg-nortvud	desmond-oridzhin	союз	союзник при Лисьем Доле	ten-velikogo-dreva
+derril	kuindar	союз	напарник по посольству	ten-velikogo-dreva
+derril	adrian	служба	посол	ten-velikogo-dreva
+valeri-grejsend	aleksis-smajl	союз	склонила перейти к Адриану	ten-velikogo-dreva
+laura-farvej	paul	союз	восторженная сторонница	ten-velikogo-dreva
+niza	kharmon	союз	спасла его из погреба Бакли	yanmejskaya-okhota
+adrian	minerva	вражда	соперник за престол	ten-velikogo-dreva
+salem	sorok-dva	союз	соратник-воздухоплаватель	ten-velikogo-dreva
+lejla-talmir	dorian-ember	служба	глава отдела найма в его секретариате	ten-velikogo-dreva
+dzhemis-lillidej	otets-david	вражда	подозревал в шпионстве	ten-velikogo-dreva
+robert-oridzhin	dorian-ember	союз	поручился за него	ten-velikogo-dreva
+vittor-shejland	elias-nortvud	союз	вернул ему власть	ten-velikogo-dreva
+nekseya-flejm	desmond-oridzhin	союз	передала ему планы	ten-velikogo-dreva
+ledi-vo-tme	adrian	союз	союзница	ten-velikogo-dreva
+kuindar	adrian	служба	посол	ten-velikogo-dreva
+vittor-shejland	alanis-almera	вражда	приказал пытать	ten-velikogo-dreva
+alanis-almera	vittor-shejland	вражда	покушалась на него	ten-velikogo-dreva
+mejnir	menson	родня	отец	fantazii
+hajder-lid	mirej-nen-kler	любовь	разыгранная страсть (зелье)	fantazii
+dalliya-rejven	ervin-oridzhin	союз	призрак-спутница («альтесса Тревога»)	fantazii
+aleksis-smajl	kuindar	союз	друг	fantazii
+nejmir	ervin-oridzhin	союз	посол Степи	fantazii
+hajder-lid	mirej-nen-kler	служба	охранник	fantazii
+ervin-oridzhin	minerva	любовь	возлюбленный	fantazii
+gektor	ervin-oridzhin	союз	друг и собутыльник	fantazii
+mejnir	imperatritsa-ingrid	родня	свёкор	fantazii
+mejnir	karen	родня	свёкор	fantazii
+hajder-lid	dzhemis-lillidej	союз	спутник в Лаэме	fantazii
+henri-farvej	karen	вражда	угрожал (из-за Нексии)	fantazii
+nekseya-flejm	minerva	служба	посол в центральных землях	fantazii
+sofi	adrian	вражда	убийца	fantazii
+khamfri	zlataya-griva	вражда	изувечил	fantazii
+zlataya-griva	sofi	вражда	убийца	fantazii
+zlataya-griva	adrian	служба	тайный стрелок с Перстом	fantazii
+khamfri	ajden-almera	служба	лейтенант гвардии	fantazii
+dzhonas	ajden-almera	служба	кучер	fantazii
+sofi	alanis-almera	служба	служанка	fantazii
+khamfri	alanis-almera	служба	вассал, мстил за её Дом	fantazii
+khamfri	sofi	союз	соратник	fantazii
+dzhonas	khamfri	союз	соратник	fantazii
+ervin-oridzhin	khamfri	союз	тайный союзник	fantazii
+iona-oridzhin	dorian-ember	любовь	любовница	fantazii
+ervin-oridzhin	nekseya-flejm	супруги	жених (помолвка)	fantazii
+robert-oridzhin	roza-erroubek	супруги	жених (помолвка)	fantazii
+frantsisk-ilian	episkop-amessin	вражда	отнял мантию приарха	fantazii
+frantsisk-ilian	minerva	союз	автор раздела власти	fantazii
+frantsisk-ilian	ervin-oridzhin	союз	автор раздела власти	fantazii
+ervin-oridzhin	adrian	вражда	разоблачил в Палате	fantazii
+magda-labelin	minerva	вражда	предлагала сделку	fantazii
+ganta-kort	moran	служба	ганта орды	kukla-na-trone
+nejmir	ganta-kort	служба	всадник гана, должник	kukla-na-trone
+chara	ganta-kort	служба	всадница гана, должница	kukla-na-trone
+ganta-kort	paul	служба	помощник	ten-velikogo-dreva
+ganta-kort	yukhan-rejs	союз	соратник	ten-velikogo-dreva
+ganta-kort	henri-farvej	союз	союзник, сват	ten-velikogo-dreva
+nejmir	ganta-kort	служба	посол	fantazii
+ganta-kort	minerva	вражда	побеждённый, молил о прощении	fantazii
+ganta-kort	ervin-oridzhin	вражда	враг, заключил мир	fantazii
+ganta-kort	katrin-katrin	родня	дядя	fantazii
+krojdon-bekfild	zlataya-griva	служба	надзиратель	fantazii
+zlataya-griva	nejmir	вражда	презирает	fantazii
+ledi-vo-tme	zlataya-griva	вражда	держала в плену (по всем признакам)	ten-velikogo-dreva
+obri	ervin-oridzhin	служба	адъютант, телохранитель	lyudi-i-bogi
+obri	iona-oridzhin	служба	телохранитель	ten-velikogo-dreva
+obri	hajder-lid	союз	соратник по рейду в Лид	ten-velikogo-dreva
+obri	dalliya-rejven	вражда	поймал (с кайрами)	fantazii
+dalliya-rejven	odar-spesivyj	служба	призрак-служанка	fantazii
+odar-spesivyj	ervin-oridzhin	вражда	призрак, не уступал кресло	fantazii
+dalliya-rejven	minerva	служба	призрак, «подарок» кайров	fantazii
+dalliya-rejven	nekseya-flejm	вражда	ревновала	lyudi-i-bogi
+ajden-almera	albert-almera	родня	отец	strela-moneta-iskra
+alanis-almera	albert-almera	родня	сестра	strela-moneta-iskra
+gallard-almera	albert-almera	родня	дядя, опекун	khochu-poni
+laura-farvej	albert-almera	супруги	невеста	khochu-poni
+vanessa-lilit	onoriko	супруги	жена	nebesnyj-korabl-i-devushka
+moger-bakli	vanessa-lilit	вражда	похититель	yanmejskaya-okhota
+kharmon	vanessa-lilit	союз	товарищ по плену	yanmejskaya-okhota
+niza	vanessa-lilit	союз	спасительница	yanmejskaya-okhota
+khalintor	vanessa-lilit	любовь	альтер (по слухам)	fantazii
+vanessa-lilit	demetra-nellis-lajon	союз	сообщница	fantazii
+vanessa-lilit	barni	союз	вернула дяде	fantazii
+khalintor	gektor	служба	шериф Лаэма	yanmejskaya-okhota
+khalintor	moger-bakli	вражда	пытался арестовать	yanmejskaya-okhota
+khalintor	kharmon	вражда	преследовал ради Сферы	yanmejskaya-okhota
+hajder-lid	barni	родня	дядя, опекун	fantazii
+nikolas-olli	elis-kavendish	наставник	профессор	fantazii
+elis-kavendish	nikolas-olli	любовь	влюблена (безответно)	fantazii
+adrian	nikolas-olli	союз	покровитель, заказчик	fantazii
+frantsisk-ilian	nikolas-olli	союз	купил изобретение	fantazii
+ruka-dodzh	nikolas-olli	вражда	надзирал за лабораторией	fantazii
+inzhi-prajs	nikolas-olli	союз	привратник Эжен (по приметам)	fantazii
+ruka-dodzh	dzhoakin	вражда	забрал в ополчение	lish-odna-zvezda
+ruka-dodzh	ervin-oridzhin	служба	перешёл на его сторону	lish-odna-zvezda
+ruka-dodzh	salem	союз	соратник у Подснежников	kukla-na-trone
+minerva	ruka-dodzh	вражда	арестовала	kukla-na-trone
+ruka-dodzh	adrian	служба	«майор»	ten-velikogo-dreva
+ruka-dodzh	krojdon-bekfild	союз	соратник по тайной страже	fantazii
+ruka-dodzh	khamfri	служба	куратор ватаги	fantazii
+episkop-amessin	gallard-almera	служба	правая рука	yanmejskaya-okhota
+ervin-oridzhin	episkop-amessin	вражда	враг	yanmejskaya-okhota
+mat-kordeliya	episkop-amessin	вражда	оппонентка в Палате	yanmejskaya-okhota
+episkop-amessin	minerva	вражда	испытывал «на покорность»	fantazii
+mat-alisiya	episkop-amessin	вражда	соперница	fantazii
+mat-alisiya	mat-kordeliya	союз	соратница по капитулу	lyudi-i-bogi
+mat-alisiya	ervin-oridzhin	союз	наложила епитимью, гарант мира	fantazii
+mat-alisiya	frantsisk-ilian	союз	заверила обращение	fantazii
+katrin-katrin	gektor	любовь	альтесса	strela-moneta-iskra
+katrin-katrin	gektor	супруги	жена	fantazii
+katrin-katrin	adrian	служба	советница	strela-moneta-iskra
+katrin-katrin	ervin-oridzhin	вражда	взаимная неприязнь	strela-moneta-iskra
+frantsisk-ilian	katrin-katrin	родня	свёкор	fantazii
+frantsisk-ilian	demetra-nellis-lajon	родня	отец	ten-velikogo-dreva
+gektor	demetra-nellis-lajon	родня	брат	ten-velikogo-dreva
+dzhemis-lillidej	demetra-nellis-lajon	супруги	жених	ten-velikogo-dreva
+iona-oridzhin	demetra-nellis-lajon	вражда	соперница по пансиону	fantazii
+alanis-almera	demetra-nellis-lajon	вражда	соперница по пансиону	fantazii
+somerset-flejm	edgar-flejm	родня	сын	lish-odna-zvezda
+somerset-flejm	nekseya-flejm	родня	брат	lish-odna-zvezda
+somerset-flejm	ervin-oridzhin	вражда	презирал	lish-odna-zvezda
+karen	somerset-flejm	родня	тётка	ten-velikogo-dreva
+menson	somerset-flejm	наставник	учил обольщению	fantazii
+somerset-flejm	roza-erroubek	любовь	бывший жених	fantazii
+somerset-flejm	elis-kavendish	любовь	влюблён (безответно)	fantazii
+somerset-flejm	henri-farvej	служба	вассал	fantazii
+uolter-dzhejn-dzhon	mark-voron	союз	друг («Мак»)	ten-velikogo-dreva
+uolter-dzhejn-dzhon	valeri-grejsend	союз	друг	fantazii
+khamfri	dzhoakin	союз	взял в охрану миледи	lish-odna-zvezda
+sofi	khamfri	любовь	влюблена	fantazii
+dzhonas	alanis-almera	служба	кучер	lish-odna-zvezda
+mark-voron	dzhonas	вражда	допрашивал	lish-odna-zvezda
+dzhonas	sofi	союз	соратник	fantazii
+gobart-sintal	ervin-oridzhin	союз	принимал северян в Солтауне	lish-odna-zvezda
+sorok-dva	kharmon	служба	помощник министра	fantazii
+dzhemis-lillidej	sorok-dva	союз	бывший сослуживец, собутыльник	fantazii
+dzhemis-lillidej	kharmon	союз	собутыльник	fantazii
+menson	edgar-flejm	родня	зять (муж сестры)	ten-velikogo-dreva
+moris-labelin	adrian	родня	тесть	ten-velikogo-dreva
+gektor	mirej-nen-kler	союз	дал Солнечный полк	fantazii
+mirej-nen-kler	minerva	союз	обменялись кулонами	fantazii
+sofiya-oridzhin	ded	любовь	мечтала о браке	fantazii

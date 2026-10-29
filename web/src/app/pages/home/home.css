@@ -1,0 +1,156 @@
+.welcome {
+  margin-bottom: 38px;
+}
+.intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 48px;
+  padding: 0 0 30px;
+}
+.intro section > h2 {
+  font-size: 2rem;
+  line-height: 1.4;
+  max-width: 25ch;
+  margin: 0 0 24px;
+}
+.intro p {
+  font: 1rem/1.6 var(--sans);
+  color: var(--ink-2);
+  max-width: 58ch;
+}
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+.reading {
+  padding: 24px;
+  background: var(--sheet-2);
+  border-radius: 5px;
+  align-self: start;
+}
+.reading h2 {
+  font-size: 1.4rem;
+  margin: 0 0 14px;
+}
+.reading p {
+  font-size: 0.875rem;
+}
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+}
+.section-head h2,
+.two h2 {
+  font-size: var(--fs-h2);
+}
+.section-head > a {
+  font: var(--fs-ui) var(--sans);
+}
+.reading-order {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.reading-order a {
+  position: relative;
+  display: block;
+  padding: 18px 35px 18px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.reading-order a:hover {
+  text-decoration: none;
+  background: var(--sheet-2);
+}
+.book-name {
+  display: block;
+  font-size: 1.35rem;
+}
+.kind {
+  display: block;
+  font: var(--fs-ui)/1.5 var(--sans);
+  color: var(--ink-2);
+  margin-top: 5px;
+}
+.arrow {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  color: var(--ink-3);
+}
+.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 38px;
+  margin-top: 28px;
+}
+.explore {
+  display: block;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.explore b {
+  display: block;
+  font-weight: normal;
+  font-size: 1.35rem;
+}
+.explore span {
+  display: block;
+  font: var(--fs-ui)/1.5 var(--sans);
+  color: var(--ink-2);
+  margin-top: 5px;
+}
+.references {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 28px;
+  font: var(--fs-ui)/1.6 var(--sans);
+}
+@media (max-width: 700px) {
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .welcome {
+    margin-bottom: 28px;
+  }
+  .intro section > h2 {
+    font-size: 1.7rem;
+  }
+  .two {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .reading {
+    padding: 20px;
+  }
+  .section-head h2 {
+    font-size: 1.5rem;
+  }
+  .section-head > a {
+    white-space: nowrap;
+  }
+}
+
+.reading-order a.with-art {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.book-cover {
+  width: 62px;
+  height: 88px;
+  object-fit: contain;
+  background: var(--sheet-2);
+  flex-shrink: 0;
+}
+.book-copy {
+  min-width: 0;
+}
+.with-art .arrow {
+  top: 50%;
+  transform: translateY(-50%);
+}

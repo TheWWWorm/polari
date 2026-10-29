@@ -1,0 +1,50 @@
+<div class="page wide">
+  <div class="crumbs"><a routerLink="/">Заглавная</a></div>
+  <h1 class="page-title">Связи персонажей</h1>
+  <p class="page-sub">Кто кому родня, союзник, враг или возлюбленный. Нажмите на персонажа, чтобы выделить его связи. Колесо мыши меняет масштаб, перетаскивание двигает схему.</p>
+
+  <div class="tools ui">
+    @for (c of colors; track c[0]) {
+      <button class="btn" [attr.aria-pressed]="!hiddenTypes().has(c[0])" (click)="toggleType(c[0])"><i [style.background]="c[1]"></i>{{ c[0] }}</button>
+    }
+    <input class="field find" type="search" placeholder="Найти персонажа" aria-label="Найти персонажа" (input)="find($any($event.target).value)" />
+  </div>
+
+  <div class="stage">
+    <svg #svg [attr.viewBox]="viewBox()" [class.has-sel]="selected()" (pointerdown)="down($event)" (pointermove)="move($event)" (pointerup)="up()" (pointerleave)="up()" (wheel)="wheel($event)">
+      @for (r of edges(); track $index) {
+        @if (!hiddenTypes().has(r.t)) {
+          <line [attr.x1]="byId().get(r.a)!.x" [attr.y1]="byId().get(r.a)!.y" [attr.x2]="byId().get(r.b)!.x" [attr.y2]="byId().get(r.b)!.y"
+            [attr.stroke]="color(r.t)" [class.sel]="selected() && (r.a === selected() || r.b === selected())"
+            [attr.data-t]="r.t"><title>{{ name(r.a) }} — {{ r.l }} для {{ name(r.b) }}</title></line>
+        }
+      }
+      @for (n of nodes(); track n.id) {
+        <g class="node" [class.sel]="neighbours().has(n.id)" [attr.transform]="'translate(' + n.x + ',' + n.y + ')'" (click)="pick(n.id)">
+          <circle [attr.r]="radius(n)" />
+          <text [attr.y]="-radius(n) - 5">{{ name(n.id) }}</text>
+        </g>
+      }
+    </svg>
+
+    <aside class="info">
+      @if (selected()) {
+        <h2><a [routerLink]="'/' + selected()">{{ name(selected()) }}</a></h2>
+        @for (g of details(); track g.t) {
+          <h3><i [style.background]="g.c"></i>{{ g.t }}</h3>
+          <ul>
+            @for (r of g.items; track $index) {
+              @if (r.a === selected()) {
+                <li>{{ r.l }} для <a [routerLink]="'/' + r.b">{{ name(r.b) }}</a></li>
+              } @else {
+                <li><a [routerLink]="'/' + r.a">{{ name(r.a) }}</a> — {{ r.l }}</li>
+              }
+            }
+          </ul>
+        }
+      } @else {
+        <p class="muted">Выберите персонажа на схеме или найдите его по имени. Всего связей: {{ edges().length }}.</p>
+      }
+    </aside>
+  </div>
+</div>

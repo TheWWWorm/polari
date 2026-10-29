@@ -1,0 +1,98 @@
+# file (assets/img/)	articles (first = main; role per article: slug or slug:portrait / slug:cover / slug:emblem / slug:map)	caption	credit
+portrait-ervin.jpg	ervin-oridzhin:portrait	Эрвин Ориджин	Портрет персонажа
+portrait-kharmon.jpg	kharmon:portrait	Хармон	Портрет персонажа
+portrait-minerva.jpg	minerva	Минерва	Портрет персонажа
+portrait-mark.jpg	mark-voron:portrait	Марк	Портрет персонажа
+portrait-dzhoakin.jpg	dzhoakin:portrait	Джоакин Ив Ханна	Портрет персонажа
+portrait-iona.jpg	iona-oridzhin:portrait	Иона Ориджин	Портрет персонажа
+portrait-alanis.jpg	alanis-almera:portrait	Аланис Альмера	Портрет персонажа
+portrait-adrian.jpg	adrian:portrait	Адриан	Портрет персонажа
+portrait-menson.jpg	menson:portrait	Менсон	Портрет персонажа
+portrait-karen.jpg	karen:portrait	Карен	Портрет персонажа
+portrait-doroti.jpg	sibil-nortvud:portrait	Дороти Слай	Портрет персонажа
+portrait-navi.jpg	navi:portrait	Нави	Портрет персонажа
+desmond-melnikov.jpg	desmond-oridzhin:portrait	Лорд Десмонд Ориджин	Евгений Мельников, изд. «Лаборатория Фантастики»
+iona-melnikov.jpg	iona-oridzhin	Леди Иона Ориджин	Евгений Мельников, изд. «Лаборатория Фантастики»
+minerva-melnikov.jpg	minerva:portrait	Минерва Стагфорт	Евгений Мельников, изд. «Лаборатория Фантастики»
+minerva-alfa.jpg	minerva	Минерва в 1774 году	Вера Успенская, изд. «Альфа-книга»
+alanis-garnets.jpg	alanis-almera	Аланис Альмера (иллюстрация к «Лишь одной Звезде»)	Сергей Гарнец, изд. «Фантлаб»
+adrian-lamzina.jpg	adrian	Владыка Адриан	Ирина Ламзина, изд. «Фантлаб»
+polli-garnets.jpg	polli:portrait, kharmon	Полли в Излучине	Сергей Гарнец, изд. «Фантлаб»
+polli-death.jpg	polli, kharmon, lzhe-sfera	Хармон у тела Полли	Сергей Гарнец, изд. «Фантлаб»
+kharmon-dzhek.jpg	kharmon, lzhe-sfera	Хармон и скелет Молчаливого Джека в каменной яме	Сергей Гарнец, изд. «Фантлаб»
+kharmon-onoriko.jpg	onoriko, nebesnyj-korabl-i-devushka, kharmon	Хармон и Онорико в Лаэме; позади небесный корабль	Сергей Гарнец, изд. «Фантлаб»
+poteshnyj-boj.jpg	smolden, strela-moneta-iskra	Потешный бой в Смолдене	Борис Баширов, изд. «Фантлаб»
+dzhoakin-shajka.jpg	dzhoakin	Джоакин усмиряет шайку Седого лорда	Сергей Гарнец, изд. «Фантлаб»
+dzhoakin-vomak.jpg	dzhoakin, ben-vomak	Джоакин угрожает сиру Вомаку	Сергей Гарнец, изд. «Фантлаб»
+dzhoakin-vomak-alfa.jpg	ben-vomak	Джоакин и сир Вомак	Вера Успенская, изд. «Альфа-книга»
+dzhoakin-iona.jpg	dzhoakin, iona-oridzhin, kukla-na-trone	Вторая встреча Джоакина с Ионой	Олег Бабкин, изд. «Фантлаб»
+luiza-dzhoakin.jpg	luiza, dzhoakin, vosstanie-podsnezhnikov	Джоакин и Луиза в Излучине	Олег Бабкин, изд. «Фантлаб»
+dzhemis-ervin.jpg	ervin-oridzhin, dzhemis-lillidej, ekspedicija	Джемис находит раненого Эрвина в Запределье	Агний Немов, изд. «Фантлаб»
+dzhemis-ervin-alfa.jpg	ekspedicija	Джемис находит Эрвина	Вера Успенская, изд. «Альфа-книга»
+ervin-zmej-trava.jpg	ervin-oridzhin, ekspedicija	Эрвин готовит змей-траву во время эксплорады	Агний Немов, изд. «Фантлаб»
+ervin-kid.jpg	ekspedicija, ervin-oridzhin	Эрвин и Кид в засаде на охоте	Илья Орлов, изд. «Фантлаб»
+telo-pod-yasenem.jpg	ekspedicija	Тело под ясенем	Илья Орлов, изд. «Фантлаб»
+myatezh-dzhemisa.jpg	myatezh-dzhemisa, dzhemis-lillidej, ekspedicija	Мятеж Джемиса	Алексей Провоторов, изд. «Фантлаб»
+minerva-kareta.jpg	minerva, ajden-almera	Минерва в карете Айдена Альмеры	Ирина Ламзина, изд. «Фантлаб»
+minerva-sibil.jpg	minerva, sibil-nortvud	Минерва угрожает Сибил Нортвуд выстрелить в себя из арбалета	Ирина Ламзина, изд. «Фантлаб»
+itan-minerva.jpg	itan, minerva	Итан пытается уберечь Минерву от больных в госпитале	Ирина Ламзина, изд. «Фантлаб»
+dom-s-plyushchom.jpg	lejla-talmir	Лейла Тальмир и её дочь на постоялом дворе	Ирина Ламзина, изд. «Фантлаб»
+iskrovyj-tyagach.jpg	zheleznaya-doroga, iskra	Искровый тягач	Ирина Ламзина, изд. «Фантлаб»
+menson-ekhiota.jpg	menson	Шут Менсон	Изд. «Фантлаб»
+menson-kon.jpg	menson, lish-odna-zvezda	Менсон рисует коня	Изд. «Фантлаб»
+sobachya-upryazhka.jpg	kukla-na-trone, faunterra	Гонки собачьих упряжек в Фаунтерре	Дмитрий Алексеев, изд. «Фантлаб»
+doroti-navi.jpg	navi, sibil-nortvud, ostrov-faradeya-rajli	Дороти Слай и Нави в лечебнице	Изд. «Фантлаб»
+kukla-mech-1.jpg	kukla-na-trone	Иллюстрация к «Кукле на троне»	Олег Бабкин, изд. «Фантлаб»
+kukla-mech-2.jpg	kukla-na-trone	Иллюстрация к «Кукле на троне»	Олег Бабкин, изд. «Фантлаб»
+kukla-mech-19.jpg	kukla-na-trone	Иллюстрация к «Кукле на троне»	Олег Бабкин, изд. «Фантлаб»
+kukla-sputniki-5.jpg	kukla-na-trone	Иллюстрация к «Кукле на троне»	Олег Бабкин, изд. «Фантлаб»
+kukla-sputniki-6.jpg	kukla-na-trone	Иллюстрация к «Кукле на троне»	Олег Бабкин, изд. «Фантлаб»
+kukla-sputniki-7.jpg	kukla-na-trone	Иллюстрация к «Кукле на троне»	Олег Бабкин, изд. «Фантлаб»
+yanm-mech.jpg	yanmejskaya-okhota	Иллюстрация к «Янмэйской охоте»	Изд. «Фантлаб»
+yanm-svidetel.jpg	yanmejskaya-okhota	Иллюстрация к «Янмэйской охоте»	Изд. «Фантлаб»
+poleznye-lyudi-ill.jpg	poleznye-lyudi	Иллюстрация к «Полезным людям»	Олег Бабкин, изд. «Фантлаб»
+smi-predislovie.jpg	strela-moneta-iskra	Иллюстрация к предисловию «Стрелы, монеты, искры»	Мария Ходулёва, изд. «Фантлаб»
+yanmej.jpg	pramater-yanmej:portrait, pramateri	Праматерь Янмэй (форзац «Стрелы, монеты, искры»)	Изд. «Фантлаб»
+po-vechnyj-efes.jpg	vechnyj-efes:portrait, svyashchennye-predmety	Вечный Эфес	Дмитрий Алексеев
+po-golos-boga.jpg	golos-boga:portrait, svyashchennye-predmety	Голос Бога	Дмитрий Алексеев
+po-kaplya-solntsa.jpg	kaplya-solntsa:portrait, svyashchennye-predmety	Капля Солнца	Дмитрий Алексеев
+po-krylya-miriam.jpg	svyashchennye-predmety	Крылья Мириам	Дмитрий Алексеев
+po-kulon-adriana.jpg	kulon-adriana:portrait, svyashchennye-predmety	Кулон владыки Адриана	Дмитрий Алексеев
+po-persty.jpg	persty-vilgelma:portrait, svyashchennye-predmety	Перст Вильгельма	Дмитрий Алексеев
+po-perchatka.jpg	perchatka-mogushchestva:portrait, svyashchennye-predmety	Перчатка Могущества	Дмитрий Алексеев
+po-poyas-kolduna.jpg	svyashchennye-predmety	Пояс Колдуна	Дмитрий Алексеев
+po-ptakha.jpg	ptakha-bez-ploti:portrait, svyashchennye-predmety	Птаха без Плоти	Дмитрий Алексеев
+po-rosa-schastya.jpg	svyashchennye-predmety	Роса Счастья	Дмитрий Алексеев
+po-ruka-znakharki.jpg	ruka-znakharki:portrait, svyashchennye-predmety	Рука Знахарки	Дмитрий Алексеев
+po-svetlaya-sfera.jpg	svetlaya-sfera:portrait, svyashchennye-predmety, lzhe-sfera	Светлая Сфера	Дмитрий Алексеев
+po-ulyanina-pyl.jpg	ulyanina-pyl:portrait, svyashchennye-predmety	Ульянина Пыль	Дмитрий Алексеев
+po-tsvetok-syuzen.jpg	svyashchennye-predmety	Цветок Сьюзен	Дмитрий Алексеев
+po-chrevo.jpg	chrevo:portrait, svyashchennye-predmety	Чрево	Дмитрий Алексеев
+cover-smi-1.jpg	strela-moneta-iskra:cover	«Стрела, монета, искра», том 1	Обложка
+cover-smi-2.jpg	strela-moneta-iskra	«Стрела, монета, искра», том 2	Обложка
+cover-smi-fl.jpg	strela-moneta-iskra	«Стрела, монета, искра», издание «Лаборатории Фантастики»	Обложка
+cover-loz-1.jpg	lish-odna-zvezda:cover	«Лишь одна Звезда», том 1	Обложка
+cover-loz-2.jpg	lish-odna-zvezda	«Лишь одна Звезда», том 2	Обложка
+cover-loz-fl.jpg	lish-odna-zvezda	«Лишь одна Звезда», издание «Лаборатории Фантастики»	Обложка
+cover-knt-1.jpg	kukla-na-trone:cover	«Кукла на троне», том 1	Обложка
+cover-knt-2.jpg	kukla-na-trone	«Кукла на троне», том 2	Обложка
+cover-knt-fl.jpg	kukla-na-trone	«Кукла на троне», издание «Лаборатории Фантастики»	Обложка
+cover-yao-1.jpg	yanmejskaya-okhota:cover	«Янмэйская охота», том 1	Обложка
+cover-yao-2.jpg	yanmejskaya-okhota	«Янмэйская охота», том 2	Обложка
+cover-yao-fl.jpg	yanmejskaya-okhota	«Янмэйская охота», издание «Лаборатории Фантастики»	Обложка
+cover-plaksa.jpg	plaksa:cover	«Плакса»	Обложка
+cover-dusha-zapada.jpg	dusha-zapada:cover	«Душа Запада»	Обложка
+cover-nebesnyj-korabl.jpg	nebesnyj-korabl-i-devushka:cover	«Небесный корабль и девушка»	Обложка
+cover-govoryashchij.jpg	govoryashchij-s-bogom:cover	«Говорящий с богом»	Обложка
+cover-poleznye-lyudi.jpg	poleznye-lyudi:cover	«Полезные люди»	Обложка
+cover-vrata-doveriya.jpg	vrata-doveriya:cover	«Врата доверия»	Обложка
+cover-glas-zimy.jpg	glas-zimy:cover	«Глас Зимы»	Обложка
+cover-teper-ty-koldun.jpg	teper-ty-koldun:cover	«Теперь ты колдун»	Обложка
+cover-te-kogo.jpg	te-kogo-my-proshchaem:cover	«Те, кого мы прощаем»	Обложка
+cover-yolka.jpg	yolka-episkopa:cover	«Ёлка епископа»	Обложка
+gerb-oridzhin.jpg	dom-oridzhin:emblem, oridzhin-zemlya	Герб Ориджинов: нетопырь, пронзённый стрелой	Изд. «Фантлаб»
+gerb-nortvud.jpg	dom-nortvud:emblem, nortvud-zemlya	Герб Нортвудов	Изд. «Фантлаб»
+gerb-almera.jpg	dom-almera:emblem, almera-zemlya	Герб Альмеры	Изд. «Фантлаб»
+gerb-yuzhnyj-put.jpg	dom-labelin:emblem, yuzhnyj-put	Герб Южного Пути	Изд. «Фантлаб»
+gerb-yanmej.jpg	dom-yanmej:emblem	Герб Блистательной Династии	Изд. «Фантлаб»
+map-polari-small.jpg	polari-world:map	Карта Полари	Карта из «Путеводителя по землям Полари»
