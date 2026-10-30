@@ -1,4 +1,4 @@
-.wide { max-width: 1600px; }
+.wide { max-width: none; }
 .tools { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin-bottom: 10px; }
 .grp { display: flex; flex-wrap: wrap; gap: 6px; }
 .tools .btn[aria-pressed='false'] { opacity: .55; }
@@ -34,7 +34,7 @@ canvas:active { cursor: grabbing; }
 }
 
 @media (min-width: 1280px) {
-  .layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 16px; align-items: start; }
+  .layout { display: grid; grid-template-columns: minmax(0, 1fr) 18.75rem; gap: 16px; align-items: start; }
   .layout.folded { grid-template-columns: minmax(0, 1fr) auto; }
   .stage { height: calc(100vh - 210px); min-height: 520px; }
 }

@@ -17,9 +17,13 @@
   text-decoration: none;
   border-color: var(--azure);
 }
+/* prose keeps its measure, so a plain article reads best as a centred column, not the full width */
+.page:not(.book-page) {
+  max-width: 84rem;
+}
 .layout {
   display: grid;
-  grid-template-columns: 140px minmax(0, 1fr) 245px;
+  grid-template-columns: 8.75rem minmax(0, 1fr) 15.3rem;
   gap: 28px;
   align-items: start;
 }
@@ -34,7 +38,7 @@
 }
 .toc {
   position: sticky;
-  top: 102px;
+  top: calc(var(--header-height) + 30px);
   border-left: 2px solid var(--rule);
   padding-left: 14px;
   min-width: 0;

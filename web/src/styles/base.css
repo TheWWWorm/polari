@@ -3,6 +3,9 @@
 }
 html {
   -webkit-text-size-adjust: 100%;
+  /* past 1920px the whole UI grows with the viewport (to 125% at ~2880px), so wide or
+     high-density screens get a larger copy of the layout instead of a narrow strip of it */
+  font-size: clamp(100%, 50% + 0.4167vw, 125%);
 }
 body {
   margin: 0;
@@ -101,8 +104,8 @@ select.field {
   font-family: var(--sans);
 }
 .page {
-  max-width: 1480px;
-  margin: 0;
+  max-width: 120rem;
+  margin: 0 auto;
   padding: 30px 32px 80px;
 }
 .crumbs {

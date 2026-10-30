@@ -1,5 +1,5 @@
 .wide {
-  max-width: 1500px;
+  max-width: none;
 }
 .tools {
   display: flex;
@@ -237,7 +237,7 @@
 @media (min-width: 1280px) {
   .stage {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 300px;
+    grid-template-columns: minmax(0, 1fr) 18.75rem;
     gap: 16px;
     align-items: start;
   }

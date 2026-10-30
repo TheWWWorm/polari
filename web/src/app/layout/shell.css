@@ -15,9 +15,9 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  flex: 0 0 160px;
+  flex: 0 0 10rem;
   color: var(--ink);
-  font: 25px/1 var(--serif);
+  font: 1.5625rem/1 var(--serif);
 }
 .brand:hover {
   text-decoration: none;
@@ -27,7 +27,7 @@
 }
 .search {
   flex: 1;
-  max-width: 640px;
+  max-width: 40rem;
   min-width: 0;
 }
 .spoil {
@@ -36,8 +36,8 @@
 .icon {
   display: grid;
   place-items: center;
-  width: 44px;
-  height: 44px;
+  width: 2.75rem;
+  height: 2.75rem;
   flex-shrink: 0;
   border: 0;
   border-radius: 4px;
@@ -53,7 +53,7 @@
 }
 .frame {
   display: grid;
-  grid-template-columns: 208px minmax(0, 1fr);
+  grid-template-columns: 13rem minmax(0, 1fr);
   min-height: calc(100vh - var(--header-height));
 }
 .side {
@@ -71,7 +71,7 @@
   margin-bottom: 24px;
 }
 .group-title {
-  font-size: 11px;
+  font-size: 0.6875rem;
   color: #bccad5;
   margin: 0 14px 8px;
 }
@@ -80,10 +80,10 @@
   align-items: center;
   gap: 12px;
   padding: 12px 14px;
-  min-height: 44px;
+  min-height: 2.75rem;
   border-radius: 4px;
   color: #dde6ec;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.4;
 }
 .side a:hover {
@@ -96,8 +96,8 @@
   box-shadow: inset 3px 0 #d2b77c;
 }
 .side svg {
-  width: 19px;
-  height: 19px;
+  width: 1.1875rem;
+  height: 1.1875rem;
   flex-shrink: 0;
   stroke: currentColor;
   stroke-width: 1.5;
@@ -106,7 +106,7 @@
   stroke-linejoin: round;
 }
 .about {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #bccad5;
   margin: 25px 14px 0;
   line-height: 1.6;
