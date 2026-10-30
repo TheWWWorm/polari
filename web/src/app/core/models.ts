@@ -21,6 +21,8 @@ export interface ArticleMeta {
   /** Free-form date from the infobox («2 декабря 1775 г.») and its sortable start, when the article has one. */
   when?: string;
   iso?: string;
+  /** Books: in-world start and end of the story («1774-03-21», «1774-08»). */
+  span?: [string, string];
 }
 
 /** Heavy part of an article, loaded on demand from data/a/<slug>.json. */
@@ -104,6 +106,8 @@ export interface MapEvent {
   p: string;
   t: string;
   s?: string[];
+  /** Event article that tells this event in full (the chronology shows the article instead). */
+  a?: string;
 }
 
 export interface WikiExtra {

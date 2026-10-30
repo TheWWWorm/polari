@@ -5,7 +5,7 @@ type: character
 group: Дом Нортвуд
 aliases: Сибил, Медведица, леди Сибил, Дороти, Дороти Слай, Свидетель
 summary: Графиня Нортвуд, правившая графством за старого мужа; затеяла подмену невест, выдав свою дочь Глорию за Минерву Стагфорт. После разоблачения потеряла память в лечебнице Фарадея-Райли, под именем Дороти Слай стала POV-героиней «Свидетель» и была повешена по приказу Адриана.
-books: strela-moneta-iskra, lish-odna-zvezda, kukla-na-trone, yanmejskaya-okhota, lyudi-i-bogi, ten-velikogo-dreva
+books: strela-moneta-iskra, lish-odna-zvezda, kukla-na-trone, yanmejskaya-okhota, lyudi-i-bogi, tsena-strakha, ten-velikogo-dreva
 infobox:
 - Полное имя: Сибил Дорина Дениза рода Сьюзен
 - Титул: графиня Нортвуд, «хозяйка половины Севера»

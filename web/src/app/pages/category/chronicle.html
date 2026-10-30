@@ -39,31 +39,52 @@
       {{ monthTitle() }} <span>{{ year() }}</span>
     </h2>
     <p class="sr-only" role="status">Найдено событий: {{ visible().length }}</p>
+    @if (periodStories().length) {
+      <section class="stories" aria-label="Истории этого периода">
+        <h3>{{ month() ? 'Истории этого месяца' : 'Истории этого года' }}</h3>
+        <ul>
+          @for (s of periodStories(); track s.id) {
+            <li>
+              <a [routerLink]="'/' + s.slug"
+                ><b>{{ s.title }}</b><span>{{ s.group }} · {{ span(s) }}</span></a
+              >
+            </li>
+          }
+        </ul>
+      </section>
+    }
     <ol class="spine">
-      @for (a of visible(); track a.slug) {
-        <li class="event">
+      @for (a of visible(); track a.id) {
+        <li class="event" [class.key]="!a.article">
           <time [attr.datetime]="a.iso"
             ><b>{{ dateParts(a).day }}</b
             ><span>{{ dateParts(a).month }}</span></time
           >
-          <div class="event-entry" [class.selected]="selectedSlug() === a.slug">
+          <div class="event-entry" [class.selected]="selectedId() === a.id">
             <button
               class="event-select"
-              [attr.aria-pressed]="selectedSlug() === a.slug"
-              (click)="selectedSlug.set(a.slug)"
+              [attr.aria-pressed]="selectedId() === a.id"
+              (click)="selectedId.set(a.id)"
             >
               <h3>{{ a.title }}</h3>
-              <span class="event-summary">{{ summary(a) }}</span>
+              @if (a.summary) {
+                <span class="event-summary">{{ a.summary }}</span>
+              }
             </button>
             <div class="event-links">
-              <span>{{ a.group }}</span
-              ><a [routerLink]="'/' + a.slug">Открыть статью <span aria-hidden="true">→</span></a>
+              <span>{{ a.group }}</span>
+              @if (a.open) {
+                <a [routerLink]="'/' + a.open"
+                  >{{ a.article ? 'Открыть статью' : data.title(a.open) }}
+                  <span aria-hidden="true">→</span></a
+                >
+              }
             </div>
           </div>
         </li>
       }
     </ol>
-    @if (!visible().length) {
+    @if (!visible().length && !periodStories().length) {
       <div class="empty" role="status">
         <p>
           За выбранный период событий не найдено. Проверьте фильтр и последнюю прочитанную книгу.
@@ -84,9 +105,11 @@
   @if (selected(); as a) {
     <aside class="inspector" aria-label="Выбранное событие">
       <h2>{{ a.title }}</h2>
-      <p class="event-date">{{ when(a) }}</p>
+      <p class="event-date">{{ a.when }}</p>
       <p class="event-type">{{ a.group }}</p>
-      <p class="inspector-summary">{{ summary(a) }}</p>
+      @if (a.summary) {
+        <p class="inspector-summary">{{ a.summary }}</p>
+      }
       @if (info.isLoading()) {
         <p class="muted ui" role="status">Загрузка сведений…</p>
       }
@@ -99,15 +122,24 @@
           <dd [innerHTML]="f[1]"></dd>
         }
       </dl>
-      <a class="btn primary" [routerLink]="'/' + a.slug"
-        >Открыть статью <span aria-hidden="true">→</span></a
-      >
+      @if (a.article) {
+        <a class="btn primary" [routerLink]="'/' + a.open"
+          >Открыть статью <span aria-hidden="true">→</span></a
+        >
+      } @else if (a.links.length) {
+        <section class="related">
+          <h3>Подробнее в статьях</h3>
+          @for (l of a.links; track l) {
+            <a [routerLink]="'/' + l">{{ data.title(l) }}</a>
+          }
+        </section>
+      }
       @if (related().length) {
         <section class="related">
           <h3>Связанные события</h3>
-          @for (r of related(); track r.slug) {
-            <a [routerLink]="'/' + r.slug"
-              >{{ r.title }}<small>{{ when(r) }}</small></a
+          @for (r of related(); track r.id) {
+            <a [routerLink]="'/' + r.open"
+              >{{ r.title }}<small>{{ r.when }}</small></a
             >
           }
         </section>

@@ -5,7 +5,7 @@ type: character
 group: Дом Шейланд
 aliases: Виттор, граф Шейланд, Кукловод, Избранный, Вит, дядя Вит, беломордый
 summary: Граф-банкир из Уэймара, муж Ионы Ориджин. Под маской любезного финансиста скрывался Кукловод, хозяин Перстов Вильгельма. После «воскрешения» он объявил себя Избранным богов, повёл войско на Первую Зиму, убил собственного брата и был заморожен во Чреве.
-books: strela-moneta-iskra, lish-odna-zvezda, poleznye-lyudi, kukla-na-trone, teper-ty-koldun, yanmejskaya-okhota, lyudi-i-bogi, ten-velikogo-dreva, fantazii
+books: strela-moneta-iskra, lish-odna-zvezda, poleznye-lyudi, kukla-na-trone, teper-ty-koldun, yanmejskaya-okhota, lyudi-i-bogi, tsena-strakha, ten-velikogo-dreva, fantazii
 infobox:
 - Полное имя: Виттор Кейлин Агна рода Вивиан
 - Титул: граф Шейланд, правитель Предлесья и Поречья

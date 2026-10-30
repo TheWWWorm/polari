@@ -5,7 +5,7 @@ type: character
 group: Дом Ориджин
 aliases: Десмонд, Десмонд Герда Ленор, лорд Десмонд, великий лорд Ориджин
 summary: Правящий герцог Ориджин в начале цикла, суровый полководец и отец Рихарда, Эрвина и Ионы. Сражённый каменной хворью, он отрёкся в пользу Эрвина, позднее вернулся в строй и был убит старшим сыном после битвы за Первую Зиму.
-books: strela-moneta-iskra, lish-odna-zvezda, govoryashchij-s-bogom, kukla-na-trone, glas-zimy, vrata-doveriya, yanmejskaya-okhota, lyudi-i-bogi, ten-velikogo-dreva, fantazii
+books: strela-moneta-iskra, lish-odna-zvezda, govoryashchij-s-bogom, kukla-na-trone, glas-zimy, vrata-doveriya, yanmejskaya-okhota, lyudi-i-bogi, tsena-strakha, ten-velikogo-dreva, fantazii
 infobox:
 - Титул: герцог Ориджин (до отречения в августе 1774 г.)
 - Дом: [[dom-oridzhin]], род Светлой Агаты

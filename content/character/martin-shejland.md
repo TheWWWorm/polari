@@ -5,7 +5,7 @@ type: character
 group: Дом Шейланд
 aliases: лорд Мартин, Марти, дядя Марти
 summary: Младший брат графа Виттора Шейланда, охотник и садист. Ради «эликсира бессмертия» он замучил десятки людей в подземельях Уэймара, позже стал перстоносцем в войске Избранного, задушил Лауру Фарвей и погиб от руки собственного брата.
-books: lish-odna-zvezda, kukla-na-trone, yanmejskaya-okhota, lyudi-i-bogi, ten-velikogo-dreva
+books: lish-odna-zvezda, kukla-na-trone, yanmejskaya-okhota, lyudi-i-bogi, tsena-strakha, ten-velikogo-dreva
 infobox:
 - Полное имя: Мартин Кейлин Агна рода Вивиан
 - Титул: лорд, брат графа Шейланд

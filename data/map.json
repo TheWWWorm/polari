@@ -642,7 +642,8 @@
    "s": [
     "loshadinye-vojny",
     "nadezhda"
-   ]
+   ],
+   "a": "loshadinye-vojny"
   },
   {
    "d": "1750-01-01",
@@ -651,7 +652,8 @@
    "t": "Золотая война: дом Лайтхарт нападает на Альмеру.",
    "s": [
     "zolotaya-vojna"
-   ]
+   ],
+   "a": "zolotaya-vojna"
   },
   {
    "d": "1755-10-26",
@@ -661,7 +663,8 @@
    "s": [
     "shutovskoj-zagovor",
     "menson"
-   ]
+   ],
+   "a": "shutovskoj-zagovor"
   },
   {
    "d": "1756-08-01",
@@ -671,7 +674,8 @@
    "s": [
     "paul",
     "teper-ty-koldun"
-   ]
+   ],
+   "a": "semnadtsatyj-dar"
   },
   {
    "d": "1772-01-01",
@@ -690,7 +694,8 @@
    "t": "Турнир на арене Алеридана.",
    "s": [
     "turnir-v-aleridane"
-   ]
+   ],
+   "a": "turnir-v-aleridane"
   },
   {
    "d": "1774-03-21",
@@ -732,7 +737,8 @@
    "s": [
     "brak-vittora-i-iony",
     "iona-oridzhin"
-   ]
+   ],
+   "a": "brak-vittora-i-iony"
   },
   {
    "d": "1774-04-12",
@@ -783,7 +789,8 @@
    "s": [
     "myatezh-dzhemisa",
     "dzhemis-lillidej"
-   ]
+   ],
+   "a": "myatezh-dzhemisa"
   },
   {
    "d": "1774-05-28",
@@ -814,7 +821,8 @@
    "s": [
     "lzhe-sfera",
     "moris-labelin"
-   ]
+   ],
+   "a": "lzhe-sfera"
   },
   {
    "d": "1774-07-01",
@@ -865,7 +873,8 @@
     "zasada-v-lejsi",
     "rebekka-litlend",
     "moran"
-   ]
+   ],
+   "a": "zasada-v-lejsi"
   },
   {
    "d": "1774-08-14",
@@ -896,7 +905,8 @@
     "pozhar-evergarda",
     "alanis-almera",
     "ajden-almera"
-   ]
+   ],
+   "a": "pozhar-evergarda"
   },
   {
    "d": "1774-09-10",
@@ -994,7 +1004,8 @@
    "s": [
     "bitva-pri-piksi",
     "aleksis-smajl"
-   ]
+   ],
+   "a": "bitva-pri-piksi"
   },
   {
    "d": "1774-12-02",
@@ -1013,7 +1024,8 @@
    "t": "Северяне захватывают Престольную Цитадель и дворец Пера и Меча.",
    "s": [
     "bitva-za-faunterru"
-   ]
+   ],
+   "a": "bitva-za-faunterru"
   },
   {
    "d": "1774-12-08",
@@ -1022,7 +1034,8 @@
    "t": "Ночной Лабелин: армия Алексиса гибнет в городе.",
    "s": [
     "reznya-v-labeline"
-   ]
+   ],
+   "a": "reznya-v-labeline"
   },
   {
    "d": "1774-12-22",
@@ -1033,7 +1046,8 @@
     "krushenie-na-beke",
     "menson",
     "adrian"
-   ]
+   ],
+   "a": "krushenie-na-beke"
   },
   {
    "d": "1774-12-26",
@@ -1052,7 +1066,8 @@
    "t": "Коронация Минервы в полуразрушенном дворце; Эрвин становится лордом-канцлером.",
    "s": [
     "koronatsiya-minervy"
-   ]
+   ],
+   "a": "koronatsiya-minervy"
   },
   {
    "d": "1775-02-25",
@@ -1074,7 +1089,8 @@
     "svyatoe-pole",
     "vosstanie-podsnezhnikov",
     "salem"
-   ]
+   ],
+   "a": "svyatoe-pole"
   },
   {
    "d": "1775-03-20",
@@ -1112,7 +1128,8 @@
    "t": "Суд над Менсоном; 29 мая Менсон кричит «Адриан жив!», Палата низлагает Адриана.",
    "s": [
     "sud-nad-mensonom"
-   ]
+   ],
+   "a": "sud-nad-mensonom"
   },
   {
    "d": "1775-05-19",
@@ -1144,7 +1161,8 @@
    "s": [
     "perevorot-v-uejmare",
     "garri-khog"
-   ]
+   ],
+   "a": "perevorot-v-uejmare"
   },
   {
    "d": "1775-05-28",
@@ -1308,7 +1326,8 @@
    "t": "Битва за Первую Зиму: армия Избранного застревает в ледяном лабиринте, Эрвин тяжело ранен.",
    "s": [
     "bitva-za-pervuyu-zimu"
-   ]
+   ],
+   "a": "bitva-za-pervuyu-zimu"
   },
   {
    "d": "1775-12-02",

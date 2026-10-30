@@ -5,7 +5,7 @@ type: character
 group: Двор и Корона
 aliases: Адриан Ингрид Элизабет, владыка Адриан, Охотник, герцог Арденский, лорд Адриан, лорд Арденский, бургомистр Адриан
 summary: Император Полари, реформатор и сторонник рельсовой дороги. Считался погибшим при крушении на Бэке, но выжил, скитался под личиной Охотника, был низложен Палатой и вернулся претендентом на трон. В «Фантазиях» погиб в ноябре 1776 г., во время выборов владыки.
-books: strela-moneta-iskra, lish-odna-zvezda, kukla-na-trone, glas-zimy, yanmejskaya-okhota, lyudi-i-bogi, ten-velikogo-dreva, fantazii
+books: strela-moneta-iskra, lish-odna-zvezda, kukla-na-trone, glas-zimy, yanmejskaya-okhota, lyudi-i-bogi, tsena-strakha, ten-velikogo-dreva, fantazii
 infobox:
 - Полное имя: Адриан Ингрид Элизабет рода Янмэй, герцог Арден, император Полари
 - Титул: император Полари (до низложения Палатой в мае 1775 г.); формально — герцог Арденский; в 1775 г. назначен Минервой бургомистром Фаунтерры

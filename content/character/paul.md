@@ -5,7 +5,7 @@ type: character
 group: Загадки и колдуны
 aliases: Пауль, Гной-ганта, узник Уэймара, дикарь, командир бригады, Хозяин Перстов (по догадкам), лорд Пауль
 summary: «Темный» бог из мира за пределами Полариса, переживший крушение вместе с Натаниэлем; десять лет узник Уэймара, затем оружие Кукловода, вождь шаванской орды и главный военный кошмар цикла. Погиб 2 декабря 1775 года под Первой Зимой.
-books: strela-moneta-iskra, lish-odna-zvezda, kukla-na-trone, yanmejskaya-okhota, te-kogo-my-proshchaem, lyudi-i-bogi, ten-velikogo-dreva, fantazii
+books: strela-moneta-iskra, lish-odna-zvezda, kukla-na-trone, yanmejskaya-okhota, te-kogo-my-proshchaem, lyudi-i-bogi, tsena-strakha, ten-velikogo-dreva, fantazii
 infobox:
 - Происхождение: «темный» бог (по словам Нави), космодесантник по «игровой» роли
 - Прозвища: Гной-ганта (у шаванов), Праотец (у Галларда Альмера), «лорд Пауль» (у Виттора в 1756 г.), узник Уэймара

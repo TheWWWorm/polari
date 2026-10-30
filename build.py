@@ -72,8 +72,8 @@ BOOK_PATTERNS = [
     (1, r'стрел\w*,? монет'), (2, r'плакс'), (3, r'душ\w* запада'), (4, r'лиш\w* одн\w* звезд'),
     (5, r'небесн\w* корабл'), (6, r'говорящ\w* с богом'), (7, r'полезн\w* люд'), (8, r'кукл\w* на троне'),
     (9, r'врат\w* доверия'), (10, r'«глас\w* зимы»'), (11, r'хочу пони'), (12, r'янмэйск\w* охот'),
-    (13, r'теперь ты колдун'), (14, r'те, кого мы прощаем'), (15, r'люд\w* и бог|цен\w* страха'),
-    (16, r'конфидентк'), (17, r'[её]лк\w* епископа'), (18, r'тен\w* великого древа'), (19, r'фантази'),
+    (13, r'теперь ты колдун'), (14, r'те, кого мы прощаем'), (15, r'люд\w* и бог'),
+    (16, r'цен\w* страха'), (17, r'конфидентк'), (18, r'[её]лк\w* епископа'), (19, r'тен\w* великого древа'), (20, r'фантази'),
 ]
 
 
@@ -323,6 +323,20 @@ def main():
         img['slugs'] = [s for s in img['slugs'] if s in data]
 
     extra = load_data(slugs, data)
+    # in-world span of each book for the chronology: the infobox «Хронология» line, else its dated chapters
+    for slug, d in data.items():
+        if d['type'] != 'book':
+            continue
+        line = next((v for k, v in entries[slug]['meta']['infobox'] if k == 'Хронология'), '')
+        line = re.sub(r'\([^)]*\)', '', line.split(';')[0])
+        parts = [p for p in re.split(r'\s[—–]\s', line) if p.strip()]
+        end = when_iso(parts[-1]) if parts else ''
+        start = (when_iso(parts[0]) or when_iso(f'{parts[0]} {end[:4]}')) if end else ''
+        isos = sorted(c['iso'] for c in extra['chapters'].get(slug, []) if c['iso'])
+        if not start and isos:
+            start, end = isos[0], isos[-1]
+        if start:
+            d['span'] = [start, max(end, start, isos[-1] if isos else '')]
 
     out_dir = os.path.join(ROOT, 'web', 'public', 'data')
     art_dir = os.path.join(out_dir, 'a')

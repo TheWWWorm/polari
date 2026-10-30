@@ -5,7 +5,7 @@ type: character
 group: Дом Альмера
 aliases: Айден, герцог Альмера, первый советник
 summary: Герцог Альмера и первый советник императора, «спаситель» трона в Шутовском заговоре; после разоблачения своих интриг укрылся в Эвергарде и погиб при его уничтожении в 1774 году.
-books: strela-moneta-iskra, lish-odna-zvezda, yanmejskaya-okhota, lyudi-i-bogi, fantazii
+books: strela-moneta-iskra, lish-odna-zvezda, yanmejskaya-okhota, lyudi-i-bogi, tsena-strakha, fantazii
 infobox:
 - Полное имя: Айден Эллис Гвенда рода Агаты
 - Титул: герцог Альмера, первый советник императора

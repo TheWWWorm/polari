@@ -5,7 +5,7 @@ type: character
 group: Дом Альмера
 aliases: Галлард, приарх, архиепископ, его преосвященство, Галлард-мученик
 summary: Глава Праотеческой Церкви и старший брат герцога Айдена; после гибели Эвергарда захватил власть в Альмере, сжигал еретиков, вступил в союз с Паулем и был убит Аланис в Уэймаре.
-books: strela-moneta-iskra, lish-odna-zvezda, kukla-na-trone, khochu-poni, yanmejskaya-okhota, lyudi-i-bogi, ten-velikogo-dreva, fantazii
+books: strela-moneta-iskra, lish-odna-zvezda, kukla-na-trone, khochu-poni, yanmejskaya-okhota, lyudi-i-bogi, tsena-strakha, ten-velikogo-dreva, fantazii
 infobox:
 - Титул: архиепископ Фаунтерры, приарх Праотеческой Церкви; регент, затем наместник Альмеры
 - Род (Праматерь): [[pramater-agata|Светлая Агата]]

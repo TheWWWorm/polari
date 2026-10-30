@@ -5,7 +5,7 @@ type: character
 group: Дом Ориджин
 aliases: Артур Хайрок, кастелян Хайрок, кайр Артур, барон Хайрок
 summary: Посвящённый кайр, барон и кастелян замка Первой Зимы, «левая рука» герцога Десмонда Ориджина и один из его прим-вассалов. В молодости, капитаном, охранял ложе Дара в Шейланде; в 1775 году готовил Первую Зиму к обороне и принимал в замке императрицу Минерву.
-books: strela-moneta-iskra, lish-odna-zvezda, lyudi-i-bogi, ten-velikogo-dreva, fantazii
+books: strela-moneta-iskra, lish-odna-zvezda, lyudi-i-bogi, tsena-strakha, ten-velikogo-dreva, fantazii
 infobox:
 - Полное имя: Артур Эльза Мей
 - Род: Праматерь Глория

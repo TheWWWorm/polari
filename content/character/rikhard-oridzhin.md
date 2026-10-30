@@ -5,7 +5,7 @@ type: character
 group: Дом Ориджин
 aliases: Рихард, Лёд, Лед, лорд Рихард
 summary: Старший сын герцога Десмонда, пропавший в море и считавшийся погибшим. Вернулся под именем Лёд как боец бригады еретиков и полководец Виттора Шейланда, убил отца и пал от руки брата Эрвина.
-books: strela-moneta-iskra, lish-odna-zvezda, kukla-na-trone, yanmejskaya-okhota, lyudi-i-bogi, ten-velikogo-dreva, fantazii
+books: strela-moneta-iskra, lish-odna-zvezda, kukla-na-trone, yanmejskaya-okhota, lyudi-i-bogi, tsena-strakha, ten-velikogo-dreva, fantazii
 infobox:
 - Полное имя: Рихард София Джессика рода Агаты
 - Титул: старший сын и бывший наследник герцога Ориджин; у сторонников Шейланда — «подлинный герцог»

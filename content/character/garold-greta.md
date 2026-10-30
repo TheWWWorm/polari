@@ -5,7 +5,7 @@ type: character
 group: Дом Шейланд
 aliases: сир Гарольд, кастелян Гарольд, Сир Котофей, Сир Мурмур
 summary: Кастелян Уэймарского замка и командир его гарнизона, вассал графа Виттора Шейланда. Свёл графа с торговцем Хармоном ради продажи Светлой Сферы; первым погиб в ночь переворота, поднятого Ионой Ориджин.
-books: strela-moneta-iskra, lish-odna-zvezda, kukla-na-trone, yanmejskaya-okhota
+books: strela-moneta-iskra, lish-odna-zvezda, kukla-na-trone, yanmejskaya-okhota, tsena-strakha
 infobox:
 - Полное имя: Гарольд Грета Люсия рода Инессы
 - Титул: сир, кастелян Уэймарского замка, командир замкового гарнизона

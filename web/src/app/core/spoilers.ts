@@ -6,7 +6,7 @@ const KEY = 'polari.read-up-to';
 export const ALL_BOOKS = 99;
 
 /** Pre-cycle events that the reader only learns about in later books. */
-const EVENT_REVEALED_IN: Record<string, number> = { '0036-05-02': 15, '1750-01-01': 15, '1756-08-01': 15, '1772-01-01': 18 };
+const EVENT_REVEALED_IN: Record<string, number> = { '0036-05-02': 15, '1750-01-01': 15, '1756-08-01': 16, '1772-01-01': 19 };
 
 /**
  * "Прочитано до книги N": hides content from books after N.

@@ -5,7 +5,7 @@ type: character
 group: Дом Нортвуд
 aliases: Элиас, граф Нортвуд, старый граф, седой граф, старина Элиас
 summary: Престарелый граф Нортвуд, глава Великого Дома Нортвуд и муж Сибил, равнодушный ко всему, кроме кораблей. Не знал о подмене невест, отказался поддержать мятеж Ориджина и остался почётным пленником в Уэймаре; в 1775 году стал заложником борьбы Шейланда с собственным сыном Крейгом и закончил войну безвольной марионеткой Кукловода.
-books: strela-moneta-iskra, lish-odna-zvezda, kukla-na-trone, yanmejskaya-okhota, lyudi-i-bogi, ten-velikogo-dreva
+books: strela-moneta-iskra, lish-odna-zvezda, kukla-na-trone, yanmejskaya-okhota, lyudi-i-bogi, tsena-strakha, ten-velikogo-dreva
 infobox:
 - Титул: граф Нортвуд, глава [[velikie-doma|Великого Дома]]
 - Дом: [[dom-nortvud]]; род Праматери Сьюзен

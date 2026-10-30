@@ -105,6 +105,61 @@
   font-size: 1.45em;
   margin-left: 8px;
 }
+.stories {
+  margin: 0 0 26px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--rule);
+}
+.stories h3 {
+  font: 0.75rem/1.4 var(--sans);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  margin: 0 0 12px;
+}
+.stories ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+.stories a {
+  display: block;
+  height: 100%;
+  padding: 10px 14px 11px;
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--gold);
+  border-radius: 4px;
+  background: var(--sheet-2);
+  color: inherit;
+  text-decoration: none;
+}
+.stories a:hover b {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.stories b {
+  display: block;
+  font: 1.1rem/1.25 var(--serif);
+  font-weight: normal;
+}
+.stories span {
+  display: block;
+  font: 0.75rem/1.45 var(--sans);
+  color: var(--ink-2);
+  margin-top: 4px;
+}
+.event.key .event-select h3 {
+  font-size: 1.2rem;
+}
+.event.key::after {
+  width: 7px;
+  height: 7px;
+  left: 91px;
+  top: 29px;
+}
 .spine {
   list-style: none;
   margin: 0;
@@ -327,6 +382,9 @@ dd {
   .event::after {
     left: 64px;
   }
+  .event.key::after {
+    left: 66px;
+  }
   .event-select {
     padding: 14px 12px 10px;
   }
@@ -411,6 +469,9 @@ dd {
   }
   .event::after {
     left: 45px;
+  }
+  .event.key::after {
+    left: 47px;
   }
   .event-select h3 {
     font-size: 1.25rem;

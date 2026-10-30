@@ -5,7 +5,7 @@ type: character
 group: Дом Ориджин
 aliases: капитан Теобарт
 summary: Капитан кайров в экспедиции Эрвина Ориджина за Реку, бывший оруженосец герцога Десмонда; смертельно раненный при ночном нападении на лагерь у ложа Дара, он первым назвал нападавших людьми Короны и покончил с собой.
-books: strela-moneta-iskra, lish-odna-zvezda, lyudi-i-bogi, ten-velikogo-dreva
+books: strela-moneta-iskra, lish-odna-zvezda, lyudi-i-bogi, tsena-strakha, ten-velikogo-dreva
 infobox:
 - Звание: кайр, капитан отряда экспедиции
 - Сюзерен: [[desmond-oridzhin]] ([[dom-oridzhin]])

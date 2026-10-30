@@ -5,7 +5,7 @@ type: concept
 group: Общее
 aliases: хронология, хронология Полари, летопись цикла, даты цикла
 summary: Сводная датированная летопись мира Полари: ключевые события прошлого, названные в книгах и в «Путеводителе по землям Полари», и помесячная хронология шести романов и интерлюдий, с марта 1774 по декабрь 1775 года от Сошествия, а также рассказов «Фантазий» 1776–1777 годов.
-books: strela-moneta-iskra, plaksa, dusha-zapada, lish-odna-zvezda, nebesnyj-korabl-i-devushka, govoryashchij-s-bogom, poleznye-lyudi, kukla-na-trone, vrata-doveriya, glas-zimy, khochu-poni, yanmejskaya-okhota, teper-ty-koldun, te-kogo-my-proshchaem, lyudi-i-bogi, konfidentka, yolka-episkopa, ten-velikogo-dreva, fantazii
+books: strela-moneta-iskra, plaksa, dusha-zapada, lish-odna-zvezda, nebesnyj-korabl-i-devushka, govoryashchij-s-bogom, poleznye-lyudi, kukla-na-trone, vrata-doveriya, glas-zimy, khochu-poni, yanmejskaya-okhota, teper-ty-koldun, te-kogo-my-proshchaem, lyudi-i-bogi, tsena-strakha, konfidentka, yolka-episkopa, ten-velikogo-dreva, fantazii
 infobox:
 - Летоисчисление: от [[soshestvie|Сошествия Праматерей]] (см. [[kalendar|Календарь]])
 - Основное действие: 21 марта 1774 — начало декабря 1775 г.
