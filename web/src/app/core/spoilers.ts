@@ -17,10 +17,13 @@ export class Spoilers {
   private readonly data = inject(WikiData);
   private readonly revealed = signal<Set<string>>(new Set());
   readonly level = signal<number>(readStored());
+  /** The reader has picked a level at least once (otherwise we ask on first visit). */
+  readonly chosen = signal<boolean>(hasStored());
   readonly active = computed(() => this.level() < ALL_BOOKS);
 
   setLevel(n: number): void {
     this.level.set(n);
+    this.chosen.set(true);
     try { localStorage.setItem(KEY, String(n)); } catch { /* private mode */ }
   }
 
@@ -67,6 +70,10 @@ export class Spoilers {
 
 function readStored(): number {
   try { return Number(localStorage.getItem(KEY)) || ALL_BOOKS; } catch { return ALL_BOOKS; }
+}
+
+function hasStored(): boolean {
+  try { return localStorage.getItem(KEY) !== null; } catch { return true; }
 }
 
 export type { MapEvent };

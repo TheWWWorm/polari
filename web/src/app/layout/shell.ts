@@ -4,10 +4,11 @@ import { Theme } from '../core/theme';
 import { SearchBox } from './search-box';
 import { SpoilerSelect } from './spoiler-select';
 import { LightboxView } from '../shared/lightbox-view';
+import { ReadingDialog } from './reading-dialog';
 
 @Component({
   selector: 'app-shell',
-  imports: [RouterOutlet, RouterLink, RouterLinkActive, SearchBox, SpoilerSelect, LightboxView],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, SearchBox, SpoilerSelect, LightboxView, ReadingDialog],
   host: { '(document:keydown.escape)': 'closeNavigation()' },
   templateUrl: './shell.html',
   styleUrl: './shell.css',
