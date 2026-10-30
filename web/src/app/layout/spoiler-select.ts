@@ -14,13 +14,12 @@ import { WikiData } from '../core/wiki-data';
       <select
         class="field"
         [class.expanded]="expanded()"
-        [value]="spoilers.level()"
         (change)="spoilers.setLevel(+$any($event.target).value)"
         aria-label="Прочитано до книги"
       >
-        <option [value]="all">весь цикл</option>
+        <option [value]="all" [selected]="spoilers.level() === all">весь цикл</option>
         @for (b of data.books(); track b.slug) {
-          <option [value]="b.order">до «{{ b.title }}»</option>
+          <option [value]="b.order" [selected]="spoilers.level() === b.order">до «{{ b.title }}»</option>
         }
       </select>
     </label>

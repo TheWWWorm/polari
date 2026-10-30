@@ -6,9 +6,9 @@
   <div id="timeline-body">
   @if (narrators().length) {
     <label class="jr ui">Маршрут героя
-      <select class="field" [value]="journeySlug()" (change)="setJourney($any($event.target).value)">
-        <option value="">не показывать</option>
-        @for (s of narrators(); track s) { <option [value]="s">{{ title(s) }}</option> }
+      <select class="field" (change)="setJourney($any($event.target).value)">
+        <option value="" [selected]="!journeySlug()">не показывать</option>
+        @for (s of narrators(); track s) { <option [value]="s" [selected]="s === journeySlug()">{{ title(s) }}</option> }
       </select>
     </label>
   }
