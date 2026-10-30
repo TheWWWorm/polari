@@ -28,14 +28,14 @@ function score(g: Game, me: Side): number {
   return s;
 }
 
-/** Choose the turn's actions one by one, each the best for the position it leaves. */
+/** Choose the turn's three touches one by one, each the best for the position it leaves. */
 export function chooseTurn(game: Game, jitter = 3): Action[] {
   const me = game.side;
   const g = game.clone();
   const plan: Action[] = [];
   for (let k = 0; k < 3 && g.side === me && !g.winner; k++) {
     let best: { a: Action; v: number } | null = null;
-    for (const p of g.pieces.filter((x: Piece) => x.side === me && !g.used.has(x.id))) {
+    for (const p of g.pieces.filter((x: Piece) => x.side === me)) {
       for (const a of g.actionsFor(p)) {
         const h = g.clone();
         h.apply(a);

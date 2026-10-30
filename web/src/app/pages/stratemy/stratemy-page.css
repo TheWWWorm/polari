@@ -1,13 +1,14 @@
 :host {
-  --st-red: #b2362c;
-  --st-blue: #2f6ea8;
-  --st-plain: #e3d6ad;
-  --st-road: #d2bd8a;
-  --st-forest: #a7b98a;
-  --st-hill: #d3bd8f;
-  --st-stream: #8fbcd4;
-  --st-ruins: #c9c2b2;
-  --st-wood: #6e4d2e;
+  --st-red: #a3262a;
+  --st-blue: #2d6fb0;
+  --st-bone: #efe4c8;
+  --st-plain: #c4a066;
+  --st-forest: #8e9455;
+  --st-hill: #bf955c;
+  --st-stream: #2f6699;
+  --st-ruins: #b49c74;
+  --st-wood: #5e3c22;
+  --st-ink: #5a3f22;
 }
 .controls {
   display: flex;
@@ -63,32 +64,31 @@
 .t-hill { fill: var(--st-hill); }
 .t-stream { fill: var(--st-stream); }
 .t-ruins { fill: var(--st-ruins); }
-.tree { fill: #6f8a52; stroke: #55703c; stroke-width: 1; }
-.hill { fill: none; stroke: #8f7448; stroke-width: 2; stroke-linecap: round; }
-.road { stroke: #c4a46a; stroke-width: 9; stroke-linecap: round; pointer-events: none; }
-.cell polygon { stroke: rgba(70, 50, 25, 0.28); stroke-width: 1; }
-.ruin { fill: none; stroke: #6f6a60; stroke-width: 2; stroke-linejoin: round; }
+.tree { fill: #3f5c2c; stroke: #3f5c2c; stroke-width: 1.2; stroke-linejoin: round; }
+.hill { fill: none; stroke: var(--st-ink); stroke-width: 1.6; stroke-linecap: round; }
+.road { stroke: #6b4a28; stroke-width: 2.6; stroke-dasharray: 3 3.4; pointer-events: none; }
+.cell polygon { stroke: #c9ccd1; stroke-width: 1.2; }
+.ruin { fill: rgba(90, 63, 34, .18); stroke: var(--st-ink); stroke-width: 1.6; stroke-linejoin: round; }
 .cell.reach { cursor: pointer; }
 .cell.reach rect { fill-opacity: 0.75; }
 .dot { fill: var(--ink); opacity: 0.35; pointer-events: none; }
 
 .piece .disc {
-  stroke: rgba(0, 0, 0, 0.35);
-  stroke-width: 1.5;
+  stroke: var(--st-bone);
+  stroke-width: 2.5;
 }
 .piece.red .disc, .mini .disc { fill: var(--st-red); }
 .piece.blue .disc { fill: var(--st-blue); }
 .glyph {
   fill: none;
-  stroke: #fff6e4;
+  stroke: var(--st-bone);
   stroke-width: 2.3;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
-.glyph.solid { fill: #ffe7a6; stroke: #fff6e4; stroke-width: 1.2; }
+.glyph.solid { fill: #e6b94c; stroke: #e6b94c; stroke-width: 0.6; }
 .piece { transition: transform 0.25s ease; }
 .piece.can { cursor: pointer; }
-.piece.spent { opacity: 0.55; }
 .piece.sel .disc { stroke: #ffe7a6; stroke-width: 4; }
 .piece.target { cursor: crosshair; }
 .piece.target .disc { stroke: #fff; stroke-width: 3.5; stroke-dasharray: 4 3; }

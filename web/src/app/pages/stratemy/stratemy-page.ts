@@ -1,6 +1,6 @@
-import { Component, OnDestroy, computed, signal } from '@angular/core';
+import { Component, OnDestroy, computed, linkedSignal, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { Action, COLS, Cell, Game, Kind, Piece, ROWS, STATS, Side, TERRAIN, Terrain, army, cellName, makeField, roadLinks } from './engine';
+import { ACTIONS_PER_TURN, Action, COLS, Cell, DEPLOY, Game, Kind, Piece, ROWS, STATS, Side, TERRAIN, Terrain, army, cellName, makeField, roadLinks, step } from './engine';
 import { chooseTurn } from './opponent';
 import { GLYPH } from './glyphs';
 import { BoardPiece, StratemyBoard3d } from './board3d';
@@ -56,19 +56,32 @@ export class StratemyPage implements OnDestroy {
     const p = this.sel(), g = this.view();
     if (!p || this.staged()) return [];
     if (this.phase() === 'setup') return this.setupCells(p.side);
-    return g.used.has(p.id) || p.side !== g.side ? [] : g.reach(p);
+    if (!this.canAct(p)) return [];
+    if (this.lead()) return [0, 1, 2, 3, 4, 5].filter((d) => g.shifted(p, d)).map((d) => step(p, d)!);
+    return g.reach(p);
   });
   protected readonly targets = computed<Piece[]>(() => {
     const p = this.sel(), g = this.view(), st = this.staged();
-    if (!p || this.phase() === 'setup' || g.used.has(p.id) || p.side !== g.side) return [];
+    if (!p || this.phase() === 'setup' || this.lead() || !this.canAct(p)) return [];
     return g.targets(p, st?.to ?? p);
   });
+  /** Whether the selected spark leads its whole стратема instead of moving alone. */
+  protected readonly lead = linkedSignal<number | null, boolean>({ source: () => this.selected(), computation: () => false });
+  /** The стратема that moves with the spark: the spark and the friends beside it. */
+  protected readonly led = computed(() => {
+    const p = this.sel();
+    return new Set(p && this.lead() ? this.view().stratema(p).map((q) => q.id) : []);
+  });
+  protected readonly canLead = computed(() => {
+    const p = this.sel();
+    return !!p && this.phase() === 'play' && !this.staged() && p.kind === 'iskra' && this.canAct(p) && this.view().stratema(p).length > 1;
+  });
   protected readonly boardPieces = computed<BoardPiece[]>(() => {
-    const g = this.view(), sel = this.selected(), targets = this.targets();
+    const g = this.view(), sel = this.selected(), targets = this.targets(), group = this.led();
     this.staged();
     return g.pieces.map((p) => {
       const at = this.piecePos(p);
-      return { id: p.id, kind: p.kind, side: p.side, r: at.r, c: at.c, spent: g.used.has(p.id), sel: sel === p.id,
+      return { id: p.id, kind: p.kind, side: p.side, r: at.r, c: at.c, sel: sel === p.id || group.has(p.id),
         target: targets.some((t) => t.id === p.id), can: this.canAct(p) };
     });
   });
@@ -92,7 +105,7 @@ export class StratemyPage implements OnDestroy {
   protected readonly rowLabels = computed(() => this.rows.map((r) => {
     const c = this.cols.find((c) => this.field()[r][c] !== 'edge')!;
     const at = this.hexAt({ r, c });
-    return { text: String(ROWS - r), x: at.x - HR * 1.6, y: at.y };
+    return { text: String(ROWS - r), x: at.x - HR * 2.1, y: at.y };
   }));
   protected readonly hint = computed<Hint | null>(() => {
     const p = this.sel(), h = this.hover(), g = this.view();
@@ -108,11 +121,11 @@ export class StratemyPage implements OnDestroy {
   });
   protected readonly status = computed(() => {
     const g = this.view();
-    if (this.phase() === 'setup') return 'Расставьте войско: выберите свою фишку и клетку в трёх нижних рядах. Затем начните партию.';
+    if (this.phase() === 'setup') return 'Расставьте войско: выберите свою фишку и клетку в четырёх нижних рядах. Затем начните партию.';
     if (g.winner) return g.winner === 'red' ? 'Победа алых: все лазурные искры сбиты.' : 'Победа лазурных: все алые искры сбиты.';
     if (this.thinking()) return 'Лазурные обдумывают ход…';
     const who = g.side === 'red' ? 'алых' : 'лазурных';
-    return `Ход ${g.turn}, очередь ${who}. Осталось движений: ${g.actionsLeft()} из 3.`;
+    return `Ход ${g.turn}, очередь ${who}. Осталось касаний: ${g.actionsLeft()} из ${ACTIONS_PER_TURN}.`;
   });
   protected readonly lost = computed(() => {
     const g = this.view(), start = this.fresh();
@@ -146,7 +159,7 @@ export class StratemyPage implements OnDestroy {
   protected start(): void { this.phase.set('play'); this.selected.set(null); this.bump(); }
 
   private setupCells(side: Side): Cell[] {
-    const rows = side === 'red' ? [ROWS - 3, ROWS - 2, ROWS - 1] : [0, 1, 2];
+    const rows = Array.from({ length: DEPLOY }, (_, k) => (side === 'red' ? ROWS - 1 - k : k));
     return rows.flatMap((r) => this.cols.filter((c) => this.field()[r][c] !== 'edge').map((c) => ({ r, c })));
   }
 
@@ -154,13 +167,13 @@ export class StratemyPage implements OnDestroy {
   protected terrainAt(r: number, c: number): Terrain { return this.field()[r][c]; }
   protected isReach(r: number, c: number): boolean { return this.reach().some((x) => x.r === r && x.c === c); }
   protected isTarget(id: number): boolean { return this.targets().some((t) => t.id === id); }
-  protected used(id: number): boolean { return this.view().used.has(id); }
+  protected inLead(id: number): boolean { return this.led().has(id); }
   protected cellName(r: number, c: number): string { return cellName({ r, c }); }
   protected piecePos(p: Piece): Cell { const st = this.staged(); return st && st.id === p.id ? st.to : p; }
   protected canAct(p: Piece): boolean {
     const g = this.view();
     if (this.phase() === 'setup') return p.side === 'red' || !this.vsComputer();
-    return !g.winner && !this.thinking() && p.side === g.side && !g.used.has(p.id) && (!this.vsComputer() || p.side === 'red');
+    return !g.winner && !this.thinking() && p.side === g.side && g.actionsLeft() > 0 && (!this.vsComputer() || p.side === 'red');
   }
   protected label(p: Piece): string {
     return `${p.side === 'red' ? 'Алая' : 'Лазурная'} фишка «${STATS[p.kind].name}» на ${cellName(p)}`;
@@ -184,6 +197,11 @@ export class StratemyPage implements OnDestroy {
     if (!p || !this.isReach(r, c)) { if (!this.staged()) this.selected.set(null); return; }
     if (this.phase() === 'setup') { p.r = r; p.c = c; this.selected.set(null); this.bump(); return; }
     const g = this.view();
+    if (this.lead()) {
+      const d = [0, 1, 2, 3, 4, 5].find((d) => { const to = step(p, d); return to?.r === r && to.c === c; });
+      if (d != null) this.act({ id: p.id, shift: d });
+      return;
+    }
     if (Game.movesThenActs(p.kind) && g.targets(p, { r, c }).length) { this.staged.set({ id: p.id, to: { r, c } }); return; }
     this.act({ id: p.id, to: { r, c } });
   }
@@ -205,10 +223,14 @@ export class StratemyPage implements OnDestroy {
     const g = this.view();
     if (!g.legal(a)) return;
     const side = g.side, turn = g.turn;
+    const lead = this.lead();
     const out = g.apply(a);
     this.log.update((l) => [{ side, turn, text: out.text }, ...l].slice(0, 60));
     this.staged.set(null);
-    this.selected.set(null);
+    // the same piece may be touched again, so it stays in hand while the turn lasts
+    const p = g.byId(a.id);
+    this.selected.set(p && g.side === side && !g.winner ? p.id : null);
+    this.lead.set(lead && !!p);
     this.bump();
     if (g.side !== side) this.afterHuman();
   }

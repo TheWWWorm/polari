@@ -1,31 +1,35 @@
 import { Component, ElementRef, OnDestroy, afterNextRender, effect, input, output, viewChild } from '@angular/core';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
 import { mergeGeometries } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 import { COLS, Cell, Kind, ROWS, Side, Terrain, cellName, roadLinks } from './engine';
 import { GLYPH } from './glyphs';
 
 /** One piece as the board shows it. */
-export interface BoardPiece { id: number; kind: Kind; side: Side; r: number; c: number; spent: boolean; sel: boolean; target: boolean; can: boolean }
+export interface BoardPiece { id: number; kind: Kind; side: Side; r: number; c: number; sel: boolean; target: boolean; can: boolean }
 
 const BASE = 0.18;
-const TOP: Record<Terrain, number> = { plain: 0.2, road: 0.2, forest: 0.22, hill: 0.2, stream: 0.08, ruins: 0.24, edge: 0 };
-const SOIL: Record<Terrain, number> = { plain: 0x9fae62, road: 0x9fae62, forest: 0x6f8a46, hill: 0xb3a86a, stream: 0x6d6450, ruins: 0xa49d8c, edge: 0 };
-const LACQUER: Record<Side, number> = { red: 0xa8302a, blue: 0x2c64a0 };
+/** Top of the painted board, where the tokens stand. */
+const FLOOR = BASE + 0.004;
+/** Dye of each army; the other side of a token carries the other army's colour. */
+const DYE: Record<Side, string> = { red: '#a3262a', blue: '#2d6fb0' };
+const BONE = 0xece0c4;
 const other = (s: Side): Side => (s === 'red' ? 'blue' : 'red');
 
 /** Hex radius; flat side up, odd columns half a cell lower, as in the engine. */
 const S = 0.6, SQ = Math.sqrt(3);
 const x = (c: number) => (c - (COLS - 1) / 2) * 1.5 * S;
 const z = (r: number, c: number) => (r + (c & 1) * 0.5 - (ROWS - 0.5) / 2) * SQ * S;
-/** Height of the ground a piece stands on. */
-const ground = (t: Terrain) => BASE + (t === 'stream' ? 0.12 : t === 'hill' ? 0.44 : TOP[t]);
 const hexPrism = (radius: number, h: number) => new THREE.CylinderGeometry(radius, radius, h, 6, 1, false, Math.PI / 6).translate(0, h / 2, 0);
+/** The painted board's extent, and its texture resolution per unit. */
+const BX = 6.7, BZ = 10.9, PX = 120;
 
 /**
- * The field as a carved wooden diorama: hexagonal cells, raised hills, a sunken river, groves,
- * a road and a broken castle, with lacquered two-sided tokens that glide from cell to cell.
- * It only draws; every click goes back to the page, which owns the game.
+ * The board as the books describe it: a wooden field «со схематичными изображениями полей, лесов
+ * и рек», cells laid out in a web of silver thread, rivers in blue enamel, roads in dotted lines;
+ * and bone tokens dyed in the two armies' colours, their signs carved in, the spark's a gilded
+ * lightning bolt. It only draws; every click goes back to the page, which owns the game.
  */
 @Component({
   selector: 'app-stratemy-board3d',
@@ -87,7 +91,7 @@ export class StratemyBoard3d implements OnDestroy {
     renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
     renderer.outputColorSpace = THREE.SRGBColorSpace;
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    renderer.toneMappingExposure = 1.15;
+    renderer.toneMappingExposure = 1.0;
     renderer.shadowMap.enabled = true;
     renderer.shadowMap.type = THREE.PCFSoftShadowMap;
     this.renderer = renderer;
@@ -95,7 +99,9 @@ export class StratemyBoard3d implements OnDestroy {
     const scene = this.scene;
     scene.background = new THREE.Color(0x2b2118);
     scene.fog = new THREE.Fog(0x2b2118, 36, 70);
-    scene.add(new THREE.HemisphereLight(0xf3e6cf, 0x3a2a1a, 1.1));
+    scene.environment = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(), 0.04).texture;
+    scene.environmentIntensity = 0.35;
+    scene.add(new THREE.HemisphereLight(0xf3e6cf, 0x3a2a1a, 0.8));
     const sun = new THREE.DirectionalLight(0xfff0d8, 2.4);
     sun.position.set(-8, 18, 10);
     sun.castShadow = true;
@@ -183,87 +189,54 @@ export class StratemyBoard3d implements OnDestroy {
     loop();
   }
 
-  /** Lay the frame, the cells and their groves, hills, water, roads and ruins. */
+  /** Make the board: a wooden body cut to the field's outline, a raised rim, and the painted face. */
   private buildField(f: Terrain[][]): void {
     if (f === this.fieldNow) return;
     this.fieldNow = f;
     for (const o of [...this.terrain.children]) {
       this.terrain.remove(o);
-      o.traverse((m) => { if (m instanceof THREE.Mesh) m.geometry.dispose(); });
+      o.traverse((m) => {
+        if (!(m instanceof THREE.Mesh)) return;
+        m.geometry.dispose();
+        for (const mat of [m.material].flat()) { (mat as THREE.MeshStandardMaterial).map?.dispose(); mat.dispose(); }
+      });
     }
     const on = (r: number, c: number) => f[r]?.[c] != null && f[r][c] !== 'edge';
-    const rnd = seeded(f.flat().map((t, i) => (t === 'forest' ? i : 0)).reduce((a, b) => a + b, 7));
-    const tiles = new THREE.InstancedMesh(hexPrism(S * 0.96, 1), new THREE.MeshStandardMaterial({ roughness: 0.9 }), ROWS * COLS);
-    tiles.receiveShadow = true;
-    tiles.castShadow = true;
-    const m = new THREE.Matrix4(), col = new THREE.Color();
-    const parts: Record<string, THREE.BufferGeometry[]> = { frame: [], leaf: [], trunk: [], mound: [], stone: [], water: [], road: [] };
-    const add = (k: string, g: THREE.BufferGeometry, px: number, py: number, pz: number, ry = 0) =>
-      parts[k].push(g.rotateY(ry).translate(px, py, pz));
+    const body: THREE.BufferGeometry[] = [], rim: THREE.BufferGeometry[] = [];
+    // invisible flat cells, only there to be clicked
+    const tiles = new THREE.InstancedMesh(hexPrism(S, 0.01), new THREE.MeshBasicMaterial({ transparent: true, opacity: 0, depthWrite: false }), ROWS * COLS);
+    const m = new THREE.Matrix4();
     for (let r = 0; r < ROWS; r++) for (let c = 0; c < COLS; c++) {
-      const t = f[r][c], i = r * COLS + c;
-      if (t === 'edge') { tiles.setMatrixAt(i, m.makeScale(0, 0, 0)); continue; }
-      const cx = x(c), cz = z(r, c), h = TOP[t], top = BASE + h;
-      add('frame', hexPrism(S * 1.22, BASE), cx, 0, cz);
-      m.makeScale(1, h, 1).setPosition(cx, BASE, cz);
-      tiles.setMatrixAt(i, m);
-      col.setHex(SOIL[t]).offsetHSL((rnd() - 0.5) * 0.02, 0, (rnd() - 0.5) * 0.05);
-      tiles.setColorAt(i, col);
-      if (t === 'forest') {
-        for (let k = 0; k < 4; k++) {
-          const px = cx + (rnd() - 0.5) * 0.55, pz = cz + (rnd() - 0.5) * 0.55, s = 0.7 + rnd() * 0.5;
-          add('trunk', new THREE.CylinderGeometry(0.03, 0.04, 0.12 * s, 5), px, top + 0.06 * s, pz);
-          add('leaf', new THREE.ConeGeometry(0.14 * s, 0.42 * s, 7), px, top + 0.3 * s, pz, rnd() * 3);
-        }
-      } else if (t === 'hill') {
-        add('mound', new THREE.SphereGeometry(S * 0.88, 20, 10, 0, Math.PI * 2, 0, Math.PI / 2).scale(1, 0.46, 1), cx, top, cz);
-      } else if (t === 'stream') {
-        add('water', hexPrism(S, 0.1), cx, top, cz);
-      } else if (t === 'road') {
-        add('road', new THREE.CylinderGeometry(0.16, 0.16, 0.016, 16), cx, top + 0.008, cz);
-      } else if (t === 'ruins') {
-        const walls: [number, number, number, number][] = [[-0.3, 0, 0.07, 0.62], [0.3, 0.08, 0.07, 0.48], [0, -0.33, 0.6, 0.07]];
-        for (const [dx, dz, w, d] of walls) {
-          const hh = 0.12 + rnd() * 0.2;
-          add('stone', new THREE.BoxGeometry(w, hh, d), cx + dx, top + hh / 2, cz + dz);
-        }
-        add('stone', new THREE.BoxGeometry(0.15, 0.42, 0.15), cx - 0.28, top + 0.21, cz - 0.3);
-      }
-    }
-    for (const [a, n] of roadLinks(f)) {
-      const ax = x(a.c), az = z(a.r, a.c), dx = x(n.c) - ax, dz = z(n.r, n.c) - az;
-      add('road', new THREE.BoxGeometry(0.32, 0.012, Math.hypot(dx, dz)), ax + dx / 2, BASE + TOP.road + 0.006, az + dz / 2, Math.atan2(dx, dz));
+      if (!on(r, c)) { tiles.setMatrixAt(r * COLS + c, m.makeScale(0, 0, 0)); continue; }
+      tiles.setMatrixAt(r * COLS + c, m.makeTranslation(x(c), FLOOR, z(r, c)));
+      body.push(hexPrism(S * 1.01, BASE).translate(x(c), 0, z(r, c)));
+      rim.push(hexPrism(S * 1.24, BASE - 0.03).translate(x(c), 0, z(r, c)));
     }
     tiles.instanceMatrix.needsUpdate = true;
     this.tiles = tiles;
-    this.terrain.add(tiles);
-    const mats: Record<string, THREE.Material> = {
-      frame: new THREE.MeshStandardMaterial({ color: 0x7a5434, roughness: 0.6 }),
-      leaf: new THREE.MeshStandardMaterial({ color: 0x3f6a33, roughness: 0.8, flatShading: true }),
-      trunk: new THREE.MeshStandardMaterial({ color: 0x5a3d22, roughness: 1 }),
-      mound: new THREE.MeshStandardMaterial({ color: 0xb3a86a, roughness: 0.95 }),
-      stone: new THREE.MeshStandardMaterial({ color: 0x8e887c, roughness: 1, flatShading: true }),
-      water: new THREE.MeshStandardMaterial({ color: 0x4d8fb8, roughness: 0.15, metalness: 0.1, transparent: true, opacity: 0.82 }),
-      road: new THREE.MeshStandardMaterial({ color: 0xc9ad74, roughness: 1 }),
-    };
-    for (const [k, gs] of Object.entries(parts)) {
-      if (!gs.length) continue;
-      const mesh = new THREE.Mesh(mergeGeometries(gs), mats[k]);
-      mesh.castShadow = k !== 'water' && k !== 'road';
-      mesh.receiveShadow = true;
-      mesh.raycast = () => {};   // clicks go to the cell underneath
-      this.terrain.add(mesh);
-    }
+    const wood = (color: number) => new THREE.MeshStandardMaterial({ color, roughness: 0.55, map: grain() });
+    const rimMesh = new THREE.Mesh(mergeGeometries(rim), wood(0x5e3c22));
+    const bodyMesh = new THREE.Mesh(mergeGeometries(body), wood(0x8a6238));
+    // the board stands on a wider plinth that follows its outline
+    bodyMesh.position.y = 0.03;
+    for (const o of [rimMesh, bodyMesh]) { o.castShadow = o.receiveShadow = true; o.raycast = () => {}; }
+    const [map, gloss] = paintBoard(f);
+    const face = new THREE.Mesh(new THREE.PlaneGeometry(BX * 2, BZ * 2).rotateX(-Math.PI / 2),
+      new THREE.MeshStandardMaterial({ map, roughnessMap: gloss, metalnessMap: gloss, metalness: 1, roughness: 1, alphaTest: 0.5 }));
+    face.position.y = FLOOR + 0.03 - 0.002;
+    face.receiveShadow = true;
+    face.raycast = () => {};
+    tiles.position.y = 0.03;
+    this.terrain.add(rimMesh, bodyMesh, face, tiles);
     // letters under each column and numbers beside each row, burnt into the table
     for (let c = 0; c < COLS; c++) {
       const r = [...Array(ROWS).keys()].reverse().find((r) => on(r, c))!;
-      this.terrain.add(label(cellName({ r: ROWS - 1, c }).replace(/\d+/, ''), x(c), z(r, c) + 1.05));
+      this.terrain.add(label(cellName({ r: ROWS - 1, c }).replace(/\d+/, ''), x(c), z(r, c) + 1.15));
     }
     for (let r = 0; r < ROWS; r++) {
       const c = [...Array(COLS).keys()].find((c) => on(r, c))!;
-      this.terrain.add(label(String(ROWS - r), x(c) - 1.05, z(r, c)));
+      this.terrain.add(label(String(ROWS - r), x(c) - 1.15, z(r, c)));
     }
-    for (const tok of this.tokens.values()) tok.ground = ground(f[tok.r][tok.c]);
   }
 
   private syncPieces(list: BoardPiece[]): void {
@@ -273,23 +246,23 @@ export class StratemyBoard3d implements OnDestroy {
       let tok = this.tokens.get(p.id);
       if (!tok) {
         tok = new Token(p, this.cap.bind(this));
-        tok.place(p, ground(this.fieldNow[p.r]?.[p.c] ?? 'plain'), true);
+        tok.place(p, FLOOR + 0.03, true);
         this.tokens.set(p.id, tok);
         this.scene.add(tok.mesh);
       }
-      tok.update(p, ground(this.fieldNow[p.r][p.c]));
+      tok.update(p, FLOOR + 0.03);
     }
     for (const [id, tok] of this.tokens) if (!seen.has(id)) { tok.fall(() => this.scene.remove(tok.mesh)); this.tokens.delete(id); }
   }
 
   private syncReach(cells: Cell[]): void {
     const m = new THREE.Matrix4();
-    cells.forEach((c, i) => this.dots.setMatrixAt(i, m.makeTranslation(x(c.c), ground(this.fieldNow[c.r][c.c]) + 0.02, z(c.r, c.c))));
+    cells.forEach((c, i) => this.dots.setMatrixAt(i, m.makeTranslation(x(c.c), FLOOR + 0.05, z(c.r, c.c))));
     this.dots.count = cells.length;
     this.dots.instanceMatrix.needsUpdate = true;
   }
 
-  /** The lacquered face of a token, with its pictogram painted on. */
+  /** A token's face: bone dyed in the army's colour, the sign carved through to the bone. */
   private cap(side: Side, kind: Kind): THREE.MeshStandardMaterial {
     const key = side + kind;
     let mat = this.caps.get(key);
@@ -297,20 +270,30 @@ export class StratemyBoard3d implements OnDestroy {
       const cv = document.createElement('canvas');
       cv.width = cv.height = 256;
       const g = cv.getContext('2d')!;
-      g.fillStyle = '#' + LACQUER[side].toString(16).padStart(6, '0');
+      g.fillStyle = DYE[side];
       g.fillRect(0, 0, 256, 256);
-      g.strokeStyle = 'rgba(255, 231, 166, .55)';
-      g.lineWidth = 6;
-      g.beginPath(); g.arc(128, 128, 116, 0, Math.PI * 2); g.stroke();
-      g.translate(128, 128); g.scale(7, 7); g.translate(-12, -12);
+      // the dye soaks unevenly into bone
+      const rnd = seeded(key.length * 31 + kind.charCodeAt(0));
+      for (let i = 0; i < 900; i++) {
+        g.fillStyle = `rgba(${rnd() < 0.5 ? '0,0,0' : '255,240,220'}, ${rnd() * 0.06})`;
+        g.fillRect(rnd() * 256, rnd() * 256, 2 + rnd() * 5, 1 + rnd() * 2);
+      }
+      g.translate(128, 128); g.scale(7.4, 7.4); g.translate(-12, -12);
       const path = new Path2D(GLYPH[kind]);
       g.lineCap = g.lineJoin = 'round';
-      if (kind === 'iskra') { g.fillStyle = '#ffd46a'; g.fill(path); g.lineWidth = 0.7; g.strokeStyle = '#fff6e4'; g.stroke(path); }
-      else { g.lineWidth = 2.3; g.strokeStyle = '#fff6e4'; g.stroke(path); }
+      const cut = (dx: number, dy: number, style: string) => {
+        g.save(); g.translate(dx, dy);
+        if (kind === 'iskra') { g.fillStyle = style; g.fill(path); }
+        else { g.lineWidth = 2.1; g.strokeStyle = style; g.stroke(path); }
+        g.restore();
+      };
+      // a carved groove: shadow on one wall, then the bone (or gilding) inside
+      cut(0.25, 0.3, 'rgba(30, 10, 5, .55)');
+      cut(0, 0, kind === 'iskra' ? '#e6b94c' : '#efe4c8');
       const tex = new THREE.CanvasTexture(cv);
       tex.colorSpace = THREE.SRGBColorSpace;
       tex.anisotropy = this.renderer?.capabilities.getMaxAnisotropy() ?? 1;
-      mat = new THREE.MeshStandardMaterial({ map: tex, roughness: 0.35 });
+      mat = new THREE.MeshStandardMaterial({ map: tex, roughness: 0.42 });
       this.caps.set(key, mat);
     }
     return mat;
@@ -318,51 +301,43 @@ export class StratemyBoard3d implements OnDestroy {
 }
 
 /**
- * A token and its motion. Tokens are two-sided, each face in one army's colour:
- * a bribed sword is simply turned over.
+ * A token and its motion. Tokens are bone discs dyed on both sides, one face in each army's
+ * colour: a bribed sword is simply turned over («её оборот имел цвет угля»).
  */
 class Token {
   readonly mesh = new THREE.Group();
   private readonly spin = new THREE.Group();
-  private readonly body: THREE.MeshStandardMaterial;
   private readonly face: THREE.Mesh;
   private readonly back: THREE.Mesh;
   private readonly ring: THREE.Mesh;
   private readonly aim: THREE.Mesh;
   private readonly to = new THREE.Vector3();
-  private readonly tall: number;
+  private readonly tall = 0.14;
   private dying: { t: number; done: () => void } | null = null;
   private flip: { t: number; to: Side } | null = null;
   private shown: Side;
   state: BoardPiece;
-  ground = 0;
   get r() { return this.state.r; }
   get c() { return this.state.c; }
 
   constructor(p: BoardPiece, private readonly capOf: (s: Side, k: Kind) => THREE.MeshStandardMaterial) {
     this.state = p;
     this.shown = p.side;
-    const tall = (this.tall = p.kind === 'iskra' ? 0.34 : 0.22);
-    // a bevelled disc turned on a lathe, centred on its middle so it can be turned over
-    const R = 0.38, b = 0.04;
+    const tall = this.tall;
+    // a bevelled bone disc turned on a lathe, centred on its middle so it can be turned over
+    const R = 0.37, b = 0.035;
     const prof = [new THREE.Vector2(0, 0), new THREE.Vector2(R - b, 0), new THREE.Vector2(R, b), new THREE.Vector2(R, tall - b),
       new THREE.Vector2(R - b, tall), new THREE.Vector2(0, tall)];
-    this.body = new THREE.MeshStandardMaterial({ color: LACQUER[p.side], roughness: 0.4 });
-    const disc = new THREE.Mesh(new THREE.LatheGeometry(prof, 40).translate(0, -tall / 2, 0), this.body);
+    const disc = new THREE.Mesh(new THREE.LatheGeometry(prof, 48).translate(0, -tall / 2, 0), new THREE.MeshStandardMaterial({ color: BONE, roughness: 0.45 }));
     disc.castShadow = disc.receiveShadow = true;
-    this.face = new THREE.Mesh(new THREE.CircleGeometry(R - b, 40).rotateX(-Math.PI / 2), capOf(p.side, p.kind));
+    this.face = new THREE.Mesh(new THREE.CircleGeometry(R - b, 48).rotateX(-Math.PI / 2), capOf(p.side, p.kind));
     this.face.position.y = tall / 2 + 0.002;
-    this.back = new THREE.Mesh(new THREE.CircleGeometry(R - b, 40).rotateX(Math.PI / 2), capOf(other(p.side), p.kind));
+    this.back = new THREE.Mesh(new THREE.CircleGeometry(R - b, 48).rotateX(Math.PI / 2), capOf(other(p.side), p.kind));
     this.back.position.y = -tall / 2 - 0.002;
     this.face.raycast = this.back.raycast = () => {};
     this.spin.position.y = tall / 2;
     this.spin.add(disc, this.face, this.back);
-    if (p.kind === 'iskra') {
-      const band = new THREE.Mesh(new THREE.TorusGeometry(R + 0.005, 0.018, 8, 48).rotateX(Math.PI / 2),
-        new THREE.MeshStandardMaterial({ color: 0xd9a93c, metalness: 0.8, roughness: 0.3 }));
-      this.spin.add(band);
-    }
-    this.ring = new THREE.Mesh(new THREE.RingGeometry(0.44, 0.52, 40).rotateX(-Math.PI / 2),
+    this.ring = new THREE.Mesh(new THREE.RingGeometry(0.43, 0.5, 48).rotateX(-Math.PI / 2),
       new THREE.MeshBasicMaterial({ color: 0xffe7a6, transparent: true, depthWrite: false }));
     this.aim = new THREE.Mesh(new THREE.RingGeometry(0.42, 0.52, 6, 1, Math.PI / 6).rotateX(-Math.PI / 2),
       new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true, depthWrite: false }));
@@ -373,8 +348,7 @@ class Token {
   }
 
   place(p: BoardPiece, g: number, now = false): void {
-    this.ground = g;
-    this.to.set(x(p.c), g + (p.sel ? 0.18 : 0), z(p.r, p.c));
+    this.to.set(x(p.c), g + (p.sel ? 0.12 : 0), z(p.r, p.c));
     if (now) this.mesh.position.copy(this.to);
   }
 
@@ -384,10 +358,7 @@ class Token {
     this.place(p, g);
     this.ring.visible = p.sel;
     this.aim.visible = p.target;
-    this.tint();
   }
-
-  private tint(): void { this.body.color.setHex(LACQUER[this.shown]).multiplyScalar(this.state.spent ? 0.55 : 1); }
 
   fall(done: () => void): void { this.dying = { t: 0, done }; }
 
@@ -407,10 +378,10 @@ class Token {
       f.t = Math.min(1, f.t + dt * 1.6);
       this.spin.rotation.z = Math.PI * f.t;
       this.spin.position.y = this.tall / 2 + Math.sin(Math.PI * f.t) * 0.6;
-      if (f.t >= 0.5 && this.shown !== f.to) { this.shown = f.to; this.tint(); }
       if (f.t >= 1) {
         // lying reversed now: swap the faces back so the new colour is the face again
         this.flip = null;
+        this.shown = f.to;
         this.spin.rotation.z = 0;
         this.spin.position.y = this.tall / 2;
         this.face.material = this.capOf(this.shown, this.state.kind);
@@ -421,10 +392,128 @@ class Token {
     const far = Math.hypot(this.to.x - pos.x, this.to.z - pos.z);
     pos.x += (this.to.x - pos.x) * k;
     pos.z += (this.to.z - pos.z) * k;
-    // hop while gliding to a new cell
+    // a token is lifted and set down again, not dragged across the board
     pos.y += (this.to.y + Math.min(far, 1) * 0.5 - pos.y) * k;
     (this.aim.material as THREE.MeshBasicMaterial).opacity = 0.55 + Math.sin(t * 6) * 0.35;
   }
+}
+
+/**
+ * The painted face of the board, and its gloss map (green: roughness, blue: metalness):
+ * lacquered fields, woods and hills drawn as map signs, rivers in glossy enamel, roads dotted,
+ * the castle drawn in ink, and the cells parted by threads of silver.
+ */
+function paintBoard(f: Terrain[][]): [THREE.CanvasTexture, THREE.CanvasTexture] {
+  const W = Math.round(BX * 2 * PX), H = Math.round(BZ * 2 * PX);
+  const cv = document.createElement('canvas'), gv = document.createElement('canvas');
+  cv.width = gv.width = W; cv.height = gv.height = H;
+  const g = cv.getContext('2d')!, k = gv.getContext('2d')!;
+  const at = (r: number, c: number) => [(x(c) + BX) * PX, (z(r, c) + BZ) * PX] as const;
+  const hex = (ctx: CanvasRenderingContext2D, cx: number, cy: number, rad: number) => {
+    ctx.beginPath();
+    for (let i = 0; i < 6; i++) { const a = (i * Math.PI) / 3; ctx[i ? 'lineTo' : 'moveTo'](cx + rad * Math.cos(a), cy + rad * Math.sin(a)); }
+    ctx.closePath();
+  };
+  const rnd = seeded(f.flat().map((t, i) => (t === 'forest' || t === 'hill' ? i : 0)).reduce((a, b) => a + b, 11));
+  const R = S * PX, INK = '#5a3f22';
+  const FILL: Record<Terrain, string> = { plain: '#c4a066', road: '#c4a066', forest: '#8e9455', hill: '#bf955c', stream: '#2f6699', ruins: '#b49c74', edge: '' };
+  const on = (r: number, c: number) => f[r][c] !== 'edge';
+  // grounds, with lacquer that pools a little darker towards the cell edges
+  for (let r = 0; r < ROWS; r++) for (let c = 0; c < COLS; c++) {
+    if (!on(r, c)) continue;
+    const [cx, cy] = at(r, c), t = f[r][c];
+    hex(g, cx, cy, R * 1.01);
+    const grad = g.createRadialGradient(cx, cy, R * 0.2, cx, cy, R);
+    grad.addColorStop(0, FILL[t]);
+    grad.addColorStop(1, shade(FILL[t], t === 'stream' ? -0.12 : -0.07));
+    g.fillStyle = grad;
+    g.fill();
+    hex(k, cx, cy, R * 1.01);
+    k.fillStyle = t === 'stream' ? 'rgb(0, 50, 0)' : 'rgb(0, 150, 0)';
+    k.fill();
+  }
+  g.lineCap = g.lineJoin = 'round';
+  for (let r = 0; r < ROWS; r++) for (let c = 0; c < COLS; c++) {
+    const [cx, cy] = at(r, c), t = f[r][c];
+    if (t === 'forest') {
+      // three little spruces, the map sign for a wood
+      const spots = [[-0.32, 0.18], [0.3, 0.2], [0, -0.22]];
+      for (const [dx, dy] of spots) {
+        const px = cx + (dx + (rnd() - 0.5) * 0.12) * R, py = cy + (dy + (rnd() - 0.5) * 0.1) * R, s = R * (0.24 + rnd() * 0.05);
+        g.fillStyle = '#3f5c2c';
+        g.beginPath(); g.moveTo(px, py - s); g.lineTo(px + s * 0.62, py + s * 0.55); g.lineTo(px - s * 0.62, py + s * 0.55); g.closePath(); g.fill();
+        g.strokeStyle = '#3f5c2c'; g.lineWidth = R * 0.05;
+        g.beginPath(); g.moveTo(px, py + s * 0.5); g.lineTo(px, py + s * 0.85); g.stroke();
+      }
+    } else if (t === 'hill') {
+      // a hill drawn with hachures, as on old maps
+      g.strokeStyle = INK; g.lineWidth = R * 0.06;
+      g.beginPath(); g.arc(cx, cy + R * 0.35, R * 0.55, Math.PI * 1.08, Math.PI * 1.92); g.stroke();
+      g.lineWidth = R * 0.035;
+      for (let i = 0; i <= 8; i++) {
+        const a = Math.PI * (1.12 + i * 0.095), x0 = cx + Math.cos(a) * R * 0.55, y0 = cy + R * 0.35 + Math.sin(a) * R * 0.55;
+        g.beginPath(); g.moveTo(x0, y0); g.lineTo(x0 + Math.cos(a) * R * 0.18, y0 + Math.sin(a) * R * 0.18 + R * 0.1); g.stroke();
+      }
+    } else if (t === 'stream') {
+      g.strokeStyle = 'rgba(225, 240, 250, .55)'; g.lineWidth = R * 0.05;
+      for (const dy of [-0.25, 0.05, 0.35]) {
+        g.beginPath();
+        for (let i = 0; i <= 12; i++) { const px = cx - R * 0.55 + (i / 12) * R * 1.1, py = cy + dy * R + Math.sin(i * 1.3) * R * 0.05; g[i ? 'lineTo' : 'moveTo'](px, py); }
+        g.stroke();
+      }
+    } else if (t === 'ruins') {
+      // the home castle in ink, its walls broken
+      g.strokeStyle = INK; g.fillStyle = 'rgba(90, 63, 34, .18)'; g.lineWidth = R * 0.06;
+      const w = R * 0.7, h = R * 0.5, l = cx - w / 2, b = cy + h / 2;
+      g.beginPath();
+      g.moveTo(l, b); g.lineTo(l, b - h); g.lineTo(l + w * 0.15, b - h); g.lineTo(l + w * 0.15, b - h * 0.85); g.lineTo(l + w * 0.3, b - h * 0.85);
+      g.lineTo(l + w * 0.3, b - h); g.lineTo(l + w * 0.45, b - h); g.lineTo(l + w * 0.55, b - h * 0.6); g.lineTo(l + w * 0.7, b - h * 0.75);
+      g.lineTo(l + w, b - h * 0.45); g.lineTo(l + w, b);
+      g.closePath(); g.fill(); g.stroke();
+      g.beginPath(); g.moveTo(cx - R * 0.1, b); g.lineTo(cx - R * 0.1, b - h * 0.4); g.arc(cx, b - h * 0.4, R * 0.1, Math.PI, 0); g.lineTo(cx + R * 0.1, b); g.stroke();
+    }
+  }
+  // roads: dotted tracks between the centres of neighbouring road cells
+  g.strokeStyle = '#6b4a28'; g.lineWidth = R * 0.11; g.setLineDash([R * 0.13, R * 0.14]);
+  for (const [a, b] of roadLinks(f)) {
+    const [ax, ay] = at(a.r, a.c), [bx, by] = at(b.r, b.c);
+    g.beginPath(); g.moveTo(ax, ay); g.lineTo(bx, by); g.stroke();
+  }
+  g.setLineDash([]);
+  // the silver web of cells
+  for (let r = 0; r < ROWS; r++) for (let c = 0; c < COLS; c++) {
+    if (!on(r, c)) continue;
+    const [cx, cy] = at(r, c);
+    hex(g, cx, cy, R); g.strokeStyle = '#c9ccd1'; g.lineWidth = R * 0.05; g.stroke();
+    hex(k, cx, cy, R); k.strokeStyle = 'rgb(0, 70, 255)'; k.lineWidth = R * 0.05; k.stroke();
+  }
+  const map = new THREE.CanvasTexture(cv), gloss = new THREE.CanvasTexture(gv);
+  map.colorSpace = THREE.SRGBColorSpace;
+  map.anisotropy = gloss.anisotropy = 8;
+  return [map, gloss];
+}
+
+function shade(hex: string, by: number): string {
+  const n = parseInt(hex.slice(1), 16), f = (v: number) => Math.max(0, Math.min(255, Math.round(v * (1 + by))));
+  return `rgb(${f(n >> 16)}, ${f((n >> 8) & 255)}, ${f(n & 255)})`;
+}
+
+/** A wood grain texture for the board's body and rim. */
+function grain(): THREE.CanvasTexture {
+  const cv = document.createElement('canvas');
+  cv.width = cv.height = 256;
+  const g = cv.getContext('2d')!;
+  g.fillStyle = '#fff'; g.fillRect(0, 0, 256, 256);
+  const rnd = seeded(5);
+  for (let i = 0; i < 70; i++) {
+    g.strokeStyle = `rgba(60, 35, 15, ${0.05 + rnd() * 0.12})`; g.lineWidth = 1 + rnd() * 2;
+    const y = rnd() * 256;
+    g.beginPath(); g.moveTo(0, y); g.bezierCurveTo(90, y + (rnd() - 0.5) * 14, 170, y + (rnd() - 0.5) * 14, 256, y); g.stroke();
+  }
+  const t = new THREE.CanvasTexture(cv);
+  t.colorSpace = THREE.SRGBColorSpace;
+  t.wrapS = t.wrapT = THREE.RepeatWrapping;
+  return t;
 }
 
 /** A coordinate burnt into the table beside the board. */

@@ -2,8 +2,10 @@
  * Стратемы, reconstructed from the games described in the cycle. The books fix the pieces and their
  * characters (the sword wears armour, the horseshoe pierces it and is the fastest, the arrow takes no
  * return blow, the sickle fears to leave the regular troops, the coin bribes swordsmen, the spark
- * commands), three moves by different pieces per turn, terrain that matters, a castle worth three
- * points of defence, and victory by striking down the enemy sparks. Numbers are our own.
+ * commands its стратема), three touches per turn that may all go to one piece, a whole стратема
+ * moved with one touch, terrain that matters, a castle worth three points of defence, a short game
+ * with one spark and a long one with a double set, and victory by striking down the enemy sparks.
+ * Numbers are our own.
  */
 
 export type Side = 'red' | 'blue';
@@ -13,22 +15,27 @@ export type Terrain = 'plain' | 'road' | 'forest' | 'hill' | 'stream' | 'ruins' 
 
 export interface Piece { id: number; kind: Kind; side: Side; r: number; c: number }
 export interface Cell { r: number; c: number }
-/** One activation of a piece: an optional move, then an optional strike or bribe. */
-export interface Action { id: number; to?: Cell; target?: number }
+/**
+ * One touch: a piece moves, strikes or bribes (a horseshoe or coin may move and then strike), or,
+ * with `shift`, a spark leads its whole стратема one cell in that direction.
+ */
+export interface Action { id: number; to?: Cell; target?: number; shift?: number }
 export interface Outcome { text: string; removed: number[]; converted?: number }
 
 /** Hexagonal cells, flat side up, odd columns set half a cell lower. An even column count keeps the field point-symmetric. */
 export const ROWS = 20;
 export const COLS = 14;
 export const ACTIONS_PER_TURN = 3;
+/** Rows each side may set its army in. */
+export const DEPLOY = 4;
 
 export const STATS: Record<Kind, { a: number; d: number; mp: number; name: string; plural: string; value: number }> = {
-  serp: { a: 1, d: 1, mp: 4, name: 'серп', plural: 'серпы', value: 1 },
-  mech: { a: 2, d: 3, mp: 4, name: 'меч', plural: 'мечи', value: 3 },
-  strela: { a: 2, d: 1, mp: 4, name: 'стрела', plural: 'стрелы', value: 3 },
-  podkova: { a: 3, d: 2, mp: 8, name: 'подкова', plural: 'подковы', value: 5 },
-  moneta: { a: 0, d: 1, mp: 6, name: 'монета', plural: 'монеты', value: 3 },
-  iskra: { a: 1, d: 2, mp: 4, name: 'искра', plural: 'искры', value: 40 },
+  serp: { a: 1, d: 1, mp: 2, name: 'серп', plural: 'серпы', value: 1 },
+  mech: { a: 2, d: 3, mp: 2, name: 'меч', plural: 'мечи', value: 3 },
+  strela: { a: 2, d: 1, mp: 2, name: 'стрела', plural: 'стрелы', value: 3 },
+  podkova: { a: 3, d: 2, mp: 4, name: 'подкова', plural: 'подковы', value: 5 },
+  moneta: { a: 0, d: 1, mp: 4, name: 'монета', plural: 'монеты', value: 3 },
+  iskra: { a: 1, d: 2, mp: 2, name: 'искра', plural: 'искры', value: 40 },
 };
 export const TERRAIN: Record<Terrain, { name: string; def: number }> = {
   plain: { name: 'равнина', def: 0 },
@@ -45,7 +52,8 @@ const REGULAR: Kind[] = ['mech', 'strela', 'podkova', 'iskra'];
 export class Game {
   pieces: Piece[] = [];
   side: Side = 'red';
-  used = new Set<number>();
+  /** Touches spent this turn. */
+  touches = 0;
   winner: Side | null = null;
   turn = 1;
 
@@ -55,8 +63,8 @@ export class Game {
     const off = Math.floor((COLS - army[0].length) / 2);
     army.forEach((row, k) => row.forEach((kind, c) => {
       if (kind) {
-        this.pieces.push({ id: id++, kind, side: 'red', r: ROWS - 3 + k, c: off + c });
-        this.pieces.push({ id: id++, kind, side: 'blue', r: 2 - k, c: COLS - 1 - off - c });
+        this.pieces.push({ id: id++, kind, side: 'red', r: ROWS - army.length + k, c: off + c });
+        this.pieces.push({ id: id++, kind, side: 'blue', r: army.length - 1 - k, c: COLS - 1 - off - c });
       }
     }));
   }
@@ -65,7 +73,7 @@ export class Game {
     const g = Object.create(Game.prototype) as Game;
     g.field = this.field; g.sparks = this.sparks; g.side = this.side; g.turn = this.turn; g.winner = this.winner;
     g.pieces = this.pieces.map((p) => ({ ...p }));
-    g.used = new Set(this.used);
+    g.touches = this.touches;
     return g;
   }
 
@@ -170,9 +178,30 @@ export class Game {
     return back > this.defenceValue(att) ? 'lost' : 'repelled';
   }
 
+  /** A spark's стратема: the spark and every friend standing beside it. */
+  stratema(p: Piece): Piece[] {
+    return p.kind !== 'iskra' ? [p] : [p, ...this.pieces.filter((q) => q.side === p.side && q.id !== p.id && dist(q, p) === 1)];
+  }
+
+  /** Where a стратема would stand after one step in a direction, or null if the way is blocked. */
+  shifted(p: Piece, dir: number): Cell[] | null {
+    const group = this.stratema(p);
+    if (group.length < 2) return null;
+    const ids = new Set(group.map((q) => q.id)), out: Cell[] = [];
+    for (const q of group) {
+      const to = step(q, dir);
+      if (!to || this.field[to.r][to.c] === 'edge') return null;
+      const occ = this.at(to.r, to.c);
+      if (occ && !ids.has(occ.id)) return null;
+      out.push(to);
+    }
+    return out;
+  }
+
   legal(a: Action): boolean {
     const p = this.byId(a.id);
-    if (!p || p.side !== this.side || this.used.has(p.id) || this.winner) return false;
+    if (!p || p.side !== this.side || this.winner || this.touches >= ACTIONS_PER_TURN) return false;
+    if (a.shift != null) return !a.to && a.target == null && !!this.shifted(p, a.shift);
     if (!a.to && a.target == null) return false;
     if (a.to && !this.reach(p).some((c) => c.r === a.to!.r && c.c === a.to!.c)) return false;
     if (a.to && a.target != null && !Game.movesThenActs(p.kind)) return false;
@@ -185,6 +214,11 @@ export class Game {
     const out: Outcome = { text: '', removed: [] };
     const who = (q: Piece) => `${q.side === 'red' ? 'алая' : 'лазурная'} фишка «${STATS[q.kind].name}»`;
     const parts: string[] = [];
+    if (a.shift != null) {
+      const group = this.stratema(p), to = this.shifted(p, a.shift)!;
+      group.forEach((q, i) => { q.r = to[i].r; q.c = to[i].c; });
+      parts.push(`${p.side === 'red' ? 'Алая' : 'Лазурная'} искра ведёт стратему из ${group.length} фишек на ${cellName(p)}`);
+    }
     if (a.to) {
       p.r = a.to.r; p.c = a.to.c;
       parts.push(`${cap(who(p))} идёт на ${cellName(a.to)}`);
@@ -193,7 +227,6 @@ export class Game {
       const q = this.byId(a.target)!;
       if (p.kind === 'moneta') {
         q.side = p.side;
-        this.used.add(q.id);
         out.converted = q.id;
         parts.push(`${parts.length ? 'и подкупает' : cap(who(p)) + ' подкупает'} вражеский меч на ${cellName(q)}`);
       } else {
@@ -214,7 +247,7 @@ export class Game {
         }
       }
     }
-    this.used.add(p.id);
+    this.touches++;
     out.text = parts.join(' ') + '.';
     for (const s of ['red', 'blue'] as Side[])
       if (!this.pieces.some((x) => x.side === s && x.kind === 'iskra')) this.winner = s === 'red' ? 'blue' : 'red';
@@ -222,13 +255,10 @@ export class Game {
     return out;
   }
 
-  actionsLeft(): number {
-    const mine = this.pieces.filter((p) => p.side === this.side && !this.used.has(p.id));
-    return Math.min(ACTIONS_PER_TURN - [...this.used].filter((id) => this.byId(id)?.side === this.side).length, mine.length);
-  }
+  actionsLeft(): number { return ACTIONS_PER_TURN - this.touches; }
 
   endTurn(): void {
-    this.used.clear();
+    this.touches = 0;
     this.side = this.side === 'red' ? 'blue' : 'red';
     if (this.side === 'red') this.turn++;
   }
@@ -241,14 +271,23 @@ export class Game {
       list.push({ id: p.id, to });
       if (Game.movesThenActs(p.kind)) for (const t of this.targets(p, to)) list.push({ id: p.id, to, target: t.id });
     }
+    if (p.kind === 'iskra') for (let d = 0; d < 6; d++) if (this.shifted(p, d)) list.push({ id: p.id, shift: d });
     return list;
   }
 }
 
+/** Steps to the six neighbours, in the same order for both column parities: up, down, upper-left, lower-left, upper-right, lower-right. */
+const HEX_EVEN = [[-1, 0], [1, 0], [-1, -1], [0, -1], [-1, 1], [0, 1]];
+const HEX_ODD = [[-1, 0], [1, 0], [0, -1], [1, -1], [0, 1], [1, 1]];
+/** The cell one step away in a direction, or null off the board's bounds. */
+export function step(from: Cell, dir: number): Cell | null {
+  const [dr, dc] = (from.c & 1 ? HEX_ODD : HEX_EVEN)[dir];
+  const r = from.r + dr, c = from.c + dc;
+  return r >= 0 && c >= 0 && r < ROWS && c < COLS ? { r, c } : null;
+}
 /** The six cells around a hex, inside the board's bounds. */
 export function neighbours(r: number, c: number): Cell[] {
-  const d = c & 1 ? [[-1, 0], [1, 0], [0, -1], [1, -1], [0, 1], [1, 1]] : [[-1, 0], [1, 0], [-1, -1], [0, -1], [-1, 1], [0, 1]];
-  return d.map(([dr, dc]) => ({ r: r + dr, c: c + dc })).filter((n) => n.r >= 0 && n.c >= 0 && n.r < ROWS && n.c < COLS);
+  return [0, 1, 2, 3, 4, 5].map((d) => step({ r, c }, d)).filter((n): n is Cell => !!n);
 }
 /** Steps between two hexes. */
 export function dist(a: Cell, b: Cell): number {
@@ -260,20 +299,18 @@ const LETTERS = 'АБВГДЕЖЗИКЛМНОП';
 export function cellName(c: Cell): string { return LETTERS[c.c] + (ROWS - c.r); }
 function cap(s: string): string { return s[0].toUpperCase() + s.slice(1); }
 
-/** Armies, red side, front row first. The full one follows Adrian's «классический порядок». */
+/**
+ * Armies, red side, front row first. The short game has one set; the long game a double set
+ * («двойной набор фишек») in Adrian's «классический порядок»: the spark and a wedge of horsemen
+ * in front, swords behind them, and the second spark at the back with the coins under a
+ * «коробочка» of sickles.
+ */
 export function army(sparks: number): Kind[][] {
-  const _ = '' as Kind;
-  if (sparks === 1)
-    return [
-      [_, _, 'serp', 'serp', 'podkova', 'iskra', 'podkova', 'serp', 'serp', _, _, _],
-      [_, _, _, 'mech', 'mech', 'strela', 'mech', 'moneta', _, _, _, _],
-      [_, _, _, _, _, _, _, _, _, _, _, _],
-    ];
-  return [
-    [_, 'serp', 'serp', 'podkova', 'podkova', 'iskra', 'podkova', 'podkova', 'serp', 'serp', _, _],
-    [_, _, 'strela', 'mech', 'mech', 'mech', 'mech', 'mech', 'strela', _, _, _],
-    [_, _, _, _, 'serp', 'iskra', 'moneta', 'serp', _, _, _, _],
-  ];
+  const K: Record<string, Kind | ''> = { s: 'serp', m: 'mech', t: 'strela', p: 'podkova', o: 'moneta', I: 'iskra', _: '' };
+  const rows = sparks === 1
+    ? ['____sspIpss___', '_____mmtm_____', '______sos_____', '______________']
+    : ['__sssppIppsss_', '___tmmmmmmt___', '___ssoIoss____', '_____ss_______'];
+  return rows.map((r) => r.split('').map((ch) => K[ch] as Kind));
 }
 
 /**
