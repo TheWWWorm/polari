@@ -113,6 +113,9 @@
   --fig-h: 380px;
   border: 0;
 }
+.head-lead {
+  display: none;
+}
 .ib-head {
   padding: 12px 16px 10px;
   text-align: left;
@@ -204,8 +207,14 @@ dd {
   .infobox {
     order: 2;
   }
+  /* On phones the infobox drops below the article, so the image moves up into the header. */
   .infobox .lead {
-    --fig-h: 240px;
+    display: none;
+  }
+  .head-lead {
+    display: block;
+    --fig-h: 300px;
+    margin: 16px 0 4px;
   }
   .lede {
     font-size: 1.2rem;

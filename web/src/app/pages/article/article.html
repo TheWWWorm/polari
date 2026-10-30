@@ -87,6 +87,9 @@
           @if (m.ru) {
             <p class="page-sub">{{ m.ru }}</p>
           }
+          @if (lead() !== null) {
+            <app-figure class="head-lead" [index]="lead()!" />
+          }
           @if (bookChips().length) {
             <details class="appearances">
               <summary>Появления в книгах</summary>
