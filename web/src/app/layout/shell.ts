@@ -1,6 +1,8 @@
 import { Component, ElementRef, inject, signal, viewChild } from '@angular/core';
 import { NavigationEnd, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { Meta } from '@angular/platform-browser';
 import { Theme } from '../core/theme';
+import { WikiData } from '../core/wiki-data';
 import { SearchBox } from './search-box';
 import { SpoilerSelect } from './spoiler-select';
 import { LightboxView } from '../shared/lightbox-view';
@@ -91,8 +93,29 @@ export class Shell {
       ev.stopPropagation();
       blur.classList.remove('spoil-blur');
     }, true);
-    inject(Router).events.subscribe((e) => {
-      if (e instanceof NavigationEnd) this.navOpen.set(false);
+    // Plain links in generated HTML (article text, search suggestions, 3D labels) go through the router
+    // instead of reloading the page; routerLink handles its own clicks and marks them defaultPrevented.
+    const router = inject(Router);
+    document.addEventListener('click', (ev) => {
+      const a = (ev.target as Element | null)?.closest?.('a');
+      const href = a?.getAttribute('href');
+      if (ev.defaultPrevented || ev.button || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
+      if (!href?.startsWith('/') || href.startsWith('//') || a!.target || a!.hasAttribute('download')) return;
+      ev.preventDefault();
+      router.navigateByUrl(href);
+    });
+    // keep the description and canonical address in step with the page, as the prerendered copy has them
+    const meta = inject(Meta), data = inject(WikiData);
+    const about = meta.getTag('name="description"')?.content ?? '';
+    const canonical = document.head.querySelector<HTMLLinkElement>('link[rel=canonical]');
+    router.events.subscribe((e) => {
+      if (!(e instanceof NavigationEnd)) return;
+      this.navOpen.set(false);
+      const path = e.urlAfterRedirects.split(/[?#]/)[0];
+      // an article section (/slug/anchor) belongs to the article's page
+      const article = data.get(path.split('/')[1]);
+      meta.updateTag({ name: 'description', content: article?.summary || about });
+      if (canonical) canonical.href = location.origin + (article ? '/' + article.slug : path);
     });
   }
 }

@@ -117,7 +117,7 @@
           </nav>
         }
 
-        <article class="body" (click)="interceptLinks($event)">
+        <article class="body">
           @if (m.type !== 'book' && m.summary) {
             <p class="lede" [class.spoil-blur]="spoilers.partly(m)" (click)="unblur($event)">
               {{ m.summary }}

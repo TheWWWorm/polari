@@ -56,7 +56,7 @@ def inline(text, links, slugs, missing):
         label = (label or TITLES.get(target, target)).strip()
         if target in slugs:
             links.add(target)
-            return f'<a href="#/{target}" class="wl">{label}</a>'
+            return f'<a href="/{target}" class="wl">{label}</a>'
         missing.add(target)
         return f'<span class="wl-missing" title="No article yet">{label}</span>'
 
@@ -349,6 +349,12 @@ def main():
     for slug, d in data.items():
         with open(os.path.join(art_dir, slug + '.json'), 'w', encoding='utf-8') as fh:
             fh.write(dump({k: d[k] for k in heavy if k in d}))
+    # full-text snippets and hand-made routes are only needed by search and the map: they load after startup
+    with open(os.path.join(out_dir, 'search.json'), 'w', encoding='utf-8') as fh:
+        fh.write(dump({slug: d['text'] for slug, d in data.items()}))
+    with open(os.path.join(out_dir, 'routes.json'), 'w', encoding='utf-8') as fh:
+        fh.write(dump(extra.pop('routes', {})))
+    heavy += ('text',)
     index = [{k: v for k, v in d.items() if k not in heavy} for d in data.values()]
     mp = os.path.join(ROOT, 'data', 'map.json')
     extra['map'] = json.load(open(mp, encoding='utf-8')) if os.path.exists(mp) else {'places': {}, 'events': []}

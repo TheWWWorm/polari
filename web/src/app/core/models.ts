@@ -12,7 +12,6 @@ export interface ArticleMeta {
   order: number;
   group: string;
   words: number;
-  text: string;
   backlinks: string[];
   /** Reading order of the first and last book the entity appears in (spoiler filter). */
   first: number;

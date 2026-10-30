@@ -6,7 +6,7 @@
   "build": { "command": "cd web && npm ci && npm run build" },
   "assets": {
     "directory": "./web/dist/web/browser",
-    // the site routes with #/slug, but fall back to index.html for any other path
+    // /slug serves the prerendered slug.html; any other path (e.g. /slug/section) falls back to index.html
     "not_found_handling": "single-page-application"
   },
   "routes": [{ "pattern": "polari.wwworm.com", "custom_domain": true }]

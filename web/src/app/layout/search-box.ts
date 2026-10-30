@@ -15,9 +15,9 @@ import { Search } from '../core/search';
     @if (open() && query().trim()) {
       <ul class="suggest" role="listbox">
         @for (r of results(); track r.slug; let i = $index) {
-          <li [class.on]="i === active()"><a [href]="'#/' + r.slug" (click)="open.set(false)"><b>{{ r.title }}</b><span>{{ types[r.type].one }}</span></a></li>
+          <li [class.on]="i === active()"><a [href]="'/' + r.slug" (click)="open.set(false)"><b>{{ r.title }}</b><span>{{ types[r.type].one }}</span></a></li>
         }
-        <li class="all" [class.on]="active() === results().length"><a [href]="'#/search/' + enc(query().trim())" (click)="open.set(false)">
+        <li class="all" [class.on]="active() === results().length"><a [href]="'/search/' + enc(query().trim())" (click)="open.set(false)">
           {{ results().length ? 'Все результаты' : 'Искать в тексте статей' }}: «{{ query().trim() }}»</a></li>
       </ul>
     }

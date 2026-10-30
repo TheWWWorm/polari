@@ -11,7 +11,7 @@ import { FamilyTree } from '../../shared/family-tree';
       <div class="crumbs"><a routerLink="/">Заглавная</a></div>
       <h1 class="page-title">Родословные</h1>
       <p class="page-sub">Семейные древа по данным книг. ⚭ — брак; дети, рождённые вне брака, подписаны именем второго родителя. Ветви, чья связь с основной линией в книгах не названа, показаны отдельно.</p>
-      <nav class="jump ui">@for (f of data.extra().families; track f.house; let i = $index) {<a [href]="'#/families'" (click)="go($event, i)">{{ f.title }}</a>}</nav>
+      <nav class="jump ui">@for (f of data.extra().families; track f.house; let i = $index) {<a href="/families" (click)="go($event, i)">{{ f.title }}</a>}</nav>
       @for (f of data.extra().families; track f.house; let i = $index) {
         <section [id]="'fam-' + i">
           <h2 class="section-title">{{ f.title }}@if (data.get(f.house)) { <a class="art ui" [routerLink]="'/' + f.house">статья о роде</a> }</h2>

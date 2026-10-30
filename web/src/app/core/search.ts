@@ -27,12 +27,13 @@ interface Entry { a: ArticleMeta; names: string[]; words: string[]; sum: string;
 @Injectable({ providedIn: 'root' })
 export class Search {
   private readonly data = inject(WikiData);
-  private readonly index = computed<Entry[]>(() =>
-    this.data.articles().map((a) => {
+  private readonly index = computed<Entry[]>(() => {
+    const texts = this.data.texts();
+    return this.data.articles().map((a) => {
       const names = [a.title, a.ru, ...a.aliases].filter(Boolean).map(norm);
-      return { a, names, words: names.flatMap((n) => n.split(/[\s\-«»"(),]+/).filter((w) => w.length > 2)), sum: norm(a.summary), text: norm(a.text) };
-    }),
-  );
+      return { a, names, words: names.flatMap((n) => n.split(/[\s\-«»"(),]+/).filter((w) => w.length > 2)), sum: norm(a.summary), text: norm(texts[a.slug] ?? '') };
+    });
+  });
 
   find(query: string, limit = 1e9): ArticleMeta[] {
     const q = norm(query.trim());

@@ -10,7 +10,7 @@ import {
   viewChild,
 } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { Router, RouterLink } from '@angular/router';
+import { RouterLink } from '@angular/router';
 import { byTitle, plural } from '../../core/format';
 import { TYPE_LABELS } from '../../core/models';
 import { Spoilers } from '../../core/spoilers';
@@ -48,7 +48,6 @@ export class ArticlePage {
 
   protected readonly data = inject(WikiData);
   protected readonly spoilers = inject(Spoilers);
-  private readonly router = inject(Router);
   private readonly titleSvc = inject(Title);
   protected readonly types = TYPE_LABELS;
 
@@ -217,14 +216,4 @@ export class ArticlePage {
     (ev.currentTarget as HTMLElement).classList.remove('spoil-blur');
   }
 
-  protected interceptLinks(ev: MouseEvent): void {
-    const a = (ev.target as HTMLElement).closest('a');
-    const href = a?.getAttribute('href');
-    if (href?.startsWith('#/') && !ev.metaKey && !ev.ctrlKey) {
-      ev.preventDefault();
-      this.router.navigateByUrl(href.slice(1));
-    }
-    const blur = (ev.target as HTMLElement).closest('.spoil-blur');
-    if (blur && !a) blur.classList.remove('spoil-blur');
-  }
 }

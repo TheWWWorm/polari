@@ -161,7 +161,7 @@ export class Map3dPage implements OnDestroy {
     controls.touches = { ONE: THREE.TOUCH.PAN, TWO: THREE.TOUCH.DOLLY_ROTATE };
     controls.addEventListener('start', () => (this.flight = null));
     this.controls = controls;
-    // #/map3d?view=north opens straight at one of the named views
+    // /map3d?view=north opens straight at one of the named views
     const start = this.route.snapshot.queryParamMap.get('view');
     this.setView(start && this.VIEWS[start] ? start : 'overview', true);
 
@@ -298,7 +298,7 @@ export class Map3dPage implements OnDestroy {
       el.className = 't-' + type;
       el.draggable = false;
       if (link) {
-        el.href = '#/' + link;
+        el.href = '/' + link;
         el.addEventListener('click', (e) => { e.preventDefault(); this.router.navigateByUrl('/' + link); });
       }
       layer.appendChild(el);

@@ -11,7 +11,7 @@ import { WikiData } from '../../core/wiki-data';
       <div class="crumbs"><a routerLink="/">Заглавная</a></div>
       <h1 class="page-title">Все статьи</h1>
       <p class="page-sub">{{ data.articles().length }} статей по алфавиту.</p>
-      <nav class="letters ui">@for (l of letters(); track l.letter) {<a [href]="'#/all'" (click)="jump($event, l.letter)">{{ l.letter }}</a>}</nav>
+      <nav class="letters ui">@for (l of letters(); track l.letter) {<a href="/all" (click)="jump($event, l.letter)">{{ l.letter }}</a>}</nav>
       <div class="az">
         @for (l of letters(); track l.letter) {
           <h2 [id]="'l-' + l.letter">{{ l.letter }}</h2>

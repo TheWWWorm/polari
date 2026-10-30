@@ -3,7 +3,7 @@ import { Injectable, computed, inject, signal } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
 import { ArticleBody, ArticleMeta, ArticleType, WikiExtra, WikiImage, WikiIndex } from './models';
 
-/** Loads the wiki index once at startup and article bodies on demand. */
+/** Loads the wiki index once at startup, article bodies on demand, search snippets and hero routes right after. */
 @Injectable({ providedIn: 'root' })
 export class WikiData {
   private readonly http = inject(HttpClient);
@@ -11,6 +11,8 @@ export class WikiData {
 
   readonly articles = signal<ArticleMeta[]>([]);
   readonly images = signal<WikiImage[]>([]);
+  /** Plain-text start of every article for full-text search; empty until data/search.json arrives. */
+  readonly texts = signal<Record<string, string>>({});
   readonly extra = signal<WikiExtra>({ chapters: {}, families: [], houses: [], relations: [], map: { places: {}, events: [] } });
 
   readonly bySlug = computed(() => new Map(this.articles().map((a) => [a.slug, a])));
@@ -21,6 +23,9 @@ export class WikiData {
     this.articles.set(idx.articles);
     this.images.set(idx.images);
     this.extra.set(idx.data);
+    // not needed for the first screen: fetch without holding up startup
+    this.http.get<Record<string, string>>('data/search.json').subscribe((t) => this.texts.set(t));
+    this.http.get<WikiExtra['routes']>('data/routes.json').subscribe((routes) => this.extra.update((x) => ({ ...x, routes })));
   }
 
   get(slug: string): ArticleMeta | undefined {
