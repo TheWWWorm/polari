@@ -2,7 +2,7 @@
 title: Даллия Рейвен
 full: Даллия Рейвен, призрак замка Первая Зима
 type: character
-group: Загадки и колдуны
+group: Дом Ориджин
 aliases: Тревога, альтесса Тревога, Мерзлячка
 summary: Девушка-призрак из замка Первая Зима, много лет служившая духу Одара Спесивого, а затем ставшая невидимой для других «альтессой Тревогой» Эрвина Ориджина; ее подлинное имя раскрывается в «Фантазиях».
 books: lish-odna-zvezda, kukla-na-trone, glas-zimy, yanmejskaya-okhota, lyudi-i-bogi, ten-velikogo-dreva, fantazii

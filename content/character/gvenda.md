@@ -2,7 +2,7 @@
 title: Гвенда
 full: Гвенда
 type: character
-group: Загадки и колдуны
+group: Дом Ориджин
 aliases: Фрида, Бельчонок, Белочка
 summary: Пленница таинственного форта за Рекой, потерявшая память; обладательница первокрови, умевшая говорить со Священными Предметами. Погибла в Лиде, пытаясь освободить Иону Ориджин.
 books: lish-odna-zvezda, govoryashchij-s-bogom, kukla-na-trone, yanmejskaya-okhota, lyudi-i-bogi, ten-velikogo-dreva
