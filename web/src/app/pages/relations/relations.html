@@ -28,12 +28,16 @@
             (click)="pick(n.id)" (pointerenter)="$event.pointerType === 'mouse' && hover.set(n.id)" (pointerleave)="hover.set('')">
             <circle class="hit" [attr.r]="radius(n) + 8 * k()" />
             <circle [attr.r]="radius(n)" [attr.stroke-width]="2 * k()" />
-            @if (labels().get(n.id); as l) {
-              <text [attr.x]="l.x" [attr.y]="l.y" [attr.text-anchor]="l.a" [attr.font-size]="13 * k()" [attr.stroke-width]="4 * k()">{{ name(n.id) }}</text>
-            }
             <title>{{ name(n.id) }}</title>
           </g>
         }
+        <g class="labels">
+          @for (n of nodes(); track n.id) {
+            @if (labels().get(n.id); as l) {
+              <text [class.me]="n.id === selected()" [attr.x]="n.x + l.x" [attr.y]="n.y + l.y" [attr.text-anchor]="l.a" [attr.font-size]="13 * k()" [attr.stroke-width]="4 * k()">{{ name(n.id) }}</text>
+            }
+          }
+        </g>
       </svg>
       <div class="zoom ui">
         <button class="btn" (click)="zoom(1 / 1.5)" aria-label="Приблизить" title="Приблизить">+</button>

@@ -53,8 +53,12 @@ import { WikiData } from '../core/wiki-data';
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       gap: 6px;
     }
+    li {
+      display: flex;
+    }
     li button {
       width: 100%;
+      height: 100%;
       min-height: 44px;
       display: flex;
       align-items: center;

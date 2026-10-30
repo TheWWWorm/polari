@@ -100,7 +100,7 @@
 .edges path {
   fill: none;
   stroke-width: 1.4;
-  opacity: 0.55;
+  opacity: 0.4;
   vector-effect: non-scaling-stroke;
   transition: opacity 0.2s;
 }
@@ -126,7 +126,7 @@
 .node:hover circle:not(.hit) {
   fill: var(--wax);
 }
-.node text {
+.labels text {
   font-family: var(--sans);
   font-weight: 500;
   fill: var(--ink);
@@ -154,7 +154,7 @@ svg.has-sel .node.sel circle:not(.hit) {
 svg.has-sel .node.me circle:not(.hit) {
   fill: var(--ink);
 }
-svg.has-sel .node.me text {
+.labels text.me {
   font-weight: 700;
 }
 .zoom {

@@ -16,6 +16,8 @@ export const REL_TYPES: [type: string, key: string, dash: string][] = [
   ['вражда', 'enemy', '6 4'],
   ['наставник', 'mentor', '2 3 8 3'],
 ];
+/** Most world units per screen px on first open: nodes (≥110 apart) stay ≥ ~35px apart on screen. */
+const MAX_START_K = 3.2;
 const TYPE = new Map(REL_TYPES.map(([t, key, dash]) => [t, { key, dash }]));
 
 interface Edge { r: Relation; d: string; }
@@ -99,13 +101,19 @@ export class RelationsPage {
   /**
    * Which names to print and where: greedy, by priority (selection, hover, then most connected).
    * Each label tries above, below, right and left of its node and is dropped if all four would
-   * overlap a label already placed or stick out of the view.
+   * overlap a label already placed or another dot, or stick out of the view.
    */
   protected readonly labels = computed(() => {
     const [vx, vy, vw, vh] = this.view(), k = this.k(), sel = this.neighbours(), hov = this.hover(), s = this.selected();
     const prio = (n: GraphNode) => (n.id === s ? 1e6 : n.id === hov ? 1e5 : sel.has(n.id) ? 1e4 : 0) + n.degree;
-    const placed: [number, number, number, number][] = [];
+    // Seeded with the corner under the zoom buttons.
+    const placed: [number, number, number, number][] = [[vx + vw - 62 * k, vy + vh - 172 * k, vx + vw, vy + vh]];
     const shown = new Map<string, Label>();
+    // Dots a label must not cover: those at least as connected as its own (faded ones don't count while someone is selected).
+    const dots = this.nodes().filter((n) => !s || sel.has(n.id)).map((n) => {
+      const r = this.radius(n);
+      return [n.id, n.degree, n.x - r, n.y - r, n.x + r, n.y + r] as const;
+    });
     for (const n of [...this.nodes()].sort((a, b) => prio(b) - prio(a))) {
       if (s && !sel.has(n.id) && n.id !== hov) continue;
       const w = this.name(n.id).length * 7.4 * k + 6 * k, h = 17 * k, r = this.radius(n), gap = 4 * k;
@@ -118,6 +126,7 @@ export class RelationsPage {
       for (const [x0, y0, label] of spots) {
         if (x0 < vx || x0 + w > vx + vw || y0 < vy || y0 + h > vy + vh) continue;
         if (placed.some(([a, b, c, d]) => x0 < c && x0 + w > a && y0 < d && y0 + h > b)) continue;
+        if (dots.some(([id, deg, a, b, c, d]) => id !== n.id && deg >= n.degree && x0 < c && x0 + w > a && y0 < d && y0 + h > b)) continue;
         placed.push([x0, y0, x0 + w, y0 + h]);
         shown.set(n.id, label);
         break;
@@ -156,9 +165,15 @@ export class RelationsPage {
     });
   }
 
-  /** Initial framing: the selected character's circle if any, otherwise everything. */
+  /**
+   * Initial framing: the selected character's circle if any, otherwise everything —
+   * unless that would squeeze the graph into a tangle (phones), then the busy middle at a readable scale.
+   */
   private reframe(): void {
-    if (this.selected()) this.select(this.selected(), false); else this.fit(false);
+    if (this.selected()) { this.select(this.selected(), false); return; }
+    this.fit(false);
+    const v = this.view(), f = (MAX_START_K * this.px()[0]) / v[2];
+    if (f < 1) this.view.set([v[0] + (v[2] * (1 - f)) / 2, v[1] + (v[3] * (1 - f)) / 2, v[2] * f, v[3] * f]);
   }
 
   protected viewBox(): string { return this.view().join(' '); }

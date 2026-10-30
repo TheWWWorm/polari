@@ -16,7 +16,7 @@ export function layoutGraph(edges: Relation[], iterations = 600): GraphNode[] {
   ids.sort((a, b) => (degree.get(b) ?? 0) - (degree.get(a) ?? 0));
   const nodes = ids.map((id, i) => ({ id, x: Math.cos(i * 2.4) * (80 + i * 12), y: Math.sin(i * 2.4) * (80 + i * 12), vx: 0, vy: 0, degree: degree.get(id) ?? 0, mass: Math.sqrt(1 + (degree.get(id) ?? 0)) / 2 }));
   const at = new Map(nodes.map((n) => [n.id, n]));
-  const SPRING = 210, REPULSE = 90000, GRAVITY = 0.0025, MIN_GAP = 70;
+  const SPRING = 260, REPULSE = 140000, GRAVITY = 0.002, MIN_GAP = 110;
   for (let it = 0; it < iterations; it++) {
     const cool = 1 - it / iterations;
     for (let i = 0; i < nodes.length; i++) {
