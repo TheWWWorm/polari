@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Spoilers } from '../core/spoilers';
 import { WikiData } from '../core/wiki-data';
@@ -43,8 +43,7 @@ import { WikiData } from '../core/wiki-data';
               <td [innerHTML]="h.ruler_start"></td>
               <td
                 [innerHTML]="h.ruler_end"
-                [class.spoil-blur]="spoilers.active() && spoilers.level() < 18"
-                (click)="$any($event.currentTarget).classList.remove('spoil-blur')"
+                [class.spoil-blur]="spoilers.active() && spoilers.level() < lastBook()"
               ></td>
               <td [innerHTML]="h.pramater"></td>
               <td>
@@ -67,4 +66,6 @@ import { WikiData } from '../core/wiki-data';
 export class HousesTable {
   protected readonly data = inject(WikiData);
   protected readonly spoilers = inject(Spoilers);
+  /** The end-of-cycle column draws on every book, «Фантазии» included. */
+  protected readonly lastBook = computed(() => this.data.books().at(-1)?.order ?? 0);
 }

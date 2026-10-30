@@ -83,6 +83,14 @@ export class Shell {
   }
 
   constructor() {
+    // The first click on blurred spoiler text only reveals it — links inside must not fire until then.
+    document.addEventListener('click', (ev) => {
+      const blur = (ev.target as Element | null)?.closest?.('.spoil-blur');
+      if (!blur) return;
+      ev.preventDefault();
+      ev.stopPropagation();
+      blur.classList.remove('spoil-blur');
+    }, true);
     inject(Router).events.subscribe((e) => {
       if (e instanceof NavigationEnd) this.navOpen.set(false);
     });
