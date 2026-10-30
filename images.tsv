@@ -68,16 +68,20 @@ po-svetlaya-sfera.jpg	svetlaya-sfera:portrait, svyashchennye-predmety, lzhe-sfer
 po-ulyanina-pyl.jpg	ulyanina-pyl:portrait, svyashchennye-predmety	Ульянина Пыль	Дмитрий Алексеев
 po-tsvetok-syuzen.jpg	svyashchennye-predmety	Цветок Сьюзен	Дмитрий Алексеев
 po-chrevo.jpg	chrevo:portrait, svyashchennye-predmety	Чрево	Дмитрий Алексеев
+cover-smi-new.jpg	strela-moneta-iskra	«Стрела, монета, искра», издание с обложками-медальонами	Обложка
 cover-smi-1.jpg	strela-moneta-iskra:cover	«Стрела, монета, искра», том 1	Обложка
 cover-smi-2.jpg	strela-moneta-iskra	«Стрела, монета, искра», том 2	Обложка
 cover-smi-3.jpg	strela-moneta-iskra	«Стрела, монета, искра», том 3 (аудиокнига)	Обложка
 cover-smi-fl.jpg	strela-moneta-iskra	«Стрела, монета, искра», издание «Лаборатории Фантастики»	Обложка
+cover-loz-new.jpg	lish-odna-zvezda	«Лишь одна Звезда», издание с обложками-медальонами	Обложка
 cover-loz-1.jpg	lish-odna-zvezda:cover	«Лишь одна Звезда», том 1	Обложка
 cover-loz-2.jpg	lish-odna-zvezda	«Лишь одна Звезда», том 2	Обложка
 cover-loz-fl.jpg	lish-odna-zvezda	«Лишь одна Звезда», издание «Лаборатории Фантастики»	Обложка
+cover-knt-new.jpg	kukla-na-trone	«Кукла на троне», издание с обложками-медальонами	Обложка
 cover-knt-1.jpg	kukla-na-trone:cover	«Кукла на троне», том 1	Обложка
 cover-knt-2.jpg	kukla-na-trone	«Кукла на троне», том 2	Обложка
 cover-knt-fl.jpg	kukla-na-trone	«Кукла на троне», издание «Лаборатории Фантастики»	Обложка
+cover-yao-new.jpg	yanmejskaya-okhota	«Янмэйская охота», издание с обложками-медальонами	Обложка
 cover-yao-1.jpg	yanmejskaya-okhota:cover	«Янмэйская охота», том 1	Обложка
 cover-yao-2.jpg	yanmejskaya-okhota	«Янмэйская охота», том 2	Обложка
 cover-yao-fl.jpg	yanmejskaya-okhota	«Янмэйская охота», издание «Лаборатории Фантастики»	Обложка
@@ -92,14 +96,16 @@ cover-teper-ty-koldun.jpg	teper-ty-koldun:cover	«Теперь ты колдун
 cover-te-kogo.jpg	te-kogo-my-proshchaem:cover	«Те, кого мы прощаем»	Обложка
 cover-yolka.jpg	yolka-episkopa:cover	«Ёлка епископа»	Обложка
 cover-khochu-poni.jpg	khochu-poni:cover	«Хочу пони» (аудиокнига)	Обложка
-cover-lib-1.jpg	lyudi-i-bogi:cover	«Люди и боги», том 1 (аудиокнига)	Обложка
+cover-lib-new.jpg	lyudi-i-bogi:cover	«Люди и боги», издание с обложками-медальонами	Обложка
+cover-lib-1.jpg	lyudi-i-bogi	«Люди и боги», том 1 (аудиокнига)	Обложка
 cover-lib-2.jpg	lyudi-i-bogi	«Люди и боги», том 2 (аудиокнига)	Обложка
-cover-tsena-strakha.jpg	lyudi-i-bogi	«Цена страха» — главы Виттора Шейланда отдельным изданием	Обложка
+cover-tsena-strakha.jpg	tsena-strakha:cover, lyudi-i-bogi	«Цена страха» — главы Виттора Шейланда отдельным изданием	Обложка
 cover-konfidentka.jpg	konfidentka:cover	«Конфидентка» (аудиокнига)	Обложка
 cover-tvd-1.jpg	ten-velikogo-dreva:cover	«Тень Великого Древа», том 1 (аудиокнига)	Обложка
 cover-tvd-2.jpg	ten-velikogo-dreva	«Тень Великого Древа», том 2 (аудиокнига)	Обложка
 cover-tvd-3.jpg	ten-velikogo-dreva	«Тень Великого Древа», том 3 (аудиокнига)	Обложка
-cover-fantazii.jpg	fantazii:cover	«Фантазии» (аудиокнига)	Обложка
+cover-fantazii-new.jpg	fantazii:cover	«Фантазии», издание с обложками-медальонами	Обложка
+cover-fantazii.jpg	fantazii	«Фантазии» (аудиокнига)	Обложка
 gerb-oridzhin.jpg	dom-oridzhin:emblem, oridzhin-zemlya	Герб Ориджинов: нетопырь, пронзённый стрелой	Изд. «Фантлаб»
 gerb-nortvud.jpg	dom-nortvud:emblem, nortvud-zemlya	Герб Нортвудов	Изд. «Фантлаб»
 gerb-almera.jpg	dom-almera:emblem, almera-zemlya	Герб Альмеры	Изд. «Фантлаб»
