@@ -177,10 +177,10 @@ otets-david	iona-oridzhin	союз	собеседник, доверенное л
 drejfus-born	adrian	служба	глава налоговой службы	kukla-na-trone
 dorian-ember	minerva	служба	первый секретарь	kukla-na-trone
 liam-shele	adrian	служба	министр путей	kukla-na-trone
-koldun	chara	союз	освободитель	kukla-na-trone
+mik	chara	союз	освободитель	kukla-na-trone
 ded	inzhi-prajs	вражда	осудил на галеры	kukla-na-trone
 aleksis-smajl	minerva	служба	генерал	kukla-na-trone
-adrian	koldun	вражда	пленитель	kukla-na-trone
+adrian	mik	вражда	пленитель	kukla-na-trone
 minerva	drejfus-born	вражда	взяла его родню в заложники	kukla-na-trone
 sorok-dva	liam-shele	вражда	держал в цепях	kukla-na-trone
 paul	luis-mariya	вражда	пленитель	kukla-na-trone
@@ -228,7 +228,7 @@ moger-bakli	magda-labelin	служба	агент	yanmejskaya-okhota
 moger-bakli	onoriko	вражда	заказчик убийства	yanmejskaya-okhota
 navi	karen	союз	товарищ по лечебнице	yanmejskaya-okhota
 mark-voron	ervin-oridzhin	служба	глава протекции	yanmejskaya-okhota
-koldun	kuindar	служба	слуга	yanmejskaya-okhota
+mik	kuindar	служба	слуга	yanmejskaya-okhota
 menson	adrian	вражда	ударил кинжалом	yanmejskaya-okhota
 ledi-vo-tme	adrian	родня	кузина матери	yanmejskaya-okhota
 moris-labelin	moger-bakli	вражда	убийца	yanmejskaya-okhota
