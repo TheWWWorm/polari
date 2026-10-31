@@ -18,8 +18,9 @@ import { WikiData } from '../core/wiki-data';
   styles: `
     :host { display: block; }
     figure { margin: 0; display: flex; flex-direction: column; height: 100%; background: var(--sheet); border: 1px solid var(--rule); }
-    button { flex: 1; display: grid; place-items: center; padding: 0; border: 0; background: var(--engraving-bg); cursor: zoom-in; }
-    img { display: block; width: 100%; height: var(--fig-h, 220px); object-fit: contain; }
+    button { flex: 1; display: grid; place-items: center; padding: 0; border: 0; background: var(--fig-bg, transparent); cursor: zoom-in; }
+    /* Grids keep a fixed box height; single images (--fig-img-h: auto) take their own proportions, capped by --fig-h. */
+    img { display: block; width: 100%; height: var(--fig-img-h, var(--fig-h, 220px)); max-height: var(--fig-h, 220px); object-fit: contain; }
     figcaption { padding: 7px 10px 9px; font: var(--fs-small)/1.4 var(--sans); color: var(--ink-2); border-top: 1px solid var(--rule); }
     small { display: block; color: var(--ink-3); font-style: italic; }
   `,

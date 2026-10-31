@@ -50,6 +50,11 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/stratemy/stratemy-page').then((m) => m.StratemyPage),
   },
   {
+    path: 'ispytaniya',
+    title: 'Испытания · Полари Вики',
+    loadComponent: () => import('./pages/quiz/quiz-page').then((m) => m.QuizPage),
+  },
+  {
     path: 'chronology',
     data: { type: 'event' },
     loadComponent: () => import('./pages/category/category').then((m) => m.CategoryPage),

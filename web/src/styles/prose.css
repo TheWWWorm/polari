@@ -1,8 +1,8 @@
 /* Article body HTML comes from build.py (markdown -> html), so it is styled globally. */
 .prose { max-width: var(--measure); }
 .prose p { margin: 0 0 1em; }
-.prose h2 { font-size: var(--fs-h2); margin: 2em 0 .5em; padding-bottom: 4px; border-bottom: 1px solid var(--rule); scroll-margin-top: 80px; }
-.prose h3 { font-size: var(--fs-h3); margin: 1.6em 0 .4em; scroll-margin-top: 80px; }
+.prose h2 { font-size: var(--fs-h2); margin: 2em 0 .5em; padding-bottom: 4px; border-bottom: 1px solid var(--rule); scroll-margin-top: calc(var(--anchor-gap) + 80px); }
+.prose h3 { font-size: var(--fs-h3); margin: 1.6em 0 .4em; scroll-margin-top: calc(var(--anchor-gap) + 80px); }
 .prose h4 { font-size: 1.1rem; margin: 1.3em 0 .3em; }
 .prose ul, .prose ol { padding-left: 1.3em; margin: 0 0 1em; }
 .prose li { margin: .25em 0; }

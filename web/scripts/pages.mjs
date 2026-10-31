@@ -1,6 +1,7 @@
 // Runs after `ng build`: writes a static copy of index.html for every article and section
 // (<slug>.html, served by Cloudflare at /<slug>) with its own title, description and link-preview tags,
-// plus the article text in <noscript> for crawlers that do not run scripts; then sitemap.xml and robots.txt.
+// plus the article text inside <app-root>, so crawlers read it in the page source (Angular replaces it on start);
+// then sitemap.xml and robots.txt.
 // index.html changes here, so the build regenerates the service worker manifest (ngsw.json) afterwards.
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
@@ -33,6 +34,7 @@ const SECTIONS = [
   ['families', 'Родословные', 'Родословные древа Великих Домов Полари.'],
   ['relations', 'Связи персонажей', 'Схема связей персонажей цикла «Полари».'],
   ['stratemy-igra', 'Сыграть в стратемы', 'Стратемы — настольная игра из мира Полари, против компьютера.'],
+  ['ispytaniya', 'Испытания', 'Тесты на знание мира Полари трёх уровней сложности: от испытания грея до испытания Ворона Короны.'],
   ['chronology', 'Хронология', 'Хронология событий цикла «Полари».'],
   ...Object.entries(TYPES).map(([t, [many, text]]) => [`c/${t}`, many, text]),
 ];
@@ -57,7 +59,7 @@ function page({ path, title, description, image, type = 'website', body = '' }) 
     .replace(/<meta\s+name="description"\s+content="[^"]*"\s*\/?>/, '')
     .replace(/<link rel="canonical"[^>]*>/, '')
     .replace('</head>', `    ${head}\n  </head>`)
-    .replace('</app-root>', body ? `</app-root>\n    <noscript>${body}</noscript>` : '</app-root>');
+    .replace(/<div class="boot">[^<]*<\/div>/, (boot) => body || boot);
 }
 
 function write(path, html) {
@@ -70,7 +72,8 @@ for (const a of articles) {
   const { html, infobox } = JSON.parse(readFileSync(join(OUT, 'data', 'a', a.slug + '.json'), 'utf8'));
   const description = a.summary || TYPES[a.type][1];
   const facts = infobox.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${v}</dd>`).join('');
-  const body = `<article><h1>${esc(a.title)}</h1><p>${esc(description)}</p>${facts ? `<dl>${facts}</dl>` : ''}${html}</article>`;
+  const crumbs = `<nav><a href="/">${NAME}</a> › <a href="/c/${a.type}">${TYPES[a.type][0]}</a></nav>`;
+  const body = `<main class="boot">${crumbs}<article><h1>${esc(a.title)}</h1><p>${esc(description)}</p>${facts ? `<dl>${facts}</dl>` : ''}${html}</article></main>`;
   write(a.slug, page({ path: a.slug, title: `${a.title} · ${NAME}`, description, image: images[a.image]?.src, type: 'article', body }));
 }
 for (const [path, title, description] of SECTIONS) write(path, page({ path, title: `${title} · ${NAME}`, description }));

@@ -27,7 +27,7 @@ import { Spoilers } from '../../core/spoilers';
   styles: `
     .results { list-style: none; padding: 0; max-width: var(--measure); }
     li { padding: 12px 0; border-bottom: 1px solid var(--rule); }
-    li > a { font: 500 1.15rem/1.3 var(--serif); }
+    li > a { font: 500 1.15rem/1.3 var(--serif); margin-right: .5em; }
     p { margin: 4px 0 0; color: var(--ink-2); font-size: .98rem; }
   `,
 })

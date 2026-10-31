@@ -249,8 +249,15 @@ details > summary:focus-visible {
 .skip-link:focus {
   top: 10px;
 }
+/* Room under the sticky header for anchor jumps. It sits on the targets, not as scroll-padding on html:
+   with scroll-padding Chrome counts the search box in the header as covered and scrolls the page up on
+   every keystroke to reveal the caret. */
 html {
-  scroll-padding-top: 100px;
+  --anchor-gap: 100px;
+}
+[id],
+details {
+  scroll-margin-top: var(--anchor-gap);
 }
 @media (max-width: 599px) {
   .page {
@@ -266,7 +273,7 @@ html {
     margin-top: 30px;
   }
   html {
-    scroll-padding-top: 140px;
+    --anchor-gap: 140px;
   }
 }
 

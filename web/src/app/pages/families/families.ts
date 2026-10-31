@@ -25,7 +25,7 @@ import { FamilyTree } from '../../shared/family-tree';
     .jump { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: var(--fs-ui); }
     .art { margin-left: 10px; font-size: var(--fs-ui); }
     .note { max-width: var(--measure); font-size: .98rem; }
-    section { scroll-margin-top: 70px; }
+    section { scroll-margin-top: calc(var(--anchor-gap) + 70px); }
   `,
 })
 export class FamiliesPage {

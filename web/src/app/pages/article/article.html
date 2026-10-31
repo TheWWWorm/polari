@@ -1,5 +1,5 @@
 @if (meta(); as m) {
-  <div class="page" [class.book-page]="m.type === 'book'">
+  <div class="page" [class.book-page]="bookView()">
     <div class="crumbs">
       <a routerLink="/">Заглавная</a> /
       <a [routerLink]="'/c/' + m.type">{{ types[m.type].many }}</a>
@@ -15,7 +15,7 @@
         <button class="btn" (click)="spoilers.reveal(m.slug)">Показать статью со спойлерами</button>
       </div>
     } @else {
-      @if (m.type === 'book') {
+      @if (bookView()) {
         <header class="book-hero" [class.with-cover]="lead() !== null">
           @if (lead() !== null) {
             <app-figure class="hero-cover" [index]="lead()!" />
@@ -103,8 +103,8 @@
         </header>
       }
 
-      <div class="layout" [class.no-toc]="toc().length < 3" [class.book-layout]="m.type === 'book'">
-        @if (m.type !== 'book' && toc().length >= 3) {
+      <div class="layout" [class.no-toc]="toc().length < 3" [class.book-layout]="bookView()">
+        @if (!bookView() && toc().length >= 3) {
           <nav class="toc ui" aria-label="Содержание">
             <details [open]="!compact()">
               <summary>В статье</summary>
@@ -121,7 +121,7 @@
         }
 
         <article class="body">
-          @if (m.type !== 'book' && m.summary) {
+          @if (!bookView() && m.summary) {
             <p class="lede" [class.spoil-blur]="spoilers.partly(m)" (click)="unblur($event)">
               {{ m.summary }}
             </p>
@@ -133,10 +133,10 @@
             <p role="alert">Не удалось загрузить статью.</p>
             <button class="btn" (click)="body.reload()">Повторить загрузку</button>
           }
-          @if (m.type === 'book') {
+          @if (bookView()) {
             <app-chapter-table [book]="m.slug" />
           }
-          @if (m.type === 'book') {
+          @if (bookView()) {
             <h2 class="section-title" id="h-about">О книге</h2>
           }
           <div class="prose" #content></div>
@@ -180,8 +180,8 @@
           }
         </article>
 
-        <aside class="infobox" [class.book-guide]="m.type === 'book'">
-          @if (m.type === 'book') {
+        <aside class="infobox" [class.book-guide]="bookView()">
+          @if (bookView()) {
             @if (bookPlaces().length) {
               <section class="book-places">
                 <h2>Места этой книги</h2>

@@ -60,6 +60,8 @@ export class ArticlePage {
     this.body.hasValue() ? this.body.value() : undefined,
   );
   protected readonly chapters = computed(() => this.data.extra().chapters[this.slug()] ?? []);
+  /** A book with a chapter table gets the book layout; one without (a special edition) reads as a plain article. */
+  protected readonly bookView = computed(() => this.meta()?.type === 'book' && this.chapters().length > 0);
   protected readonly chapterCount = computed(
     () => this.chapters().length + ' ' + plural(this.chapters().length, 'глава', 'главы', 'глав'),
   );

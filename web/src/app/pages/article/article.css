@@ -17,9 +17,13 @@
   text-decoration: none;
   border-color: var(--azure);
 }
-/* prose keeps its measure, so a plain article reads best as a centred column, not the full width */
+/* prose keeps its measure, so an article reads best as a centred column, not the full width;
+   a book page is narrower still: its text column sits next to the guide */
 .page:not(.book-page) {
   max-width: 84rem;
+}
+.page.book-page {
+  max-width: 66rem;
 }
 .layout {
   display: grid;
@@ -108,6 +112,11 @@
   border: 0;
   border-radius: 5px;
   font: 0.95rem/1.45 var(--serif);
+}
+.infobox .lead,
+.head-lead,
+.hero-cover {
+  --fig-img-h: auto;
 }
 .infobox .lead {
   --fig-h: 380px;

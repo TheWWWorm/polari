@@ -356,6 +356,18 @@ def main():
         fh.write(dump(extra.pop('routes', {})))
     heavy += ('text',)
     index = [{k: v for k, v in d.items() if k not in heavy} for d in data.values()]
+    # data/quiz.json: questions for the /ispytaniya page, each pointing to an article to read more
+    qp = os.path.join(ROOT, 'data', 'quiz.json')
+    if os.path.exists(qp):
+        quiz = json.load(open(qp, encoding='utf-8'))
+        for lv in quiz.get('levels', []):
+            for q in lv.get('questions', []):
+                if q.get('slug') not in data:
+                    print(f'warning: quiz.json: unknown article {q.get("slug")}', file=sys.stderr)
+                if not 0 <= q.get('answer', -1) < len(q.get('options', [])):
+                    print(f'warning: quiz.json: bad answer in «{q.get("q", "")[:40]}»', file=sys.stderr)
+        with open(os.path.join(out_dir, 'quiz.json'), 'w', encoding='utf-8') as fh:
+            fh.write(dump(quiz))
     mp = os.path.join(ROOT, 'data', 'map.json')
     extra['map'] = json.load(open(mp, encoding='utf-8')) if os.path.exists(mp) else {'places': {}, 'events': []}
     out = os.path.join(out_dir, 'index.json')
