@@ -7,9 +7,12 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const SITE = 'https://polari.wwworm.com';
-const NAME = 'Полари Вики';
-const OUT = join(dirname(fileURLToPath(import.meta.url)), '..', 'dist', 'web', 'browser');
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
+// names, sections and types of the wiki (src/site.json, the same config the app uses)
+const CONFIG = JSON.parse(readFileSync(join(ROOT, 'src', 'site.json'), 'utf8'));
+const SITE = CONFIG.url;
+const NAME = CONFIG.name;
+const OUT = join(ROOT, 'dist', 'web', 'browser');
 
 const shell = readFileSync(join(OUT, 'index.html'), 'utf8');
 const { articles, images } = JSON.parse(readFileSync(join(OUT, 'data', 'index.json'), 'utf8'));
@@ -17,25 +20,10 @@ const about = shell.match(/<meta\s+name="description"\s+content="([^"]*)"/)[1];
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
-const TYPES = {
-  book: ['Книги', 'Романы и интерлюдии цикла в порядке чтения.'],
-  character: ['Персонажи', 'Люди Полари — от императоров до наёмников.'],
-  house: ['Дома и фракции', 'Великие Дома, ордена и фракции.'],
-  place: ['Места', 'Земли, города, замки и реки Полари.'],
-  event: ['События', 'Войны, сражения, заговоры и поворотные моменты.'],
-  concept: ['Понятия и мир', 'Религия, Священные Предметы, обычаи и устройство мира.'],
-};
+const TYPES = Object.fromEntries(Object.entries(CONFIG.types).map(([t, l]) => [t, [l.many, l.about]]));
 // sections of the app with fixed addresses (the titles match app.routes.ts)
 const SECTIONS = [
-  ['all', 'Все статьи', 'Алфавитный указатель всех статей вики.'],
-  ['map', 'Карта', 'Карта Полари и шкала времени: где и когда происходили главные события цикла.'],
-  ['map3d', '3D-карта', 'Трёхмерная карта материка: горы, реки, леса, города, железные дороги и тракты.'],
-  ['gallery', 'Галерея', 'Иллюстрации к циклу «Полари».'],
-  ['families', 'Родословные', 'Родословные древа Великих Домов Полари.'],
-  ['relations', 'Связи персонажей', 'Схема связей персонажей цикла «Полари».'],
-  ['stratemy-igra', 'Сыграть в стратемы', 'Стратемы — настольная игра из мира Полари, против компьютера.'],
-  ['ispytaniya', 'Испытания', 'Тесты на знание мира Полари трёх уровней сложности: от испытания грея до испытания Ворона Короны.'],
-  ['chronology', 'Хронология', 'Хронология событий цикла «Полари».'],
+  ...CONFIG.sections,
   ...Object.entries(TYPES).map(([t, [many, text]]) => [`c/${t}`, many, text]),
 ];
 

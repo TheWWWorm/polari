@@ -4,6 +4,7 @@ import { Chapter } from '../../core/models';
 import { Spoilers } from '../../core/spoilers';
 import { WikiData } from '../../core/wiki-data';
 import { Stop, byDate, chapterStops, keyStops } from './timeline';
+import { SITE } from '../../core/site';
 
 /** One stop of a hero's route: consecutive chapters in the same place are merged. */
 export interface RouteStep { key: string; items: { book: string; c: Chapter }[] }
@@ -36,7 +37,7 @@ export class TimelinePanel implements OnDestroy {
     const ex = this.data.extra();
     const visibleBook = (slug: string) => this.spoilers.bookVisible(this.data.get(slug)?.order ?? 999);
     const key = keyStops(ex.map.events).filter((e) => this.spoilers.eventVisible(e));
-    const chapters = this.onlyKey() ? [] : chapterStops(ex.chapters, (s) => this.data.title(s), (s) => this.data.get(s)?.order ?? 0).filter((s) => !s.book || visibleBook(s.book));
+    const chapters = this.onlyKey() ? [] : chapterStops(ex.chapters, (s) => this.data.title(s), (s) => this.data.get(s)?.order ?? 0).filter((s) => (!s.book || visibleBook(s.book)) && this.spoilers.eventVisible(s));
     return [...key, ...chapters].filter((s) => this.places()[s.p]).sort(byDate);
   });
   readonly cur = signal(0);
@@ -51,7 +52,7 @@ export class TimelinePanel implements OnDestroy {
   });
   protected readonly ticks = computed(() => {
     const s = this.stops();
-    const marks = ['1774-03', '1774-07', '1774-11', '1775-03', '1775-07', '1775-11', '1776'];
+    const marks = SITE.timeline.marks;
     return marks.map((m) => ({ m, i: s.findIndex((x) => x.d >= m) })).filter((t) => t.i > 0)
       .map((t) => ({ i: t.i, left: (t.i / Math.max(s.length - 1, 1)) * 100, label: tickLabel(t.m) }));
   });
@@ -61,7 +62,7 @@ export class TimelinePanel implements OnDestroy {
     const count = new Map<string, number>();
     for (const b of this.data.books()) {
       if (!this.spoilers.bookVisible(b.order)) continue;
-      for (const c of this.data.extra().chapters[b.slug] ?? []) if (c.pov && c.key && this.places()[c.key]) count.set(c.pov, (count.get(c.pov) ?? 0) + 1);
+      for (const c of this.data.extra().chapters[b.slug] ?? []) if (c.pov && c.key && this.places()[c.key] && this.spoilers.eventVisible({ d: c.iso })) count.set(c.pov, (count.get(c.pov) ?? 0) + 1);
     }
     for (const [hero, rows] of Object.entries(this.data.extra().routes ?? {}))
       count.set(hero, rows.filter((r) => this.visibleBook(r.book) && this.places()[r.key]).length);
@@ -73,9 +74,9 @@ export class TimelinePanel implements OnDestroy {
     // a hand-made route wins: it follows the hero through other narrators' chapters too
     const own = this.data.extra().routes?.[slug];
     const rows = own
-      ? own.filter((r) => this.visibleBook(r.book)).map((c) => ({ book: c.book, c }))
+      ? own.filter((r) => this.visibleBook(r.book) && this.spoilers.eventVisible({ d: r.iso })).map((c) => ({ book: c.book, c }))
       : this.data.books().filter((b) => this.spoilers.bookVisible(b.order))
-          .flatMap((b) => (this.data.extra().chapters[b.slug] ?? []).filter((c) => c.pov === slug).map((c) => ({ book: b.slug, c })));
+          .flatMap((b) => (this.data.extra().chapters[b.slug] ?? []).filter((c) => c.pov === slug && this.spoilers.eventVisible({ d: c.iso })).map((c) => ({ book: b.slug, c })));
     const pts: RouteStep[] = [];
     for (const it of rows) {
       if (!it.c.key || !this.places()[it.c.key]) continue;
@@ -139,12 +140,13 @@ export class TimelinePanel implements OnDestroy {
   }
 }
 
-const FOLD_KEY = 'polari.timeline.folded';
+const FOLD_KEY = `${SITE.key}.timeline.folded`;
 function readFolded(): boolean {
   try { return localStorage.getItem(FOLD_KEY) === '1'; } catch { return false; }
 }
 
 function tickLabel(m: string): string {
+  if (SITE.spoilers.unit === 'chapters') return 'гл. ' + (+m - 1000);
   const months = ['', 'янв.', 'фев.', 'март', 'апр.', 'май', 'июнь', 'июль', 'авг.', 'сен.', 'окт.', 'нояб.', 'дек.'];
   return m.length > 4 ? `${months[+m.slice(5)]} ${m.slice(0, 4)}` : `${m} г.`;
 }

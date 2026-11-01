@@ -1,3 +1,5 @@
+import { SITE } from './site';
+
 export type ArticleType = 'book' | 'character' | 'house' | 'place' | 'event' | 'concept';
 
 /** Light article record from data/index.json (enough for lists, cards and search). */
@@ -67,18 +69,11 @@ export interface Family {
   people: FamilyPerson[];
 }
 
+/** A row of data/houses.tsv: its columns differ between the wikis (see houses.cols of the site). */
 export interface HouseRow {
   slug: string;
-  land: string;
-  capital: string;
-  ruler_start: string;
-  ruler_end: string;
-  pramater: string;
-  sigil: string;
-  colors: string;
-  predmety: string;
-  palata: string;
   notes: string;
+  [column: string]: string;
 }
 
 export interface Relation {
@@ -107,6 +102,14 @@ export interface MapEvent {
   s?: string[];
   /** Event article that tells this event in full (the chronology shows the article instead). */
   a?: string;
+  /** Era of the chronology (MapEra id) and order within it, for worlds whose books name no years. */
+  era?: string;
+  w?: number;
+}
+
+export interface MapEra {
+  id: string;
+  label: string;
 }
 
 export interface WikiExtra {
@@ -116,7 +119,7 @@ export interface WikiExtra {
   relations: Relation[];
   /** Hand-made routes: a hero's stops in order, each tied to a book and possibly a chapter. */
   routes?: Record<string, (Chapter & { book: string })[]>;
-  map: { places: Record<string, MapPlace>; events: MapEvent[] };
+  map: { places: Record<string, MapPlace>; events: MapEvent[]; eras?: MapEra[] };
 }
 
 export interface WikiIndex {
@@ -125,11 +128,4 @@ export interface WikiIndex {
   data: WikiExtra;
 }
 
-export const TYPE_LABELS: Record<ArticleType, { one: string; many: string; about: string }> = {
-  book: { one: 'Книга', many: 'Книги', about: 'Романы и интерлюдии цикла в порядке чтения.' },
-  character: { one: 'Персонаж', many: 'Персонажи', about: 'Люди Полари — от императоров до наёмников.' },
-  house: { one: 'Дом', many: 'Дома и фракции', about: 'Великие Дома, ордена и фракции.' },
-  place: { one: 'Место', many: 'Места', about: 'Земли, города, замки и реки Полари.' },
-  event: { one: 'Событие', many: 'События', about: 'Войны, сражения, заговоры и поворотные моменты.' },
-  concept: { one: 'Понятие', many: 'Понятия и мир', about: 'Религия, Священные Предметы, обычаи и устройство мира.' },
-};
+export const TYPE_LABELS = SITE.types as Record<ArticleType, { one: string; many: string; about: string }>;

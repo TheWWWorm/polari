@@ -4,8 +4,10 @@ import { MapPlace } from '../../core/models';
 import { WikiData } from '../../core/wiki-data';
 import { Stop } from './timeline';
 import { RouteStep, TimelinePanel } from './timeline-panel';
+import { SITE } from '../../core/site';
 
-const W0 = 3200, H0 = 2410;
+/** Logical size of the map image: it is always drawn at this size, whatever the resolution of the file. */
+const W0 = SITE.map.w, H0 = SITE.map.h;
 
 interface View { z: number; x: number; y: number; base: number; }
 
@@ -17,6 +19,7 @@ interface View { z: number; x: number; y: number; base: number; }
   host: { '(window:resize)': 'fit()' },
 })
 export class MapPage {
+  protected readonly site = SITE;
   /** ?p=<place key> opens the map centred on that place. */
   readonly p = input<string>();
   protected readonly data = inject(WikiData);
@@ -55,6 +58,8 @@ export class MapPage {
 
   protected px(p: MapPlace): number { const v = this.view(); return v.x + (p.x / 100) * W0 * v.z * v.base; }
   protected py(p: MapPlace): number { const v = this.view(); return v.y + (p.y / 100) * H0 * v.z * v.base; }
+  protected readonly w0 = W0;
+  protected readonly h0 = H0;
   protected imgTransform(): string { const v = this.view(); return `translate(${v.x}px, ${v.y}px) scale(${v.z * v.base})`; }
   protected labelsOn(): boolean { const v = this.view(); return v.z * v.base * W0 > 2600; }
 

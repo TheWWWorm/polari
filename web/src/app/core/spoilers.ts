@@ -1,16 +1,16 @@
 import { Injectable, computed, inject, signal } from '@angular/core';
 import { ArticleMeta, MapEvent } from './models';
+import { SITE } from './site';
 import { WikiData } from './wiki-data';
 
-const KEY = 'polari.read-up-to';
+const KEY = `${SITE.key}.read-up-to`;
 export const ALL_BOOKS = 99;
-
-/** Pre-cycle events that the reader only learns about in later books. */
-const EVENT_REVEALED_IN: Record<string, number> = { '0036-05-02': 15, '1750-01-01': 15, '1756-08-01': 16, '1772-01-01': 19 };
+const BY_CHAPTER = SITE.spoilers.unit === 'chapters';
 
 /**
- * "Прочитано до книги N": hides content from books after N.
- * ALL_BOOKS means the reader wants everything shown.
+ * "Прочитано до …": hides content from parts of the work the reader has not reached yet.
+ * A part is a book of the cycle, or a chapter when the wiki covers one novel (then in-world dates
+ * are chapter-based: a chapter's iso is 1000 + its number). ALL_BOOKS means everything is shown.
  */
 @Injectable({ providedIn: 'root' })
 export class Spoilers {
@@ -31,23 +31,43 @@ export class Spoilers {
     this.revealed.update((s) => new Set(s).add(slug));
   }
 
-  /** The whole article belongs to an unread book. */
+  /** The whole article belongs to an unread part. */
   hidden(a: ArticleMeta | undefined): boolean {
     return !!a && this.active() && a.first > this.level() && !this.revealed().has(a.slug);
   }
 
-  /** The article mentions events from an unread book somewhere. */
+  /** The article mentions events from an unread part somewhere. */
   partly(a: ArticleMeta | undefined): boolean {
     return !!a && this.active() && a.last > this.level();
   }
 
+  /** Parts of the work in reading order, offered in «Прочитано до». */
+  readonly parts = computed(() =>
+    BY_CHAPTER
+      ? Object.values(this.data.extra().chapters).flat().filter((c) => +c.n > 0).map((c) => ({ order: +c.n, title: c.h }))
+      : this.data.books().map((b) => ({ order: b.order, title: b.title })),
+  );
+
+  /** The last part: columns about the end of the work stay blurred until it is read. */
+  readonly lastPart = computed(() => Math.max(0, ...this.parts().map((p) => p.order)));
+
+  /** A part as the texts name it: «Title», or «Title» (гл. N) for a chapter. */
   bookTitle(order: number): string {
-    return this.data.books().find((b) => b.order === order)?.title ?? String(order);
+    const c = this.parts().find((p) => p.order === order);
+    if (BY_CHAPTER) return c ? `«${c.title}» (гл. ${order})` : `гл. ${order}`;
+    return `«${c?.title ?? order}»`;
   }
 
-  /** Latest in-world date the reader has reached (max chapter date of read books). */
+  /** «до главы «Title» (гл. N)» / «до «Title»»: how far the reader got. */
+  upTo(order: number): string {
+    return (BY_CHAPTER ? SITE.spoilers.word.gen + ' ' : '') + this.bookTitle(order);
+  }
+
+  /** Latest in-world date the reader has reached. */
   readonly cutoff = computed(() => {
     if (!this.active()) return '9999';
+    if (BY_CHAPTER) return String(1000 + this.level());
+    // max chapter date of the books read
     let max = '0000';
     const chapters = this.data.extra().chapters;
     for (const b of this.data.books()) {
@@ -59,7 +79,9 @@ export class Spoilers {
 
   eventVisible(ev: { d: string }): boolean {
     if (!this.active()) return true;
-    if (ev.d < '1774') return (EVENT_REVEALED_IN[ev.d] ?? 1) <= this.level();
+    // events before the cycle starts are told in later books
+    const start = SITE.spoilers.cycleStart;
+    if (start && ev.d < start) return (SITE.spoilers.revealedIn?.[ev.d] ?? 1) <= this.level();
     return ev.d <= this.cutoff();
   }
 

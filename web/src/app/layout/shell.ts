@@ -1,6 +1,7 @@
 import { Component, ElementRef, inject, signal, viewChild } from '@angular/core';
 import { NavigationEnd, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { Meta } from '@angular/platform-browser';
+import { SITE } from '../core/site';
 import { Theme } from '../core/theme';
 import { WikiData } from '../core/wiki-data';
 import { SearchBox } from './search-box';
@@ -32,42 +33,8 @@ export class Shell {
     this.menuButton()?.nativeElement.focus();
   }
 
-  protected readonly nav = [
-    {
-      title: 'Энциклопедия',
-      links: [
-        ['/', 'Заглавная'],
-        ['/c/book', 'Книги'],
-        ['/c/character', 'Персонажи'],
-        ['/c/house', 'Великие Дома'],
-        ['/c/place', 'Места'],
-        ['/c/event', 'События'],
-        ['/c/concept', 'Понятия и мир'],
-      ],
-    },
-    {
-      title: 'Исследовать',
-      links: [
-        ['/map', 'Карта и время'],
-        ['/map3d', '3D-карта'],
-        ['/families', 'Родословные'],
-        ['/relations', 'Связи персонажей'],
-        ['/gallery', 'Иллюстрации'],
-        ['/stratemy-igra', 'Сыграть в стратемы'],
-        ['/ispytaniya', 'Испытания'],
-      ],
-    },
-    {
-      title: 'Справочники',
-      links: [
-        ['/all', 'Все статьи'],
-        ['/chronology', 'Хронология'],
-        ['/glossarij', 'Глоссарий'],
-        ['/tsitaty', 'Цитаты'],
-        ['/random', 'Случайная статья'],
-      ],
-    },
-  ];
+  protected readonly site = SITE;
+  protected readonly nav = SITE.nav;
   protected navIcon(path: string): string {
     if (path.includes('book'))
       return 'M12 5C8 2 3 3 2 4v16c4-2 7-1 10 1 3-2 6-3 10-1V4c-4-2-7-1-10 1Zm0 0v16';

@@ -50,7 +50,7 @@ h4 {
 .boot {
   padding: 30vh 20px;
   text-align: center;
-  color: #6f7886;
+  color: var(--boot-ink);
   font:
     1.2rem Georgia,
     serif;

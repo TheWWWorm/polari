@@ -252,7 +252,7 @@ time span {
   overflow: hidden;
 }
 .selected .event-summary {
-  color: #334f61;
+  color: var(--selected-ink-2, var(--ink-2));
 }
 .event-links {
   display: flex;
@@ -267,10 +267,10 @@ time span {
   color: var(--ink-2);
 }
 .selected .event-links > span {
-  color: #40586a;
+  color: var(--selected-ink-3, var(--ink-2));
 }
 .selected .event-links a {
-  color: #204d70;
+  color: var(--selected-link, var(--azure));
 }
 .event-links a {
   font-size: 0.8rem;

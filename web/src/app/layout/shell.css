@@ -8,6 +8,7 @@
   min-height: var(--header-height);
   padding: 14px 24px;
   background: var(--sheet);
+  border-top: var(--header-top, 0);
   border-bottom: 1px solid var(--rule);
   font-family: var(--sans);
 }
@@ -17,7 +18,7 @@
   gap: 12px;
   flex: 0 0 10rem;
   color: var(--ink);
-  font: 1.5625rem/1 var(--serif);
+  font: var(--brand-font);
 }
 .brand:hover {
   text-decoration: none;
@@ -62,9 +63,9 @@
   align-self: start;
   height: calc(100vh - var(--header-height));
   overflow-y: auto;
-  background: #172d40;
+  background: var(--side);
   padding: 22px 12px 30px;
-  color: #dde6ec;
+  color: var(--side-ink);
   font-family: var(--sans);
 }
 .group {
@@ -72,7 +73,7 @@
 }
 .group-title {
   font-size: 0.6875rem;
-  color: #bccad5;
+  color: var(--side-ink-2);
   margin: 0 14px 8px;
 }
 .side a {
@@ -82,18 +83,18 @@
   padding: 12px 14px;
   min-height: 2.75rem;
   border-radius: 4px;
-  color: #dde6ec;
+  color: var(--side-ink);
   font-size: 0.875rem;
   line-height: 1.4;
 }
 .side a:hover {
-  background: #314a61;
+  background: var(--side-2);
   text-decoration: none;
 }
 .side a.on {
-  background: #314a61;
+  background: var(--side-2);
   color: #fff;
-  box-shadow: inset 3px 0 #d2b77c;
+  box-shadow: inset 3px 0 var(--side-mark);
 }
 .side svg {
   width: 1.1875rem;
@@ -107,10 +108,10 @@
 }
 .about {
   font-size: 0.75rem;
-  color: #bccad5;
+  color: var(--side-ink-2);
   margin: 25px 14px 0;
   line-height: 1.6;
-  border-top: 1px solid #43566a;
+  border-top: 1px solid var(--side-rule);
   padding-top: 18px;
 }
 .main {

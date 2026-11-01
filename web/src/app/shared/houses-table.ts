@@ -1,5 +1,6 @@
-import { Component, computed, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { SITE } from '../core/site';
 import { Spoilers } from '../core/spoilers';
 import { WikiData } from '../core/wiki-data';
 
@@ -10,19 +11,15 @@ import { WikiData } from '../core/wiki-data';
     <div
       class="table-wrap"
       tabindex="0"
-      aria-label="Сравнение Великих Домов, доступна горизонтальная прокрутка"
+      [attr.aria-label]="site.houses.aria + ', доступна горизонтальная прокрутка'"
     >
       <table class="table">
         <thead>
           <tr>
-            <th>Дом</th>
-            <th>Земля и столица</th>
-            <th>Правитель в 1774</th>
-            <th>Правитель в конце цикла</th>
-            <th>Род</th>
-            <th>Герб и цвета</th>
-            <th>Предметы</th>
-            <th>Палата</th>
+            <th>{{ site.houses.first }}</th>
+            @for (c of site.houses.cols; track c.k) {
+              <th>{{ c.h }}</th>
+            }
           </tr>
         </thead>
         <tbody>
@@ -37,20 +34,14 @@ import { WikiData } from '../core/wiki-data';
                   }</b
                 ><span class="sub" [innerHTML]="h.notes"></span>
               </td>
-              <td>
-                <span [innerHTML]="h.land"></span><span class="sub" [innerHTML]="h.capital"></span>
-              </td>
-              <td [innerHTML]="h.ruler_start"></td>
-              <td
-                [innerHTML]="h.ruler_end"
-                [class.spoil-blur]="spoilers.active() && spoilers.level() < lastBook()"
-              ></td>
-              <td [innerHTML]="h.pramater"></td>
-              <td>
-                <span [innerHTML]="h.sigil"></span><span class="sub" [innerHTML]="h.colors"></span>
-              </td>
-              <td [innerHTML]="h.predmety"></td>
-              <td [innerHTML]="h.palata"></td>
+              @for (c of site.houses.cols; track c.k) {
+                <td [class.spoil-blur]="c.spoil && spoilers.active() && spoilers.level() < spoilers.lastPart()">
+                  <span [innerHTML]="h[c.k]"></span>
+                  @if (c.sub) {
+                    <span class="sub" [innerHTML]="h[c.sub]"></span>
+                  }
+                </td>
+              }
             </tr>
           }
         </tbody>
@@ -64,8 +55,7 @@ import { WikiData } from '../core/wiki-data';
   `,
 })
 export class HousesTable {
+  protected readonly site = SITE;
   protected readonly data = inject(WikiData);
   protected readonly spoilers = inject(Spoilers);
-  /** The end-of-cycle column draws on every book, «Фантазии» included. */
-  protected readonly lastBook = computed(() => this.data.books().at(-1)?.order ?? 0);
 }

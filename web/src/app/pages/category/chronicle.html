@@ -1,5 +1,5 @@
 <div class="chronicle-tools">
-  <nav class="years" aria-label="Год событий">
+  <nav class="years" aria-label="Период событий">
     @for (y of years(); track y) {
       <button [attr.aria-pressed]="year() === y" (click)="chooseYear(y)">{{ y }}</button>
     }
@@ -16,10 +16,10 @@
 </div>
 <aside class="reading">
   <app-spoiler-select [expanded]="true" /><span
-    >Поздние события скрываются с учётом прочитанной книги.</span
+    >Поздние события скрываются с учётом прочитанной {{ site.spoilers.word.gen }}.</span
   >
 </aside>
-@if (year() && year() !== 'Древность' && year() !== 'Без даты') {
+@if (dated()) {
   <nav class="months" aria-label="Месяц событий">
     <button [attr.aria-pressed]="!month()" (click)="month.set('')">Весь год</button>
     @for (m of months; track m; let i = $index) {
@@ -87,12 +87,12 @@
     @if (!visible().length && !periodStories().length) {
       <div class="empty" role="status">
         <p>
-          За выбранный период событий не найдено. Проверьте фильтр и последнюю прочитанную книгу.
+          За выбранный период событий не найдено. Проверьте фильтр и последнюю прочитанную {{ site.spoilers.word.acc }}.
         </p>
         <button class="btn" (click)="month.set(''); query.set('')">Показать весь год</button>
       </div>
     }
-    @if (year() && year() !== 'Древность' && year() !== 'Без даты') {
+    @if (dated()) {
       <nav class="period-nav" aria-label="Перейти к другому месяцу">
         <button class="btn" [disabled]="!canMove(-1)" (click)="moveMonth(-1)">
           ← Предыдущий месяц</button
@@ -148,5 +148,5 @@
   }
 </div>
 <p class="full-chronology ui">
-  <a routerLink="/khronologiya">Подробная хронология по тексту книг</a>
+  <a [routerLink]="site.chronology.full">Подробная хронология по тексту книг</a>
 </p>

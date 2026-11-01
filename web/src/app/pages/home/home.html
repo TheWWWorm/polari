@@ -1,11 +1,11 @@
 <div class="page portal">
   <div class="hero">
     <section class="introduction">
-      <h1>Полари</h1>
-      <p class="byline">Энциклопедия цикла Романа Суржикова</p>
-      <h2>Люди, земли и история Империи.</h2>
+      <h1>{{ home.title }}</h1>
+      <p class="byline">{{ home.byline }}</p>
+      <h2>{{ home.tagline }}</h2>
       <p class="description">
-        Найдите героя, проследите связи Великих Домов или вернитесь к событиям прочитанной книги.
+        {{ home.description }}
       </p>
       <form
         class="hero-search"
@@ -26,12 +26,12 @@
         <button type="submit" aria-label="Искать"><span aria-hidden="true">→</span></button>
       </form>
     </section>
-    <a class="world-map" routerLink="/map" aria-label="Открыть карту Полари">
+    <a class="world-map" routerLink="/map" [attr.aria-label]="home.mapImage.aria">
       <img
-        src="img/map-polari-small.jpg"
-        alt="Карта земель Полари из путеводителя"
-        width="1400"
-        height="1054"
+        [src]="home.mapImage.src"
+        [alt]="home.mapImage.alt"
+        [width]="home.mapImage.w"
+        [height]="home.mapImage.h"
         fetchpriority="high"
       />
       <span class="map-caption"
@@ -39,19 +39,19 @@
           ><svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true">
             <path d="M19 10c0 5-7 12-7 12S5 15 5 10a7 7 0 1 1 14 0Z" />
             <circle cx="12" cy="10" r="2" /></svg
-          >Карта Полари</span
+          >{{ home.mapImage.label }}</span
         ><span class="map-action">Открыть карту <span aria-hidden="true">→</span></span></span
       >
     </a>
   </div>
   <aside class="reading-strip">
     <app-spoiler-select />
-    <p>Выберите последнюю прочитанную книгу. Вики скроет поздние события.</p>
+    <p>{{ home.readingHint }}</p>
   </aside>
   <div class="section-head">
-    <h2>Книги цикла</h2>
+    <h2>{{ home.booksTitle }}</h2>
     <span class="rule"></span
-    ><a routerLink="/c/book">Все книги в порядке чтения <span aria-hidden="true">→</span></a>
+    ><a [routerLink]="home.booksLink[0]">{{ home.booksLink[1] }} <span aria-hidden="true">→</span></a>
   </div>
   <div class="book-shelf">
     @for (book of novels(); track book.slug) {
@@ -64,7 +64,7 @@
           <h3>{{ book.title }}</h3>
           <span class="synopsis">{{
             spoilers.hidden(book) || spoilers.partly(book)
-              ? 'Сведения о сюжете скрыты с учётом выбранной книги.'
+              ? 'Сведения о сюжете скрыты с учётом выбранной ' + site.spoilers.word.gen + '.'
               : book.summary
           }}</span
           ><span class="open-book">Перейти к книге <span aria-hidden="true">→</span></span></span
@@ -72,11 +72,11 @@
       </a>
     }
     <section class="interludes">
-      <h3>Интерлюдии</h3>
-      @for (book of interludes(); track book.slug) {
-        <a [routerLink]="'/' + book.slug">{{ book.title }}<span aria-hidden="true">→</span></a>
+      <h3>{{ home.side.title }}</h3>
+      @for (s of sideLinks(); track s[0]) {
+        <a [routerLink]="'/' + s[0]">{{ s[1] }}<span aria-hidden="true">→</span></a>
       }
-      <a class="all-books" routerLink="/c/book">Весь порядок чтения</a>
+      <a class="all-books" [routerLink]="home.side.all[0]">{{ home.side.all[1] }}</a>
     </section>
   </div>
   <nav class="explore-grid" aria-label="Исследовать энциклопедию">
@@ -93,20 +93,20 @@
       ><svg viewBox="0 0 24 24" aria-hidden="true">
         <path d="m12 2 9 4v6c0 5-9 10-9 10S3 17 3 12V6Z" />
         <path d="M12 6v11M7 11h10" /></svg
-      ><span><b>Великие Дома</b><small>Дома Империи, их владения, традиции и связи.</small></span
+      ><span><b>{{ home.houses[0] }}</b><small>{{ home.houses[1] }}</small></span
       ><span aria-hidden="true">→</span></a
     >
     <a routerLink="/chronology"
       ><svg viewBox="0 0 24 24" aria-hidden="true">
         <rect x="3" y="5" width="18" height="17" rx="2" />
         <path d="M7 2v6M17 2v6M3 11h18M7 15h2M13 15h2M7 18h2" /></svg
-      ><span><b>Хронология</b><small>Ключевые события, войны и эпохи истории Полари.</small></span
+      ><span><b>Хронология</b><small>{{ home.chronology }}</small></span
       ><span aria-hidden="true">→</span></a
     >
   </nav>
   <nav class="reference-links" aria-label="Другие разделы">
-    <a routerLink="/families">Родословные</a><a routerLink="/relations">Связи персонажей</a
-    ><a routerLink="/c/place">Земли и города</a><a routerLink="/glossarij">Глоссарий</a
-    ><a routerLink="/gallery">Иллюстрации</a><a routerLink="/all">Все статьи</a>
+    @for (r of home.references; track r[0]) {
+      <a [routerLink]="r[0]">{{ r[1] }}</a>
+    }
   </nav>
 </div>
