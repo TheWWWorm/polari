@@ -1,11 +1,13 @@
 /**
- * Стратемы, reconstructed from the games described in the cycle. The books fix the pieces and their
- * characters (the sword wears armour, the horseshoe pierces it and is the fastest, the arrow takes no
- * return blow, the sickle fears to leave the regular troops, the coin bribes swordsmen, the spark
- * commands its стратема), three touches per turn that may all go to one piece, a whole стратема
- * moved with one touch, terrain that matters, a castle worth three points of defence, a short game
- * with one spark and a long one with a double set, and victory by striking down the enemy sparks.
- * Numbers are our own.
+ * Стратемы by the author's own rules: Roman Surzhikov's article of 2019 («Поларипедия»), gathered
+ * from his posts. From it come the touches (two per turn in the short game, four in the full one,
+ * no own piece touched twice, but several may strike one enemy), the speeds, wounds and return
+ * blows instead of numbers, the horseshoe that ignores the sword's armour, the bow that takes no
+ * return blow, the cowardly sickle, the coin's limited purse, the стратема that moves up to seven
+ * pieces and strikes and answers as one, the terrain, the sets of pieces and the four endings.
+ * Where the article is silent the books and our own choices stand: the hex field of 280 cells with
+ * its terrain and home castle, the «классический порядок», a castle that strikes first like a
+ * wall, hills that slow the horsemen, a стратема marching as far as its slowest piece in a line.
  */
 
 export type Side = 'red' | 'blue';
@@ -13,51 +15,65 @@ export type Kind = 'serp' | 'mech' | 'strela' | 'podkova' | 'moneta' | 'iskra';
 /** `edge` lies off the board: a master cuts each field to its own outline. */
 export type Terrain = 'plain' | 'road' | 'forest' | 'hill' | 'stream' | 'ruins' | 'edge';
 
-export interface Piece { id: number; kind: Kind; side: Side; r: number; c: number }
+/** `hurt`: an armoured piece struck once and turned over; `spent`: what a coin has already paid out. */
+export interface Piece { id: number; kind: Kind; side: Side; r: number; c: number; hurt?: boolean; spent?: number }
 export interface Cell { r: number; c: number }
 /**
- * One touch: a piece moves, strikes or bribes (a horseshoe or coin may move and then strike), or,
- * with `shift`, a spark leads its whole стратема one cell in that direction.
+ * One touch: an own piece moves (`to`), strikes or bribes an enemy (`target`), a spark leads its
+ * whole стратема `steps` cells in one direction (`shift`), or a spark leaves the field (`off`).
  */
-export interface Action { id: number; to?: Cell; target?: number; shift?: number }
+export interface Action { id: number; to?: Cell; target?: number; shift?: number; steps?: number; off?: boolean }
 export interface Outcome { text: string; removed: number[]; converted?: number }
+export type Ending = 'unconditional' | 'merciful' | 'dear' | 'draw';
 
 /** Hexagonal cells, flat side up, odd columns set half a cell lower. An even column count keeps the field point-symmetric. */
 export const ROWS = 20;
 export const COLS = 14;
-export const ACTIONS_PER_TURN = 3;
+/** Touches per turn: two in the short game (one spark), four in the full one (two sparks). */
+export const touchesFor = (sparks: number) => (sparks === 1 ? 2 : 4);
 /** Rows each side may set its army in. */
 export const DEPLOY = 4;
 
-export const STATS: Record<Kind, { a: number; d: number; mp: number; name: string; plural: string; value: number }> = {
-  serp: { a: 1, d: 1, mp: 2, name: 'серп', plural: 'серпы', value: 1 },
-  mech: { a: 2, d: 3, mp: 2, name: 'меч', plural: 'мечи', value: 3 },
-  strela: { a: 2, d: 1, mp: 2, name: 'стрела', plural: 'стрелы', value: 3 },
-  podkova: { a: 3, d: 2, mp: 4, name: 'подкова', plural: 'подковы', value: 5 },
-  moneta: { a: 0, d: 1, mp: 4, name: 'монета', plural: 'монеты', value: 3 },
-  iskra: { a: 1, d: 2, mp: 2, name: 'искра', plural: 'искры', value: 40 },
+export const STATS: Record<Kind, { speed: number; armour: boolean; name: string; plural: string; value: number }> = {
+  serp: { speed: 1, armour: false, name: 'серп', plural: 'серпы', value: 1 },
+  mech: { speed: 1, armour: true, name: 'меч', plural: 'мечи', value: 3 },
+  strela: { speed: 1, armour: false, name: 'лук', plural: 'луки', value: 2 },
+  podkova: { speed: 2, armour: true, name: 'подкова', plural: 'подковы', value: 5 },
+  moneta: { speed: 2, armour: false, name: 'монета', plural: 'монеты', value: 3 },
+  iskra: { speed: 2, armour: false, name: 'искра', plural: 'искры', value: 40 },
 };
-export const TERRAIN: Record<Terrain, { name: string; def: number }> = {
-  plain: { name: 'равнина', def: 0 },
-  road: { name: 'дорога', def: 0 },
-  forest: { name: 'лес', def: 1 },
-  hill: { name: 'холм', def: 1 },
-  stream: { name: 'река', def: -1 },
-  ruins: { name: 'руины замка', def: 3 },
-  edge: { name: 'край поля', def: 0 },
+export const TERRAIN: Record<Terrain, { name: string }> = {
+  plain: { name: 'равнина' },
+  road: { name: 'дорога' },
+  forest: { name: 'лес' },
+  hill: { name: 'холм' },
+  stream: { name: 'река' },
+  ruins: { name: 'руины замка' },
+  edge: { name: 'край поля' },
 };
 
-const REGULAR: Kind[] = ['mech', 'strela', 'podkova', 'iskra'];
+/** The senior pieces, beside which a sickle dares to stand. */
+const SENIOR: Kind[] = ['mech', 'podkova', 'iskra'];
 
 export class Game {
   pieces: Piece[] = [];
   side: Side = 'red';
   /** Touches spent this turn. */
   touches = 0;
+  /** Own pieces already touched this turn: a tired troop does not march again. */
+  used = new Set<number>();
+  /** A coin waiting this turn for a second coin to buy a horseshoe together. */
+  pledges: { coin: number; target: number }[] = [];
   winner: Side | null = null;
+  ending: Ending | null = null;
   turn = 1;
+  readonly perTurn: number;
+  /** Sparks each side has led off the field, and coins that paid out and left. */
+  withdrawn: Record<Side, number> = { red: 0, blue: 0 };
+  spentCoins: Record<Side, number> = { red: 0, blue: 0 };
 
   constructor(public field: Terrain[][], army: Kind[][], public sparks: number) {
+    this.perTurn = touchesFor(sparks);
     let id = 1;
     // army rows are written from the front line backwards, for the red side at the bottom
     const off = Math.floor((COLS - army[0].length) / 2);
@@ -71,207 +87,269 @@ export class Game {
 
   clone(): Game {
     const g = Object.create(Game.prototype) as Game;
-    g.field = this.field; g.sparks = this.sparks; g.side = this.side; g.turn = this.turn; g.winner = this.winner;
+    Object.assign(g, this);
     g.pieces = this.pieces.map((p) => ({ ...p }));
-    g.touches = this.touches;
+    g.used = new Set(this.used);
+    g.pledges = this.pledges.map((x) => ({ ...x }));
+    g.withdrawn = { ...this.withdrawn };
+    g.spentCoins = { ...this.spentCoins };
     return g;
   }
 
+  get over(): boolean { return this.ending != null; }
   at(r: number, c: number): Piece | undefined { return this.pieces.find((p) => p.r === r && p.c === c); }
   byId(id: number): Piece | undefined { return this.pieces.find((p) => p.id === id); }
   terrain(r: number, c: number): Terrain { return this.field[r][c]; }
   /** The neighbouring cells that are on the board. */
   around(r: number, c: number): Cell[] { return neighbours(r, c).filter((n) => this.field[n.r][n.c] !== 'edge'); }
+  /** A cell on the rim of the field, from which a spark can be led away. */
+  onBorder(p: Cell): boolean { return this.around(p.r, p.c).length < 6; }
 
-  /** Movement cost in half-steps: roads speed everyone up, forest and hills slow the cavalry. */
-  private cost(kind: Kind, t: Terrain): number {
-    const horse = kind === 'podkova';
-    switch (t) {
-      case 'road': return 1;
-      case 'forest': return horse ? 4 : 2;
-      case 'hill': return horse ? 3 : 2;
-      case 'stream': return horse ? 4 : 99; // infantry wading a stream stops there
-      default: return 2;
-    }
-  }
+  /** Cavalry bogs down: in a forest (the article) or on a hill (ours) a horseshoe moves one cell. */
+  private slowed(kind: Kind, t: Terrain): boolean { return kind === 'podkova' && (t === 'forest' || t === 'hill'); }
+  speed(p: Piece): number { return this.slowed(p.kind, this.field[p.r][p.c]) ? 1 : STATS[p.kind].speed; }
 
-  /** Cells the piece can end its move on. */
+  /**
+   * Cells the piece can end its move on. A road adds one cell to a march along it, and so does a
+   * river to a march along its water; a piece that steps into a river from the bank stops there,
+   * so a crossing costs an extra touch. A horseshoe entering a forest or a hill stops too.
+   */
   reach(p: Piece): Cell[] {
-    const best = new Map<number, number>([[p.r * COLS + p.c, 0]]);
-    const queue: [number, number, number][] = [[p.r, p.c, 0]];
-    const out: Cell[] = [];
-    while (queue.length) {
-      queue.sort((a, b) => a[2] - b[2]);
-      const [r, c, spent] = queue.shift()!;
-      if (spent > 0 && this.field[r][c] === 'stream' && p.kind !== 'podkova') continue;
-      for (const { r: nr, c: nc } of this.around(r, c)) {
-        const occ = this.at(nr, nc);
-        if (occ) continue; // no passing through any piece
-        const t = this.field[nr][nc];
-        let step = this.cost(p.kind, t);
-        if (step === 99) step = Math.max(1, STATS[p.kind].mp - spent); // may enter, then stops
-        const total = spent + step;
-        if (total > STATS[p.kind].mp) continue;
-        const k = nr * COLS + nc;
-        if ((best.get(k) ?? 99) <= total) continue;
-        best.set(k, total);
-        queue.push([nr, nc, total]);
+    const found = new Map<number, Cell>();
+    const walk = (limit: number, only?: Terrain) => {
+      const seen = new Set([p.r * COLS + p.c]);
+      let front: Cell[] = [p];
+      for (let s = 0; s < limit && front.length; s++) {
+        const next: Cell[] = [];
+        for (const a of front) for (const n of this.around(a.r, a.c)) {
+          const k = n.r * COLS + n.c, t = this.field[n.r][n.c];
+          if (seen.has(k) || this.at(n.r, n.c) || (only && t !== only)) continue;
+          seen.add(k);
+          found.set(k, n);
+          const stops = (t === 'stream' && this.field[a.r][a.c] !== 'stream') || this.slowed(p.kind, t);
+          if (!stops) next.push(n);
+        }
+        front = next;
       }
-    }
-    for (const k of best.keys()) {
-      const r = Math.floor(k / COLS), c = k % COLS;
-      if (r === p.r && c === p.c) continue;
-      if (p.kind === 'serp' && !this.nearRegular(p.side, r, c, p.id)) continue;
-      out.push({ r, c });
-    }
-    return out;
+    };
+    const sp = this.speed(p), t0 = this.field[p.r][p.c];
+    walk(sp);
+    if (t0 === 'road' || t0 === 'stream') walk(sp + 1, t0);
+    return [...found.values()].filter((c) => p.kind !== 'serp' || this.nearSenior(p.side, c, p.id));
   }
 
-  /** The sickle never strays more than two cells from regular troops. */
-  private nearRegular(side: Side, r: number, c: number, self: number): boolean {
-    return this.pieces.some((q) => q.side === side && q.id !== self && REGULAR.includes(q.kind) && dist(q, { r, c }) <= 2);
+  /** Cowardice: a sickle only steps onto a cell beside one of its own senior pieces. */
+  private nearSenior(side: Side, at: Cell, self: number): boolean {
+    return this.pieces.some((q) => q.side === side && q.id !== self && SENIOR.includes(q.kind) && dist(q, at) === 1);
   }
 
-  /** Enemies the piece could strike (or bribe) from the given cell. */
-  targets(p: Piece, from: Cell = p): Piece[] {
-    if (p.kind === 'moneta')
-      return this.pieces.filter((q) => q.side !== p.side && q.kind === 'mech' && dist(q, from) === 1 && !this.ledBySpark(q));
-    const range = p.kind === 'strela' ? 2 : 1;
-    return this.pieces.filter((q) => q.side !== p.side && dist(q, from) <= range);
+  /** Enemies the piece could strike, or for a coin bribe, from where it stands. */
+  targets(p: Piece): Piece[] {
+    const near = this.pieces.filter((q) => q.side !== p.side && dist(q, p) === 1);
+    if (p.kind !== 'moneta') return near;
+    const left = 2 - (p.spent ?? 0);
+    return near.filter((q) => q.kind === 'serp' || q.kind === 'strela' || (left === 2 && (q.kind === 'mech' || q.kind === 'podkova')));
   }
 
-  /** A swordsman standing beside his own spark cannot be bought. */
-  private ledBySpark(q: Piece): boolean {
-    return this.pieces.some((s) => s.side === q.side && s.kind === 'iskra' && dist(s, q) === 1);
+  /** The стратема a piece belongs to: a spark with the friends around it, or the piece alone. */
+  group(p: Piece): Piece[] {
+    const spark = p.kind === 'iskra' ? p : this.pieces.find((s) => s.side === p.side && s.kind === 'iskra' && dist(s, p) === 1);
+    const g = spark ? this.stratema(spark) : [p];
+    return g.length > 1 ? g : [p];
   }
 
-  /** Which pieces may still strike after moving in the same action. */
-  static movesThenActs(kind: Kind): boolean { return kind === 'podkova' || kind === 'moneta'; }
-
-  /** A spark beside a piece joins it into a battalion: +1 to strike and to defence. */
-  private battalion(p: Piece): number {
-    return p.kind !== 'iskra' && this.pieces.some((s) => s.side === p.side && s.kind === 'iskra' && dist(s, p) === 1) ? 1 : 0;
-  }
-
-  attackValue(att: Piece, def: Piece): number {
-    let a = STATS[att.kind].a + this.battalion(att);
-    if (att.kind === 'podkova' && def.kind === 'mech') a += 2; // the horseshoe pierces the sword's armour
-    if (att.kind === 'podkova' && this.field[att.r][att.c] === 'forest') a -= 1;
-    // pincers: every other friend touching the defender adds weight, up to two
-    const helpers = this.pieces.filter((q) => q.side === att.side && q.id !== att.id && q.kind !== 'moneta' && dist(q, def) === 1).length;
-    return a + Math.min(2, helpers);
-  }
-
-  defenceValue(def: Piece): number {
-    const t = this.field[def.r][def.c];
-    let d = STATS[def.kind].d + this.battalion(def) + TERRAIN[t].def;
-    // the «коробочка»: every friend beside a spark shields it, up to two
-    if (def.kind === 'iskra') d += Math.min(2, this.pieces.filter((q) => q.side === def.side && q.id !== def.id && dist(q, def) === 1).length);
-    return Math.max(0, d);
-  }
-
-  /** Predict a strike without making it. */
-  strike(att: Piece, def: Piece): 'win' | 'repelled' | 'lost' {
-    if (this.attackValue(att, def) > this.defenceValue(def)) return 'win';
-    if (att.kind === 'strela') return 'repelled';
-    const back = STATS[def.kind].a + this.battalion(def);
-    return back > this.defenceValue(att) ? 'lost' : 'repelled';
-  }
-
-  /** A spark's стратема: the spark and every friend standing beside it. */
+  /** A spark's стратема: the spark and every friend standing beside it, up to seven pieces. */
   stratema(p: Piece): Piece[] {
     return p.kind !== 'iskra' ? [p] : [p, ...this.pieces.filter((q) => q.side === p.side && q.id !== p.id && dist(q, p) === 1)];
   }
 
-  /** Where a стратема would stand after one step in a direction, or null if the way is blocked. */
-  shifted(p: Piece, dir: number): Cell[] | null {
+  /** How far a стратема marches with one touch: as fast as its slowest piece. */
+  groupSpeed(p: Piece): number { return Math.min(...this.stratema(p).map((q) => this.speed(q))); }
+
+  /**
+   * Where a стратема would stand after `steps` cells in a direction, or null if the way is blocked.
+   * It marches in a line, keeping its shape, and stops on entering a river.
+   */
+  shifted(p: Piece, dir: number, steps = 1): Cell[] | null {
     const group = this.stratema(p);
-    if (group.length < 2) return null;
-    const ids = new Set(group.map((q) => q.id)), out: Cell[] = [];
-    for (const q of group) {
-      const to = step(q, dir);
-      if (!to || this.field[to.r][to.c] === 'edge') return null;
-      const occ = this.at(to.r, to.c);
-      if (occ && !ids.has(occ.id)) return null;
-      out.push(to);
+    if (group.length < 2 || steps < 1 || steps > this.groupSpeed(p)) return null;
+    const ids = new Set(group.map((q) => q.id));
+    let cur: Cell[] = group.map((q) => ({ r: q.r, c: q.c })), prev = cur;
+    for (let j = 0; j < steps; j++) {
+      if (cur.some((c, i) => this.field[c.r][c.c] === 'stream' && this.field[prev[i].r][prev[i].c] !== 'stream')) return null;
+      prev = cur;
+      const next: Cell[] = [];
+      for (const q of cur) {
+        const to = step(q, dir);
+        if (!to || this.field[to.r][to.c] === 'edge') return null;
+        const occ = this.at(to.r, to.c);
+        if (occ && !ids.has(occ.id)) return null;
+        next.push(to);
+      }
+      cur = next;
     }
-    return out;
+    return cur;
   }
 
   legal(a: Action): boolean {
     const p = this.byId(a.id);
-    if (!p || p.side !== this.side || this.winner || this.touches >= ACTIONS_PER_TURN) return false;
-    if (a.shift != null) return !a.to && a.target == null && !!this.shifted(p, a.shift);
-    if (!a.to && a.target == null) return false;
-    if (a.to && !this.reach(p).some((c) => c.r === a.to!.r && c.c === a.to!.c)) return false;
-    if (a.to && a.target != null && !Game.movesThenActs(p.kind)) return false;
-    if (a.target != null && !this.targets(p, a.to ?? p).some((q) => q.id === a.target)) return false;
-    return true;
+    if (!p || p.side !== this.side || this.over || this.touches >= this.perTurn || this.used.has(p.id)) return false;
+    const kinds = [a.to, a.target, a.shift, a.off].filter((x) => x != null && x !== false).length;
+    if (kinds !== 1) return false;
+    if (a.off) return p.kind === 'iskra' && this.onBorder(p);
+    if (a.shift != null) return !!this.shifted(p, a.shift, a.steps ?? 1);
+    if (a.to) return this.reach(p).some((c) => c.r === a.to!.r && c.c === a.to!.c);
+    return this.targets(p).some((q) => q.id === a.target);
+  }
+
+  /** Whether a blow from `att` goes through the armour of `def`: the horseshoe ignores a sword's, but not in a forest or against a wall. */
+  private pierces(att: Piece, def: Piece): boolean {
+    return att.kind === 'podkova' && def.kind === 'mech' && this.field[att.r][att.c] !== 'forest' && this.field[def.r][def.c] !== 'ruins';
+  }
+
+  /** Blows land on a piece: the unarmoured and the wounded fall, the armoured are wounded and turned over. */
+  private land(def: Piece, hits: number, pierce: boolean): boolean {
+    if (!STATS[def.kind].armour || def.hurt || pierce || hits >= 2) {
+      this.pieces = this.pieces.filter((x) => x.id !== def.id);
+      this.pledges = this.pledges.filter((x) => x.coin !== def.id && x.target !== def.id);
+      return true;
+    }
+    def.hurt = true;
+    return false;
+  }
+
+  /** The friend of a fallen or struck piece that hits back: one of its стратема beside the attacker, the strongest first. */
+  private answerer(group: Piece[], att: Piece, skip: number): Piece | undefined {
+    return group.filter((q) => q.id !== skip && q.kind !== 'moneta' && !!this.byId(q.id) && dist(q, att) === 1)
+      .sort((a, b) => STATS[b.kind].value * (b.hurt ? 0.5 : 1) - STATS[a.kind].value * (a.hurt ? 0.5 : 1))[0];
   }
 
   apply(a: Action): Outcome {
     const p = this.byId(a.id)!;
     const out: Outcome = { text: '', removed: [] };
+    const before = new Set(this.pieces.map((x) => x.id));
     const who = (q: Piece) => `${q.side === 'red' ? 'алая' : 'лазурная'} фишка «${STATS[q.kind].name}»`;
+    const whom = (q: Piece) => who(q).replace('фишка', 'фишку').replace('лазурная', 'лазурную').replace('алая', 'алую');
     const parts: string[] = [];
-    if (a.shift != null) {
-      const group = this.stratema(p), to = this.shifted(p, a.shift)!;
-      group.forEach((q, i) => { q.r = to[i].r; q.c = to[i].c; });
-      parts.push(`${p.side === 'red' ? 'Алая' : 'Лазурная'} искра ведёт стратему из ${group.length} фишек на ${cellName(p)}`);
-    }
-    if (a.to) {
+    this.used.add(p.id);
+    if (a.off) {
+      this.pieces = this.pieces.filter((x) => x.id !== p.id);
+      this.withdrawn[p.side]++;
+      parts.push(`${p.side === 'red' ? 'Алая' : 'Лазурная'} искра уходит за край поля`);
+    } else if (a.shift != null) {
+      const group = this.stratema(p), to = this.shifted(p, a.shift, a.steps ?? 1)!;
+      group.forEach((q, i) => { q.r = to[i].r; q.c = to[i].c; this.used.add(q.id); });
+      parts.push(`${p.side === 'red' ? 'Алая' : 'Лазурная'} искра ведёт стратему (${group.length} ${pieces(group.length)}) на ${cellName(p)}`);
+    } else if (a.to) {
       p.r = a.to.r; p.c = a.to.c;
       parts.push(`${cap(who(p))} идёт на ${cellName(a.to)}`);
-    }
-    if (a.target != null) {
-      const q = this.byId(a.target)!;
-      if (p.kind === 'moneta') {
-        q.side = p.side;
-        out.converted = q.id;
-        parts.push(`${parts.length ? 'и подкупает' : cap(who(p)) + ' подкупает'} вражеский меч на ${cellName(q)}`);
-      } else {
-        const res = this.strike(p, q);
-        const verb = parts.length ? 'и бьёт' : cap(who(p)) + ' бьёт';
-        if (res === 'win') {
-          this.pieces = this.pieces.filter((x) => x.id !== q.id);
-          out.removed.push(q.id);
-          parts.push(`${verb} ${who(q).replace('фишка', 'фишку').replace('лазурная', 'лазурную').replace('алая', 'алую')} — сбита`);
-          // the horsemen sweep through: a winning horseshoe takes the cell
-          if (p.kind === 'podkova' && dist(p, q) === 1) { p.r = q.r; p.c = q.c; }
-        } else if (res === 'lost') {
-          this.pieces = this.pieces.filter((x) => x.id !== p.id);
-          out.removed.push(p.id);
-          parts.push(`${verb} на ${cellName(q)}, но отбита и сама сбита ответным ударом`);
-        } else {
-          parts.push(`${verb} на ${cellName(q)}, но удар отбит`);
-        }
-      }
+    } else if (p.kind === 'moneta') {
+      this.bribe(p, this.byId(a.target!)!, parts, who, whom);
+    } else {
+      this.attack(p, this.byId(a.target!)!, parts, who, whom);
     }
     this.touches++;
-    out.text = parts.join(' ') + '.';
-    for (const s of ['red', 'blue'] as Side[])
-      if (!this.pieces.some((x) => x.side === s && x.kind === 'iskra')) this.winner = s === 'red' ? 'blue' : 'red';
-    if (!this.winner && this.actionsLeft() === 0) this.endTurn();
+    out.removed = [...before].filter((id) => !this.byId(id));
+    out.text = parts.join('; ') + '.';
+    this.judge();
+    if (!this.over && this.actionsLeft() === 0) this.endTurn();
     return out;
   }
 
-  actionsLeft(): number { return ACTIONS_PER_TURN - this.touches; }
+  /**
+   * A strike from the cell beside the target. The whole стратема of the attacker that touches the
+   * target strikes with it; a castle wall or an archer on a hill strikes first; then the target, if
+   * it stands, or a friend of its стратема beside the attacker, strikes back — unless the attacker
+   * is a bow.
+   */
+  private attack(p: Piece, q: Piece, parts: string[], who: (q: Piece) => string, whom: (q: Piece) => string): void {
+    const t = this.field[q.r][q.c];
+    let answered = false;
+    if (q.kind !== 'moneta' && (t === 'ruins' || (t === 'hill' && q.kind === 'strela'))) {
+      answered = true;
+      const fell = this.land(p, 1, this.pierces(q, p));
+      parts.push(`${cap(who(q))} на ${t === 'ruins' ? 'стене' : 'холме'} бьёт первой: ${whom(p)} ${fell ? 'сбивает' : 'ранит'}`);
+      if (fell) return;
+    }
+    const hitters = [p, ...this.group(p).filter((x) => x.id !== p.id && x.kind !== 'moneta' && dist(x, q) === 1)];
+    const defenders = this.group(q);
+    const fell = this.land(q, hitters.length, hitters.some((h) => this.pierces(h, q)));
+    const by = `${parts.length ? 'тогда ' + who(p) : cap(who(p))}${hitters.length > 1 ? ` со стратемой (${hitters.length} ${pieces(hitters.length)})` : ''} бьёт`;
+    parts.push(`${by} ${whom(q)} на ${cellName(q)} — ${fell ? 'сбита' : 'ранена'}`);
+    if (answered || p.kind === 'strela') return;
+    const back = fell ? this.answerer(defenders, p, q.id) : q;
+    if (!back) return;
+    const down = this.land(p, 1, this.pierces(back, p));
+    parts.push(`ответный удар (${STATS[back.kind].name}) ${down ? 'сбивает' : 'ранит'} её`);
+  }
+
+  /**
+   * A coin bribes the enemy it touches, who turns over to its side: two sickles or bows, or one
+   * sword, and then the coin leaves the field; a horseshoe only to two coins at once; a spark never.
+   * A стратема answers a bribe of one of its own with a blow like any other attack.
+   */
+  private bribe(p: Piece, q: Piece, parts: string[], who: (q: Piece) => string, whom: (q: Piece) => string): void {
+    const defenders = this.group(q);
+    if (q.kind === 'podkova') {
+      const mate = this.pledges.find((x) => x.target === q.id && x.coin !== p.id && this.byId(x.coin)?.side === p.side);
+      const other = mate && this.byId(mate.coin);
+      if (!other || dist(other, q) !== 1) {
+        this.pledges.push({ coin: p.id, target: q.id });
+        parts.push(`${cap(who(p))} предлагает деньги подкове на ${cellName(q)}: нужна вторая монета в этот же ход`);
+        return;
+      }
+      this.pieces = this.pieces.filter((x) => x.id !== p.id && x.id !== other.id);
+      this.spentCoins[p.side] += 2;
+    } else {
+      p.spent = (p.spent ?? 0) + (q.kind === 'mech' ? 2 : 1);
+      if (p.spent >= 2) { this.pieces = this.pieces.filter((x) => x.id !== p.id); this.spentCoins[p.side]++; }
+    }
+    this.pledges = this.pledges.filter((x) => x.target !== q.id);
+    parts.push(q.kind === 'podkova'
+      ? `Две ${p.side === 'red' ? 'алые' : 'лазурные'} монеты сообща подкупают ${whom(q)} на ${cellName(q)} и покидают поле`
+      : `${cap(who(p))} подкупает ${whom(q)} на ${cellName(q)}${this.byId(p.id) ? '' : ' и покидает поле'}`);
+    q.side = p.side;
+    this.used.add(q.id);
+    if (!this.byId(p.id)) return;
+    const back = this.answerer(defenders, p, q.id);
+    if (back) { this.land(p, 1, false); parts.push(`стратема отвечает ударом (${STATS[back.kind].name}) — монета сбита`); }
+  }
+
+  /** The game ends when a side has no spark left on the field; how it ends depends on how they left. */
+  private judge(): void {
+    const left = (s: Side) => this.pieces.some((x) => x.side === s && x.kind === 'iskra');
+    const red = left('red'), blue = left('blue');
+    if (red && blue) return;
+    if (!red && !blue) { this.ending = 'draw'; return; }
+    const w: Side = red ? 'red' : 'blue', l: Side = red ? 'blue' : 'red';
+    this.winner = w;
+    const mine = this.pieces.filter((x) => x.side === w && x.kind === 'iskra').length;
+    this.ending = mine < this.sparks ? 'dear' : this.withdrawn[l] > 0 ? 'merciful' : 'unconditional';
+  }
+
+  /** Both players find the rest of the game pointless. */
+  agreeDraw(): void { if (!this.over) this.ending = 'draw'; }
+
+  actionsLeft(): number { return this.perTurn - this.touches; }
 
   endTurn(): void {
     this.touches = 0;
+    this.used.clear();
+    this.pledges = [];
     this.side = this.side === 'red' ? 'blue' : 'red';
     if (this.side === 'red') this.turn++;
   }
 
-  /** Every action available to one piece. */
+  /** Every touch available to one piece. */
   actionsFor(p: Piece): Action[] {
+    if (this.used.has(p.id)) return [];
     const list: Action[] = [];
     for (const t of this.targets(p)) list.push({ id: p.id, target: t.id });
-    for (const to of this.reach(p)) {
-      list.push({ id: p.id, to });
-      if (Game.movesThenActs(p.kind)) for (const t of this.targets(p, to)) list.push({ id: p.id, to, target: t.id });
+    for (const to of this.reach(p)) list.push({ id: p.id, to });
+    if (p.kind === 'iskra') {
+      for (let d = 0; d < 6; d++) for (let s = 1; s <= 2; s++) if (this.shifted(p, d, s)) list.push({ id: p.id, shift: d, steps: s });
+      if (this.onBorder(p)) list.push({ id: p.id, off: true });
     }
-    if (p.kind === 'iskra') for (let d = 0; d < 6; d++) if (this.shifted(p, d)) list.push({ id: p.id, shift: d });
     return list;
   }
 }
@@ -298,18 +376,19 @@ export function dist(a: Cell, b: Cell): number {
 const LETTERS = 'АБВГДЕЖЗИКЛМНОП';
 export function cellName(c: Cell): string { return LETTERS[c.c] + (ROWS - c.r); }
 function cap(s: string): string { return s[0].toUpperCase() + s.slice(1); }
+function pieces(n: number): string { return n === 1 ? 'фишка' : n < 5 ? 'фишки' : 'фишек'; }
 
 /**
- * Armies, red side, front row first. The short game has one set; the long game a double set
- * («двойной набор фишек») in Adrian's «классический порядок»: the spark and a wedge of horsemen
- * in front, swords behind them, and the second spark at the back with the coins under a
- * «коробочка» of sickles.
+ * Armies, red side, front row first, in Adrian's «классический порядок»: the spark at the head of a
+ * стратема of swords and horseshoes, sickles on the flanks, coins at the back. The short game has
+ * the author's basic set of seventeen: a spark, two horseshoes, four swords, two coins, eight
+ * sickles, and no bows. The full game doubles it and adds the four bows played «по договоренности».
  */
 export function army(sparks: number): Kind[][] {
   const K: Record<string, Kind | ''> = { s: 'serp', m: 'mech', t: 'strela', p: 'podkova', o: 'moneta', I: 'iskra', _: '' };
   const rows = sparks === 1
-    ? ['____sspIpss___', '_____mmtm_____', '______sos_____', '______________']
-    : ['__sssppIppsss_', '___tmmmmmmt___', '___ssoIoss____', '_____ss_______'];
+    ? ['___sssmmsss___', '_____mpIpm____', '_____osso_____']
+    : ['_ssmm_ss_mmss_', '_tpIp_ss_pIpt_', '__smmostomms__', '___sstoosss___'];
   return rows.map((r) => r.split('').map((ch) => K[ch] as Kind));
 }
 

@@ -90,6 +90,8 @@
 .piece { transition: transform 0.25s ease; }
 .piece.can { cursor: pointer; }
 .piece.sel .disc { stroke: #ffe7a6; stroke-width: 4; }
+/* a wounded piece lies turned over, its dye duller */
+.piece.hurt .disc { filter: saturate(.35) brightness(.8); stroke-dasharray: 3 2.5; }
 .piece.target { cursor: crosshair; }
 .piece.target .disc { stroke: #fff; stroke-width: 3.5; stroke-dasharray: 4 3; }
 .tip { margin: 8px 0 0; font-size: var(--fs-small); color: var(--ink-3); }

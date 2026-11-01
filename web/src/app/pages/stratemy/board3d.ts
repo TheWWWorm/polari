@@ -7,7 +7,7 @@ import { COLS, Cell, Kind, ROWS, Side, Terrain, cellName, roadLinks } from './en
 import { GLYPH } from './glyphs';
 
 /** One piece as the board shows it. */
-export interface BoardPiece { id: number; kind: Kind; side: Side; r: number; c: number; sel: boolean; target: boolean; can: boolean }
+export interface BoardPiece { id: number; kind: Kind; side: Side; r: number; c: number; sel: boolean; target: boolean; can: boolean; hurt?: boolean }
 
 const BASE = 0.18;
 /** Top of the painted board, where the tokens stand. */
@@ -262,8 +262,13 @@ export class StratemyBoard3d implements OnDestroy {
     this.dots.instanceMatrix.needsUpdate = true;
   }
 
-  /** A token's face: bone dyed in the army's colour, the sign carved through to the bone. */
-  private cap(side: Side, kind: Kind): THREE.MeshStandardMaterial {
+  /** A token's face: bone dyed in the army's colour, the sign carved through to the bone; a wounded token shows a duller face. */
+  private cap(side: Side, kind: Kind, dull = false): THREE.MeshStandardMaterial {
+    if (dull) {
+      let mat = this.caps.get(side + kind + '-dull');
+      if (!mat) { mat = this.cap(side, kind).clone(); mat.color.setRGB(0.5, 0.5, 0.5); mat.roughness = 0.7; this.caps.set(side + kind + '-dull', mat); }
+      return mat;
+    }
     const key = side + kind;
     let mat = this.caps.get(key);
     if (!mat) {
@@ -316,11 +321,12 @@ class Token {
   private dying: { t: number; done: () => void } | null = null;
   private flip: { t: number; to: Side } | null = null;
   private shown: Side;
+  private dull = false;
   state: BoardPiece;
   get r() { return this.state.r; }
   get c() { return this.state.c; }
 
-  constructor(p: BoardPiece, private readonly capOf: (s: Side, k: Kind) => THREE.MeshStandardMaterial) {
+  constructor(p: BoardPiece, private readonly capOf: (s: Side, k: Kind, dull?: boolean) => THREE.MeshStandardMaterial) {
     this.state = p;
     this.shown = p.side;
     const tall = this.tall;
@@ -355,6 +361,8 @@ class Token {
   update(p: BoardPiece, g: number): void {
     if (p.side !== this.shown && !this.flip) this.flip = { t: 0, to: p.side };
     this.state = p;
+    // a wounded token is turned over in the article; here its face simply dulls
+    if (!this.flip && !!p.hurt !== this.dull) { this.dull = !!p.hurt; this.face.material = this.capOf(this.shown, p.kind, this.dull); }
     this.place(p, g);
     this.ring.visible = p.sel;
     this.aim.visible = p.target;
@@ -384,7 +392,8 @@ class Token {
         this.shown = f.to;
         this.spin.rotation.z = 0;
         this.spin.position.y = this.tall / 2;
-        this.face.material = this.capOf(this.shown, this.state.kind);
+        this.dull = !!this.state.hurt;
+        this.face.material = this.capOf(this.shown, this.state.kind, this.dull);
         this.back.material = this.capOf(other(this.shown), this.state.kind);
       }
     }
