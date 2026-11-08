@@ -9,6 +9,7 @@ books: lish-odna-zvezda, kukla-na-trone, glas-zimy, yanmejskaya-okhota, lyudi-i-
 infobox:
 - Дом: [[dom-oridzhin]]
 - Ветвь: младшая ветвь дома, «Ориджины Ступеней Неба» ([[stvorki-neba]])
+- Отец: [[valter-oridzhin|Вальтер Ориджин]] (пропал без вести в 1765 г.)
 - Братья: [[robert-oridzhin]] (старший); у их отца было трое сыновей, к 1775 году в живых остался только Роберт
 - Кузены: [[ervin-oridzhin]], [[iona-oridzhin]]
 - Прозвища: Красавчик, Смазливый, Симпатяжка, Золотой Эфес
