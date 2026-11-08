@@ -1,22 +1,13 @@
 # file (assets/img/)	articles (first = main; role per article: slug or slug:portrait / slug:cover / slug:emblem / slug:map)	caption	credit
-crop-ervin.jpg	ervin-oridzhin:portrait	Эрвин Ориджин	Портрет персонажа
 crop-kharmon.jpg	kharmon:portrait	Хармон	Портрет персонажа
-crop-minerva.jpg	minerva:portrait	Минерва	Портрет персонажа
 crop-mark.jpg	mark-voron:portrait	Марк	Портрет персонажа
-crop-dzhoakin.jpg	dzhoakin:portrait	Джоакин Ив Ханна	Портрет персонажа
-crop-iona.jpg	iona-oridzhin:portrait	Иона Ориджин	Портрет персонажа
-crop-alanis.jpg	alanis-almera:portrait	Аланис Альмера	Портрет персонажа
-crop-adrian.jpg	adrian:portrait	Адриан	Портрет персонажа
-crop-menson.jpg	menson:portrait	Менсон	Портрет персонажа
 crop-karen.jpg	karen:portrait	Карен	Портрет персонажа
-crop-doroti.jpg	sibil-nortvud:portrait	Дороти Слай	Портрет персонажа
-crop-navi.jpg	navi:portrait	Нави	Портрет персонажа
 desmond-melnikov.jpg	desmond-oridzhin:portrait	Лорд Десмонд Ориджин	Евгений Мельников, изд. «Лаборатория Фантастики»	1
 iona-melnikov.jpg	iona-oridzhin	Леди Иона Ориджин	Евгений Мельников, изд. «Лаборатория Фантастики»	1
 minerva-melnikov.jpg	minerva:portrait	Минерва Стагфорт	Евгений Мельников, изд. «Лаборатория Фантастики»	1
 minerva-alfa.jpg	minerva	Минерва в 1774 году	Вера Успенская, изд. «Альфа-книга»	1
-alanis-garnets.jpg	alanis-almera, lish-odna-zvezda	Аланис Альмера под вуалью	Сергей Гарнец, изд. «Фантлаб»	4
-adrian-lamzina.jpg	adrian	Владыка Адриан	Ирина Ламзина, изд. «Фантлаб»	1
+alanis-garnets.jpg	alanis-almera:portrait, lish-odna-zvezda	Аланис Альмера под вуалью	Сергей Гарнец, изд. «Фантлаб»	4
+adrian-lamzina.jpg	adrian:portrait	Владыка Адриан	Ирина Ламзина, изд. «Фантлаб»	1
 polli-garnets.jpg	polli:portrait, izluchina, strela-moneta-iskra	Полли одна в таверне Излучины	Сергей Гарнец, изд. «Фантлаб»	1
 polli-death.jpg	polli, kharmon, lzhe-sfera, strela-moneta-iskra	Хармон у тела Полли	Сергей Гарнец, изд. «Фантлаб»	1
 kharmon-dzhek.jpg	kharmon, valter-oridzhin, lzhe-sfera, strela-moneta-iskra	Хармон в каменном мешке рядом с телом Молчаливого Джека	Сергей Гарнец, изд. «Фантлаб»	1
@@ -38,7 +29,7 @@ minerva-sibil.jpg	minerva, sibil-nortvud, strela-moneta-iskra	Минерва у�
 itan-minerva.jpg	itan, minerva, strela-moneta-iskra	Итан шпагой заслоняет Миру от больных, Мира швыряет им серебро	Ирина Ламзина, изд. «Фантлаб»	1
 dom-s-plyushchom.jpg	lejla-talmir, strela-moneta-iskra	Лейла Тальмир и её дочь в Доме с Плющом	Ирина Ламзина, изд. «Фантлаб»	1
 iskrovyj-tyagach.jpg	zheleznaya-doroga, iskra	Искровый тягач	Ирина Ламзина, изд. «Фантлаб»	1
-menson-ekhiota.jpg	menson	Шут Менсон	Изд. «Фантлаб»	1
+menson-ekhiota.jpg	menson:portrait	Шут Менсон	Изд. «Фантлаб»	1
 menson-kon.jpg	menson, lish-odna-zvezda	Менсон рисует коня	Изд. «Фантлаб»	4
 sobachya-upryazhka.jpg	faunterra, minerva, kukla-na-trone	Гонки собачьих упряжек в Фаунтерре	Дмитрий Алексеев, изд. «Фантлаб»	8
 doroti-navi.jpg	sibil-nortvud, navi, ostrov-faradeya-rajli, yanmejskaya-okhota	Дороти Слай и Нави в писчем цеху лечебницы Фарадея-Райли	Изд. «Фантлаб»	12
@@ -179,7 +170,7 @@ lib-razvorot-1.jpg	lyudi-i-bogi	Войско с осадной башней ид
 lib-gurken.jpg	sofiya-oridzhin, lyudi-i-bogi	Гуркен, исполинская тварь вроде жабы, и водоворот у корабля над затопленным лесом Крайнего моря	Изд. «Фантлаб» (иллюстраторы издания: Дмитрий Алексеев, Олег Бабкин, Агний Немов)	15
 lib-step.jpg	lyudi-i-bogi	Шатры лагеря на горном склоне над долиной	Изд. «Фантлаб» (иллюстраторы издания: Дмитрий Алексеев, Олег Бабкин, Агний Немов)	15
 lib-iona-kletka.jpg	iona-oridzhin, lyudi-i-bogi	Иона в клетке в своей спальне в Уэймарском замке	Олег Бабкин, изд. «Фантлаб»	15
-lib-iona-kletka-2.jpg	iona-oridzhin, martin-shejland, dzhoakin, lyudi-i-bogi	Двое мужчин, один с фонарём, у клетки Ионы в её спальне в Уэймарском замке	Олег Бабкин, изд. «Фантлаб»	15
+lib-iona-kletka-2.jpg	rikhard-oridzhin, dzhoakin, iona-oridzhin, lyudi-i-bogi	Лёд бросается на Джоакина у клетки Ионы, узнав, что тот избил его сестру	Олег Бабкин, изд. «Фантлаб»	15
 lib-persty-trenirovka.jpg	persty-vilgelma, dzhoakin, rikhard-oridzhin, martin-shejland, lyudi-i-bogi	Лёд учит Джоакина и Мартина Шейланда стрелять из Перстов Вильгельма	Олег Бабкин, изд. «Фантлаб»	15
 lib-iona-pyl.jpg	iona-oridzhin, rikhard-oridzhin, ulyanina-pyl, lyudi-i-bogi	Лёд подносит к глазам Ионы приказ, написанный Ульяниной Пылью	Олег Бабкин, изд. «Фантлаб»	15
 lib-kharmon-shater.jpg	kharmon, adrian, kuindar, lyudi-i-bogi	Хармон, завёрнутый в полотнище шатра, с пауком на носу подслушивает разговор Адриана со Вторым из Пяти	Изд. «Фантлаб» (иллюстраторы издания: Дмитрий Алексеев, Олег Бабкин, Агний Немов)	15
@@ -258,3 +249,4 @@ crop-menson--yo-menson-sud.jpg	menson:portrait	Менсон на скамье п
 crop-ervin-oridzhin--yo-ervin-palata.jpg	ervin-oridzhin:portrait	Эрвин Ориджин в Палате (фрагмент иллюстрации)	Изд. «Фантлаб» (иллюстраторы издания: Дмитрий Алексеев, Олег Бабкин, Агний Немов)	12	Янмэйская охота
 crop-minerva--yo-stratemy-stol.jpg	minerva:portrait	Минерва над столом для стратем (фрагмент иллюстрации)	Изд. «Фантлаб» (иллюстраторы издания: Дмитрий Алексеев, Олег Бабкин, Агний Немов)	12	Янмэйская охота
 crop-ervin-oridzhin--yo-stratemy-stol.jpg	ervin-oridzhin:portrait	Эрвин Ориджин в стратемной комнате (фрагмент иллюстрации)	Изд. «Фантлаб» (иллюстраторы издания: Дмитрий Алексеев, Олег Бабкин, Агний Немов)	12	Янмэйская охота
+crop-rikhard-oridzhin--lib-iona-kletka-2.jpg	rikhard-oridzhin:portrait	Лёд у клетки Ионы (фрагмент иллюстрации)	Олег Бабкин, изд. «Фантлаб»	15	Люди и боги
