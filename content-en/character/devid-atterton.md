@@ -1,0 +1,42 @@
+---
+title: David Atterton
+full: David Atterton, seminarian
+type: character
+group: Characters from the Interludes
+aliases: David, David Atterton, David Atterton, God's Son David
+summary: A poor seminarian and Rose Wingrem's beloved. Accused of stealing a Sacred Object, he refuses at his trial to save himself by lying at the altar and is sentenced to hang.
+books: konfidentka
+infobox:
+- Occupation: Student Seminary
+- Associated With: Rose Wingram (beloved), seminarian Colin Baker (friend), [[darius-khajtauer|Darius Hightower]] (emissary, trial judge), Abbot of the Abode of Sophia the Wonderworker
+- First Appearance: "Confident", part 1 (in conversation); personally he appears at the trial, part 8 ([[konfidentka|The Confidante]])
+- Status: sentenced to be hanged on the day of trial, June 23; the emissary promises to justify it than the story and ends
+---
+**David Atterton** is a seminary student from the story "Confident", the chosen Rose Wingram. He sits in the basement of the monastery of Sophia the Wonderworker on charges of stealing the Sacred Subject, and the whole story is built around Rose's attempts to save him. ([[svyashchennye-predmety|Sacred Objects]]) Until the trial, David hardly appears on stage: Rose, the abbess, Colin and the emissary speak about him.
+
+## In "Confidential"
+
+### Prosecution
+Rose calls him an abbess when she asks her to become a confidante for Miriam's right: "I won't confuse him with anyone. My chosen one is David Atterton.” To the question “Seminarist?” he answers: “It is he.” The abbess replies that she herself accused David of stealing: he took the Object out of the temple, and the two sisters saw him bring it to the wall "to throw it out and then pick it up." He will be hanged when the emissary of the church court arrives. Rose counters that David “did not steal the Object, but took it for a while for love”: according to legend, if you look through the Object at the Star and call the name of your beloved, Sophia will connect the hearts.
+
+As it was, says Colin Baker. He and David performed summer duty and painted fences in the temple of the monastery. Sister Lisbeth went to bed, leaving the key in the lock. David was "enlightened to take the Item and look at the Star," and he, according to Colin, "understood the danger, but for Rose's sake he was willing to do anything." Colin stood on watch at the Dormitory to meow when the nuns appeared, and David and the Item went to the well. The sisters Maya and Lisbeth came out of the pantry, Colin screamed too late, and David twitched with fright, overturning the bucket. He was "caught with prey."
+
+The seminarians rushed to save him: they made a petition, sent it to the Labelin archbishop, the archimandrite and the archpriest and decided to meet the emissary on the road. Hightower later complained that he was tired "in the name of David".
+
+### Rose's Eyes
+Alchemist Brimsworth, trying to compare love with chemical reaction, Rose says of David: "David is very honest. Not just with me, but with the gods and with myself. He only does what he thinks is right and never acts against his conscience.” According to her, he “has intelligence, compassion and perseverance,” he “will make a great priest,” and therefore he studies in a seminary. Brimsworth calls him “poor” and advises finding a better catalyst. Rose replies, “David is exactly what my soul needs. He is my flamethrower.” In the seminarians' petition, he is described as "the best student of the seminary".
+
+The abbess is cold to him otherwise: she tells Hightower that David did not have a gloria, that he is poor and in love with the daughter of a noble man, "they are not a couple to each other."
+
+### Court
+The trial was scheduled for June 23. On the day of the abbot’s trial, hoping that the emissary would justify David, she released him from the basement: she allowed him to eat with her sisters, walk in the courtyard and enter the temple. Hightower opened the meeting with the words: “A defendant: a young man, David Atterton, a student of the seminary.” David admitted to taking the Object out of the temple, but did not acknowledge the attempted theft.
+
+Colin, while Rose was getting out of the locked basement, stated that David carried the Item to the well to put out the fire. When the abbess opened the chest, the Item flashed in front of everyone. Colin declared David "not a criminal, but a savior."
+
+I gave the floor to David. He swore by his mother Sophia and said that the oath was not necessary: “I stand in the temple at the altar. No priest will allow himself to lie in my place.” When asked if he confirmed Colin’s words, he replied, “No, Your Grace,” and explained, “I took him out of the temple to look through it at the Star and name the girl I love.” The emissary demanded a name, and David, looking at Rose, said, "I'm sorry, Rose. I love you very much. Lady Rose Wingram!". After testifying to the abbess that she had not given him the right or received payment from him, Hightower announced the verdict: "Defendant David Atterton is found guilty of stealing the Sacred Subject. He is sentenced to be executed by hanging. The sentence will be carried out today, at the first sound of the evening song."
+
+### After the verdict
+The abbess reminds the emissary that he was going to acquit David, and demands that the decision be corrected. Hightower calls David's honesty cowardice, but under threat of a book of confidence promises to "cancel the wedding and justify the little puppy." The story ends without showing the release itself.
+
+## Personality
+According to the text of the story, David is honest to the point of suicidal directness: in the temple at the altar, he refuses to confirm Colin’s saving lie, although he knows what this threatens. There is no description of his appearance and age in the story. His dream is to become a priest; on the day of the trial, Rose, deciding what to do after the acquittal, thinks that David will have to leave the seminary, and he will “become a priest, as he dreamed all his life.”

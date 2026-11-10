@@ -1,0 +1,64 @@
+---
+title: Horse Wars
+full: Horse Wars (First, Second, and Third)
+type: event
+group: The Past
+aliases: The Horse War, Kostrov Time, The Horse Rebellion, Darian the Bad Mutiny
+summary: Three wars of the sixteenth century in which Shavan hordes from the West invaded the central lands of the Empire. The first was led by Ganta Darian (Darian the Foul). The wars ended under Empress Juliana the Great, who established the Empire's borders and made the Shepherds' Meadows common territory.
+books: strela-moneta-iskra, lish-odna-zvezda, kukla-na-trone, glas-zimy, yanmejskaya-okhota, lyudi-i-bogi
+infobox:
+- Date: Sixteenth century after the Descent (three wars)
+- Place: West, [[almera-zemlya|Almera]], [[nadezhda|Hope]], [[litlend|Litland]], [[zemli-korony|Crownlands]]
+- Participants: hordes of [[shavany|Shavans]] Reis and Holliwell; Empire (Lord Evrian, then Julian the Great); ([[yuliana-velikaya|Juliana the Great]]) [[dom-oridzhin|Origins]]; Barons of Fairy
+- Commanders: Ganta Darian, Ganta Hadinai, Ganta Royhar Lazy Vol; Duke Odar Origin
+- Outcome: The Shavans are cast behind Holliwell; ([[kholliwell|Hollywell]]) The shepherds of the meadow are declared a common possession; Julian Code of Laws
+- Legacy: Winter's Voice, Imperial Infantry Tactics, Origins Customs, Rei-Roy ([[glas-zimy-mech|Voice of Winter (Sword)]])
+---
+## Background
+According to the "Guide to the lands of Polari", until the XVI century, Reiss almost did not participate in the affairs of the mainland, becoming mired in internal strife. The Empire saw in him only a "crowd of stupid savages", from which you can cheaply buy a horse and a leather jacket. Shavans have long fought Almera, Hope, and Litland for pastures on both banks of Holliwell. Darian the Ugly (in "The Guide" - Count, among the Shavans themselves - Gant) was the first to rally the Shavans of Reis and Holliwell under a single strong command and revealed the monstrous military potential of the West.
+
+Erwin Origin remembered the Shavan legend of how Darian fell in love with the proud beautiful Alileda. She told him to “be strong.” He conquered all the tribes of Reis and Holliwell, took all the lands from the emperor except the capital, but Alileda ridiculed him as weak-willed, and he slaughtered her. When Erwin compared Moran to this Darian in love, Ganta Thunderstorm was outraged: "Darian has overthrown your empire!"
+
+## The First Horse War
+### Invasion
+Shavans call it Kostrov Time. Darian assembled a great horde, crossed Holliwell, and invaded the central lands. ([[kholliwell|Hollywell]]) About two centuries ago, according to the account of the 1770s, Bishop Evrian received in the throne room of the Holy Citadel the news of the beginning of the war, and then a series of reports about the defeat of the imperial troops and the fall of the central counties. ([[prestolnaya-tsitadel|Imperial Citadel]]) Before Evrian, the imperial troops consisted mainly of cavalry, and the infantry, recruited from the rabble, did almost nothing. According to the story of the officer, Evrian gathered eighteen thousand knights, while Darian had fifty-five thousand horsemen. In the first battle, at the Clear Ford, Darian destroyed half of the Imperial army.
+
+### The Imperial Version
+According to imperial books, Darian wiped out Middles County, swept Litland, and conquered [[almera-zemlya|Almera]] and [[nadezhda|Hope]]. For a quarter of a century, the Empire, "shrinked to the size of three duchies," trembled before him. The greatest feat of Darian Erwin considered political: the “rebellious aristocrat” managed to unite all five obstinate Western peoples under his banner, which no one managed before or after. According to the Guide, the horde captured all of Almera and burned Aleridan and Blackmore; it took a century to heal these wounds. Shavans took [[aleridan|Aleridan]] and abused the then Duke's sisters. Both girls, stripped of their weapons, bit off their tongues and bled to death. The [[yuzhnyj-put|Southern Way]] was saved by the lake Smokey Dahl, which became a wall for nomads. ([[dymnaya-dal|Smoky Distance]]) Residents of the Litland jungle, according to the "Guide", gave their lords shelter in the wilds.
+
+### Steppe version
+Ganta Thunderstorm told Erwin something different. Darian took possession of the Golden Sands, Red Earth, Little Earth, half of the Wheat Fields and all the cities of the Crown up to the walls of the capital. The Emperor gave him his own daughter, five carts of gold and ten Sacred Objects, recognized him as the Leader of the Whole World, and himself as only the King of Faunterra. In three years, Darian "overthrowed the Empire of the Foremothers" and would have handled it twice as fast if it had not been for the castles. One of them survived undefeated until the end of the war. The kingdom of Darian stretched from the ocean of the Abyss to Hanoi. The timelines differ in two versions: three years of conquest in legend and a quarter-century of imperial book dominance.
+
+### Siege of the Heart of Light
+The heart of the Light, the capital of the future Hope, the army of Darian besieged for a whole year. Erwin, convincing Minerva that the besieged Melorange could survive without his help, gave this example: a city of one hundred and twenty thousand inhabitants stood against Darian for a whole year. According to the “Guide”, to take the strongest fortress of the Empire by storm Darian could not, and a third of the besiegers died this year from illness and wounds. Help from Faunterra the city never waited and fell. Less than half of the inhabitants survived. The survivors of the siege were silent about her horrors, and only one line entered the ballad: "Death devoured our bones." The bone became the emblem of perseverance on the coat of arms of Hope. This is the only time in five centuries that the city has been taken. Neymir, however, said that the Heart of Light “stood the siege for a whole year” and the reserves were enough for the whole army. According to the Guide, the Duchy of Hope itself emerged only after these wars: two ruined counties, Nearer and Farer, were restored under a single power.
+
+Steppe tradition adds that the fat herds of the Ganta of Royhar the Lazy Vola fed the horde milk during this heavy siege. Roihar's advice brought Darian two significant victories, and he generously rewarded the associate. On the prey, Royhar bought up cheaply so many slave builders that they would be enough for two cities, paved two hundred miles of road to the quarries of Hope and, taking the Heart of Light as a model, began to build in the middle of the Steppe Rei-Roy Castle - "The Place of the Lazy". Above the gate stood a statue of a bull-headed warrior with horns at a height of two hundred feet. Roihar himself did not live to see the end of construction.
+
+### Fracture
+The war was broken by the North. The Sword of the [[glas-zimy-mech|Voice of Winter]], forged in those years (he was two hundred and twenty years old in 1775), was held in his hand by the Duke of Odar Origin when he swore to protect the Empire to the last drop of blood. At the Battle of Doyle, he defeated the great gauntlet of Hadinai and stopped the advance of the Steppe to the north. According to Erwin, this sword killed Hadinai and his sons, three leaders of the Horde of Eagles, a dozen gant and a hundred Shavans. With the same sword, the son of Odar struck his father with a blow of mercy and received the blade as an inheritance. According to the "Guide", Northwood's long-standing feud with Origin ended only in the 16th century, during the Horse Wars.
+
+Later, the First Horse War was remembered as the dark days of the Empire. About the defeat of the imperial army at Labelin in 1774, it was said that such a severe defeat of the Crown had not been known since the First Horse War.
+
+## Second and Third Wars
+Royhar died, but his son completed Rei-Roy just before the Second Horse War, followed by the Third. After the death of Darian and Royhar, luck turned away from the Steppe: the imperial troops recaptured Hope and themselves crossed Holliwell. During the Second War, the young ruler Julian came to power. Mira read about her secret love for her own secretary, who did not dare to answer and left for a long time to wander.
+
+The younger Royhar found himself cut off from the horde and locked up in Rei-Roy. Yangmei general blocked the canal from Brockie, but did not notice the overgrown river Roydan, which watered the city for months. Empress Juliana sent angry letters to the general. Finally, he suggested that Roihar recognize her power in exchange for the preservation of livestock and land. So the son of Lazy Vola received the title of Count Reis. Erwin doubted the truth of the legend: in his opinion, Juliana did not want to enslave, but to rally the land and needed a quiet gaunt-ruler.
+
+The voice of Winter was heard in the Second and Third Wars. He struck the gauntlet and the "lucky barons of Fairis" who beat the imperial troops in the back.
+
+## Outcomes
+Juliana the Great, who ruled for half a century, put an end to the Horse Wars and established the boundaries of the Empire, which have not been violated since. She introduced a code of laws that carefully took into account the customs of all lands (Julian law). ([[yulianov-zakon|Juliana's Law]]) Luga herders on both banks of Holliwell she declared common ownership of three western counties and three eastern lands. Herds can be herded as much as you like, but on condition of peaceful neighborhood. The Julianine bridge over Holliwell, a mile-long arch, opened to the Shavans a trade in cattle with the central lands. By the middle of the 17th century, “having finished with the Horse Wars,” the Empire, in the words of the narrator, “breathed with its full breast”: navigation flourished, galleons were built.
+
+## Heritage
+- **Military.** Against the numerous steppe cavalry, the Crown relied on a strong infantry, capable of withstanding the blow of cavalry. Imperial infantrymen began to wear scarlet shirts, helmets and shields so that blood could not be seen on red. The spears received split tips, which slipped less, and a side spike to pierce the armor of the hasty enemy. Lady [[karen|Karen]] in the collection edition of Arrow, Coin, Spark tells about it differently. ([[strela-moneta-iskra-kollektsionnoe|Arrow, Coin, Spark (Collector's Edition)]]) Under Darian the Evil against the Shavan horse archers, any infantry was powerless, and the Crown fielded its archers with long bows. They were only required to fire four arrows per minute for three hundred yards, while the Shavans were beaten by two hundred. The law even obliged every peasant to practice shooting half a day a week. Scarlet infantry, according to Karen, then only covered the archers who beat because of her back canopy, and was neither spark nor famous. Against the knights of the Great Houses, it began to be used when spark eyes spread.
+- **Origin customs.** Since the Horse Wars, the Kairs have burned their fallen in the campaign, not buried: Westerners have dug up the bodies of northerners and given jackals or hung on trees. Northerners are proud to have saved the Empire from the nomads. After that, the Origins held the West in submission for two centuries.
+- **reputation of the West.** According to Becky Litland, Western leaders are "too wild, moreover, defamed by the Horse Wars", so their daughters can not expect to become empress (in early media - the Western counties, "defamed by the Horse Rebellion").
+- **Rei-Roy.** Count Royhar vowed not to lock the castle gates again, after the Ganta Yumilai stabbed them outside and stole two thousand cows. For a century and a half, they stood open and were locked only in 1775, when [[paul|Paul]] was in charge of Rei-Roy.
+- **Memory.** Songs are sung about the Horse War. Hard castles of that era serve as a measure for new buildings.
+- **Books.** In the library of [[ervin-oridzhin|Erwin Origin]] was the treatise "The First Horse War. Detailed consideration of the reasons for the success of Darian the Bad". Erwin remembered Darian's statement about the nature of power:
+> “True power grows out of love and fear.”
+
+- In captivity in Waymar, [[minerva|Minerva]] tried to give a sign to Adrian, ordering him a gift of the book “The Mutiny of Darian the Bad” and “Bear’s Step”. Wittor Shayland intercepted the letter and figured out that the two names were "enough to say everything". ([[vittor-shejland|Vittor Shayland]])
+- The lower circle of the dungeon in Shayland Castle is dug after the Second Horse War. Before that, dangerous criminals were immediately executed.
+- In 1775, Ganta Thunderstorm gave Erwin the condition: to conquer Almera "faster than the Ganta of Darian".
+- Secretary Dorian Amber, when the Ganta Biray called him "Count Darian", corrected him: "Count Darian is your leader from the Horse Wars, and I am Baronet Dorian." ([[ganta-biraj|Ganta Birai]])

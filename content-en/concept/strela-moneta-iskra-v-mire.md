@@ -1,0 +1,63 @@
+---
+title: Arrow, Coin, Spark (Book within Polari)
+full: “Arrow, Coin, Spark” as a book published and read in the world of Polari
+type: concept
+group: General
+aliases: Arrow Coin Spark in the World, the Book of Polari, A Novel in the World of Polari, A sensational novel, Extended Edition, My Lord 's Edition
+summary: Within the Collector's Edition's literary conceit, Arrow, Coin, Spark is a sensational novel in Polari about the Bridal Fair and the Northern Uprising. The capital's nobility praises it, its protagonists read it themselves, and Lady Karen comments on it for Lord N's expanded edition.
+books: strela-moneta-iskra-kollektsionnoe
+infobox:
+- Theme: The Fair of Brides and the Northern Outbreak, 1774
+- Author: not named (see Author (in Polari world)) ([[avtor-v-mire|The Author (in the World of Polari)]])
+- Editions: the former, with verses; the latter, without verses; extended with notes Karen
+- Publisher of the Expanded Edition: “My Lord N”, owner of the printing house in the [[serdtse-sveta|Heart of Light]]
+- Commentator: Lady [[karen|Karen]]
+- Sequels: "Only One Star," "Yanmei Hunt"
+- Real-World Novel: [[strela-moneta-iskra|Arrow, coin, spark]]
+---
+"Arrow, Coin, Spark" in the world of Polari is a novel about the events of 1774, which is read and discussed by the characters of the cycle themselves. This is a literary play by Roman Surzhikov (see Author's Word). ([[slovo-avtora|The Author's Word]]) In the collection edition of this novel, [[strela-moneta-iskra|Arrow, Coin, Spark]], he writes notes on behalf of Lady [[karen|Karen]]. ([[strela-moneta-iskra-kollektsionnoe|Arrow, Coin, Spark (Collector's Edition)]]) In them, the book has already been printed in Polari, is known at court and is controversial. Below is what Karen says about her as a subject of her world. All the information is from her words. For the unnamed author, see the article "Author (in the world of Polari)". ([[avtor-v-mire|The Author (in the World of Polari)]])
+
+## What a book.
+According to Karen, the theme of the novel is saurish. It’s the Fair of Brides and the Northern Flash — events that are already described in nine historical works and more than a dozen novels. It is unlikely, says Karen, that the author added something significant to the “common knowledge picture”.
+
+The novel consists of three lines. The Arrow line follows [[ervin-oridzhin|Erwin Origin]], the Coin line follows Harmon, and the Spark line follows [[minerva|Minerva]]. ([[kharmon|Harmon Paula Roger]]) For Karen, this is a story about well-known people: she knows many people personally, and she knows more about their future fate than the book says. Therefore, one of the chapters she proposes to read “through the prism of time.” Minerva, Karen admits, really thought the same way as in the book, and almost the entire yard then saw the events the same way. But now a lot of things look different. For example, it has not yet been proven that the murder of the heirs was ordered by Aiden Almer: there is no direct evidence against him (for more details, see the section on other books). ([[ajden-almera|Aiden Almera]])
+
+## Slava
+The book, according to Karen, made a special noise that the metropolitan nobility raised around it. The novel was praised as artistic, but “more precisely, many historical”. It was said that the reader lives the lives of heroes. To not read it was to be called ignorant. Karen herself uses this argument, persuading the Duke of Labelin: “everyone is talking about this book.” ([[moris-labelin|Maurice Labelin]]) Finding the tie of the line of the coin only in the fifth chapter, it is prickly: now it is clear why friends talk so much about the novel.
+
+There is also controversy surrounding the book among readers. The scene of Sibyl's conversation with Minerva in front of the monastery, according to Karen, causes a lot of controversy: some readers consider it a fiction. ([[sibil-nortvud|Sybil Northwood]]) In his own house, Karen’s affair also became an occasion for quarrels with [[menson|Manson]]. She even advises readers not to discuss “Arrow, coin, spark” with their husbands.
+
+## Six years in the far corner
+It was because of the hype that Karen from the spirit of contradiction took the book to a distant corner, where it lay for six years. She read it only at the request of the publisher. So, by the time of the remake, the novel had been known for at least six years. During this time, he managed to get out at least twice. In the previous edition, one of the chapters was interrupted by [[polli|Polly]]'s verses from [[niar|Niar]]. The last verse doesn't, and Karen's happy about it.
+
+## Expanded edition of my Lord N
+One day Karen came to “my Lord N”, the owner of a large printing house in the [[serdtse-sveta|Heart of Light]]. He prepared a special, expanded and expanded edition of the novel. When asked what else can be supplemented with a “multi-pound pile of paper”, he replied: her comments.
+
+The N was like that. Karen is familiar with many heroes, versed in court orders, worked a lot with books and, most importantly, was born in the Heart of Light, as he himself. Karen recalled that she could not be an eyewitness: that year she spent on the island of Faraday Riley. ([[ostrov-faradeya-rajli|Faraday-Riley Island]]) Still, she agreed, but warned that to soften the expression will not. She worked on the notes for five months.
+
+Karen didn't write alone. Some of the notes she wrote on trips, including in the compartment of the train. When the chapters were too scary for her, Manson wrote notes for her. The two pages that fell out after one of their disputes, Karen attached at the end and let the publisher decide whether to print them.
+
+## How accurate is the book
+Karen herself began with the hope of “blatant mistakes”, and there were many of them. She catches the author on the wrong words about armor and weapons, on errors in titles, laws, geography and history (a detailed list is in the article “[[avtor-v-mire|The Author (in the world of Polari)]]”). She calls one chapter “a reserve of slaps”, the other “pure fiction”.
+
+Still, the novel was more accurate than she had expected. The expedition coincided with the memoirs of two of its participants. ([[ekspedicija|Expedition beyond the River]]) The portrait of Countess Sybil Karen is ready to confirm, and Erwin’s thoughts, according to her niece, are transmitted as if he wrote himself. ([[sibil-nortvud|Sybil Northwood]]) The conversation at the monastery Karen believes the truth and wonders how the author recognized it. While checking the book with the archives, Karen admits another thing: the novel is artistic, and the author does not have to accurately reproduce the documents.
+
+Much of the book, Karen says, is deliberately left unsaid. A number of secrets will probably be revealed in the following books, and Karen tries not to spoil the reader’s pleasure.
+
+## How the book was received by the participants of the events
+Karen expected that the prototypes of the heroes would be offended: Minerva in the book often looks like a fool in love, Erwin - a misunderstanding, Almera - scoundrels. It's the opposite. Almost everyone she asked was pleased with her portraits and even flattered.
+- [[minerva|Minerva]] is known for its appreciation of the book.
+- General Davey prides himself on being simple-minded in the novel and reads it as a comedy: "mind, not a book." ([[uiljam-dejvi|William Davy]])
+- The Duke of Labelin scolds the novel, but sent the author a hundred ephemera for how he described his daughter in the Janmei Hunt. ([[moris-labelin|Maurice Labelin]])
+- Ser [[ben-vomak|Womack]] is the only one who is furious.
+- [[robert-oridzhin|Robert Origin]] is not offended that he was forgotten in the first novel: he is pleased with it in the second.
+
+## Other books about the same events
+According to Karen, nine historical works and more than a dozen novels have been written about the Bride Fair and the Northern Outbreak. Some of them she mentions. There are two eyewitness memoirs on the exploit. Aiden Almer's guilt is interpreted differently by historians than the novel. According to some, Baron Rosbet died of illness, and Aiden only raised the noise. The murder of Ser [[adamar|Adamar]] is now attributed to the [[vittor-shejland|Puppeteer]]. Several "respectable historians" believe that [[adrian|Adrian]] used the Duke's long-standing guilt only as an excuse to weaken Almer's house too strong. ([[dom-almera|House Almera]])
+
+The author himself continues. The second novel is “Only One Star” (in reality, “Only One Star”). ([[lish-odna-zvezda|Only One Star]]) There is the Yanmei Hunt (actually the Yanmei Hunt) where [[magda-labelin|Magda Labelin]] appears. ([[yanmejskaya-okhota|The Yanmei Hunt]]) The sixth book is also written.
+
+## Outcome Karen
+In the afterword, Karen calls her work, "shameful to say, great work." She laughs to remember the author's slaps, but in memory and bewilderment of the first chapters: what he tends to. Descriptions of the yard are naive, but wake up nostalgia. The battles are not very reliable, but they are alive. She was most affected by the feelings of the heroes. Knowing that she is waiting for people she knows, she reads the book with fear and sadness.
+
+Several participants of the events, after reading Karen's notes, wanted to write their own. Everyone thinks Karen missed something. Therefore, according to her, the next edition may come out with notes of completely different people. Or the publisher will be afraid of the thickness of her work and forever abandon the idea. From the very beginning, Karen considered the idea ridiculous - "like Yangmei, the patroness of flowers."

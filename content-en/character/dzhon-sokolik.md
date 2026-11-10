@@ -1,0 +1,35 @@
+---
+title: John Falcon
+full: John Sokolik, the commander of Erwin Origin's mercenary archers
+type: character
+group: House Origin
+aliases: Sokolyk, archer John, Sokolik, Sokolik, Sokolik
+summary: A mercenary archer hired away from his previous employer by Erwin Origin after the Battle of the Wise River, ‘the best archer in the northerners' army’. He commanded the archers during the defence of the Palace of Pen and Sword in Faunterra, was one of only three officers still alive near the end of the siege, and died after receiving a wound to the stomach.
+books: lish-odna-zvezda, yanmejskaya-okhota
+infobox:
+- Occupation: mercenary shooter, archer commander in the army of [[ervin-oridzhin|Erwin Origin]]
+- Assistant: Merritt Hawk
+- First Appearance: "[[lish-odna-zvezda|Only One Star]]", Chapter 23 of Arrow (late October 1774)
+- Status: He died in December 1774 while defending the [[dvorets-pera-i-mecha|Palace of Pen and Sword]] (wounded in the stomach).
+---
+John Sokolik is a mercenary archer who served [[ervin-oridzhin|Erwin Origin]] in the Northern War. He was not a northerner. Erwin bought him along with other mercenaries after the Battle of the Wise River. During the defense of the palace at Faunterra, Sokolik commanded the archers and died in the last days of the siege. ([[bitva-za-faunterru|Capture of Faunterra]])
+
+## In "Only One Star"
+### Under Doyle (Chapter 23)
+At the end of October 1774, on the opening day of the tournament under [[dojl|Doyle]], Erwin called in his tent two of the best shooters: Sokolik and crossbow captain Bruce Szczepka. Sokolik "resembled a hunter rather than a soldier": short, tanned, in a leather jacket with rivets, long hair intercepted by a ring, a beard in the entire jaw, "eyes - dashing and sharp." When the Duke asked to teach his men how to shoot from a bow, Sokolik explained that archers become lifelong: “If you are wounded or sick, you go and shoot; and if you are wounded so that you cannot get up, you cut arrows lying down.” As proof, he dropped his jacket and showed skewed shoulders and stiff, "like tree-bitch" fingers of his right hand. "Do you have ten years left, my lord?" Erwin let him go and instructed him to train Bruce Szczepka's infantry.
+
+### Capture of Faunterra (chapters 39 and 41)
+On the night of the capture of the capital, December 6–7, Sokolik and his archers stood at the gates of the palace. When people with lanterns came out of the gate, he commanded to prepare for shooting. Erwin lit up his face and taunted him, "John Sokolik, did you not admit to the guy paying you money?"
+
+In the morning, Erwin gathered his officers. Among them, the author calls Socolik: “a hired shooter, the best archer of the Northern army.” When Major Backfield (Red Earp) demanded surrender and began counting down the seconds, Erwin ordered, "Answer him, Falcon." ([[krojdon-bekfild|Croydon Beckfield]]) Backfield managed to jump over the shield, and the arrow lashed against the stones of the bridge. At the first assault Sokolik on the command “Zalp!” blew into the horn, and the archers shot the guards at the ram. Then they finished fifty soldiers cut off by the raised span of the bridge. In a night attack from boats, Sokolik operated a second spark lantern: "As an excellent shooter, he still brought more benefit as a gunner."
+
+### Siege (chapters 43 and 46)
+According to [[dzhoj-khemmond|Hammond]]'s cairn, Socolik's arrows killed a palace spark engineer who was trying to escape on a boat. [[dzhoakin|Joaquin]] Sokolik explained that reinforcements had come to the enemy: “Two hundred Marines from Marengo.” When the Kairs knocked out a detachment that broke through the ice from the palace, “John Sokolik’s beams held them with arrows.”
+
+At the end of the siege, only three Erwin officers remained alive: [[dejmon-oridzhin|Damon Origin]], [[sorok-dva|Forty-Two]], and John Sokolik. When a group of his archers escaped on the ice, grabbing the golden squirts from the palace, Erwin summoned Sokolik. He said he didn’t let them go. He did not leave himself, although he did not believe in the victory: “Our case is lost, everyone can see it. But there will come a day when you decide to retreat. Then I'll help you out of the pit and get a bag of gold as a reward, not an arrow in the ass like a deserter." These words hurt Erwin's pride, and in the next fight he fought desperately. “In the same fight, Socolic was stabbed in the stomach.” On the assault of the Marines from Marengo, Erwin himself commanded the archers instead.
+
+## The “Yanmei Hunt”
+In May 1775 (chapter 18 of Arrow 5), in Faunterra, archers Dagober and Merrit Hawk shot down pigeons with letters. They recalled seeing the deaths of Damon and John Socolick, the "X-Commander" and the "Arrow Commander". Merritt, a former assistant to Sokolik, boasted: “Only John Sokolik could do that.” He recalled to Erwin that after the death of Socolik, the Duke feared the escape of all hired shooters and promised each one a hundred ephes.
+
+## Trivia
+- Sokolik himself said that a real archer "will distort like an old oak", and his eyes will see a flea for a hundred yards, "but in a book for a foot, all the beech is fried in porridge."

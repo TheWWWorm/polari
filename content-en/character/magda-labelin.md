@@ -1,0 +1,142 @@
+---
+title: Magda Labelin
+full: Magda Fiona Lilith of Sophia, Lady Labelin
+type: character
+group: Southern Way
+aliases: Lady Magda, the Southern Way Infanta, Dolphin Lady, The Unexpected Owner, “Admiral”
+summary: The unattractive, coarse, and highly shrewd daughter of Duke Maurice Labelin. In Shimmery, she seized spark-eyes and a mercenary army, forced Adrian to marry her, and after the Battle for First Winter compelled him to seek peace and became Governor of the Crownlands.
+books: kukla-na-trone, poleznye-lyudi, yanmejskaya-okhota, lyudi-i-bogi, ten-velikogo-dreva, fantazii
+infobox:
+- Full Name: Magda Fiona Lilith of Sophia, Lady Labelin
+- Title: Lady Labelin, Infanta of the South; since 1775 wife of Adrian ("the empress" at his court); then Governor of the Crown Lands ([[yuzhnyj-put|Southern Way]])
+- Lineage: Pramatery Sofia
+- House: [[dom-labelin]]
+- Father: [[moris-labelin|Maurice Labelin]]
+- Mother: Duke Maurice 's
+- Brothers: several brothers, the eldest is the heir of the duchy
+- Husband: [[adrian|Adrian]] (from the summer of 1775)
+- Children: in "Fantasies" - a son from Adrian (name is not named); in winter and spring 1776 Magda is expecting a child, by autumn 1776 he was born
+- Nicknames: "Dolphin Lady", Unexpected Mistress; her father calls her "golden cat", and in anger "pig" and "fool"
+- First Appearance: "The Useful People" (Advice in Grace)
+- POV: Episodes of the chapters "Coin" in "Yanmei Hunt" and "Humans and Gods"; "Coin - 1", parts of the chapters "Witness" and "Cap" in "Shadow of the Great Tree"
+- Status: is alive (at the end of the cycle); in Fantasia, the governor of the Lands of the Crown, the mother of Adrian's son; in November 1776 she was widowed
+---
+## Early information
+Magda is the daughter of Duke [[moris-labelin|Maurice Labelin]], ruler of the South Road. ([[yuzhnyj-put|Southern Way]]) She has an elder brother, the heir to the duchy, and she herself did not claim power. Mira, who had learned the family of all the great lords, knew little about her: the infant was famous for external ugliness, rough, almost masculine manners and a sharp mind in everything that concerned money. Despite her youth, Magda led the treasury of the city of [[labelin|Labelin]] until it was captured by the northerners.
+
+Two years before the events of the cycle, Maurice arranged with Count Damir Reis: Flights received a trade route through the Smokey Dahl, and Labelins received Western support for [[valeri-grejsend|Valerie Graysend]]. ([[dymnaya-dal|Smoky Distance]]) To strengthen the union, the Duke proposed Magda's marriage to the young [[yukhan-rejs|Johan Reis]]. Juhan "pricked and twisted his nose", but after one feast they even kissed. Flights were delayed with the marriage contract, Valerie became a laughingstock of the court, then Damir Reis died, and the idea collapsed. Later, Magda told Adrian how she asked her father why the “small-time” [[iona-oridzhin|Iona Origin]] married the ruler of the land, and she “sits in girls.” The father replied that the lords ran away at the sight of her.
+
+## In “The Useful People”
+In the winter of 1775, Duke Maurice held a council in Grace, in the palace of the Marquises of Gracend. Twenty-five-year-old Magda made fun of everyone in turn. Baron Hugo Darryl, she predicted that when going to the [[pervaya-zima|First Winter]], his army "will stick his forehead in the walls." ([[derril|Hugo Derrill]]) Money to bribe vassals of Origin, according to her, disappeared naturally: “everyone loves money, but everyone wants to be on the strong side.” She told Father and Agent [[moger-bakli|Moger Buckley]] the exact figures: Shimmery has the right to sell to the side of no more than ten percent of the eyes, and the cost of the Crown is two million three hundred thousand with one and a half million revenues.
+
+The idea was announced by the Duke. Labelins will not be armed with eyes, so that kairs do not open a hunt for them. Instead, they'll buy up [[shimmeri|Shimmery]]'s entire supply and sell it off cheaply. Magda enthusiastically picked up: chivalry will “obsolete”, because any peasant will be able to kill a knight from a self-shooter. Buckley gave her a self-shot, and she immediately melted the knightly armor with a shot.
+> “Money and those who have it, that’s who should rule the world!”
+
+The Duke entrusted two million in gold only to his daughter. In Shimmery with her sailed Baron Darryl with the regiment and Buckley. On the stern of the flagship "Great" Magda told Buckley to stop flattering: "I know who I am." Buckley hinted that he knew how to save a million, and deliberately kept silent about it under the Duke, otherwise he would have given only half the money. Magda agreed to put a million into circulation, and Buckley dreamed of stealing everything.
+
+## "A Doll on the Throne"
+In the spring, Buckley came to [[minerva|Minerva]] with a letter of recommendation. The Duke's secretaries confirmed that the letter was written by Magda's hand. Buckley said that the Labelins, on the orders of the Duke, provided the [[podsnezhniki|Snowdrops]] with spark weapons, and the "wise lady Magda" came up with a different way. Peasants will not receive weapons if the ruler pays ten ephesas for each of the eighty thousand rebels. Minerva wrote a bill for eighty thousand as a deposit and stressed that she did not trust Buckley personally.
+
+## The “Yanmei Hunt”
+### Failure of negotiations
+Swimming in Shimmery took six weeks. In [[lajem|Laem]], Magda's squadron met with a magnificent reception, but negotiations did not take place. Magda took Buckley, lying in the pool, and for failure told the slaves to dip his head in the water. Prince Hector refused, and the Council of Five responded only with praise of silks and coffee. ([[gektor|Hector of Shimmery]]) Then Darryl silenced the musicians, and Magda gave a speech in which not a single phrase was without the words “fucking” or “back”. Hector picked up the cup for the "unsurpassed speaker", referred to the ailment and left, and the other nobles dispersed after him. Soon Labelins were charged for living in the palace: nine thousand five hundred Hilt in twenty days. Hector's eyeballs have already been sold to Origin and Farway.
+
+### The Buckley ambush
+Buckley planned to steal hidden gold from the Grace's Pride Galleon. Hired killer Rodrigo from the guild of “broad sex”, which paid [[kharmon|Harmon]], warned Magda. The assailants were killed. Magda kicked Buckley with a boot, ordered to kill the surviving accomplice and provided punishment to his father. She learned from Rodrigo that he had let Harmon go. The Guild refused to kill the “northerner” Origin: she did not touch the Lords of the Great Houses.
+
+### The Solar Regiment
+General Lorinal Gitan, commander of the Solar Regiment and the "sword of Prince Hector", pretended not to understand Magda's hint of bribing him. Gitan soon died in a carriage from a bloody cough. The man in the hat immediately asked his deputy, Colonel Horey, to enter into negotiations with the "Dolphin Lady". Magda later summed it up herself: “General Gittan has snubbed me — he is dead, too.”
+
+The Labelin squadron intercepted the fleet of the Solar Regiment, which led its eyes north. Magda ordered the raising of the "evil dolphins" - a battle banner without wheat, blue, with a black fanged dolphin. Darryl hung two prisoners on the mast. Instead of fighting, Magda offered Horey, her father's age, not money, but a revenge on those who consider them "leaked": "We'll kick their ass!" She promised twice as much as the prince. The regiment crossed over to her side with a load of eyes. Looking at the map, Magda "understood what Origin felt when he decided to take Faunterra."
+
+### Hiking in the mountains
+Labelins landed at Iserin. The city took a trick, setting it on fire. Captain [[ufretin|Ufretin]], commander of the St. Straus Brigade, passed to Magda when his ostrich did not bite her. Commandant Bellis, who refused to surrender the castle, Ufretin stabbed Magda at the hint. The troops were told that it was going to Litland, but in fact Magda led him to the [[bezdonnaya-propast|Bottomless abyss]]. There, at the mountain monastery, the knights of Darryl defeated the mercenaries of the Golden Swords. Magda announced: "This castle is mine!" - and learned in the mysterious Hunter of the living [[adrian|Adrian]]. The stunned Magda and Darryl swore an oath to him, and Adrian recognized the Labelins' right to all trophy eyes. Meanwhile, in Faunterra, Duke Maurice announced in the House that the South Road was at war with Shimmery.
+
+## In "Humans and Gods"
+Magda demanded that Adrian give her the captured Harmon and the Light Sphere. ([[svetlaya-sfera|Radiant Sphere]]) Adrian declared the Sphere his trophy, and made the merchant a cupbearer. Magda admitted his rightness, but henceforth kept on guard. Colonel Horey secretly offered her a plan. One of the two reports about the Miran Pass should have been burned so that Adrian did not get into the Surlion and did not do without the help of the Labelins.
+> “Also, let me clarify: who is the emperor here?”
+
+To find out the secret purpose of Adrian, Magda took [[niza|Niza]] hostage and forced Harmon to spy. Harmon brought her a version of the destruction of the Objects, which Adrian himself apparently suggested. On the ship, Magda herself looked into the book of the Forefather Evrian “Analysis and Synthesis” and caught the words about the deconstructor. She liked the plan, and therefore she did not, as she was going to, "move" Adrian and sell kairam for the city of Labelin.
+
+The squadron passed the Surlion. Adrian demanded an explanation, and Magda, having contracted the disease, accepted him with eight knights in self-shooting. She put the condition openly: the twenty-six-year-old infant is “still unmarried” and will help the army only to the groom. Adrian groped and swore he wouldn't give in to blackmail. Meanwhile, [[minerva|Minerva]] herself guessed that the missing Adrian is with Magda's army.
+
+## The Shadow of the Great Tree
+### Wedding
+In July 1775, the fleet came to Grace, where the wedding was being prepared. His father met Magda with a scuffle: the wedding dress, sewn according to the winter measure, spread on his back. Maurice called Adrian a "leper" whom everyone wants to kill. Magda explained that she put on Adrian, "like a running horse", and in response called her father a coward.
+> “I eat the darkness, I dare! You have the courage to stretch out your hand and take it!”
+
+She reminded me that she had beaten the Shimmers, got all the eyes of the South, returned two million to her father, and brought the emperor's fiancé. Maurice gave in and forgave her, "but it's the only time." Sphere and her fake Labelin decided to leave Adrian as a wedding gift to his debt to grow. The Duke pardoned Harmon. The second dress, a couple of inches wider, my father ordered in advance.
+
+In August, the train with the newlyweds arrived in [[faunterra|Faunterra]]. When the portraits on the streets opened the bride, it was not Minerva, but Magda. On the steps of the palace, Adrian pushed his wife forward, and she broke the flower. In the evening, Lady in Darkness reported that Harmon had stolen the Sphere again. Magda laughed to tears, "You've been spoiled, man!"
+
+### The Empress
+In the capital Magda, which the court called the empress, was afraid of her husband and at the same time was proud of him. She led his treasury and borrowed from her father a hundred thousand ephesas secured by the Palace Bridge. Upon learning of this, Adrian was offended, but Magda recalled that the House of Labelin is now his only support. Then his father demanded a pledge for a new loan of the Holy Citadel. ([[prestolnaya-tsitadel|Imperial Citadel]]) Magda herself obtained a map from her husband, according to which the County of Main with six silver mines departed the Southern Way.
+
+During the interrogation of the prisoner Johan Reis, Magda persuaded her ex-fiancé to connect Adrian with Paul through the [[golos-boga|Voice of God]]. She swore to Sophia that the Gnoi-gante would not be harmed, and promised Johan freedom, "but did not say when." On the advice of her father, Magda got a personal guard of the most reliable knights of Darryl and took a lady who would share food with her. The first lady-in-waiting was pregnant Valerie Gracend, who influenced her husband and led to Adrian Silver Fox. ([[valeri-grejsend|Valerie Graysend]]; [[aleksis-smajl|Alexis Smile]]) The second was Nisa, appointed by the cupola. The riddles of Adrian about the Great Tree ("How are gods different from people?", "Why is the lighthouse cunning?") Magda instructed the court ladies and the Lower and with their help found answers.
+
+### Hiking to the north
+In October 1775, Adrian's army liberated the Southern Way without a fight: the Kairs retreated, and the city of Labelin was taken without a single rank. Magda feared the trap of the cunning Origins and, having learned by heart the analysis of threats compiled by Darryl, shared them with her husband.
+
+In [[soltaun|Soltown]], which was liberated by the Shimmerians Francis-Ilian and Hector, Magda sat at a solemn dinner next to her husband and father. The king at first extolled her "bravely and bravely played" Shimmerian campaign, but immediately demanded her eyes be returned. Adrian and Maurice agreed to give in advance: the eyes remained with the travelers until the end of the war, and then returned to Shimmery or paid. In addition, the king demanded the head of Colonel Horey, and the husband and father agreed to this. Magda jumped up, overturned the chair, and shouted that Adrian was "pushed out of his ass" only three people - she, Darryl and Horey - and now one of them is given in a loop, and her trophies are "leaked". Under the cold gaze of the court and the fierce gaze of her father, her husband sent her away to her chambers. After that, she was so angry with her husband that she fell for Valerie.
+
+During the campaign, Magda was severely wounded that Adrian had taken away her two only successes of his own - the army and the eyes. Valerie taught her not to scold her husband, but to let him atone for the guilt and praise him. On the same advice, Magda depicted pregnancy: in public, she stroked her stomach and said that she wanted to give birth in sunny Laem, and the flattery of the court immediately became sincere. However, at a feast in Doyle, she began the “lunar days”. Already knowing that she was not expecting a child, Magda sent her husband roses with a note: “Dear, I feel: a son will be born. Let's call him after your father." Adrian answered with a chrysanthemum and a card: “You are not pregnant, alas, but I hope you will soon. Our son will have the most wonderful inheritance in the world.” My father sent her notes every day, how proud she was, and advised me to immediately ask my husband for a letter for the First Winter. Magda’s mother and brothers visited the court, “exhausted” by envy, and the father sent them back to Labelin the next day. Meanwhile, she soberly observed that Hector's Shimmering regiments left behind served as a collar for her family. The port of Windley is also behind the cairns.
+
+Over time, pretended praise became sincere, and a real passion appeared in the marriage. In November, the court stood in Main, on the land of Origen, where Magda demonstratively drank the Orge. There Adrian revealed to her and Manson the plan of the Great Tree and asked her what she wanted; Magda wished to become the most beautiful in the world, a hundred years to be Empress, to go down in history and double the land of the House of Labelin. When the Puppeteer came to Adrian and her husband struck him in the arms, Magda furiously recalled that the First Winter had been promised to the Labelins, but Adrian showed her the order's code: Erwin allegedly agreed to surrender to him along with his family and Nathaniel, and Shayland, taking the empty First Winter, would become a rebel. Then Magda called her husband a genius and almost did not lie. Through [[ptakha-bez-ploti|Bird Without Flesh]], she watched the battle for the First Winter: in the morning she was proud of how her husband's calculation was being fulfilled, and in the evening, the victory of the Origins, who received the Rings and locked five battalions in the rear of Adrian, turned her pride into anger. ([[bitva-za-pervuyu-zimu|Battle for First Winter]]) While her husband was sitting on the military council, her father burst in demanding peace, and Magda, to his astonishment, immediately agreed: “This time I am for caution.” She promised to persuade her husband and added that Adrian should return the money for the Bright Sphere.
+
+### Letter of Peace
+On the morning of December 3, Magda enthusiastically hugged her husband when the puppeteer appeared stunned with a spark and froze in [[chrevo|the Womb]], and under Shayland's dictation, she drew a table of Origin Items in a notebook, titled "Frozen Ass Items". She herself dreamed of having a conversation with the wounded Erwin and bargaining for peace, but through the Voice of God Adrian called Erwin a criminal, threatened the Origins to destroy their Items, and ordered Johan Reis to destroy the Hand of the Insignia. ([[ruka-znakharki|Healer's Hand]]) Magda hissed at her husband, sticking her fingernails into his hand, and then rushed to Reis and tried to tear the Item off him. At this point, Johan died of poison, poured by [[menson|Manson]]. Magda realized that this was a joke, but without hesitation attributed the poisoning to herself, insulted her husband with the last words and forced him to write an apology to the Origins; Francis-Ilianus supported her with a bow. A letter asking for peace was signed by "Magda Fiona Lilith of the Sophia family, Lady Labelin" and Adrian, and delivered him to the First Winter of Nisa.
+
+### Negotiations in the First Winter
+A few days later, Magda, along with Adrian, Lady in Darkness, Francis-Ilian, Silver Fox and Manson, came to the [[pervaya-zima|First Winter]] for peace talks. The Origins argued who was in charge of Adrian's family: Minerva believed that Magda had influence on both her husband and father and that by attracting her, you could get the entire Southern Way. At the feast Minerva gave her a couple of compliments and hinted at a conversation about the world “in women’s society”; Magda rudely, but sincerely rock-murdered: “How can one not talk about peace with the World-Bearer herself!” Together with her husband, she insisted on starting negotiations the same evening and, puffing, rose, leaning on Adrian, in the officer's salon. When Robert Origin killed Lady in the Dark, Magda tore a brooch-weapon off her neck, but after Minerva apologized, she only grumbled: "Damn the dog." Along with the rest, she saw the Star through the Bird without a Flesh and listened to Navi's revelation about the false lighthouse and the world of the gods, listening to it with her mouth open with delight ("Premacy your leg! I want to die!”)
+
+## In "Fantasies"
+The author calls the stories “Fantasies” possible fates of the heroes after the end of the cycle.
+
+### Peace in the First Winter
+In December 1775, in the First Winter, something happened that Magda described to her father as follows: The Great Tree of the Order was “covered” and could not grow anymore. Almost all the witnesses lost their composure, and Magda kept her speech and negotiated. Lady Sophia and the judge were on the side of the Origins, and Dorian Amber and [[lejla-talmir|Leila Talmir]] on the side of Minerva. ([[sofiya-oridzhin|Sophia Jessica Augusta]]; [[dorian-ember|Dorian Ember]]) Erwin was present, but was "barely alive from exhaustion". Magda gave it to the northerners Windley and Main. In return, Adrian retained the right to participate in the election of the lord, and the frozen Puppeteer passed under Maurice's supervision until the decision of the ecclesiastical court. Magda herself became governor of the Lands of the Crown, that is, the viceroy of Minerva in Faunterra. The Origins did not fully trust the one who sleeps with Adrian, so her father vouched for her, and he personally struck hands with the Duke of the North. So Magda, the ruler of all the lands of the Crown, was higher in the hierarchy than the husband, the ruler of one city. In a conversation with her father, she called Mimi and Mimishka: “in the northern swamp Mimi is the most important toad.”
+
+When she came to her father with this news, Magda drank two glasses of Orja in a row. "You're pregnant," the Duke recalled. “Fuck you,” my daughter replied. Later, [[nekseya-flejm|Nexia Flame]] bitterly thought that even the “fat hamster Magda Labelin” became close to Erwin, Minerva and Iona, because she knew their terrible secret.
+
+### The Unexpected Owner
+The townspeople called her the Unexpected Lady. Half of the Crown Magda's land taxes were transferred to Minerva in the First Winter, and the other was spent in coordination with his father on palaces, the Admiralty, spark shelves, protection and the three remaining in the ministry's capital - Science, Lands and Arts. Her father “tied her with a financial leash.” After the Shimmering antics, Magda no longer contradicted him and did not speak without his permission, but he listened to her carefully. She lived with her father in the Table Citadel and visited her husband in the Pera Palace and the Sword only for the fulfillment of marital duty. ([[dvorets-pera-i-mecha|Palace of Pen and Sword]]) Magda did not believe that Adrian had forgotten the humiliation, and his politeness only alarmed her. Father and daughter kept a network of spies at the town hall and the palace and exchanged information every day at lunch.
+
+In the spring of 1776, the Labelins were invited to the Citadel by Professor [[nikolas-olli|Nicholas Ollie]] with his recording device. Magda explained to the scientist that her husband has only fees from the shops of Faunterra: “he will not give you money if I do not give him.” Maurice gave the inventors a "donation" with the condition not to complete the device until October, fearing that Adrian with his help will collect the common people in the capital. Magda countered that the people loved Adrian more than "Mimi and Netopyrya." The father replied that the call of the blacks would avert the lords and give the crown to Erwin. Then Magda stroked her stomach, “dreaming about how it would still be nice to give birth to the crown prince,” but admitted the correctness of her father.
+
+In the summer of 1776, a knight "from the Duchess - Lady Magda Labelin" came to the town of Finborough in the Southern Way. There he told his long-time comrade, Baron Bernard Devo, that Lady Magda would "not be offended at all" if on the day that Adrian's recorded speech was brought, a spark disappeared in the city. ([[barony-devo|The Barons Devo]])
+
+### Under the Bird's Eye
+In August 1776, Adrian and his wife sat in the Strathe Palace of Pen and Sword. There, the Shavan of the Golden Grove showed through the Bird of Minerva with Erwin. ([[zlataya-griva|Golden Mane]]) Adrian directly told Magda that he knew about her rapprochement with the mistress: she was distant from her husband, because she was afraid of Origina and wanted to serve Minerva. He then asked how much political freedom she saw behind Minerva and whether she would protect anyone from the Origins. Magda, who did not expect her husband to know so much, answered both times with one word: "Damn."
+
+In June 1777, her maid of honor, Valerie Greysend, by then a double mother, told the executioner Walter that her lady lord Magda "kept her teeth at the mere word 'feeding.'"
+
+### "Ad-ri-an!"
+By the fall of 1776, Magda had given birth to a son, Adrian. At Erwin's advice, Edgar Flame recalled: "Lady Magda gave birth to Adrian's son. The heir to the throne is a guarantee of stability.” In October, Magda, along with the new priory of Amessin, met Minerva at the Station Square and settled her in the Venerable Citadel. As a viceroy, she warned the lady that the common people of the Land of the Crown were entirely on Adrian's side, and rumors of her connection with the "bat" scared off voters. Minerva realized the Labelins were spying on her. Magda then offered her the post of finance minister or viceroy of the northern lands for refusing to fight. Prior to the election, Minerva remained a "temporary ruler", but, according to Magda, "the consequences will come only later."
+
+On the day of the opening of the House, Adrian raised the baby in front of the Lords and gave it to his wife, and Magda carried her son out of the hall. In the evening, when Adrian returned to the Palace of Pen and Sword with the Golden Gryva (Magda knew where the Shavan was hiding and when it was supposed to come out), she called the "arrest plan" "the worst of all." ([[zlataya-griva|Golden Mane]]) She was worried about her father, who remained in the besieged House, and about the kairs in Arrowback County. Baron Darryl, on Maurice's orders, defended the Citadel, the "wife and son" of the lord, but refused to enter into battle with the Kairs. Adrian died in November and his body was never found. Francis-Ilianus conveyed the fears of the nobility that someone would claim power on behalf of his son. Later, Minerva in tears counted Magda among those whom she herself pushed away.
+
+## Personality and Appearance
+Magda is thick, with a round loose face, pimpled skin and triple chin. In moments of reflection, she becomes a “floating” father. Buckley compared her ass to "two rotten pumpkins", and in Shimmery she was still full. She swears without restraint: “The baron has not yet been born” who would make her not say “ass”. Magda is straightforward, cynical, stingy and loves money, but knows how to count and spend it. For the sake of profit, she is capable of cruelty: she takes hostages, arranges murders and deceives prisoners. At the same time, she is smart, brave and much more determined than her father. She explained her secret in one word: “smiling.” She does not flatter herself and despises flattery. Before Adrian, she first timidly and in a decisive conversation on the ship says to herself "Who is the emperor here?", and eventually takes over him.
+
+## Relationships
+### Maurice Labelin
+The father first keeps Magda in check and scolds her "stupid", but is proud of her mind. He considers the Shimmerian adventure to be madness and forgives only after a quarrel. After peace in the First Winter, he “does not shower” with his daughter and calls her his “golden cat”.
+### Adrian
+Husband. Magda sees in him a bet and a source of fear, and he is her annoying, but necessary ally. Then he became proud and passionate about it. However, after the First Winter, she subdues him and stays away from him, not believing that he has forgotten the humiliation.
+### Harmon and Nisa
+[[kharmon|Harmon]] is an enemy of House Labelin, whom Magda turned into an informant. She first took the bottom hostage, and then made a frailty and a cup because she appreciated her obstinacy.
+### Horey and Darryl
+Colonel Horey is her favorite mercenary, “the best employer of my life,” as he himself admitted. Baron Darryl is the stern warlord of his father, whom Magda mocks, but who is given a welcome opportunity to take revenge.
+
+## Trivia
+- In the negotiations with flags between the ships Magdu was designated by the word "Admiral", and she flattered.
+- So that Adrian did not settle on the flagship "Great Sophia", in his cabin "accidentally" were two rats.
+- Magda's dream of giving birth is to give the baby to nursing mothers and escape to the Ministry of Finance to demand a report.
+- Juhan Reis Magda recalled with warmth, but after receiving a favor from him, she did not object when the prisoner was taken to Lady in Darkness.
+
+## Appearances
+- "A Doll on the Throne" - mentions; Magda's letter brings Buckley.
+- "Useful people" - the first appearance (council in Grace, sailing to Shimmery).
+- "Janmei Hunt" - Laem, eye capture, meeting Adrian; scenes from her face in the chapters of Coin.
+- "Humans and Gods" - a hike with Adrian, matchmaking on a ship.
+- "Shadow of the Great Tree" - wedding, life at court, a trip to the north, peace with the Origins.
+- "Fantasies" - Governor of the Crown Lands ("Device", "Annoying trifles", "Ruthful business", "Closer - further", "Deadly evidence", "Ad-ri-an!").

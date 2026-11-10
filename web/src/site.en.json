@@ -1,0 +1,365 @@
+{
+  "name": "Polari Wiki",
+  "brand": "Polari",
+  "about": "An encyclopedia of Roman Surzhikov’s Polari series.",
+  "translationNote": "This unofficial English edition contains draft translations. Some articles have not yet been proofread.",
+  "work": {
+    "acc": "series",
+    "gen": "series"
+  },
+  "spoilers": {
+    "unit": "books",
+    "word": {
+      "gen": "book",
+      "prep": "book",
+      "genPl": "books",
+      "prepPl": "books",
+      "acc": "book"
+    },
+    "question": "How far have you read in Polari?",
+    "option": "Through “{title}”",
+    "cycleStart": "1774",
+    "revealedIn": {
+      "0036-05-02": 15,
+      "1750-01-01": 15,
+      "1756-08-01": 16,
+      "1772-01-01": 19
+    }
+  },
+  "types": {
+    "book": {
+      "one": "Book",
+      "many": "Books",
+      "about": "Books and interludes in reading order."
+    },
+    "character": {
+      "one": "Character",
+      "many": "Characters",
+      "about": "People in the stories."
+    },
+    "house": {
+      "one": "House",
+      "many": "Houses and factions",
+      "about": "Great Houses, orders and factions."
+    },
+    "place": {
+      "one": "Place",
+      "many": "Places",
+      "about": "Lands, cities, castles and rivers."
+    },
+    "event": {
+      "one": "Event",
+      "many": "Events",
+      "about": "Wars, battles, conspiracies and turning points."
+    },
+    "concept": {
+      "one": "Concept",
+      "many": "Concepts and lore",
+      "about": "Beliefs, customs and the workings of the world."
+    }
+  },
+  "nav": [
+    {
+      "title": "Encyclopedia",
+      "links": [
+        [
+          "/",
+          "Home"
+        ],
+        [
+          "/c/book",
+          "Books"
+        ],
+        [
+          "/c/character",
+          "Characters"
+        ],
+        [
+          "/c/house",
+          "Houses and factions"
+        ],
+        [
+          "/c/place",
+          "Places"
+        ],
+        [
+          "/c/event",
+          "Events"
+        ],
+        [
+          "/c/concept",
+          "Concepts and lore"
+        ]
+      ]
+    },
+    {
+      "title": "Explore",
+      "links": [
+        [
+          "/map",
+          "Map and timeline"
+        ],
+        [
+          "/map3d",
+          "3D map"
+        ],
+        [
+          "/families",
+          "Family trees"
+        ],
+        [
+          "/relations",
+          "Character relationships"
+        ],
+        [
+          "/gallery",
+          "Gallery"
+        ],
+        [
+          "/stratemy-igra",
+          "Play Stratagems"
+        ],
+        [
+          "/ispytaniya",
+          "Quizzes"
+        ],
+        [
+          "/kto-ty",
+          "Which character are you?"
+        ]
+      ]
+    },
+    {
+      "title": "Reference",
+      "links": [
+        [
+          "/all",
+          "All articles"
+        ],
+        [
+          "/chronology",
+          "Timeline"
+        ],
+        [
+          "/glossarij",
+          "Glossary"
+        ],
+        [
+          "/tsitaty",
+          "Quotations"
+        ],
+        [
+          "/novoe",
+          "What’s new"
+        ],
+        [
+          "/random",
+          "Random article"
+        ]
+      ]
+    },
+    {
+      "title": "Other worlds by Roman Surzhikov",
+      "links": [
+        [
+          "https://mirkolodcev.wwworm.com/en/",
+          "World of Wells Wiki"
+        ]
+      ]
+    }
+  ],
+  "sections": [
+    [
+      "all",
+      "All articles",
+      "An alphabetical index of every article."
+    ],
+    [
+      "map",
+      "Map",
+      "Explore the world and follow events on a timeline."
+    ],
+    [
+      "map3d",
+      "3D map",
+      "Explore the world in three dimensions."
+    ],
+    [
+      "gallery",
+      "Gallery",
+      "Maps, illustrations and portraits."
+    ],
+    [
+      "families",
+      "Family trees",
+      "The family trees of the Great Houses."
+    ],
+    [
+      "relations",
+      "Character relationships",
+      "Explore how the characters are connected."
+    ],
+    [
+      "stratemy-igra",
+      "Play Stratagems",
+      "Play the board game from Polari against the computer."
+    ],
+    [
+      "ispytaniya",
+      "Quizzes",
+      "Test your knowledge of the world."
+    ],
+    [
+      "kto-ty",
+      "Which character are you?",
+      "Take a quiz to find your match."
+    ],
+    [
+      "chronology",
+      "Timeline",
+      "Key events in reading and historical order."
+    ],
+    [
+      "novoe",
+      "What’s new",
+      "New and expanded wiki articles."
+    ]
+  ],
+  "home": {
+    "title": "Polari",
+    "byline": "An encyclopedia of Roman Surzhikov’s series",
+    "tagline": "The people, lands and history of the Empire.",
+    "description": "Find a character, explore the world, or revisit the story at your own pace.",
+    "mapImage": {
+      "src": "img/map-polari-small.jpg",
+      "w": 1400,
+      "h": 1054,
+      "alt": "Map of Polari",
+      "label": "Map of Polari",
+      "aria": "Open the map"
+    },
+    "readingHint": "Choose the last book you finished. The wiki will hide later events.",
+    "booksTitle": "Books in the series",
+    "booksLink": [
+      "/c/book",
+      "All books in reading order"
+    ],
+    "novels": 2,
+    "side": {
+      "title": "Interludes",
+      "bookGroup": "Interlude",
+      "count": 3,
+      "all": [
+        "/c/book",
+        "Full reading order"
+      ]
+    },
+    "houses": [
+      "Houses and factions",
+      "Great Houses, orders and factions."
+    ],
+    "chronology": "Key events, wars and eras.",
+    "references": [
+      [
+        "/families",
+        "Family trees"
+      ],
+      [
+        "/relations",
+        "Character relationships"
+      ],
+      [
+        "/c/place",
+        "Places"
+      ],
+      [
+        "/glossarij",
+        "Glossary"
+      ],
+      [
+        "/gallery",
+        "Gallery"
+      ],
+      [
+        "/all",
+        "All articles"
+      ]
+    ]
+  },
+  "regions": [
+    "Origin",
+    "Northwood",
+    "Shayland",
+    "Crownlands",
+    "Almera",
+    "Hope",
+    "Southern Way",
+    "Litland",
+    "Kingdoms",
+    "The West",
+    "the Beyond",
+    "Rivers, Lakes and Seas"
+  ],
+  "roster": {
+    "features": [
+      "ervin-oridzhin",
+      "minerva"
+    ],
+    "primary": [
+      "House Origin",
+      "Court and Crown"
+    ]
+  },
+  "houses": {
+    "title": "Great Houses at a glance",
+    "aria": "Compare Great Houses",
+    "first": "House",
+    "cols": [
+      {
+        "h": "Lands and capital",
+        "k": "land",
+        "sub": "capital"
+      },
+      {
+        "h": "Ruler in 1774",
+        "k": "ruler_start"
+      },
+      {
+        "h": "Ruler at the end of the series",
+        "k": "ruler_end",
+        "spoil": true
+      },
+      {
+        "h": "Lineage",
+        "k": "pramater"
+      },
+      {
+        "h": "Arms and colors",
+        "k": "sigil",
+        "sub": "colors"
+      },
+      {
+        "h": "Objects",
+        "k": "predmety"
+      },
+      {
+        "h": "Chamber",
+        "k": "palata"
+      }
+    ]
+  },
+  "map": {
+    "title": "Map of Polari",
+    "sub": "Select a marker to read about a place. Use the timeline to explore events or follow a character’s route.",
+    "image": "img/map-polari.jpg",
+    "w": 3200,
+    "h": 2410,
+    "alt": "Map of Polari"
+  },
+  "gallery": {
+    "sub": "Browse maps, illustrations and portraits. Select an image to enlarge it."
+  },
+  "quiz": {
+    "subject": "Polari"
+  }
+}

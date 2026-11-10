@@ -1,0 +1,52 @@
+POLARI WIKI — ATTRIBUTION
+Prepared: 8 November 2026
+
+SOURCE ENCYCLOPEDIA AND LITERARY WORLD
+
+Source articles: Polari Wiki, TheWWWorm/polari and its contributors.
+Repository: https://github.com/TheWWWorm/polari
+Source commit: 3bffefa0d69eef729cc0ea4e6ff84ced6ce7dc1a
+Original wiki: https://polari.wwworm.com
+
+The Polari literary cycle, its world and characters, and the Guide to the
+Lands of Polari are works by Roman Surzhikov. This package translates wiki
+article prose about those works; it is not an official English translation
+of the books. References and quotations in the articles originate in the
+source wiki and its cited works. English terminology and name spellings are
+editorial choices and are not represented as author-approved.
+
+ENGLISH DRAFTS
+
+Prepared with ChatGPT assistance. Most article bodies are automatic drafts;
+selected complete articles were translated directly and reviewed by the
+assistant. Page titles, summaries, and infobox labels were translated
+separately. The manifest and index identify each article's review status.
+The collection as a whole has not received full semantic proofreading.
+
+TRANSLATION MODEL
+
+OPUS-MT / Helsinki-NLP, opus-mt-tc-big-zle-en.
+Transformer-big model for East Slavic languages to English.
+Base model: https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-zle-en
+The base model card identifies the model license as Creative Commons
+Attribution 4.0 International (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
+
+CTranslate2 int8 conversion used for inference:
+https://huggingface.co/luigi000/opus-mt-tc-big-zle-en-ct2-int8
+Conversion revision: 987aa3c46cf871ea683bcc7a540e3053d372cb71
+Model weights and inference dependencies are not distributed in this package.
+
+Project and publications credited by the base model card:
+
+- OPUS-MT: https://github.com/Helsinki-NLP/Opus-MT
+- Jörg Tiedemann and Santhosh Thottingal (2020), "OPUS-MT — Building open
+  translation services for the World."
+  https://aclanthology.org/2020.eamt-1.61/
+- Jörg Tiedemann (2020), "The Tatoeba Translation Challenge — Realistic Data
+  Sets for Low Resource and Multilingual MT."
+  https://aclanthology.org/2020.wmt-1.139/
+
+The model attribution above concerns the translation tool. Authorship and
+rights in the source encyclopedia and literary works remain with their
+respective authors and rights holders.

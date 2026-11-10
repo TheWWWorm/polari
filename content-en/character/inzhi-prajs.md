@@ -1,0 +1,122 @@
+---
+title: Inzhi Price
+full: Inzhi Price nicknamed Couple
+type: character
+group: Commoners and Merchants
+aliases: Couple, Inzhi, Uncle Inji
+summary: A moustachioed chatterbox and former clockmaker who is in fact a hired killer and escaped convict. Mira's jailer and ‘mentor’ in Waymar, who sold her to Martin Shayland; later forgiven by Minerva, he became her loyal agent.
+books: lish-odna-zvezda, kukla-na-trone, te-kogo-my-proshchaem, lyudi-i-bogi, ten-velikogo-dreva, fantazii
+infobox:
+- Full Name: Inzhi Price
+- Nickname: “I always have a couple of them.”
+- Origins: According to him - Leonhard, [[nadezhda|Hope]]; the son of a watchmaker
+- Trade: watchmaker; hired killer
+- Sentence: ten years in the galleys for a paid killing (the Duchy of Origin, August of the year 65; the judge was [[ded|Grandfather]])
+- Masters: [[martin-shejland|Martin Shayland]], then [[minerva|Minerva]]
+- Ward: Orphan Baby G (Minerva gave him a guarantee for adoption)
+- First Appearance: "Only One Star", chapter "Spark" (road from Ulyana Monastery to Waymar)
+- Status: alive (at the end of the cycle); pardoned by Minerva
+- In Fantasies: In the spring of 1776, by all indications, - the gatekeeper of the "Eugene" of the Faculty of Physics of the University of Faunterra, the secret agent of the "mistress" (apparently Minerva)
+---
+## Biography
+
+### The Past
+
+According to his own account, Inge Price was born in Leongard, the third largest city of Hope, in the family of a watchmaker who died early, and he learned this craft himself; he married a modest woman who ran away with a cavalry officer, then dropped out of the workshop, built a spark shop, and then served as a mail courier. His stories about the past have changed. Attentive [[minerva|Mira]] noticed that some stories he repeated word for word, as if learned, and guessed in him a fugitive convict and a former sailor: on his wrist he had four scars, left, in her opinion, not a suicide knife, but a convict brand-burn, and his eyes distinguished gulls in the fog better than the watchmaker. Mira decided that he was an assassin in the service of the count.
+
+He later confessed to Minerva that he had killed three, then "entered the guild", where he was "trained" and where he performed five more, was convicted of one of the murders, escaped from the galleys, killing two warders, and eventually ended up in Waymar in secret service with the Shaylands. A former northern judge by the name of [[ded|Grandfather]] confirmed that in the 65th year, in August, Price was convicted by an imperial-level court in the Duchy of Virginia for the deliberate paid murder of ten years of galleys. Inji himself said that of the four judges known to him, only this one was fair, and regretted his resignation.
+
+## In "Only One Star"
+
+### Guardian of the Worlds
+
+In the autumn of 1774, Inji and the people of Count [[vittor-shejland|Shayland]] took Mira from Ulyana Monastery and brought her to [[uejmar|Waymar]] in three days along Almera and six days along the lake Smokey Dahl. All the way he entertained her with stories; he called her "tiny", "baby", "baby", but never by name. When Mira, injuring Sir Francis (Efa), tried to escape from the castle, it was Inji who intercepted her at the gate with the words "Baby, be nice, drop the knife." ([[frensis-myurrej|Eff]]) The next morning, he brought her a lollipop, reported that Eph had survived, and advised the girl not to think so much.
+
+In Waymar, he was her guardian and chattering companion. He taught her how to cope with a hangover, told her how killers work: the assassin is introduced under the guise of a craft and withstands checks, the servant is killed by the hands of hired thunderbolts and thrown in the street, and the lord's wife is blamed on the servant or guest. From these accounts, Mira concluded that the count would not hide the body of the missing servant.
+
+### Dungeons
+
+In fact, Inzhi served not the count, but his brother Martin: according to Eff, the count rarely took escaped convicts, but Martin's "jagers" were all like this. ([[martin-shejland|Martin Shayland]]) Eph chatted to Pairochka about his relationship with Lindsay's maid while they were drinking on the ship - and Mira realized that Martin had kidnapped Lindsay and Jane with Inge's help. ([[lindsi|Lindsey]]) When Mira and Eph secretly went down to the underground cellar, Inji caught up with them. Eph demanded that he give up his belt; Inji threw a belt with a dagger in his face, and when he evaded, he killed him with a narrow stiletto hidden in his sleeve. After wiping the blade, he explained to Mira his nickname:
+
+> “You once wondered why my name is a couple? “That’s because I always have a couple of them.”
+
+He then gave Mira to Martin, calling her a "task", and warned the host to be careful with her. Later, he confessed to Mark that he had been paid for Peace and that he had sold it “for slaughter”: the Northerners were losing the war, it was time to get out of Waymar, and the money was needed abroad. He assured that he regretted it; from the destruction of the world saved and released [[iona-oridzhin|Iona]], who appeared with the cairns.
+
+## "A Doll on the Throne"
+
+### Jack Buckler
+
+In December 1774, while hiding, Inge, under the guise of an "honest watchmaker", rode in a van with refugees traveling from Fliss to Aleridan: newlywed deserters Matt and Reena, usurious Anna Greta with her husband and adopted daughter - a little Baby G, who dreamed of becoming a "pirate", and three deserters led by Col. A cake maker in the Road Pillar sent them to spend the night in the [[dzhek-bakler|Jack Buckler]] Forest Inn. The owner of the inn said that at the end of the summer there were three dozen “very serious people” in scarlet guard uniforms, and a week earlier a note came that they would return. At night, two scouts of the brigade arrived - Rebro and Led (later it turned out that this was [[rikhard-oridzhin|Richard Origin]]). Kol and his cronies attacked them; Inge threw a knife at one of the strangers, and the one - Rib - was tied up and robbed, and the body of the second, Ice, who was considered killed, disappeared without a trace. Inge released him in exchange for showing a pattern applied to the underside of a flap of skin under a scar on his arm: Rebro called it [[absolyut|the Absolute]] scheme, and it seemed to Inge like a clockwork mechanism. Inge then purposely shouted to Ice that Rebro had stolen the scheme to poison them.
+
+Ice killed almost everyone, cut off the feet of Anna Greta, who was hiding behind the child, and nailed Rebro to the floor with bolts. Inzhy and Baby hid in the basement; Ice, descending, offered him to kill himself with a barrel collar. The girl clung her teeth to Ice's hand, Inge knocked him down, but was stunned, and only a burned Matt saved them with a crossbow shot to the side of Ice. Inji locked the basement, set fire to the inn, and ran south with Kroshka: the girl refused to go with Matt and Rina because "he's good." She said, “You’re not a watchmaker.”
+
+### Prisoner of the Crow
+
+Later, he and G were captured in [[aleridan|Aleridan]]. Grandpa and [[mark-voron|Mark]] were on the trail: Grandpa found Price's sentence in the registers, and when he met, the old man called himself not a judge, but simply "Grandfather". Mark, calling himself the Crow of the Crown, offered the deal; Inzhi asked not to give it to the Empress, the Chancellor and his sister, and to arrange Kroshka in a good boarding house. On the train to the capital, chained to a chair, Inji, under pressure from Mark, confessed to selling Mira and said that Iona had predicted in Waymar how the jester would kill Adrian, as well as details about Rebre and Ice (the latter had a scar from the gate). He hinted that the Absolute is “more valuable than any weapon,” but did not explicitly say what it was. When the train stopped abruptly, Inji locked Mark in the closet and jumped out the window, but was captured outside. So he got to Captain [[uitmor|Whitmore]] of the [[lazurnaya-gvardiya|Azure Guard]] and became a valuable witness in the case of the stolen items.
+
+## “The ones we forgive.”
+
+Major Backfield betrayed Inge Minerva, although Whitmore and Mark vowed not to extradite him. ([[krojdon-bekfild|Croydon Beckfield]]) The empress locked him in and Little G locked him in a nearby cell. Through the wall, Inji taught the girl to break the bucket, straighten the iron hoop and push the bolt away, but they were interrupted by Minerva and the executioner. The executioner at her direction made G scream while Minerva talked to Inji about forgiveness: he taught her how to cope with a hangover and kill people - now let her learn to forgive. Inji replied that she was carrying her grudge, and told her story of the murders. Then Minerva offered a choice: to return to the galleys according to the verdict of an honest judge or to take an injection of blood, corpse poison and “witch potion” and trust the court of Ulyana Pechalnaya. Inji chose the injection and survived the long illness.
+
+## In "Humans and Gods"
+
+A few weeks later, Captain Whitmore brought the aged Inge to Minerva. She gave him the Hand of the Magi; ([[ruka-znakharki|Healer's Hand]]) Inge somehow fitted the thimbles and cheerfully promised to heal anyone, but the cut on his hand did not last long. Minerva tore the object off him, leaving the killer to wait for no mercy, and ordered him to return to the cell.
+
+Soon, however, she changed her mind and under Mark announced an imperial pardon: Inzhi was released from persecution and received all the rights of a free man. She offered him to adopt Baby G, presenting her guarantee, gave the address of the boarding house where the girl studied for fully paid four courses, and told him to decide whether he would leave the craft or go to her service. Inji bowed and promised to think: in recent weeks, he more “thought the way to the Star.”
+
+## The Shadow of the Great Tree
+
+### Release
+
+In the summer of 1775, Inge, despite the previous pardon, was again in prison: Mark reminded Minerva that Price was "still sitting" and "does not spend the day without whining", and suggested using him as a murderer against Adrian through the secret passages of the palace. Minerva herself now said that she promised him freedom only if he spoke to the Subject. Mark advised to let him go: Inzhi drank the blood of Znaharka, as required, and it was not his fault that it did not work. ([[znakharka|The Healer]])
+
+In August 1775, on an imperial train stopping at Patrick's Chapel, Minerva ordered Agent Red to bring in the chained Inge and finally released him. Lifting him into the air with the Gauntlet of Power, she called him a "brutal killer with a good soul", admitted that he sacrificed himself for Baby G, and that it was in the basement of Martin, where he sold it, that [[pervokrov|firstblood]] got to her. ([[perchatka-mogushchestva|Glove of Might]]) She gave him a pardon, a promissory note, the address of the boarding house and a guarantee for the adoption of Baby G. Little was known about Paula Inji: Vittor's brigade was kept separate, but Martin, he said, feared two people - Iona and the "prisoner", considered the recipe for immortality a matter of blood, scraped the prisoner's blood from torture tools and considered him a "demon in human form". ([[paul|Paul]]) Inji himself offered her to become her adviser - "and it will not work, so at least I will learn to escape."
+
+### Under Minerva
+
+A couple have been with her ever since. He was amused when Minerva lifted him with a Glove for reconnaissance from the wall, and during a night attack, the scouts killed one of them with a stiletto and led her to the pier. He participated in the flight of a ship raised into the sky by [[navi|Nathaniel]], and in the First Winter accompanied Minerva with Navi and Shatterhand to work in the mountains: while the mistress wielded the Glove, Inji and the captain took turns writing numbers for Navi or playing cards. Back in September 1775, while flying over Smokey Dahlia, when Navi stunned Minerva with a prophecy about Paul's escape into the kingdom of chaos, and Shatterhand rushed to support the shaken ruler, Inji threatened with a fist to both: "Easy, guys, don't bother! The girl was cold and hungry.” The morning before the battle, when Minerva first landed a flying boat herself, Inji stood up for her in front of a grumbling favorite: in a big battle she could be killed, and then she would not learn to drive a boat. Before the decisive battle, he was in the camp of the aeronauts of [[kharmon|Harmon]], hanging a dozen knives, and proudly showed a terrible imitation of the dead man’s skin, glass, glue and glowing “phosphorus”.
+
+### Battle for First Winter
+
+In the Battle for the First Winter, Inji was ordered to divert Paul's satellites into the dungeons of the Cosuli grotto. ([[bitva-za-pervuyu-zimu|Battle for First Winter]]; [[grot-kosuli|Roe Deer Grotto]]) He put out his dummy with a shiny "hand" from behind the statue; Char's shavanka burned him with a shot of Perst, and when he came to the "wounded", Inzhi stood out from under the cloak of a real, "third" hand and put a bolt of spring self-arm in her face, then finished off the dag and took it away Perst. ([[chara|Chara]]) Thus came true the image of the ninth dream of Francis-Ilianus: a gray-haired watchmaker, at whose feet lies a severed, charred hand, but no blood. ([[sny-frantsiska-iliana|Dreams of Francis-Ilian]]) From the shelter at the portal of the chapel, he saw how the deconstructor Paul and Navi fell into the abyss; trying to help, he threw down the candlestick and counted seconds. He was the first to bring the message to Minerva: “Crumbs, we have fulfilled it.”
+
+Minerva was waiting for the outcome in the Agatov women's monastery on the rock near the grotto of Kosuli, where they flew on a boat. She did not believe in Navi's death, and Inji hugged her: "He was a nice guy, it's true. Only now he's dead." Without the Glove sunk into the abyss with Navi, Minerva demanded that Inge and Shatterhand immediately go after the men, ropes and hooks to the outpost of the mountain guard. ([[perchatka-mogushchestva|Glove of Might]]) Both refused: the valley was full of running enemies, and they could not leave the mistress alone. Before dark, Inge and the captain looked out of the refectory windows to battle and cheered at every attack by the northerners. By the night when the victory was clear, Minerva ordered Shatterhand to take the men and the ropes and go into the grotto, and Inge, along with Whitmore, literally pushed the unwilling captain away from her on a mission.
+
+## In "Fantasies"
+
+In "[[fantazii|Fantasies]]", which the author calls the possible fates of the heroes, in the story "The Device" (Spring 1776) at the Faculty of Physics of the University of Faunterra serves as a gatekeeper Eugene - by all indications, this is Inge Price. He is not called by Inji's name, but the signs are direct: he has a "very funny" nickname, which is "not for learned circles", "adoptive daughter in a boarding house"; he "worshipped the world" and serves as a "mistress" - apparently Minerva, who in Faunterra had a "reliable person" for informal errands. Beckfield’s “face” seemed familiar. Eugene was without a mustache, with a beard shovel and shoulder-to-shoulder hair touched sagging.
+
+It was Eugene who opened the lock of the secretary of Professor Nicholas Ollie with a pin and took a blue notebook with the drawings of the recording device to find out what this car is and tell the “lady”. When Colonel Backfield and Hand Dodge came to get the blueprints, the doorman framed Doge, knocked down one of the guys, and told the students to throw the protection people out the window. Ollie showed him the device himself, and Eugene returned the notebook with a note. In it, he apologized and conveyed the words of the mistress: to work calmly, she does not mind if the car gets to Adrian, and in the Conto bank, the professor is waiting for a “hello of monetary value”. ([[konto|Konto]]) In the story "Let's catch him", Lady Leila laments that the "old assassin", who could influence the mistress, "was gone to Faunterra in the winter."
+
+In The Death of the Assassin (spring, by all indications 1777), Inge Price does not appear himself, but much is said about him. He is one of two special envoys of the Empress: with good news Minerva sends [[shatterkhend|Shatterhand]], and when you need to threaten or "put a heel on someone's neck" - Price. According to rumors, he “performed” at least fifty people, defeated the best warrior of the Gnome-ganta and took one of the lives of [[rikhard-oridzhin|Richard Origin]], eliminated Colonel Backfield and even tortured the empress herself, and for a long time he did not kill himself, because he only had one visit. He is allowed to call the owner a “child”. Under his name, a thief came to the estate of the former minister of the yard - gray, with sideburns and kind eyes, similar to a master watchmaker. When he was found stabbed, Mac immediately doubted that the "mother assassin" could be laid by a turquoise knight, and realized that it was not Price. ([[mark-voron|Mark]]) He also noticed that Inji had been dealing with Objects for many years and "never tried to steal anything."
+
+## Relationships
+
+### Minerva
+
+For Mira, Inji was a jailer, a mentor, a traitor and a savior at the same time. She hated him on a par with the Shaylands and Origin, tormented, forgave and finally took him to her; he invariably called her “baby” and “baby” and, according to Harmon, did not want a soul in her.
+
+### Baby G
+
+The orphan, whose parents were killed by Led, became Inji's almost daughter and called him "Uncle Inji". For her, he remained in “Jack Buckler” and, as Minerva admitted, only because of that caught the Crow.
+
+### Grandfather
+
+The judge who sent him to the galleys was Inge's only fair judge of all he knew. My grandfather treated him with the same calmness.
+
+## Personality
+
+Inzhi is a mustache, charming chatterer with golden hands and without special conscience, a master of throwing knives and hidden weapons. He is cruel and calculating, but in his own way is attached to the World and tenderly cares for Baby G. Minerva described him as a "brutal killer with a kind soul" and "a fusion of gold and dung."
+
+## Trivia
+
+- His nickname he explained spare blades; Minerva later suggested that it was related to the duality of his character.
+- Before the battle, Minerva noticed that he “always has a couple in stock,” and he replied: “Today is a dozen, on a special occasion.”
+- Baby G considered him a "pirate" and herself his partner.
+
+## Appearances
+
+- "Only One Star" - the heads of the World ("Spark").
+- "A Doll on the Throne" - the chapters of Mark ("Pero"); the chapter of "Pero-7" - a retrospective of his eyes.
+- “Those We Forgive,” “Humans and Gods,” “The Shadow of the Great Tree” — in the chapters of Minerva and other characters.
+- "Fantasies" - "Device" (Eugene's gatekeeper), references in "Let's catch him" and "Death of the Assassin" (his name is assigned by the thief).

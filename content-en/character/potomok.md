@@ -1,0 +1,54 @@
+---
+title: Descendant
+full: Descendant, sailor schooner "The Seal"
+type: character
+group: Commoners and Merchants
+aliases: Descendant, Myriam, black
+summary: A dark-skinned sailor in the northern fleet, who served aboard the Seal on the expedition beyond the River and assured everyone that he was a direct descendant of Foremother Miriam. The narrator of He Who Speaks with God; in 1775, he sailed to Folta with Lady Sophia Origin aboard the Sea Arrow.
+books: lish-odna-zvezda, govoryashchij-s-bogom, lyudi-i-bogi, ten-velikogo-dreva
+infobox:
+- Real Name: not named
+- Origins: According to him, a descendant of Foremother Miriam; the father is the great-grandson of Miriam herself, who survived on the Mother Island
+- Appearance: thin and tall; skin "colors of strong coffee with three drops of milk", eyes color ripe blueberries
+- Service: schooner "Sea Seal" fleet [[fleming|Fleming]]; then "Sea Arrow" captain [[dzheff-bamber|Jeff Bamber]]
+- Friends: Larry, Gray, John-John, [[mark-voron|Mark]]-The Raven
+- First Appearance: "Only One Star," the pen's chapter.
+- POV: Interlude "Speaking to God" ([[govoryashchij-s-bogom|He Who Speaks with God]])
+- Status: Alive
+---
+## Who He Is
+
+The descendant was a seaman of the schooner Seal, which went in the autumn of 1774 in the fleet of the Earl of [[fleming|Fleming]] to the River. He was thin and tall, wore a jacket from someone else's shoulder, so tanned with dirt and salt that she "sat on the guy like a chivalric cuirass." On a sunburned “like steak” face, “eye whites and teeth sparkled with patches of snow.” Its skin was the color of strong coffee with three drops of milk, and the iris of the eyes “like ripe blueberries”.
+
+## "Descendant of the Mother"
+
+He got his nickname for his favorite story. Having lost in dice to [[mark-voron|Mark the Raven]], who offered to play "on history", the Descendant solemnly declared that he was "a direct and full-fledged descendant of St. Foremother Miriam the Dark-eyed". According to him, in front of the Scarlet Trouble, the two nephews of the then lord Miriam did not go to the court, but took refuge on a deserted island, nicknamed Maternal. For centuries, all the survivors of the Myriam gathered there. His father seemed to be the great-grandson of Miriam Dark-eyed, and the proof was the “appearance” of the Descendant. He brought the lamp to his face "with the importance of a bishop" and warned that any Yanmean lord would send for his head.
+
+His comrades made him laugh. John-John recalled that history knows the whole North: “in the fleet of Fleming serves a black-faced sailor and is called Miriam.” Salty added that the brothels of the whole coast meet him with a cry: “The descendant of Pramateri has appeared!” Mark, however, accepted the bet, because for him the story was new. Soon the whole team was friends with Raven, and "The Descendant and Larry are before the others."
+
+## The March for the River and the Revolt on the Seal
+
+After a storm in the Ice Sea, where the Albatross crashed on the reef, and Lord Selwyn lost his mast, the Descendant with the helmsman Larry took care of the half-live Mark: when everyone was released to the shore, they lowered him into the boat "dry cargo". The sailors were glad that they did not have to go further: “Let Gloria-mother and Miriam-beauty send you good luck.”
+
+Later, when Fleming moved to Adrian's side, Mark had to swim, in icy water, to get from the flagship "White Star" to "The Seal". The descendant met him with a joke: rats swim perfectly, “and you swim — well, like a crow about.” Meanwhile, on the deck of the Seal, there was a massacre between the Earl's men and the loyal soldiers of the [[dzhemis-lillidej|Jemis]] kair. The descendant, glittering with his eyes and straying into a whisper, told her to Mark. The sailors had four crossbows, and one was held personally by the Descendant. The sailors fired a volley into the back of the traitors, and then the captain, the boatman and the Descendant reloaded the crossbows and fired again. In the fight killed navigator Hopper, ship doctor and friend of the Descendant Salty. After that, the "seal" left the flagship. At a secret meeting in Mark's cabin, the Descendant was among those to whom the Raven asked his questions, and aloud made a guess, to which he led: "You, brother, do you mean that Adrian took on another's sin?" Mark faked it as a “connoisseur of the struggle for the throne”: did the descendant of Miriam never dream that the Yanmei were overthrown and again ruled by the Miriams? The son said, “A little, a little.”
+
+## "Speaking to God"
+
+In the interlude "Speaking to God", the Descendant tells in the first person. ([[govoryashchij-s-bogom|He Who Speaks with God]]) He swears that he "never lies" and can only "lie a little... for expressiveness." In December 1774, the team had to abandon the Seal near the Belomorye and leave the people of Fleming on foot through the hills and gorges in the north of the Duchy of Origin. On the bridge over the gorge, Captain Jeff Bamber sent the Descendant and Larry back to sweep the snow so that the bridge could be set on fire. At the end of the campaign, the sailors rode in a sleigh in the tail of the column to the capital: Bumber was promised a schooner, and the sailors "profitable service".
+
+## Expedition to Volta
+
+In the summer of 1775, the Descendant served on Captain Bamber's crew on the Sea Arrow, which the Origins hired to take Lady [[sofiya-oridzhin|Sophia]] to the Volta. ([[folta|Folta]]) It was he who gave the nickname to the mysterious gray companion of the Duchess, Grandpa. ([[ded|Grandfather]]) He told the old man, "You are a skipper," gave five arguments, and when he heard that he had never driven ships, he replied: "I will still call Skipper - very similar. And your student will be Jung.”
+
+When the Descendant of the drunk started his "charm about Miriam's inheritance" and the sailors wanted to hang up his bedside tables, Skipper interceded: "No, brothers, wait, I'm curious." The Descendant himself explained that "not one bowl of bread" was eaten with [[dzhemis-lillidej|Jemis]], her son's first vassal, and therefore Duke Erwin to the sailors "the native and closest of all the other lords."
+
+The descendant swung around Lady Mireille and offered to exchange her tales of sea monsters for the story of the Mireille family, but Boseman Biven drove him away. ([[mirej-nen-kler|Mireille Nen-Clair]]) The team laughed at him all day, and then he secretly threw a rat overboard. Before his eyes, the water around the animal thickened with a black tar stain, a “black badger”, and dissolved the rat like acid. They did not believe him, and he himself hunted unsuccessfully in the hold for a new rat. Only Sofia, who knew that according to the laws of dramaturgy the eccentric, whom no one believes, was destined to be right, asked him seriously. Later, the Righteousness of the Descendant was confirmed, and he held on "proudly as a crown prince." Later on the schooner was a wild bird - a fluffy ball with sparks at the tips of the hairs - and the Descendant, waiting for it to extinguish the sparks, with the permission of Mireille timidly stroked it: "You saw this - a flying kitten!"
+
+In the return voyage, the descendant fell ill with the first of the team with a tsinga, but they joked over him: “You are black, brother, you are invisible.” When the squadron reached the South Mark with lemon trees, he brought the duchess a lemon, grabbed her in his arms and circled: "We are saved, Your Grace!" On the Southeast Mark, he and Larry flipped a crawling "skeleton" and found glowing bugs inside. At the beginning of November 1775, in Windley, saying goodbye to the team, Sophia "allowed the Descendant to hug himself once more."
+
+## Appearances
+
+- "Only One Star" - Chapters "Pero" (swimming on "The Seal").
+- “Speaking to God” is a story.
+- "Humans and Gods" - the heads of Sofia (swimming to Folte).
+- "The Shadow of the Great Tree" - the return of the expedition.

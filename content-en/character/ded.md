@@ -1,0 +1,113 @@
+---
+title: Grandfather
+full: Grandfather (retired judge from the North, real name hidden by vow)
+type: character
+group: House Origin
+aliases: Grandfather, Judge, Seday, Skipper, My Lord Grandfather
+summary: A retired northern judge who has relinquished his former name, fond of parables and playing the chimbuk. At Erwin Origin's behest, he accompanied Mark the Raven on investigations and became the head of the Protection's assistant.
+books: kukla-na-trone, yanmejskaya-okhota, lyudi-i-bogi, ten-velikogo-dreva, fantazii
+infobox:
+- Full Name: I don’t know (it started in heaven.)
+- Former Position: Imperial level judge in the North (appointed 8.07.1756, retired 20.11.1768)
+- Service: [[ervin-oridzhin|Erwin Origin]]'s confidant; since the spring of 1775 assistant to the head of the patronage ([[protektsiya|The Protection]])
+- Companion: [[vnuchok|Grandson]] (student and bodyguard)
+- Nicknames: Grandfather; Grey (in Erwin's game in Rusty Rail); Skipper (on Lady Sofia's expedition)
+- Habits: Plays the chimp, speaks in parables
+- First Appearance: "A Doll on the Throne", the head of "Pero-1"
+- Status: live (at the end of the cycle)
+- In Fantasies: Together with Lady Sophia, he represented the Origins in negotiations with Magda Labelin (winter of 1775/76); Sophia dreamed of marrying him, but postponed the engagement for at least a year
+---
+## Biography
+
+### Name and vow
+
+Even [[mark-voron|Mark]] didn't know his name. When the former Crow of the Crown was brought to him in early 1775 and he introduced himself, the gray-haired old man replied that the name should be chosen wisely, and offered to call himself whatever he wanted, "at least a guy"; to the remark that he looked more like a grandfather, he agreed: "Then call Grandpa." He later explained that he had once given a vow of eight years not to give his name and by that time only six had passed; the vow, he said, did not allow concessions - he refused even to write down the name.
+
+Twelve years - from July 8, 1756 to November 20, 1768 - he served as a judge. In the Aleridan prison, the monk brother Abel, who interrogated the detainees of Ded and Mark, on the advice of the old man found these dates in the court registers, recognized him and managed to exclaim: “Judge Paradise...”, but Ded made him shut up in a gesture so as not to give the name to Mark at least indirectly. As evidence, he listed his predecessor and successor in office, as well as the first and last three defendants with their articles and sentences. The glory of an honest judge in the North was such that one of his names served as an alibi. [[ervin-oridzhin|Erwin]] and the kairs call him "my lord", and the kair [[sorok-dva|Forty-Two]], seeing him, minted "I wish you health, my lord judge!"; the Grandfather himself emphasizes that he is not a kair, but "of the rest of the people", and that "no longer a judge". Erwin could not call him anything other than a judge.
+
+## A Doll on the Throne.
+
+### The Raven's Guardian
+
+At the behest of Lord Chancellor Erwin, Grandfather and his assistant Granddaughter patted Mark's patties in the old house of the Origins on Milky Avenue. To all the questions that they are waiting for, he answered with a parable or a melody on a chimbo; He allowed Mark to run away if he wanted to, “and you will run, then the Grandson will think about it.” He gave Mark the opportunity to read the latest issues of The Voices of the Crown, according to which Granddaughter taught literacy. ([[golos-korony|Voice of the Crown]]) When Erwin instructed them to return the objects of the dynasty and Lady [[sibil-nortvud|Sybil Northwood]], the grandfather calmly said: “Well, we are lazy — and now we will work a little,” and told the parable of the peasant, the bishop and the chest with faith. ([[svyashchennye-predmety|Sacred Objects]]) Erwin told Mark to contact Grandfather for money, information from the palace and communication with him.
+
+### Investigation of theft
+
+Grandfather and Grandson accompanied Mark on all trips. He destroyed the first hypothesis of the Raven about the guilt of Erwin himself: the Duke would use kairs, not bandits, kairs would not spend the night in the inn, and Erwin himself would bring the mayor and lieutenant to justice. In Almera, he told Mark a parable about a wounded young duchess and a warrior who loves her - that humiliation and love are incompatible - and admitted that he explained too much. At [[bek-most|Beck]] Castle, he laid siege to the audacious commanding officer of the Earl of [[erroubek|Arrowback]]'s detachment, swinging a whip at him, and presented a travel charter to Origin. [[gallard-almera|Gallard]]’s watchman with the monk brother Hemish, he deliberately answered defiantly, referring to the laws, so that they would be left alone, albeit under observation.
+
+When Mark fell from his horse in the fog while fleeing the Blue Gang, Grandfather and Granddaughter found him at night on the sounds of a jimbuk. In Aleridan prison, Grandfather secured his release and helped track down Inji Price — once a ten-year-old galley he had been convicted of. ([[inzhi-prajs|Inzhi Price]]) At the meeting, he told Price the Western proverb "The river flows, the horse jumps": everything changes, and he is no longer a judge, but simply a grandfather. Price called him the only one of the four judges known to him.
+
+### Accusations of cowardice
+
+On the train to the capital, Grandfather told the parable of the devil Hen, who secretly brought good luck to the boy, until he boasted - Mark later realized that it was food for thought about the course of the war. Then Grandfather threw the Raven a heavy rebuke: he always acts with an eye on someone stronger - Adrian, Erwin, the gang - for the commoner needs a master; and at the same time, fear puts Mark in conditions in which he thinks most effectively.
+
+> “Fear, Raven, is the one who guides you.”
+
+He gave Mark three questions that Erwin would ask: who stole the Items, where they were, and what was on the chart. When Captain [[uitmor|Whitmore]]'s unit attacked the train, Deda was captured with Mark and Granddaughter was shot in the thigh. In Whitmore’s estate, Grandpa came to apologize — again a parable: about a hanged robber and a judge opening a tap of a wine barrel (“We did what we had to do, but is it fair?”). Mark asked him as an impartial judge with twelve years of experience to listen to his reasoning; Grandfather admitted that he studied impartiality for twelve years, “never mastered the skill”, although many said that he was successful. His remark about the interconnected “wheels” led Mark to the main guess.
+
+### Suspects
+
+At the end of March 1775, at the manor of Whitmore, Mark presented his version to Grandfather: the rebellion was only a distraction for the purpose of stealing the Objects from which the Puppeteer collects [[absolyut|the Absolute]], and it should be sought in Erwin's inner circle. For each suspect, the old man answered with the same formula - "it is possible to believe, but with difficulty" - and found objections. Against [[dzhemis-lillidej|Jemis]]'s guilt, it was said that he spent October and November swimming; against [[alanis-almera|Alanis]], that the brigade killed her father and brother. But the Grandfather himself gave Mark a new idea: Count Arrowback, who coped with the health of both the Duke and Duchess, in his opinion, was waiting for payment for a certain service - for example, for the storage of Objects. When Mark led to the third suspect, Grandfather himself called the name: "Lady Iona Sophia Jessica" - and then her husband, Count [[vittor-shejland|Vittor Shayland]]. Doubting that young Iona would have had enough time and experience for such a game, he nevertheless admitted: the version sounds like a complete absurdity - "it is because ... it may be true." When asked by Mark whether to carry such conclusions to Erwin or Captain Whitmore, Grandfather replied with the latest story of "A Doll on the Throne" - about the master of hardware, who Agatha in a dream allowed one unpunished murder. The master poisoned one of the three cups for his wife, neighbor and guild elder, but all three at the festive table asked for his forgiveness. Having cut off the story for a moment, when the cups were already brought to the lips, Grandfather asked Crow: “What do you think: what did the master do?”
+
+## The “Janmei Hunt”
+
+In the spring of 1775, Grandfather, Mark, and Grandson returned to the capital: on May 4, they arrived in Faunterra by the Aleridani Express, and Erwin, who called himself the "Bad King", met them in the railway station caback "Rust Rail". In this masquerade, Grandfather was called "Seventh", Mark - "Platcom", and Grandson - "Baby"; the old man confirmed Mark's arguments that something new can be collected from the Objects: "from the judge and the villain - justice". Erwin introduced him to the capital as a future assistant to the head of protection, responsible for the connection of the secret guard with the army. To the greeting of Forty-Two in the palace, Grandfather waved, "I'm no longer a judge, queer. “Call me grandfather.” Kairam, who spoke about honor, immediately told the parable of the Leed judge, who demanded that everyone call him “your honor”. Erwin discussed the possibility of immortality with Robert, Jemis and Forty-Two, but not with him: the judge seemed to him reliable and wise, but “poisoned by the logic of the Raven.”
+
+On 8 May, Grandfather and Raven met Erwin at the station when he returned to the capital with the empress, and noticed that when the duke, his duchy, and his army were in three different places, it was "a confusion of minds"; here Mark again became the Crown Raven and head of the patronage. Prior to Minerva's announcement of the Census of Items (11 May), Erwin instructed Grandpa, Forty-Two and Crow to intercept and copy all the letters of all the House Lords — "the most important assignment in the history of the Secret Guard" — and ordered a wolf to be attached to each "dog"; My grandfather approved of this parable about a wolf and a shepherd.
+
+Along with Raven, Grandfather oversaw the interception of pigeon mail and was part of Erwin's nearby headquarters alongside Mark and Forty-Two. At night meetings, he offered the Duke the story of a camel hoping to get caught in the rain, the parable of a wise healer, and Erwin said that he was pleased with his desire for justice. At the [[sud-nad-mensonom|trial of Manson]], he told the parable of Jack the carpenter, who bought mice “to check the cat”, the meaning of which Erwin realized only later. At the break of the second meeting (May 21), Erwin found him to ask about the strange behavior of Manson and his adviser Francis-Ilian; The grandfather first advised the prophet to shorten his beard to resemble a king, and not a good wizard, then noticed to the duke that you should start with what you want to say, and told about the defendants who dragged time or painted in front of the beloved. When Erwin demanded at least one good news in anger, Grandfather insisted on the story "just now" and told the legend of Ulyanina Dust - a silvery subject in the form of an apple, whose writings subordinate the will of the reader; before the Shutov conspiracy, he belonged to the Lightharts, and then went to the Church. ([[ulyanina-pyl|Ulyana's Dust]]; [[shutovskoj-zagovor|Jesters' Conspiracy]]; [[dom-lajthart|House Lightheart]]) To the accusation that this could be reported earlier, Grandfather replied: at the last census, Dust was still listed for Lightharts, and it took a long time to find her trace.
+
+## "Humans and Gods" and "The Shadow of the Great Tree"
+
+### Lady Sofia's Expedition
+
+At the end of May 1775, after a scuffle with his mother, Erwin ordered Lady Sophia Origin to go to [[folta|Folta]] to find out the reasons for Lady Mireille Nan-Claire's breakup with her mother and gave her to the judge; the Duchess was waiting for an "iron warrior like [[stetkhem|Statham]]", and was glad that he was a companion. ([[sofiya-oridzhin|Sophia Jessica Augusta]]; [[mirej-nen-kler|Mireille Nen-Clair]]) When the train departed from the station of Faunterra, Grandfather played on the chimbuck melody in the rhythm of the wheels and told Sofia the parable of Jack the carpenter and the flower. On 29 May at Marengo they boarded Captain [[dzheff-bamber|Jeff Bamber]]'s Sea Arrow schooner; with them were twelve kires led by Cyre Glenn and Margaret's maidservant. Sailors have long wondered who this gray man without a cape and sword, who talks to the Duchess “briefly” — he was called a colonel, a baron, an ambassador, a musician — and the Grandson firmly replied that the lord gave a pledge not to name. Finally, the black sailor the Descendant declared him Skipper, and the student Jung, and Grandfather was very pleased.
+
+Five days later, the schooner arrived in Maple, Lithuania. At the headquarters of General William Davey, Erwin's friend, the judge helped Sophia to have a conversation: when the general was outraged that the "Voice of the Crown" attributed the rescue to Melorange Minerve, Grandfather told the parable of the horse and rider who argued who would come first to the finish line, and both fell down at the start. ([[uiljam-dejvi|William Davy]]) From Davey they learned of Manson's testimony and that Adrian was alive; the general received orders from Minerva to remove the Melorange defense and a letter from Erwin inviting him to transfer the spark regiment to Main. Then the judge gave Sofia his shepherd's bag, and the guests played a scene with masks - he put on a mask of a hare, she - sheep - showing the general that in the capital without a mask can not live. After that, they walked around Melorange for several days; the judge walked around the taverns and squares, replenishing the stock of parables, until he got to an open court session in the town hall, after which he said: "Sophia, we stayed here. It's time to get down to business." In the port of Maple they were waiting for the ships of the Foltic admiralty.
+
+In mid-June, Lady Mireille herself boarded in Maple with hunting captains Lycaine and Kolistad and invited Sofia to hunt for the gurken. ([[likejn-i-kolistad|Likein and Colistad]]) The judge still answered all the stories: when the Duchess asked about the plan of Lady Mireille, he told a parable about a boy who listened to the signs of fate, and the meaning was given to guess herself. When Jung suddenly remembered the tale of the sea snake- "masthole", the judge reproached the student: "You did not tell me this" - and played on the chimbuk a melody "full of bitter resentment."
+
+At the end of June, when the ships were bracing for a humpback whale for the third day, the judge “occupied” Mireille with his stories, and Sofia suggested a guess: the guest constantly asks about Erwina - did she not plan the matchmaking? Mireille is a Yankee of royal blood, the heiress of Darkwater, and with the help of Erwin can get the throne; to the objection that she is twenty years older than Erwin, Grandfather corrected: "For seventeen", - and such a gap, he said, is not an obstacle to marriage. Then Jung burst into the salon shouting: “Gurken!” On East Mark Island, Skipper and Jung, along with Lady Mireille, accompanied the Duchess to an old shipwreck and a rock-cut map: The marks marked the boundary of the "water of death" surrounding all of Polaris. Over the skeleton of a dead sailor, the judge did not dare to play the tambourine, but puzzled about the girl, the first forbidden room in the parental home; Lady Mireille with tears in her eyes answered: “Thank you, judge. You have no idea how right you are.”
+
+Having learned from Mireille the secret of the Great Tree, Sophia decided to reveal it to her relatives only in the First Winter, after the victory of the Origins, and took an oath from the judge and Mireille for insurance: if she dies, they will reveal the secret. At the end of July, the squadron visited the island of the North-Eastern Mark, and then moved south along the boundary of the disastrous waters.
+
+In the pernicious waters, monsters, poisonous bubbles and scurvy fell on the squadron; Skipper's tooth fell out, and when the ships finally reached the South Mark Island, to the Duchess's question "Are we saved?" he, straightening his swinging tooth, replied that he had a story to tell, but there was no strength to tell it. There, coming to her senses, Sophia admitted to herself that the judge is "more human than Lord Desmond" and that the kindness of strong people worries her, but reminded herself of the marriage vows. At the Southeast Mark, a judge wrote a story about glowing beetles living in skeletons.
+
+Five months later, in early November, the squadron returned to Windley, and Skipper and Junga went ashore with Sophia and Lady Mireille. Not wanting to listen to the bad news and believing only the "fairy tales of the judge", Sophia led a small detachment through the mountain paths of Zarezhnye in the [[pervaya-zima|First Winter]]. Adrian's troops blocked the road, and the detachment went round the way through the mountains - fjords over the sea, the hem of the Servant, the path of the White Wanderers, the grotto of Kosuli. ([[grot-kosuli|Roe Deer Grotto]]) The road was hard, the two greys broke, exhausted Mireille had to carry, and the judge even gave up playing the tune and told the story, where in the end everyone died. They reached the monastery at the grotto of Kosuli on 3 December, the day after the Descent, when the battle for the First Winter had already been won; at the castle, Sophia learned that [[desmond-oridzhin|Desmond]] had died. ([[bitva-za-pervuyu-zimu|Battle for First Winter]])
+
+## In "Fantasies"
+
+In [[fantazii|Fantasies]], which the author calls the possible fates of the heroes, the judge remains with the Origins. In the winter, after the battle in which the "Great Tree of the Order was covered", he together with Lady [[sofiya-oridzhin|Sophia]] represented the Origins in negotiations with [[magda-labelin|Magda Labelin]] (Dorian Amber and Leila Talmir acted from Minerva). There, they agreed on the election of the lord, the temporary rule of Minerva and that Adrian would recognize himself as the mayor of Faunterra.
+
+In the story "Let's catch him" (July 1776), Sophia sends a judge to reconcile the family with Iona, who willingly speaks only with her brother. ([[iona-oridzhin|Iona Origin]]) Grandpa tells her a parable, Iona thanks him, calls him "my lord" and answers his own story - about an elderly widow who decided to remarry; after listening to her, Grandpa recognizes the story as excellent and reports to Sofia: "The matter is complicated, a different approach is needed." The widow is a hint of Sophia herself: having become a widow, she dreamed of marrying a judge. At a spiritistic session, Iona blurted out, "And will you cancel your engagement to the judge?" Sophia replied that the engagement was not appointed. She only “fed some dreams”, but after the appearance of the spirit of Desmond, reproaching her for forgetting him too quickly, she was ashamed of them and postponed everything “for a year, if not more”.
+
+## Satellites
+
+The granddaughter is a white-haired young man with a sword, a pupil and a bodyguard of Grandfather. His grandfather taught him to read the Voice of the Crown. In "A Doll on the Throne", he accompanied Grandpa and Mark on all trips and was shot in the thigh when Whitmore's squad attacked the train. In Erwin's masquerade he was called Kid, and in Lady Sophia's expedition he was called Jung; there he cut through the trail on the island of East Mark with his sword.
+
+**Red** is a protection agent, a former subordinate of Mark and "the best specialist in the capital on corpses." He assisted Raven as early as the summer of 1774, was temporarily involved in the search for Objects, testified at the Manson trial, and in 1775 again worked under Mark: participated in the arrest of fugitives in Arden and in the interrogation of [[kharmon|Harmon]]. ([[sud-nad-mensonom|Trial of Manson]])
+
+## Personality
+
+Grandfather is unflappable, incontrovertible in disputes and verbose in stories: he can answer any question with a parable, the meaning of which the listener will have to guess for himself, or with a melody on a chimbuck - a flute of mountain shepherds, the sounds of which resemble a song of the wind. His rule is not to object or argue, but to agree with the person and see where it will lead. He is strict with himself (compare his impartiality with a craft that he did not master until the end) and is able to admit a mistake, apologizing again by parable. All his stories in order and their meaning are collected in the article Proverbs of the Grandfather. ([[pritchi-deda|Grandfather's Parables]])
+
+## Trivia
+
+- Grandfather himself calls his dud not a dud, but a jimbuk, and more than once corrected Mark.
+- Many of his parables are about Jack the carpenter: about the flies that his wife woke him up with in the afternoon, and about mice to check the cat.
+- Inji Price mocked him as Mark's "friend-judge", and Minerva later thought that the northern judge had shown mercy to Price by giving him a hard labor rather than a noose.
+
+## The Author's Word
+- According to the author, he partly composed the parables of Grandfather in advance, and then specifically looked for where to insert them. For him, this is a rare case of blanks (stream April 18, 2021).
+- According to the author, the summary of the never written interlude about the devil in the village of [[spot|Spot]], he invested in one of the stories of Grandfather at the end of the “[[kukla-na-trone|A Doll on the Throne]]” (stream January 7, 2026).
+- According to the author, the judge of the books that [[mark-voron|Mark]] read as a child is not literally a grandfather. Grandfather was a prototype, but these are artistic stories, not the materials of his processes (stream January 7, 2026).
+
+In other words, the author’s word. ([[slovo-avtora|The Author's Word]])
+
+## Appearances
+
+- "A Doll on the Throne" - the chapters "Pero-1"... "Pero-6", "Pero-8", "Pero-9".
+- "The Yanmei Hunt" - the heads of Erwin ("Arrow-1", "Arrow-3", "Arrow-4", "Arrow-5", "Arrow-8", Supreme Court sessions).
+- "Humans and Gods" - Head of Lady Sofia "Mask-1" ... "Mask-3".
+- "The Shadow of the Great Tree" is the head of the Mask.
+- "Fantasies" - "Device" (negotiations with Magda, mention), "Let's catch him" (episode with Iona, a failed engagement with Sofia).

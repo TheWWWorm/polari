@@ -1,0 +1,71 @@
+---
+title: Nicholas Ollie
+full: Professor Nicholas Ollie of the Sophia family
+type: character
+group: Other Lords
+aliases: Nicholas Ollie, Professor Ollie, Ollie
+summary: A professor in the physics faculty of Faunterra University and inventor of a sound-recording apparatus. In the spring of 1776, Adrian, the Labelins, the Church, and King Francis-Ilian all sought to obtain his invention at the same time. The protagonist of ‘Fantasy One: The Device’.
+books: fantazii
+infobox:
+- Lineage: Sophia Velichava
+- Occupation: Professor, Faculty of Physics, University of [[faunterra|Faunterra]]
+- Age: under forty years of age (Spring 1776)
+- Inventions: participated in the creation of a "wave"; a portable wave apparatus for a train; a recording apparatus
+- Assistants: Felix (exiled); [[elis-kavendish|Alice Cavendish]]
+- Buyer of the Invention: King Francis Ilianus ([[frantsisk-ilian|Francis-Ilian]])
+- First Appearance: Fantasy, Device (March 1776) ([[fantazii|Fantasies]])
+- Status: Living (November 1776)
+---
+## Who He Is
+
+**Nicholas Ollie** is a professor of physics at the University of [[faunterra|Faunterra]]. He belongs to the "high family of Sofia", although he does not trump titles. It is distinguished by its proud posture, milky white skin, soft facial features and a bright orange coat. He's not 40 yet. Ollie worked on the “wave” and [[adrian|Adrian]] was familiar from the time of her first tests. ([[iskra|Spark]]) According to Adrian, the professor "was good at working on the wave, but could not turn around in the shadow of Isaac Flewin", the minister of science. Then the lord ordered him to allocate his own laboratory and funding.
+
+Ollie appears only in [[fantazii|Fantasies]]: he is the protagonist of the story "The Device" and is mentioned in the story "Annoying Little Things".
+
+## Work during the war years
+
+Ollie could not stand when the nobles interfered in his work and tried to squeeze profits and influence from the discoveries. He respected the people only “abstractly, from afar.” He created instruments for the sake of “the finest art expressed in them,” and therefore he loved wars: fascinated by mutual extermination, the lords forgot about the university.
+
+While the Northern Flash was going on, the professor brought the wave apparatus to perfection. He expelled his assistant Felix for constantly relaying news from the fronts, and took [[elis-kavendish|Alice Cavendish]], a student indifferent to the war, as an assistant. When Origin occupied the palace and half of Faunterra fled, the lectures were canceled, and Ollie worked from morning to night on a portable wave apparatus capable of working on a train on the go. Alice asked him only one question: how long will Origin hold the palace.
+
+During the war with the Puppeteer, Olli took up a long-developed theory of sound recording. He added his own savings to the budget money and ordered parts from jewelers, and Alice entrusted the assembly of tiny parts. The first device did not work, the second turned out to be slightly better. Ollie converted the amplifier by applying negative feedback instead of positive, and replaced the readout head. But the war suddenly ended in a victory for the northerners, and the device was still raw. The money ran out: the budget, the second subsidy of the Ministry, the professor's savings and even Alice's contribution. Ollie couldn't ask for patrons.
+
+## In "Fantasies"
+
+### Apparatus and Burgomaster
+In March 1776, an article about the apparatus was published in the university's Bulletin of Science. Unbeknownst to the professor, Alice gave it to her. The article delighted Adrian, who became the mayor of Faunterra by a peace agreement, and he summoned the inventor to the town hall. The device consisted of a rotating cylinder, a head with a diamond needle, a trumpet and coils of ultra-thin wire, wound manually. He recorded Adrian's voice, but on high notes he broke into a squeal ("parasitic resonance at high frequencies"), and gave a loud speech with wheezing. Ollie honestly called the device unprepared and apologized for it. Adrian declared the invention ingenious and required a hundred devices by September to appeal to the people "with a hundred squares in a hundred different cities." The professor countered that it would take at least seven months: “Seven is undoubtedly more than two.” He almost said that he was waiting for a victory in the election of Minerva, but Alice interrupted him. Adrian instructed Croydon Backfield and Hand Dodge to supervise the laboratory, and his secretary asked Backfield to establish surveillance of the professor himself and Alice, suspecting their connection with the First Winter. ([[krojdon-bekfild|Croydon Beckfield]])
+
+### Notebook theft and search
+Returning to the faculty, Ollie discovered that a blue notebook of forty-eight pages with drawings had disappeared from the upper right drawer of his secretary. In everyday life, the professor was scattered: he forgot names and faces and was confused about when the election will be and who is chosen. But in the lab, he remembered the location of every thing to within an inch, so he knew it was theft. Instead of constables came Backfield and Dodge. They dug through the secretary and found in the bottom drawer a page of the "[[golos-korony|Voice of the Crown]]" with a portrait of Minerva and an invitation to the ball, which Minerva and Erwin Origin gave in honor of the scientists. When Dodge suspected the watchman, the professor proved his innocence: he asked to file from the shelf of Agatha's Illusion, and it turned out that the watchman was illiterate. In the middle of the search, a girl came to the office, accompanied by a knight, Sir Peter, and passed to the professor the invitation of her mistress, Lady Magda Labelin, the next day for the day's song in the Venerable Citadel. ([[prestolnaya-tsitadel|Imperial Citadel]])
+
+At a meeting in the Table Citadel, [[moris-labelin|Maurice]] and [[magda-labelin|Magda Labelin]] criticized the device. Maurice was proud that the “genius of science” belongs to his genus Sophia: “The Great Mother once again wiped Agatha’s nose.” He promised to buy the invention for ten thousand ephesas, but not before October, and gave a "donation" of about half a thousand ephesas. Ollie didn't touch the money, Alice took it. Later, he took the pack, gave Alice a note for chocolate, and wrote the rest into the project budget.
+
+The next day, Backfield and Dodge raided the lab. Backfield accused the professor of serving Minerva and hid the drawings himself. Ollie put the bag out the window and threatened to smash it: “Adrian will get nothing.” Dodge rushed to take the bag away, but Eugene's doorman set his leg up. The students beat the agents and threw them out the window, and Backfield was forced to surrender his sword. Ollie thanked Eugene with a banknote and showed him the device. Then the professor coldly refused to abbess Isabella, who came from Alicia's mother: he will appoint the show himself when he cleans up and makes up for fourteen hours of missed lectures.
+
+### Church and King
+At the show in the demonstration hall of the faculty, the higher mothers of Orlando and Alicia, Bishop Amessin and the Second of the Five announced that they were buying the invention. They wanted to write down the call to the bearers of the Rings to repent, so that in all the temples it would sound word for word. Ollie denied in vain that the drawings had been sold and stolen. After they left, he admitted to Alice that he could no longer think about science, and decided to seek refuge with Minerva in the First Winter: "Minerva is the only one who knew how not to interfere with me." Suddenly, King Francis-Ilianus returned. ([[frantsisk-ilian|Francis-Ilian]]) He explained that the Church is poor and counts on his money, and bought the invention himself at a price that Alice calculated as a cost multiplied by four. Adrian and the Labelins, he said, would soon be absent from the professor: the next morning the king was going to announce that he was nominated to the lordship.
+
+### Interchange
+Remembering how Alice said that she “did all this” so that he did not leave, Ollie accused her of stealing a notebook: the lock was allegedly opened with a key, and the well was scratched with a pin for the view. He stated that she had "extremely disappointed" him, and Alice ran away in tears. In the upper right box, the professor found a notebook, and next to two tickets for the mystery of "Carrog and Liola". ([[liola-i-karrog|Liola and Karrog]]) A year ago, he didn't make it to the premiere. In the notebook was a note from Eugene's doorman, in which all signs are guessed by Inge Price. ([[inzhi-prajs|Inzhi Price]]) He admitted that he himself took the notebook, hoping to understand the schemes, and then told his “lady”. The lady didn't mind Adrian getting the car, so she sent the professor money through Conto's bank. ([[konto|Konto]])
+
+It turned out that the portrait of Minerva Olli did not keep from warm feelings. On the back of that page, a review of Carrog and Liola was printed. Ollie, an avid theatergoer, kept reviews, repertoires, and programs in the bottom drawer. The price of travel to the First Winter, he once learned also for the sake of the theater: Lady Sofia was preparing a play about the journey to the ends of the earth. ([[sofiya-oridzhin|Sophia Jessica Augusta]]) Half an hour later, an unsociable professor, who “cannot be dragged by force into the training wing,” burst into all the auditoriums shouting: “Is Alice Cavendish here? Alice, Eli-eis!"
+
+### In “The Miserable Little Things”
+Somerset Flame, [[karen|Karen]]'s nephew, went to open lectures on physics, which Ollie, the "rising star of science", was supposed to give. The professor hated crowds of students and walked every second lecture, and Alice led the classes instead. In the evenings, Ollie took her home in his sleigh. At the end of Somerset's story, the professor enters the auditorium with the words "A.K. is here?" and Alice immediately runs to him.
+
+### "Ad-ri-an!"
+By the November 1776 election, Ollie had perfected the device. The cylinder contained only four minutes of sound, so the new device had two axles and two recording heads, switched by “one click”, and the recording could be kept as long as desired. The device existed in a single copy, only Ollie and [[elis-kavendish|Alice Cavendish]] knew how to serve it. They installed it on the stage of the House of Representatives: for the first time, the Lords’ speeches were recorded, so that they could then play them to the people in the squares. Dorian Amber helped them, who repeated the essence of each solution for the device, and so the “sound protocol” was formed. ([[dorian-ember|Dorian Ember]])
+
+Ollie supported Adrian for the sake of the monarchy: only the direct heir to the former emperor would not create a dangerous precedent for elective power. The young men and methods by which the Duke of Arden fought for power, he despised, and Minerva sincerely respected. Because of this political position, Alice, still admired his intelligence and nobility, kept cold with him. Adrian invited the "genius of science" to dine with the lords and rehearsed his speech with him. Ollie also knew about the secret negotiations that Adrian had recorded: he promised the three lands and the Church of the Forefathers the division of the Duchy of Origin. Adrian Ollie’s chances were estimated at ninety-five percent, leaving five for the unforeseen, and such a case came when it turned out that Adrian scored more votes than any other candidate, but less than all the others combined. During the lunch break of the first day, he checked the quality of the records and, finding it acceptable, became interested in what was happening in the hall for the first time. On the night of the siege, he argued with Alice, which of them to stay in the House (“My discoveries have already been made, and yours are still ahead”), and eventually he lay down at the device, “like a sentry”. On the morning of Ember's command, he included a recording for four cardinals who appeared in the House: frightened elders chorus repented that Amessin bribed them in the election of the archpriest, and even Olly blushed when he heard the confession of the last of them. After exposing Amessin, he announced to his assistant that his "indifference to politics" was exhausted, and went to drink tea with Minerva. Minerva and Erwin explained to him that the Dynasty is a tradition of methods, not blood. After the death of Adrian Ollie recorded the speech of Minerva in front of the House, regularly changing the cylinders: immediately after the speech, the device had to be taken to the square so that the townspeople could hear her every word.
+
+## Personality
+
+Ollie says in "academic language": the question of whether he will make it on time, answers "I have reasonable doubts", and the faulty device refuses to call the worker out of "faithfulness to the truth". He does not understand the palace language and hints, so Alice always “translates” it into Polarian and helps out in conversations with nobles. Ollie is proud and does not justify himself to those whom he considers fools, but is able to be ashamed of his own arrogance: he did not know the name of the gatekeeper, although he opened the door to him for several months. The professor admired [[minerva|Minerva]] for his mind, love for science and ability not to interfere with scientists. He even played on the board of her famous party in the execution against Adrian. ([[stratemy|Stratems]]) He did not notice Alice's feelings until the very end of the story.
+
+## Relationships
+
+- [[elis-kavendish|Alice Cavendish]] is a student and assistant who is in love with him. He accused her unfairly of stealing, and then rushed to look for her.
+- [[adrian|Adrian]] is a longtime acquaintance and patron who ordered a hundred devices.
+- [[moris-labelin|Maurice]] and [[magda-labelin|Magda Labelin]] wanted to delay the device until October.
+- Francis-Ilianus bought the invention. ([[frantsisk-ilian|Francis-Ilian]])
+- Eugene (by the signs - Inge Price) - the gatekeeper of the faculty, who took a notebook and protected the device during the pogrom. ([[inzhi-prajs|Inzhi Price]])

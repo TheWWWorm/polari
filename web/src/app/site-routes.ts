@@ -1,11 +1,11 @@
 import { Routes } from '@angular/router';
-import { pageTitle } from './core/site';
+import { sectionTitle } from './core/site';
 
 /** Pages only this wiki has; the engine adds them to its routes. */
 export const SITE_ROUTES: Routes = [
   {
     path: 'stratemy-igra',
-    title: pageTitle('Сыграть в стратемы'),
+    title: sectionTitle('stratemy-igra'),
     loadComponent: () => import('./pages/stratemy/stratemy-page').then((m) => m.StratemyPage),
   },
 ];

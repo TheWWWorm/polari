@@ -1,0 +1,86 @@
+---
+title: The Bishop's Christmas Tree
+full: Bishop's Christmas Tree - Interlude of the Polari Cycle
+type: book
+group: Interlude outside the Timeline
+order: 19
+aliases: Bishop's Tree, The Bishop's Christmas Tree
+summary: A Christmastide interlude set in 1748: two boys who sneak into the bishop's garden to get a Christmas tree uncover a plot against the burgomaster.
+books: yolka-episkopa
+infobox:
+- Type: Interlude (side story)
+- Place in the Series: outside the chronological ruler - an independent story, you can read at any time; on the site stands after the "Shadow of the Great Tree"
+- Timeline: end of December 1748 from Descent, night from the penultimate to the last day of the year
+- Setting: An unnamed city in the [[zemli-korony|Crownlands]]
+- POV Characters: Marek, shoemaker's apprentice
+- Main Characters: Marek (Rick), Josh, the mayor's daughter
+- Previous Book: [[konfidentka]]
+- Next Book: [[fantazii]]
+---
+The Bishop's Tree is a short festive interlude set in late December 1748, about a quarter of a century before the events of the main cycle. The subtitle only indicates "City in the Lands of the Crown". The hero is a twelve-year-old apprentice shoemaker Marek. The story is written as a New Year's fairy tale about dreams, but it has a contract murder, a corrupt cleric and the impotence of worldly justice before the church.
+
+## Plot
+### Stanley's Workshop
+On the penultimate day of the year, Marek worked in the morning in the workshop of his father, the shoemaker Stanley. My father fell home just before dawn, drunk, with two spruce branches bought, judging by his drunken muttering, for a couple of agates, and fell asleep at the table. Marek moved it with a screen so that it could not be seen from the threshold, placed the branches of the cross-cross, so that it seemed as if there were four of them, and placed a candle in the crosshairs. For the look, he threw a few old shoes on the shelf: let customers think that the workshop is littered with orders. The only customer this morning was Dorothy Liz's glass bun. She demanded that the stuffing was changed by the master himself, but Marek, of course, did everything himself. His father called him an apprentice four years ago, and he had been doing work for a long time without looking, indulging in dreams. For twelve years of his life, the miracle never came to him either at the [[soshestvie|Descent]] or at the New Year.
+
+At noon, his friend Josh, the son of a boatman, came running in his grandfather's leather helmet instead of a hat. Marek he called Rick: that sounded "cool". Josh needed a whole tree, not a branch: the daughter of the barber Molly Sue, who at Descent told him to "test his feelings", promised to kiss him under the tree. Trees did not grow in the city. Branches to the bazaar were brought from the baron's grove nine miles away, but there was no money for the cart, and with foresters, jokes are bad. Then Josh remembered the garden at the Bishop’s Palace, where there were Christmas trees in tubs along the path. Marek recalled that this is church property and almost theft from the temple. Josh countered that they would take the smallest tree and then return it, and there were no people in the garden at night.
+
+### Overheard conversation
+The garden was great: the former bishop built a palace half a mile from the city and built a park of twenty acres around it. Then the city grew, and his guest at the church of the Holy Brothers crept into the garden wall. The current bishop asked the magistrate to include garden land in the town line and began negotiations with the trade guild to sell part of the garden for a fair. Burgomaster's up. The narrator assumes he wanted a bribe.
+
+At night, the boys climbed over the wall on the stairs, which were "taken for a while" from the yard of dyer Jack Thomson. There was not a soul in the garden: all who could not sleep, went to the night fair at the town hall. On the way, Josh told about his dreams: a gold hilt on a crossbow with engraving and his own barge. Marek admitted that he wants to be a judge. In the winter, he listened for seven nights in a row as the mother of neighbor girl Zoe read aloud the book “Judge Notes” about a young and intelligent judge Wilmer, who unraveled the darkest cases “not by the sword, but by the law.” Josh made fun of him: Marek has no university, no title, which means being his shoemaker like his father.
+
+Here the boys heard voices and hid behind a bush. Marek recognized the voice of the bishop: he heard it at Sunday sermons. The bishop spoke of a “clear conflict of interest”, of the fair and the dawn, and his interlocutor asked to “add five gold” to make everything look like an accident. The bishop explained that the right person, like every decent philistine, does not like to go out at night, but now he is at the fair and will go home in the dark. The second replied:
+> “I know my business.”
+Half of the payment was made by the bishop. Josh then wanted to go further behind the tree, but Marek realized that it was about the murder of a burgomaster, with whom the bishop had an argument over the garden.
+
+### Three Notes
+Josh wanted to run to the sheriff, but Marek, remembering a similar case from the "Judge's Notes", dissuaded him. They have no evidence, no one will believe the word of the two apprentices against the bishop. And if the sheriff still believes and starts the trial, the bishop will come out of the water and remember who annoyed him. It was also impossible to approach the mayor at the fair: half the city would see it. To catch the killer, they themselves, thinking, refused, and said “no” at the same time, “so that no one seemed a big coward.” Then Marek thought of writing an anonymous letter to the burgomaster. The boys could not write, so they decided to dictate it in parts to three different scribes at the fair, so that no one could understand the meaning as a whole.
+
+The first note said that the authors went for a Christmas tree in the garden of “Mr. E.” and heard “an important business”, and also mentioned a grave on the far side of the site with a cat with a mustache on the monument. The second is that Mr. E. hired a "assassin" to kill "my lord B." In the third, that the work will be done before dawn, that E. is a bishop, and B. is the burgomaster himself, and that gratitude can be buried in a day with a "couple of ephesas" from that cat. No sign of the boy. The note ended with the words: “But we try not for money, but for justice, because we are not jackals.”
+
+They had almost no money. Marek paid for the first note by promising to repair the scribe's boots for free, and the scribe recognized him. Josh left the second scribe as collateral for the glove. The third note for three quarters was written by Selma Artist, the best cardmaker in the city. She was bored writing words without drawings, and she did not ask questions.
+
+### The Burgmaster's Daughter
+While Marek was dreaming over an envelope about judicial service, the wind tore out his first note. She was picked up and read by a beautiful noble girl in furs and red boots. She realized that the boys had stolen a Christmas tree from the bishop. After learning about Molly Sue, she caught fire and demanded to take her to the garden. When the friends refused, she called the constable, and promised to return the note only after the tree was stolen. It was midnight, seven o'clock before dawn, and Marek agreed. The girl hired a sleigh, took a high seat, and the boys left a shop for servants. When asked by Marek what she dreams of, she replied that she dreams of having such power that the curious boy immediately “swallowed his tongue”.
+
+This time the heart took Josh right to the Christmas tree alley. He rejected the three Christmas trees offered by the girl, and chose a short, strong, with three cones, which expressed his "courageous character". When asked how he would kiss under her, he held up a tub with a tree high above his head, and the girl looked at him with "strange eyes". At the wall of the boys caught a watchman with a club, a crossbow and a huge dog. The girl, who was already sitting on the wall, could have run away, but went back down. She announced that it was her servants, whom she had tested with courage, offered the guard to immediately report to the sleeping bishop, and in the end threw him a silver coin "on the doctor" when he "felt Christmas trees." While the guard was playing in the snow, all three of them left.
+
+Devastated by Josh's gratitude, the girl asked what "important business" was. Josh asked her to hand over the notes to the burgomaster, because she must know him. The girl smiled: it would be strange not to know him. After reading the notes, she turned white. They wanted to kill her father. She called the boys scoundrels and rushed to the sleigh. Marek reassured her: it was not more than half a third, and the killer will wait for the mayor to go home from the fair, and without his daughter, he will not leave. Josh swore he'd drown in the river if anything happened to her father. The girl admitted:
+> I dream of doing anything stupid like you. And to believe, like you, that everything will end well.”
+Josh leaned over to kiss her, and she asked for his name. At this moment Marek realized that the daughter of the mayor Joshua is not a couple, and her family, servants and drivers will know who warned them. He grabbed a friend in the armpit and jumped out of the sleigh with him. The narrator calls this Marek's first step "over the apprentice".
+
+### Interchange
+Burgomaster believed the notes and survived. He told the sheriff to ambush him, but the killer walked away. For two days the burgomaster and sheriff deliberated on how to call the bishop to account. However, a high-ranking cleric was not subject to worldly justice, and a church court would not accept anonymous notes as evidence. The mayor was only able to hire security and live peacefully until his re-election. His successor was more accommodating and recognized the episcopal garden as part of the city.
+
+Josh stabbed Marek, came back for an abandoned tree, kissed Molly Sue under it, but could not forget the other one. He threw the tree over the wall back into the garden, did not think about Molly Sue anymore, and quarreled with Marek. A few days later, Marek checked the hole under the mustache cat, found the burgomaster's thanks and brought Josh four gold ephes, half of it. Josh bought a crossbow with an engraving. The father-boatman decided that the son stole the money, brutally beat him and took away both the crossbow and the rest of the coins, but did not find out from whom they were stolen, otherwise he would have to return them.
+
+Marek hid three of his ephemera, and the fourth was exchanged for a textbook and literacy lessons. He was taught to read and write by Zoe's mother, and she even gave him to read The Judge's Notes herself. One winter night, Master Stanley fell asleep in the snow and froze to death, and the workshop, which had been mortgaged, was taken away for debts. With a diploma and three hidden ephes, Marek sat down in a stagecoach and went to the capital. He never went to college and became a judge. But, as stated in the finale, half of the dream came true: he became “someone more important than a shoemaker.” Twenty years from now, the noblewoman, the burgomaster, the bishop, and even Judge Wilmer would have looked up to him.
+
+## Characters
+- Marek (Rick) is a twelve-year-old shoemaker's apprentice, a sensible dreamer who wants to be a judge.
+- Josh is his friend, the son of a boatman, brave and impetuous. He dreams of a crossbow and a barge.
+- Stanley is Marek's father, a shoemaker and a drunkard. He froze to death in the snow.
+- The burgomaster's daughter is a beautiful noble girl. Her name is never named.
+- The **bishop** is heavy and loose, "his veneration." He ordered the burgomaster's murder. Name not named.
+- The Burgomaster is opposed to the sale of the bishop's garden. Name not named.
+- The killer is "huge, scary," according to Marek's imagination. Escaped from the ambush.
+- Secondary: Molly Sue, daughter of a barber; Zoe and her mother, who read aloud the “Notes of the Judge”; Selma the Artist; Dorothy Liz's bakery; dyer Jack Thomson; guardian of the Episcopal garden.
+
+## Significance in the Series
+The story is not directly related to the main plot, but tells about the childhood of one of its characters. Who Marek became is not said, however, by all indications, it is [[mark-voron|Mark]], the Crown Raven, the head of the secret guard (protection) in the main cycle:
+- Mark's full name is Mark Frida Stanley. “Stanley was my father’s name in those long-forgotten years when he was still alive,” he says in “[[lish-odna-zvezda|Only One Star]].” Marek's father's name is Stanley, and he's freezing to death.
+- Mark is "a commoner, the son of a shoemaker from a provincial town." He said, “I’m not from the North, I’m from the Crown.” Marek also lives in the provincial town of Crown Lands.
+- In [[lyudi-i-bogi|Humans and Gods]], Mark says to Minerva, "It's nice that I'm not a shoemaker. Since childhood, they dreamed of not being - and you see, they succeeded! "
+- In “[[kukla-na-trone|A Doll on the Throne]],” Mark recalls the abuse of his father, “a mischievous shoemaker and an outstanding drunkard,” and the capital’s slum dialect.
+- In "[[lyudi-i-bogi|Humans and Gods]]" Mark is spoken of as a simple-minded shoemaker who became the head of the secret guard.
+
+The final phrase about “twenty years later” also comes to its elevation. The boy's dream of the law is also reflected in "[[fantazii|Fantasies]]": there Mark lives under the name of the lawyer Macfried Crowe, distributes business cards "Legal Services" and unravels dark matters with the executioner. For the reader of the main cycle, the story explains why Mark has faith in the law, a keen mind and distrust of loud titles. The motive of the impotence of the worldly court before a spiritual person echoes the structure of the [[tserkov|church]], which is subject only to its own court (see Confident). ([[konfidentka|The Confidante]])
+
+## Trivia
+- The text counts the whole night: at midnight, the clock beats on the town hall, it takes Josh half an hour to get to the garden, and about half a third of the children return to the sleigh.
+- At the fair, the girls make a snowclap and make her tears from a frozen ripple. Selma the Artist offers the boys the subjects of postcards: flight Miriam, laziness under the moon, the heart of Emilia.
+- The murderer asks the bishop to “add five gold coins” to make death look like an accident.
+- The girl tells the guard that it is not worth it because of a trifle to start Scarlet Trouble.
+- Josh calls the killer a "sasin", and after this terrible word, the killer becomes "doubly scary" for boys.
+- The main pattern for Marek is the fictional judge Wilmer, "the grandson of Yumin, the Foremothers of Justice".

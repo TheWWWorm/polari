@@ -1,0 +1,38 @@
+---
+title: Sanders
+full: Sir Sanders Sally Samantha of Susan, Lord Satersveit
+type: character
+group: Court and Crown
+aliases: Sir Sanders, Sanders, Sanders, Sanders, Lord Satersveit, Satersveit, Sanders Sally Satersveit, Sanders Sally Samantha
+summary: An Azure Guardsman of Adrian who survived the imperial train disaster on the Beck. He tried to save Captain Grace, pulled Adjutant Forlemay ashore, and, at the third session of Manson's trial, described the last morning aboard the train and recalled Grace's cry: ‘There's some kind of armed party over there!’.
+books: glas-zimy, yanmejskaya-okhota
+infobox:
+- Rank: Knight (Sir), Lord Satersveit; Guard of the Company of the [[lazurnaya-gvardiya|Azure Guard]] of the Emperor
+- Liege: [[adrian|Adrian]]
+- Associated With: Forlemey (saved him from the river), Captain Hugo Grace, Sir Locke ([[forlemej|Forlemay]])
+- First Mention: "The [[glas-zimy|Voice of Winter]]" (in Body Search Report)
+- First Appearance: The Yangmei Hunt, Chapter 29 Arrow - 9. ([[yanmejskaya-okhota|The Yanmei Hunt]]) The Third Meeting of the Supreme Court of the Polari Empire
+- Status: Alive
+---
+Sir Sanders Sally of the Susan family, Lord Satersveit is a guard from [[adrian|Adrian]]'s company of azure guards who was riding on an imperial train when it collapsed from a bridge over the Back. ([[lazurnaya-gvardiya|Azure Guard]]; [[bek-most|Beck]]) He is one of the few survivors. His testimony at Manson's trial helped restore the last minutes before the crash. ([[sud-nad-mensonom|Trial of Manson]]; [[krushenie-na-beke|Beck Train Disaster]])
+
+## In The Voice of Winter
+Althessa Alert recounted Erwin's report on the search for the dead. There were three hundred and twenty people on the train: ninety-two bodies were picked up on the banks, two hundred and sixteen were identified among the wreckage, twelve were never found. About the missing dead, she said: they have “stupid names — take, for example, Sanders’s sire Sally Sutherzweit. It’s so funny to write on a grave.”
+
+## The “Yanmei Hunt”
+### Witness of protection
+On May 25, 1775, at the third court hearing, [[frantsisk-ilian|Francis-Ilian]] called two witnesses "personally about Lord Manson". The full name of Sanders made [[ervin-oridzhin|Erwin]] laugh: “The nobles have favorite horses, blades, colors — it turns out, and favorite letters of the alphabet!” Sanders confirmed that he had served in the company of the Azure Guard, was on the train on the morning of December 22, 1774, and "avoided death by miracle."
+
+### Story of the crash
+The night before the crash, Sanders was carrying a watch in the Lord's carriage. On the eve of the jester was removed to another car, because at teatime he doused the emperor with tea. Sanders himself brought Manson out and told Sir Locke to lock him in the compartment. Adrian hardly slept: studied Faunterra's maps, lists of regiments and reports, consulted with Captain Grace. At dawn, Manson came with Sir Locke and demanded the lord. Sanders did not want to wake him, but the joke repeated the request “some such voice” that the guard knocked on the door. On the balcony of the car, Manson assured that he saw danger ahead. The master said, “Enough, I’m going into the heat!” and went inside. Captain Grace, looking forward and down, shouted something, and the train collapsed into the river.
+
+Sanders, Locke and Grace flew off the balcony into the icy water. Sanders grabbed the sinking captain, pulled him upstairs and hooked him with his uniform by the nail in the board, but then saw that Grace was dead: “broken in the fall.” Throwing the body, he swam to the floundering man and pulled him to the west bank. It was Forlemey. ([[forlemej|Forlemay]]) The fishermen that other witnesses spoke of, he did not see. On the east bank of the wreck climbed some people, and he decided that it came to the aid of the boys Earl of [[erroubek|Arrowback]]. A fisherman picked up the naked, hamstrung survivors in a boat. He refused to row to the nearby shore and took them to his village. Sanders grabbed him by the breasts and persuaded him to return to the bridge to look for the lord, promising him gilded insignia and a spark dagger. The fisherman did not take the gold, but swam. The local priest took both of them back to the church and put them in the basement. In the delirium Sanders felt at night the ringing of iron and threats to kill. In the morning, the priest sent the sick two days on their way to the Wilhelm monastery, although Arrowback Castle was closer. With fever and "severe pulmonary disease" Sanders lay there almost until Spring Dawn and only then found out that Adrian died, and on the throne of Minerva. Letters with reports to Faunterra remained unanswered. Prior [[gallard-almera|Gallard Almera]] visited them in the infirmary, listened and promised to deliver them to the capital “when the need arises”. The abbot of the monastery brought them to court.
+
+The story so captured the hall that Judge [[albert-kantor|Cantor]] came to his senses and rang the bell only after the last words. The voice that Manson spoke to this morning, Sanders described as the voice of the general giving the order: domineering and calm, "as if he was used to power as a reflection in a mirror." Dangers ahead, he said, no one saw, and the joke must have been delusional. Then Francis-Ilian long insisted: "You remember" - and the guard remembered the words of Grace: "There is some detachment!" He didn't think it was possible to name four fishermen. The prophet also asked what Grace was like, and Sanders replied that the captain was taller than six feet, wide in the shoulders, of the family of Sophia the Great, and proud of his Yankee father. [[mark-voron|Mark]] asked one question: is it possible to summarize all the oddities of Manson with the phrase “Lord Manson was planning something”? Sanders agreed: “Maybe it’s possible.”
+
+Later in the meeting, Mark pointed out that the fishermen did not mention the boatman, Forlemey with Sanders, or the detachment that Grace had seen. The raven suggested that the count's men had played out a murder scene to the fishermen after it had all happened on the river.
+
+## Trivia
+- All the names of the guard begin with a "C": Sanders Sally Samantha of the kind Susan, Lord Sutherzweit. Both Anxiety and Erwin laugh at this.
+- The board that Sanders grabbed Grace’s dead body apparently didn’t let him drown. In testimony printed in The Voice of the Crown, Manson said that he and Adrian found the captain nailed to the shore: "His uniform was clinging to the wood." Adrian exchanged clothes with him, and the body was mistaken for the imperial one. The text does not link these two episodes.
+- The defense counted Sanders among the unfound dead, although all this time he was lying in the Wilhelm monastery, and the archpriest knew about the saved.

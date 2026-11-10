@@ -1,0 +1,50 @@
+---
+title: Olaf Two-Beards
+full: Olaf Two-bearded, Sitting-on-a-Botch, King of Shadows and Master of the Cave
+type: character
+group: Commoners and Merchants
+aliases: Olaf, Two-bearded, Sitting-on-the-Botch, The Shadow King, Master Cave
+summary: The leader of Labelin's underworld, ruling the beggars, thieves, and swindlers in the city's dry catacombs. In November 1774, paid with Erwin Origin's silver, his men dressed in kairs' cloaks and staged the northern army's flight, making the night massacre in Labelin possible.
+books: lish-odna-zvezda
+infobox:
+- Titles: Sitting-on-the-Boche, Shadow King, Cave Master (self-proclaimed)
+- Territory: dry catacombs of [[labelin|Labelin]], Kazan hall
+- Subjects: about 1200 paying bribes (he himself called Erwin 2500)
+- Inner Circle: Thompson, Hmyk, Mole, Croy the wine merchant, Bald Fred, Bury the guard
+- First Appearance: "Only One Star," Arrow Head
+- Status: unknown
+---
+## Kingdom of Shadows
+
+Under the low-lying [[labelin|Labelin]], the catacombs grew over the century. The present duke's great-grandfather began digging them to divert rainwater, and now the dungeon is almost as large as a land town. No one had a full map. The upper tiers, the "dry catacombs", never completely flooded and became a haven for the homeless, beggars, thieves, scammers, extortionists and pimps. According to the most modest estimates, there were at least two thousand of them, and the sheriff of Labelin with six hundred constables preferred not to go to the caves without extreme need.
+
+The owner of this underground world was Olaf Two-bearded. He received in the eastern, warmest part of the catacombs, in the hall of Kazan, so named for the round smooth ceiling. There were two tables, the lower and the upper, “as is customary in the houses of the rich.” Olaf himself sat above the upper table on a barrel covered by a sheepskin, and the other barrel was pinned behind him instead of the back of the throne. On the left on the barrel there was a tap for drinking, on the right there was a raised crossbow on the hook.
+
+## Appearance and temper
+
+Olaf stood out to everyone, but above all "wild beard": it was divided in two and painted blue, and each half hardened from the paint like a icicle. He wore blue goggles, sharp-nosed boots, and a scarlet camsol with many golden buttons sewn even on the gate and shoulders. The beards also served him as sign language. Olaf rubbed his right in thought or slight irritation, grabbed his left in anger, and in confusion rubbed his jaw "accurately in the hollow between the halves of his beard."
+
+Olaf's rules are businesslike and tough. When Kroth suggested robbing a branch of Shayland Bank, where thousands of gold were stored, Twobeard cut him off: “Shayland Bank is the most reliable because it honestly pays me a bribe ... Whoever goes to Shayland will contact me.” He threw out the culprit, throwing his cup under the bottom table, and in a moment he was smiling and called to himself the thief Bald Fred. The guest, who came with kindness, threw a coin into the box at the entrance. With Sheriff Labelin, "Big Man", Olaf had a clear understanding.
+
+## Deal with Erwin
+
+On the third day after the arrival of the Northerners in Labelin, between 7 and 10 November 1774, the sheriff brought eight: [[ervin-oridzhin|Erwin Origin]], his cousin [[robert-oridzhin|Robert]], and six kair-ixes to Kazan. Olaf introduced himself with the full title: "I am Olaf the Two-bearded, Sitting-on-the-Botch, King of Shadows, and Master of the Cave." Erwin began to call him "Your Majesty" with a grin and offered two rulers, the underground and the terrestrial Labelin, "to make an acquaintance." Instead of a coin in the box, Robert threw a bag of three thousand silver glories on the table.
+
+Olaf knew that he was paid a thousand and two hundred people, but he decided to “screw up” and called two and a half thousand. Erwin told everyone to give away the Glorias, and keep the other five hundred. In return, on the appointed day, all two and a half thousand of Olaf’s subjects were to go north to the burnt-out monastery of Pro-Father Maximian twenty miles from the city, stay there for a day and wear what they were given. In addition, Erwin wanted to know everything about the catacombs: exits, passages, the shortest routes from district to district. For this he paid extra for each one and five hundred gold to Olaf himself. Olaf reasoned that such a person would not personally “break the comedy” if he just wanted to mess it up. He jumped off the barrel and shook hands with the Duke: “I’ll do the job for you.” The musicians played for the health of his lordship "Peaches".
+
+## Masquerade
+
+Why it was necessary, Erwin explained [[alanis-almera|Alanis]] in early December, during the siege of the palace in Faunterra, not yet knowing the outcome. After the defeat at [[piksi|Pixie]], the remnants of his army would retreat to Labelin and hide in the catacombs. There, the kairas will exchange clothes with the "Labelin stuff", and the army of the homeless in helmets and red and black raincoats will go north. The townspeople and sparklers will believe that the northerners have fled, will arrange a feast, and at night the cayres will come out of the ground.
+
+That's what happened. General [[aleksis-smajl|Alexis Smile]] decided that the Northerners had fled the battlefield at Pixie, and placed the army on standby at Labelin. During the night, five battalions of kire emerged from the catacombs and destroyed the army (see Night Labelin). ([[reznya-v-labeline]]) Robert briefly told Erwin, "The masquerade is successful. They believed in their victory and celebrated. At night, we attacked from the catacombs." What happened to Olaf after that, the books are not reported.
+
+## His people
+
+- Thompson, a tall, veiny guy in a new gray coat, was famous for his flair, never got caught and lived in his own house for a long time, and only “visited the lights” in the caves. He suspected his wife of everything, although he could not blame her for anything, and asked Erwin if women could be trusted. Erwin replied that he believed one thing: his sister Iona.
+- The khmyk spoke one word, "humble," and Robert looked at him with respect.
+- The mole, "small and slippery", with an unpleasantly sharp nose, kept a "special" room where money could peep into a hole in the wall. He was offering to rob the Shayland bank branch.
+- Grandfather Croy in a long-striped livery treated guests with wine stolen from the cellars of Baron Herschild, and boasted of thirty years of experience "under Vladyka Adrian, and under the old emperor, and under Vladyka Ingrid."
+
+## Appearances
+
+- "Only One Star" is the head of Arrow (Erwin's visit to Kazan Hall); later chapters mention the masquerade's intent (Erwin's conversation with Alanis, the head of Arrow) and Robert's report of success (Sword's chapter).

@@ -1,0 +1,63 @@
+---
+title: Balloon
+full: Harmon's Balloon - Polari's Skyship
+type: concept
+group: Technology
+aliases: Celestial Ship, Celestial Balloon, Flying Ship, Balloon, Hortensia Ball, Harmon Ball, Heavenly Sphere, Double Sphere, Aeronautics, the Guild of Aeronautics, the Aerial Guild, the Ministry of Air, The First Air Guild, Air Intelligence, Balls
+summary: The ‘skyship’ of Hortensius, a stoker from Laem, bought and improved by Harmon: first a hot-air balloon, then the Double Sphere with a hydrogen balloon. The first vessel flew away over the Bottomless Abyss; the second, built by Harmon for the Origins, served as a decoy in the Battle for First Winter.
+books: nebesnyj-korabl-i-devushka, poleznye-lyudi, yanmejskaya-okhota, lyudi-i-bogi, ten-velikogo-dreva, fantazii
+infobox:
+- Definition: lighter-than-air aircraft — cloth ball with basket
+- Inventor: Master [[gortenzij|Hortensius]] of [[lajem|Laem]] (circa 1773)
+- Owner and Builder: [[kharmon|Harmon Paula]] (The Glorious Horam)
+- Lift: hot air from an oil burner; since the spring of 1775 - also hydrogen
+- Ships: Hortensia ball (Laem); Celestial, or Double, Sphere ([[melison|Melison]], 1775); balloon of the aeronautics guild (The First Winter, 1775)
+- First Appearance: "[[nebesnyj-korabl-i-devushka|The Skyship and the Girl]]", August 1774
+- Fate: Double Sphere flew uncrewed over the Bottomless Fault (May 1775); the ball of the First Winter was shot down by the Rings on December 2, 1775 ([[bezdonnaya-propast|Bottomless Abyss]])
+---
+The **balloon**, or heavenly ship, is an invention of the Laemian master-hypothecist Hortense. ([[gortenzij|Hortensius]]) It was bought and improved by [[kharmon|Harmon Paula]], and then from memory built a new ball in the service of the Origins. Horam, who called the invention a ball, Hortensius corrected: “This is not a ball, glorious master! This is a heavenly ship designed to plow sky-high!”
+
+## In "The Skyship and the Girl"
+Hortensius invented the ball about a year before August 1774. He noticed that a piece of paper thrown into the fire took off first. Then the master put the bag on the furnace pipe, weighed it and estimated how much hot air will lift a person. But the ship came out “an extremely stupid means of transportation”: barely lifted two, there was frost at the top, and the ball flew only “where the wind blows”. The descent was not provided: hot air "pulls up until it cools."
+
+The case was damaged by the bishop, who said that the ball was "a fiction for those who want to get to the Star quickly", and the merchant Fidel-Corel. That battered hour hung over the city, and then demanded three hundred gold from Hortense, claiming that the flight deprived him of male power. Onoriko-Meysor called the ball a "curse", although he himself knew that the merchant was lying. ([[onoriko|Onoriko-Maysor]]) According to Rico, the ball was held in the sky for no more than two hours, once it was carried into the sea, and more than ten miles he did not fly. To this Horam, that is, [[kharmon|Harmon]], replied: "Maybe you will not reach ... But we can try.” Looking at him, [[niza|Niza]] caught fire.
+
+## In “The Useful People”
+In January 1775, [[moger-bakli|Moger Buckley]] came out on the trail of the thief of the Sphere according to this sign: he “bought at auction the cheapest and most evil slave... And then, as a gift, I bought her a celestial ship.”
+
+## The “Yanmei Hunt”
+**Melison.** Harmon commissioned Hortensius to build “a galleon, not a rowboat” for three hundred hilts, although the new balloon ultimately cost much more. In the fall of 1774, he moved the master, ball and Niza to the estate under Melison. For the flight instead of firewood decided to take fuel oil. Niza noticed that the clouds do not float where the wind blows near the ground, and Hortensius realized: “The wind depends on the height!” A half-mile flight confirmed this. You can change the course by choosing the height. Hortensius remembered the university books on the volatile gas. Rico brought in a master's in alchemy from Laem University. ([[onoriko|Onoriko-Maysor]]) He called the gas hydrogen and explained that the fabric needs to be impregnated with a special mixture, and the gas itself is extracted “from acid and iron filings.” Instead, he sent a student who needed a topic for a credit card.
+
+By the spring of 1775, the ship had cost Harmon 423 Hilt, two Helens, and five Glorias. On March 8, the hydrogen ball was tested on a harness. Hydrogen from the bubbles, sheathed with iron ribbons, was driven through the “beak” into the neck of the ball. The bottom went up in the basket alone. A gust of wind untwisted the winch, Harmon heated the blade with a stop lever, and the cable burst. The ball took off, but Nisa found the valve, drained the hydrogen and villages. The messenger of the Second of the Five Marquess, Miral-Seneli, wanted to buy a ship, drawings and a monopoly. ([[kuindar|Quindar]]) Harmon, fleeing from the Labelin people, hid the ball on the roof of the estate.
+
+**Double Sphere.** By May 1775, the ship consisted of two balls connected by a network of "stockings". The upper ball was filled with hydrogen, and he "hardly" to tear the ship from the ground. The lower one, with hot air, served to change altitude. So hydrogen did not have to be digested. In flight, Harmon proposed the name "Heavenly Sphere". Niza then called the ship the Double Sphere: he picked up four and flew "twenty miles without landing." Harmon, Niza, Hortensius, and the marquess Booth were on their way to bottomless failure. ([[bezdonnaya-propast|Bottomless Abyss]]) On the way, they were freezing and waiting for the counter wind.
+
+At the end of May, [[chara|Chara]] archer overturned an oil burner with an arrow. The basket caught fire, and the ship had to land. A hunter ([[adrian|Adrian]]) questioned Hortense about the ship's design and used it to kidnap Kindar from the Abode-u-Bezdna. The abduction fell off: Quindar jumped on the wall, his archers pierced the top ball, and the ship carried over the Fail. Throwing everything else away, the Hunter cut the basket with the burner, and the people hung in loops of ropes. All four moved to the plateau, and the empty Double Sphere "fell up and soon disappeared behind the rocks." "My ship!" cried Hortensius. “My beautiful ship.”
+
+## In "Humans and Gods"
+Becoming Adrian's cupbearer, Harmon retained the ship's blueprints. On the way to the White Stone Bay, he spread rumors: “Heavenly ships are the future,” and the wind of the Second of the Five allegedly learned to direct the secret of Pramatery Lyudmila. The interlocutors of [[ervin-oridzhin|Erwin]] from the secret order, whose goal is to fly to the Star, said that they knew about the invention of Hortense for a long time. But the ship rises only a mile, and “it is worth flying above twenty miles, as the air disappears.”
+
+## The Shadow of the Great Tree
+**Ordered by the Origins.** In the summer of 1775, Harmon fled to [[minerva|Minerva]] and called himself "the master of aeronautics", who "bought drawings and built this celestial ball". He had a drawing on a napkin, and [[navi|Nathaniel]] cut it off: “This is nonsense, not a drawing.” Kair Henry Horton ([[sorok-dva|Forty-Two]]) saw in the ball "a storage room for a scout." [[robert-oridzhin|Robert Origin]] ordered the ship, but paid for the materials himself, directly to the suppliers. Harmon took [[salem|Salem]] and Veselchak as assistants. ([[veselchak|Jolly]]) He said, “I have no idea how to build a damn ball.”
+
+The secrets remained with Hortense under Laem. On the way to the north, Harmon restored them from memory. The size of the ball he estimated on the basket "four by four feet" and the growth of Adrian, who touched the head fabric. He found the right fabric by groping the ship's pennants. I was looking for a smell. In Ruilde he bought a burner, and forty-two brought an alchemist from there. In [[uindli|Windley]], Harmon presented Robert with a drawing: the ball lifts more than five people, and the matter is “painted gray” so as not to stand out against the sky.
+
+**Navi's Ministry and Design.** In the [[pervaya-zima|first winter]], there was a “mixture of an alchemical laboratory and a sewing workshop.” Harmon called her the Ministry of Aeronautics and dreamed of the First Air Guild. Forty-two called her intelligence agency and dreamed of a squadron of balls. In October, Nathaniel saw a new drawing and exclaimed: “Here’s a way to lure the beast!” The ball was part of the plan against [[paul|Paul]]. By decree of the Lord, it was built only on hot air, without hydrogen. For two weeks, Navi watched the weather so that the wind carried the ball to Mount Agatha.
+
+**The Battle for the First Winter.** On the morning of December 2, Navi warned that the ball "will be destroyed with a probability of ninety-seven percent." Minerva ordered to put in the basket three straw stuffed works of Salem and run the ball after the third fall of the ice. Shayland's army and Adrian's court decided that the ice floes were coming off the ball. Adrian himself, "the chief expert in aeronautics," explained the break in the shelling as follows: the ball was covered with snow, and he moved away from the ice floes. In fact, Minerva and Navi were flying behind the mountains in a boat raised by the Glove. ([[perchatka-mogushchestva|Glove of Might]]) Paul's squad chased the ball. “I’ve already hit that one,” Chara said. Two flashes of the Rings pierced the ball, and it caught fire. ([[persty-vilgelma|Wilhelm's Fingers]]) Looking through the [[ptakha-bez-ploti|Bird without Flesh]], Adrian dropped: “Peace to her on the Star.” But the bird flew up to the basket, and Manson saw: “Solomon scarecrows! There were no people there!” The ball crashed on the slope of Mount Agatha. Navi hoped that Paul, considering him seriously wounded, would climb the slope to finish the job - to Cosuli's grotto. ([[grot-kosuli|Roe Deer Grotto]])
+
+The ball should not be confused with the "flying schooner" of Minerva - a river vessel that was raised by the Glove. Magde Labelin explained: "It was not a ball, but a river schooner."
+
+## In "Fantasies"
+In Fantasia, the possible fates of the heroes, Harmon became the Minister of Aeronautics, and Forty-Two became his assistant. The elders of the aeronautics guild gave Minerva a flying carriage for flying with the Glove. [[iona-oridzhin|Iona]] ordered a portrait of the lady in the form of a collage: "spark, Yangmei Glove, a flying ship and an edelweiss flower." Erwin recalls that Harmon's celestial ship "rose one mile into the sky." This was enough to establish that the air pressure decreases with height, which means that there is nothing to breathe on the Star.
+
+## Organisation
+- **Shell and impregnation.** The fabric was impregnated with a composition that does not pass hydrogen. Impregnation smelled bad; Harmon described its smell as something between a shoe glue, a wheel grease, and a paint solvent. On the hook, the ball was suspended by a loop on the top. He had a leather “skirt” and a round neck. The ball covered the network, and a basket was tied to its ends. Silk is not mentioned in the text: Harmon himself did not remember whether it was "silk, ali cotton, ali flax".
+- **Burner.** A special light oil burner made by the master of Laham Golden Harbor. Fuel oil is light and gives a lot of heat.
+- **Hydrogen.** It was extracted from acid and iron filings and stored in bubbles. The hydrogen ball was placed on top, “otherwise it smells.” For the descent served as a rope that produces hot air, and a valve for hydrogen.
+- **Management.** There's no steering wheel. The course is chosen by height, because the winds above and below blow in different directions. Before the flight, the ropes, oil supply and ballast were checked. Without hydrogen, the balloon stayed in the air for about two hours and flew 10–20 miles, the Double Sphere for five to six hours.
+
+## Trivia
+- The magister alchemist warned that the hydrogen ball "will fly until the end of the war", so the Double Sphere and combines two balls. In the history of the Earth, a similar device is the Pilatra de Rozier ball (1785). Charles's hydrogen ball (1783) was also filled with gas from acid and iron filings, and the shell was impregnated so that the gas did not go away. This is our comparison; there is none in the books.
+- [[niza|Niza]], who was the first to climb the hydrogen ball, looked at the death of the ball of the First Winter from Adrian's entourage and shouted: "No!"
+- Veselchak, who took bets on the first disaster, filed a petition “so that he would never fly on a ball in his life.”

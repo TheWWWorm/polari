@@ -1,0 +1,87 @@
+---
+title: Henry Farway
+full: Henry Farway, Duke of Hope
+type: character
+group: House Farway
+aliases: Lord Henry, Duke of Farway, Old Farway, Farway Hope
+summary: The cunning and calculating ruler of Hope, who received the duchy after the Jesters' Conspiracy. He manoeuvred between the opposing sides throughout the war and ultimately acquired Almera as well.
+books: strela-moneta-iskra, lish-odna-zvezda, vrata-doveriya, khochu-poni, yanmejskaya-okhota, lyudi-i-bogi, ten-velikogo-dreva, fantazii
+infobox:
+- Title: Duke, Lord Landlord of [[nadezhda|Hope]]; since 1775 he has also ruled Almera
+- Lineage (Foremother): Elena the Traveller
+- House: [[dom-farvej]]
+- Seat: Heart of Light, then [[aleridan|Aleridan]]
+- Children: Son of Finley (second son), daughter of Evelyn; in the House of Hope represented by the "younger Farway", son of the Duke
+- Grandchildren: twelve, including [[laura-farvej|Laura]] and [[dzheremi-farvej|Jeremy]]
+- Army: A standing army of about seven thousand soldiers
+- Nicknames: "old fox", "old creep", "hairy old man"
+- Status: is alive at the end of the cycle; in Fantasies (1776) reigns Hope and Almera of Aleridan
+---
+## Biography
+Henry Farway is a thin, aging balding man with a double chin and bristles. He says, smacking and inserting "mm..."; according to Erwin's observation, every phrase he first rolls on the tongue like gum. The Farway were formerly Counts, one of the first vassals of the House of Lighthart, who owned [[nadezhda|Hope]]. ([[dom-lajthart|House Lightheart]]) by the origin of Henry Elenovets; Alanis, responding to Paul's questions, called him a "smart old fox", and the Ganta Court, for comparison, remembered "a bad fox like your Henry Farway."
+
+### How Farway Became Duke
+After the Shutov plot, Lighthart's house lost power. ([[shutovskoj-zagovor|Jesters' Conspiracy]]; [[dom-lajthart|House Lightheart]]) The proud inhabitants of the Heart of Light would have only recognized Lighthart or one of his first vassals, the Counts of Flame and Farway. The flame was stronger, Farway cleverer. Emperor Thelurian would have preferred Flame, but through a secretary hinted that he was waiting for "a weighty proof of devotion." Flame understood the hint, but did not fulfill it. Farway came to the reception with a tight purse, handed the emperor one hilt and explained that this was the share of taxes that traitors paid to the Crown, and the purse was what they kept for themselves. Then he gave up his entire purse, but first he scooped a handful of coins into his pocket:
+> "Honestly, Your Majesty. I will not lie about being poor.”
+
+A month later, he received the Heart of Light and the title of Duke. According to the Polari Land Guide, the Farway have ruled Hope since 1755. Few believed that Henry would last more than a year: he had only three thousand soldiers, vassals did not respect him, and Almera and Reis dreamed of revenge for Hope for old offenses. However, he ruled for twenty years, grew from a middle-handed count to a great lord, was a brother to the southern lands and never entered a war he could lose. The Crown thought it was to abolish the duchy and hand it out piece by piece, but Henry restored Hope's wealth and influence. The descendants of the Lightharts and the Flames never forgave him the elevation.
+
+### Avarice
+Henry was a miser. Louis Maria recalled how he hired for the construction of the railway, which was led by the Duke’s people: when the site did not have time to finish before the cold, Farway personally inspected the rails that broke down in the field, and refused to pay. His manager announced:
+> “Who needs half-way? Who wants to buy half a ticket?”
+Workers were sent to the construction site in Litland for half the promised payment, and Erwin had no doubt that the Duke had traded some profit for this brigade.
+
+## In "Arrow, Coin, Spark"
+On December 12, 1773, [[ervin-oridzhin|Erwin Origin]] visited him in the city of Farway. [[ajden-almera|Aiden Almera]] has already promised Hope a second spark shop for votes in favor of Alanis. Farway hinted that the Almeran wine "can ferment in the stomachs" if the voices are not on the side of Lady Alanis. Erwin replied that the vassal, which wine pushes to blackmail the master, it is better to "push two fingers into his mouth" and go to the orge or hanty. He then hinted that he himself would marry the Duke's granddaughter, [[laura-farvej|Laura]]. Farway said Erwin was a good player in strata and had received "another chip", and promised to vote in the House for the Emperor's reforms. In the spring of 1774, Henry enthusiastically announced to his granddaughter that he had found her a suitor: showing Laura the image of the First Winter in the expensive album "The Castles of Polaris", he promised her a house in the center of Faunterra and demanded that he diligently study science, painting, poetry and stratagems to please the northerner. In the summer of 1774, at the court of Adrian Farway, he was considered a man of the first councilor, “singing” with the Duke of Almer. At the military parade on June 24, 1774, he sat in the grandstand with his son and beloved grandchildren (in early media - with his wife). Lady Catherine Catherine already knew about the secret marriage contract of Origin with the Duke of Hope and hinted at him to the emperor.
+
+## In "Only One Star"
+Farway was among the nobles of [[adrian|Adrian]]. The first message he sent from the Heart of Light via a new distant telegraph, the "wave", was three hundred and forty miles: it was the first testament of Foremother Yanmei. Adrian himself believed that Farway was with him "out of fear."
+
+When Origin rebelled, Farway evaded the war. Instead of a personal oath in the capital, he reported a “wave” that he was sick, and sent only a half-battalion to Faunterra, and the trains with troops were “stuck” due to a cable break at Marengo. Adrian, returning from Litland, suddenly approached the Heart of Light. He noticed that for a duchy with a standing army of seven thousand men, sending the emperor four hundred was a great generosity, and said that he knew about the collusion with Erwin. Farway tried to transfer suspicions to Gallard, through whose land the rebel train passed, but the lord demanded six battalions, two of them on the same day. The azure guards remained in the Duke's palace, and the grandchildren, Laura and Jeremy, were taken hostage by the emperor. In December 1774, Hope's troops under the flags with a bone approached the captured Northerners of Faunterra, and Alanis called Henry "Adrian's henchman". Fearing that Adrian would destroy his House, Farway sent four companies to storm the palace that had held Erwin; the North considered it a dissolution of the alliance, and Laura's engagement to Origin lost force.
+
+## In the Gate of Trust and I Want a Pony
+The Prophet [[frantsisk-ilian|Francis-Ilian]] found Farway in the Heart of Light in confusion: he saved the earth from war, but lost his beloved grandchildren. The prophet said that he saw in a dream a girl rescued from the clutches of the monster, and the next day Adrian died. The jubilant duke gave the prophet the precious book of the Forefather Edward “Divine Mechanics”.
+
+After Adrian's death, Laura and Jeremy found themselves in Evergard at [[gallard-almera|Gallard]]'s side, who offered House Farway an alliance against Origin. The Farway family played a double game between Origin and Gallard. Henry's son, Finley, carried with him a "raw eye" given to the Duke by the prophet. Henry negotiated with the king of the Shimmery to buy sparkly "eyes" and at the same time offered to marry Jeremy on one of the sixteen royal daughters. In the spring of 1775, Laura was betrothed to the priory, and Hope became an ally of Almera.
+
+## The “Yanmei Hunt”
+### Sparkling Eyes
+According to Erwin, it was the Farway who persuaded Francis-Ilian to break the Crown's monopoly on the eyes, and Prince Hector followed his father's example. Farway gave Erwin money to buy fifteen thousand eyes from Hector. Erwin's father, Desmond, reproached his son: he gave Farway a spark army and let his granddaughter go to Gallard, so that the two central lands are now bound by marriage, armed with a spark and do not depend on him.
+
+### Suspect
+Intercepting the pigeons, Erwin's cues hit a postman with a Farway coat of arms flying to Hope, but without a letter; the second same pigeon left. Erwin included Henry in the list of five suspects in the role of Puppeteer and reasoned: at the Northern Flash, Farway allegedly lost, he did not support anyone, but in fact gained the glory of a neutral and reasonable lord. The Shimmerian king sells his eyes, the prince took his granddaughter as his wife, the road between Almera and Hope is expanded. The only evidence was a pigeon without a letter, and Erwin ordered to follow the Farway mansion.
+
+### Chamber
+In the House, the younger Farway, the Duke's son, expressed regret for the "misfortune" with Queen Madeline, never once using the words "sick" and thereby hinting at an assassination attempt. Henry promised Erwin a loan and, together with Gallard, supported the project of the “sacred guard”, and the priest proposed to appoint him as a worldly curator of the guard. Lady [[sofiya-oridzhin|Sophia]] defended Farway before her son: he remained neutral, although the help to the winner promised great benefits, and thereby gained the respect of the nobility. Henry sent [[nekseya-flejm|Nexia Flame]] as his ambassador to [[uejmar|Waymar]]. When the House was arguing about the emperor’s candidacy, one of his relatives shouted: “My father, the Duke of Farway, knows how to live in peace with everyone!”
+
+## In "Humans and Gods"
+In the summer of 1775, [[paul|Paul]]'s brigade captured a train on the railways of Hope, going from Leongard to the Heart of the World. Farway, who had already introduced a signal system on his roads, ordered the heretics to be captured: the engineer disconnected the line at the agreed time, the convoy stopped, and three companies of horse archers attacked him. Under the cover of a sandstorm, the surviving heretics went into the desert, and the Duke's men ambushed the springs of water. The passengers of the captured train were killed by heretics. Farway didn't report it to the Crown, and Minerva learned it all from the patronage. At first, Farway was sent pigeons with the news that Gallard was coming to help, but then, when the Ecumenical Council suspected the archpriest of heresy, Farway moved ten thousand troops to Almera, including the Leongard regiment of former Lighthart vassals. ([[dom-lajthart|House Lightheart]]) Five of his regiments entered [[aleridan|Aleridan]], and the only battalion of the Priory laid down their arms. Through Count [[edgar-flejm|Edgar Flame]], Henry offered Erwin a deal: to recognize Laura as the heiress of the priory and pass her off as Lord Albert in exchange for support. Flame promised to take over the siege of Fliss, and Nexia Farway promised one of Hope's spark shops to the dowry. Erwin's inner voice, the "althessa," quipped that Farway would retain thousands of weapons eyes and become stronger than the emperor. Erwin agreed.
+
+## The Shadow of the Great Tree
+Farway's fleet blockaded Gallard in Fliss from the lake, and Edgar Flame's corps from land. But when Paul's horde approached Fliss, Farway ordered the troops to leave without a fight: a brilliant river of armor and flags "with bones and hearts" flowed south, and only Mother Cordelia remained at Fliss' gate. He refused to help Minerva, citing the need to protect new subjects. Paul later said that the Duke of Hope had “generously paid him for peace.”
+
+When the horde, retreating from the capital, robbed Almera for a month, Henry made peace with the ganta of Cort and sealed it with marriage: Jeremy's grandson married the daughter of the ganta. Court declared himself the leader of Reis and Farway the ruler of Almera; the union of their armies became the most formidable force south of Smoky Distance. After Laura's death, Vittor Shayland realized that Farway would "have to buy". The Farway occupied the Almeran ports and the remnants of the dockyard fleet; the ships on which Paul carried the Shavans, Vittor later presented Henry as the new master of Almera. In August, Laura, Gallard's widow, told Vittor that her grandfather was asking her to return to Aleridan and claim the rights of the Duchess of Almera because Countess Daynite and Earl of Arrowback were opposed to the Farway authorities. Farway's ships climbed the Twin from Smokey Daly and transported Horton's corps and Edgar Flame's regiment to the rear of Adrian's army near Main. Vittor, who was about to "give his regards to the Duke of Farway", found this landing an extremely clever move, and on 2 December Adrian publicly accused Lady Karen of knowing about Farway's help to the kairs. According to Adrian, Henry just wanted to throw the kairs out of Almera and at the same time get rid of the regiment, whose fidelity was not sure.
+
+## In "Fantasies"
+The author calls "Fantasies" fantasies about how the fates of heroes can develop. Henry lives and rules the two lands.
+
+### "The annoying little things"
+By the summer of 1776, Henry ruled Hope and Almera and held a court in Aleridan, where the Almerian lords did not submit to him all. His daughter Evelyn, a forty-year-old, bald and loud widow with four children, he betrothed to the young Lord Albert Almera, the last of Aiden's children. He rode in the carriage behind Lady Karen and her husband Manson, took them to Sunday Mass and put Evelyn and Albert in two honorary seats ahead of him; at the cathedral, the crowd shouted to Evelyn: "Old woman! Overripe! Yuliana Yelenka!" The engagement was scheduled for Monday "to the day song" in his palace.
+
+In the carriage, he tearfully talked about the “victims” of his descendants: Laura found love in the “Holy Great Martyr” Gallard and was strangled by “enemy spies”; Jeremy married the daughter of a steppe gauntlet for the sake of peace, the wedding was played in the Steppe, and now he lives in Rei-Roy, where, according to Karen, he is laughed at because he cannot ride a wild horse; Evelyn gets married without love. Then he moved on to business. He forbade his nephew Karen Somerset to marry the daughter of the Earl of Arrowback, one of the Almeran lords who was "least willing to submit" to his power; Somerset himself believed that Farway simply did not want to strengthen the Lightharts. ([[dom-lajthart|House Lightheart]]) The heart of Light will return to the Karen family only under the condition of Nexia's marriage to Origin, and Nexia, instead of "carrying the child", quarreled with the empress, so he postponed the execution of the deal. He threatened with consequences: Edgar would have to pay his debts, his property would go under the hammer, and the new ruler would be Origin, Minerva or “Adrian hating your whole family.” Manson rudely invited him to go to the North to seduce someone, and Karen replied that a broken nail worries her more than its threats; then the Duke changed his tone and asked her to influence Nexia.
+
+### "Ad-ri-an!"
+In the autumn of 1776, Henry came to Faunterra for the election of the emperor. The gang of the One-Eyed, whom the whole city considered to be Adrian's supporters and who called Farway "a crook and an impostor", sprinkled grain on his mansion at night, and by noon the birds turned him into a "cake"; according to Henry himself, his daughter Evelyn was directly attacked. At the first meeting of the House, when the arrondissement of Amessin proposed to remove the troops from the building, Henry demanded to keep the reinforced guard, and the knightly companies remained on guard. He was among those who knew in advance about Adrian's criminal past, revealed by Erwin; when the situation became threatening, it was he who demanded to abandon the summons and confer on security and asked if the mob was not enough to storm the Chamber. Erwin counted on the votes of the central lands through his engagement with Nexia Flame, and Minerva's tax reform brought the "Farway Stan" into disarray.
+
+### Other stories
+In "Closer - Further" it is said that the ganta Court, having plundered at will, made a profitable peace with Farway: Court recognized him as the ruler of Almera, and Farway Court - the first leader of the Steppe. In The Composition on the Theme, Almera is ruled by the "merciful Duke of Farway-Almera", who pays retired soldiers a pension of four gloria per month; Mrs. Gale's teacher, who by all indications guesses Alanis, remarks that "Farway has been a miser all his life."
+
+## Personality
+Wary, stingy and quirky, Henry never puts everything on the same card. According to the Guide, the rulers of the Farway are known primarily for caution and the ability to maneuver, avoiding direct conflicts. In front of the strong, he is cowardly and mumbles, but, having recovered, he invariably benefits. He loves his grandchildren, although he uses them as a bargaining chip.
+
+## Appearances
+- Arrow, Coin, Spark - Talks with Erwin.
+- "Only One Star" is the first message of the "wave"; a visit by Adrian (head of Manson).
+- "The Gate of Trust," "I Want a Pony" is mentioned.
+- “The Yanmei Hunt”, “Humans and Gods”, “Shadow of the Great Tree” is mentioned in politics.
+- "Fantasies" - personally appears in the story of Lady Karen ("Annoying little things") and in "Ad-ri-an!".

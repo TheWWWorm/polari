@@ -1,0 +1,109 @@
+---
+title: Chara
+full: Chara Without Fear (The Companion)
+type: character
+group: The West and the Shavans
+aliases: Charm Without Fear, Chara Sputnika, Charlotte, red archer
+summary: A Shavan archer, one of the ‘Companions’, and Neimir's partner and lover for five years. She maimed Moran, turned bandit with the Sorcerer, served Adrian in his guise as the Hunter, and then became one of Paul's three ‘blades’ and an instructor of the khanids. She was killed in the Roe Deer Grotto during the Battle for First Winter.
+books: kukla-na-trone, yanmejskaya-okhota, lyudi-i-bogi, ten-velikogo-dreva, fantazii
+infobox:
+- People: Shavanka from Reis, horseman from ganta Cort ([[shavany|Shavans]]; [[ganta-kort|Ganta Kort]])
+- Nicknames: Without Fear, Sputnik; in Paul - "lightning"
+- Disguise: Charlotte, slave-althess of a Southern merchant
+- Companion: Neymir Werewolf ([[nejmir|Neimir]])
+- Appearance: red, short-haired, dark, with narrow eyes
+- POV Chapter: "Satellite" (together with Neymir, "A Doll on the Throne"); chapter about the death in the "Shadow of the Great Tree"
+- Weapons: Onion; later Wilhelm's Feather ([[persty-vilgelma|Wilhelm's Fingers]])
+- First Appearance: "A Doll on the Throne", "Satellite - 1"
+- Status: killed by Inge Price on December 2, 1775. ([[inzhi-prajs|Inzhi Price]])
+- In Fantasies: The ashes were stored in the basement of the First Winter; Erwin gave it to Neymir to take Chara to the Steppe.
+---
+## Who She Is
+Chara is a shavanka, one of the best riders of the [[moran|Moran]] horde. It was said that she was "born with a bow in her hand"; when she was seven years old, a steppe wolf bit the horse under her, and since then she has not met anyone who would frighten her. Hence the nickname without fear. For five years she traveled with Neymir the Werewolf, sharing a road and a bed with him, and both were called "Satellite"; they were said to be worth seven soldiers together. ([[nejmir|Neimir]]) “Three Springs Ago” saved both of them from the death of their gant Cort, and the Companions considered themselves his debtors. ([[ganta-kort|Ganta Kort]])
+
+Chara is short-haired, dark and red-haired; Prince Hector described her skin as "coffee with milk", and her eyes are narrow and angry: "looks like they're aiming". ([[gektor|Hector of Shimmery]]) She is proud and quick-tempered, likes to be angry, and when she feels her inferiority - for example, not being able to read the map - her chin is proudly annoying. Neymir noticed that if Chara had something in her head, it was almost impossible to argue with her. She despises people tied to the house, “slaves of things,” and laughs at Neymir’s dream of a quiet old age. Chara has never served in the regular army and considers politics a "dark forest". She has traveled the Steppe all the way across, but has rarely been east of Holliwell and hates big cities. She loves gold not out of greed: she is captivated by how easily coins turn into horses, blades and tents, as if each hilt is a “small piece of magic”.
+
+She shoots in the rhythm of breathing: inhaling - pull the string, exhaling - pull down; half a glance to catch the target, and then a new target. Later, having received the Ring of Wilhelm, she fired not raising her hands, but from below, from the thigh.
+
+## "A Doll on the Throne"
+### Raid with Birai and Court's order
+In the winter of 1774–1775, after the defeat of the horde at [[melorandzh|Melorange]], the Sputniks were aided by the weakened ghana of the Ganty of Biray to raid for provisions. ([[ganta-biraj|Ganta Birai]]) In the village of Litland, the unit was ambushed; Chara and Neymir covered the retreat from the hill - she alone filled the knights with such a hail of arrows that they took her for a whole detachment. Biray, instead of going into the rear of the enemy, deserted. When Ganta Cort told the Companions to repay their debt and kill Moran, Chara was willing to submit: “We owe him, and I pay my debts,” and also believed that Moran, blinded by revenge, would destroy the horde. Neymir insisted on talking to the chief first. In Moran's tent, Chara held her hand on her belt and, she said, would pierce the chief at his first move. When Neymir demanded an explanation, she stood next to him: “We are not dogs and we are not northerners.” Moran, laughing, revealed to them a plan to march on Shimmery and sent scouts to Melorange.
+
+### Exploration in Melorange
+Along the way, in an abandoned Melville, Chara shot three times in three breaths to remove three southern marauders so Sputniks could change into their dress. In Melorange, she entered under the guise of an althessa of a Shimmer merchant, whose role was played by Neymir. In a polished copper dish on the market tray, she saw the reflections of two spies; Neymir forbade killing them so as not to betray himself. Satellites were seized in the hotel stable this morning.
+
+Prince Hector, who had a letter of "one gant" with their names, ordered to cut off Charya's legs - so that she would lose her saddle forever and, according to Shavan beliefs, did not fall into the Horde of Wandering Spirits. ([[gektor|Hector of Shimmery]]) The magician stopped breathing in horror, and then unleashed a stream of curses on the prince. To save her, Neymir gave Moran a plan. Before the execution, Chara calmly warned Hector:
+> “You’re not afraid at all? I shouldn't have. Oh, I shouldn't. The West has a long memory.”
+
+The prisoners were freed by a mysterious sorcerer. ([[mik|Mik]]) In the steppe, Chara called Neymir a coward and a disgrace of the West, ready to destroy the horde for her sake; he in response called her an evil fool, they fought, reconciled - and Chara asked for forgiveness: "You saved me."
+
+### Court and Moran
+Returning to the horde, which, in the meantime, defeated Hector, the Companions decided that they had been betrayed by the Ganta Cort. Chara, kneeling before him, as if for a kiss of her hand, nailed his palm with a dagger to the table. Court managed to convince them of his innocence, and Chara herself bandaged his wound. Neymir soon realized that the letter to Hector was written by Moran himself, who sacrificed the Satellites for the sake of the trap. In the fight, Neymir cut the chief's thigh, and Chara, with the words "Tyria tone of the shooting range", pointed the horse at Moran lying down and crushed his knee. Fighting off the chase, she shot the pursuers' horses, and then released all the quiver into Moran's dead horse - and never got hit. "The West is closed to us," she said, "the Companions have become exiles.
+
+### With the Magician
+Then they, along with the people of Biray, served the Sorcerer and plundered the banks of the Earl of Shayland in the free cities of Almera and [[nadezhda|Hope]]; ([[almera-zemlya|Duchy of Almera]]) Chara pretended to be Charlotte's slave. When she robbed a bank in Crystal Falls, she refused to kill unarmed employees (“I don’t kill children”) and led the junior clerk Mortimer and the cashier through the ranks of the bandits. After that, the sorcerer began to pay the Companions a tenth less, and the people of Birai killed for them. Chara later stood up for Gladys, the doctor's daughter, whom Biray wanted to take as a trophy. The detachment entered the "Novichok" - a polite native of the central lands, who called Charu "Milady". Chara did not know how to trust people quickly, saw his fake, but she wanted to be close to this man: in his speech there was an unfamiliar beauty. Neymir, who asked if there was any reason to be jealous, replied that Novichok was the most interesting person she had ever met east of Holliwell, but it was stupid to be jealous of a stranger.
+
+In Laxette, where the unit fell into a trap, Chara, according to Novichok's plan, took a position on the stack of barrels and shot down crossbowmen at the gate. The novice took away from the sorcerer a belt with the object, depriving him of his strength, and called himself a hunter of sorcerers. Chara and Neymir were the first to stand beside him. In the cemetery near Laxett, the Hunter buried the Sorcerer in a grave with a bamboo breathing tube until he named the Tower of the Tooth, the Bottomless Failure, and the Second of the Five. Chara recalled, "We owe him a life. You promised that he would survive.” The Hunter handed over the fate of the Sorcerer to the Satellites.
+
+## The “Yanmei Hunt”
+Chara fell in love with the Newcomer, nicknamed the Hunter, and looked at him with adoration, and Neymir was jealous. To captive [[kharmon|Harmon]], she said that she would spare him, and persuaded the Shavans to soften: he, they say, accidentally killed an unwanted northern woman, but saved their compatriot [[niza|Niza]], and the theft of the Sacred Object requires boldness. Harmon noticed how ridiculous her efforts to please the Hunter looked: a tough warrior never learned either femininity or mannerism. In May 1775, by order of the Hunter, she shot down a balloon of Harmon: an arrow hit a burner with oil and overturned it, the basket caught fire, and the ball had to be planted. The hunter declared the captives to belong to "my archer Chara", but Chara let him decide. The Hunter then took it with him to the basket of the ball, and Neimira left it.
+
+Chara participated in the daring raid on the Abode-u-Bezna and the kidnapping of the Second of the Five (Count [[kuindar|Quindar]]); during the interrogation of the prisoner, the Hunter kept only her. When the Second of the Five accused Neymir of betraying their plans to the Colonel of the Golden Swords, Chara exclaimed, "Neymir couldn't!" - but apparently it was true. In a fight with the coons in the courtyard of the monastery, she fired so fast that three shots merged into one, and then, throwing a useless bow, fought with a knife. When Lady [[magda-labelin|Magda Labelin]] recognized Lord [[adrian|Adrian]] in the Hunter, Chara silently left the court.
+
+## In "Humans and Gods"
+After the Hunter opened as Lord Adrian in the Abode-u-Abyss, Chara left his detachment. Adrian appointed the gaunt Birai commander of his new guard and especially ordered to find and return Chara without fear, but she managed to escape. At the end of June 1775, a lonely Chara rode from the south through the Shepherds of the Meadow and met [[paul|Paul]]'s detachment from [[alanis-almera|Alanis Almera]]. When asked by Paul, she said that men could not be trusted; upon learning that there was a "lady" with him, she agreed to escort them to Rei-Roy, but refused to introduce them to Moran: he hates her and will kill her.
+
+Along the way, she had a little conversation with Alanis, to whom she was imbued with respect, and listed five men who had betrayed her: Ganta Birai, Moran, the Sorcerer, her companion, who, out of jealousy, brought the enemy to the castle where she was defending herself, and the fifth, whom she was ashamed to name:
+> “This man cheated on me, but I agreed to be cheated on myself.”
+When Alanis mentioned Adrian, Chara changed her face. Paul, having learned about her accounts with Moran, promised to help pay him off if she gave up her bow and took a "real weapon": "I've had enough of you two." In Rey-Roe Charu, along with the detachment, were disarmed and brought to Moran as a “slave”, and she was already trying to snatch a bow from the nearest shooter when Paul turned Moran into a frozen figure before her eyes. He called the first assistants of the new chief "the ray", the young Johan Reis and the Hunt of Cort.
+
+## The Shadow of the Great Tree
+### Blade Pus-gants
+Chara became one of Paul's three "blanks", along with Knuth and Mucha. She mastered Wilhelm's ring in Rei-Roy in just a day, and Paul called it his "lightning": Knut and Fly were still shooting more accurately, but it was clear that with experience she would become the most formidable warrior of the horde. Together with them, she taught the khanids (“khanida vir kanna” — “worthy to see”). Chara did not punish for failures and did not praise for successes, but where Mucha spoke a hundred words, it cost ten, and they were the ones who forced the student to shoot properly; she expelled the unfit student with one Shavan gesture - a click on the throat. One day Paul told her to execute the guilty Shavan; Chara refused: “I will not kill my own,” and did not waver while her life “rolled on the scales.” To Paul's reproach that she wanted to kill Moran, she replied, "Only him."
+
+In July 1775, the horde of Paul moved from Rei-Roy to the east and crossed Holliwell. Char's enemies were merciless. After taking the [[slavnyj-dozor|Glorious Watch]], she told the captive kairs that she would kill them all by herself, but her students needed training, gave them twenty breaths of handicap up to Holliwell, and counted aloud while the northerners shouted "Glory to Agatha!" and then commanded, "Fire." At the council of the horde, she, along with one-armed Sormah, demanded to go north and burn the First Winter, while Court and Johan Reis called for Faunterra.
+
+### Trekking to the East
+At the end of July, the Horde came to Almera. At [[fliss|Fliss]], at a feast at [[gallard-almera|Gallard]]'s Priory, Chara, along with Johan Reis and the Ganty Court, sat next to Paul; her eyes were "greedily sparkling" when the Priory promised the Shavans gold. She directly asked Paul why the Almeran calls him the Forefather, who is the Chosen One and whether he will not go to the Wanderers' Horde. From Fliss, the chavans sailed on Almeran ships through the Smokey Dahl. To Alanis, whom she initially respected, Chara cooled down - apparently jealous of Paul - and on the ship called her "snake": "Although at first she seemed a lioness"; She advised Paul not to trust Alanis. On the night of August 1, the Shavans landed not in [[uejmar|Waymar]] itself, but in an abandoned smuggler's harbor outside the city to hit Desmond Origin in the rear of the city that was besieging the city; Chara was in the front ranks, but Desmond managed to leave, and she, along with the other leaders, annoyed at the thwarted plan. In Waymar, Chara pleaded to allow the Hanids to sleep at the door of Paul's bedroom ("These people are rotten") and was slightly hurt that she was not offered the test of the Chosen One.
+
+In September, the horde marched with the army of the Chosen Victor Shayland through [[nortvud-zemlya|Northwood]]. ([[vittor-shejland|Vittor Shayland]]) Lisye Dol Chara managed the funeral pyres of the five fallen khanids and arrogantly ignored [[dzhoakin|Joaquin]]'s questions. ([[lisij-dol|Fox Vale]]) At the military council, when Paul demanded to pursue the kairs, Chara proudly supported the leader: "The sons of the Steppe died. “You want to forget?” There Paul declared that the southern horde of Juhan Reis was defeated by Adrian, and Juhan himself in captivity; ([[yukhan-rejs|Johan Reis]]) Chara replied that kairam should be avenged: “Wolves are always along with the Yankees.”
+
+### [[lid|Leed]]
+In early November, when the Chosen One's army took over the dismounted Leed, Chara first objected whether to help the Shaylands, who had made the Ice general rather than Paul, but then, under Paul's supervision and with the Healing Object in her hands, opened [[martin-shejland|Martin Shayland]]'s shattered hand, collected the bones from the splinters, and took hold of his jaw. The Shavans were offended: Vittor did not reward them, did not allow them to plunder the city, and did not make Paul a general. At the head of the three khanids - together with Sormach and Knuth - Chara appeared at the Leed Castle to Baron [[dorkaster|Dorcaster]] and demanded that the city be given to the horde: "We came here to bathe in the blood of wolves, to take their wives and burn the houses"; the baron refused, threatening with the Voice of God. In Shavan's camp, Chara called Martin Shayland a coward and a rag. When [[dzhoakin|Joaquin]] tried to prevent the assault ("No one will enter Leed!"), the shavana pulled him off his horse with a whip, and Chara stood over him with Perst: "Kill him, Pus-ganta?" Paul let the knight go, and Chare and Sormachu ordered to raise the riders: after a quarter of an hour, the horde kicked out the gate and plundered Leed.
+
+### Before the battle
+At the end of November, the horde, together with the army of the Chosen One, passed through the Skeletons of Heaven for the First Winter. On the morning of December 2, at the observation point Chara, she first heard that the northern road was a “ready loop around our neck,” and when Paul proposed a southern path - right into a city filled with refugees - Joaquin begged to spare the common people, cut off that there live “children of wolves and sisters of wolves.” Vittor, however, ordered the Shavans to go the central way to the castle, and Chara spat, "Spirit of the Worm!"
+
+### Death
+On December 2, 1775, the day of the Battle of the First Winter, Chara broke through an ice maze with Paul; her horse somehow miraculously jumped the halberds at one of the passages. ([[bitva-za-pervuyu-zimu|Battle for First Winter]]) Ganta Birai, who watched the fight through the Bird without Flesh in Adrian's camp, recognized her and shouted through the invisible wall: "Stooi, you'll break!" When she noticed a balloon in the sky, she exclaimed that she had already shot it down. When the Rings swept the ball from the sky, Paul praised it, but Chara was disappointed: it would be too easy to shoot it down with arrows, "as in Shimmery," it would be a feat. Paul was for her the best companion of her life: he highly appreciated her and never lied. After Paul, she went to the place of the fall of the ball and recognized in the cave the "Cave of the Goat" - a wolf shrine. Paul told her to drive [[navi|Nathaniel]] down to the altar, and not to risk it.
+
+In the side course behind the statue of Wilhelm was hiding agent Minerva Inge Price. ([[inzhi-prajs|Inzhi Price]]) Chara tricked him and burned his hand to the bone with a shot; but when she took her eyes away for a moment, Inge rose from under the cloak of the "third hand" with a spring self-shooter and put a bolt in her face. While dying, Chara managed to shoot, but only burned his shoulder. Inge finished her off with a dagger and took her Perst.
+
+## In "Fantasies"
+The author calls the stories “Fantasies” possible destinies of heroes. In "Closer - Further" (August 1776) Neymir came to the First Winter as the ambassador of Ganta Cort. ([[nejmir|Neimir]]; [[ganta-kort|Ganta Kort]]) He told Erwin that he had been grieving all year: his beloved Adrian had died. After the conclusion of the peace, Neymir “as a warrior warrior” asked to show the grave of “Satellite’s Charms, or Charms Without Fear, the mentor of the gunmen of Chanid Vir Kanna.” [[ervin-oridzhin|Erwin]] did not remember the names of the killed shavanks, but he knew Chara’s name: she, along with Paul, broke through the defense of the ice labyrinth. He said that the nameless Shavans were burned, and the Chara ashes were put into an inscribed clay vessel and hidden in the basement under the Arsenal of the [[pervaya-zima|First Winter]]: “If her spirit comes to revenge, we will know his name.” Neymir pressed the vessel to his chest and whispered silently over it, and Erwin, himself almost sobbing, said, "Neymir, take Chara with you. Her place is in the Steppe."
+
+## Nature and relationship
+Chara is straightforward, proud, loyal to the debt and laws of the Steppe: she pays debts, does not kill her own, considers betrayal by the leader of her own people the gravest crime and hates liars. At the same time, it is cruel to enemies, especially to the northern “wolves”. Having learned a lot of betrayals, she began to despise men, but she became attached to Paul selflessly and believed in him madly: say he would “attack the First Winter” — she would go against a hundred thousand.
+
+### Neimir
+For five years, Neymir was her companion, lover, and the only person she fully trusted; they saved each other's lives on more than one occasion. Chara was often angry with him, but acknowledged his rightness. Love for the Hunter destroyed their union: according to her, Neymir decided that he was entitled to be jealous, “and jealousy always jumps in one harness with meanness,” and brought the enemy to the castle, which she defended.
+
+### Adrian
+The hunter, who turned out to be Lord Adrian, Chara was never named. Judging by her reaction to the name Adrian, he was her nameless "fifth" - someone she trusted, knowing that you can not trust, and breaking the ancient rule: "do not eat what the jackal eats, do not ride with someone you do not know."
+
+### Paul
+For Paul, she was a “lightning” and “daughter”, and he for her was “the best companion in a lifetime.” Her courage aroused him; Chara's refusal to kill his own he endured.
+
+## Trivia
+- Chara could not read: the map of Moran was disassembled by Neymir.
+- According to Neymir, Chara saw even the Duke of Origin, albeit from a distance.
+- Neymir, as a merchant, assured Hector that he had bought Chara in Laem for two hundred ephemera, knocking down the price due to a scar on her left breast.
+- Over the killed soldiers (not "creepers"), the Companions pronounced the steppe formula "Tirya ton of shooting."
+- In Rey-Roe, Chara told Alanis that Johan Reis's herds numbered a hundred thousand heads, "or maybe more."
+
+## Appearances
+- "A Doll on the Throne" - the first appearance ("Satellite - 1"); POV-chapters "Satellite" (with Neymir).
+- The Yangmei Hunt is in the chapters of Harmon (Hunter's Squad).
+- "Humans and Gods" is a companion of Paul's squad on the way to Rei-Roy (headed by Alanis).
+- The Shadow of the Great Tree is one of Paul's "blades"; the last scene is given from her point of view.
+- "Fantasies" - mentioned in the story "Closer - further".

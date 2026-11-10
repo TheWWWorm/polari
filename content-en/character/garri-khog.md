@@ -1,0 +1,70 @@
+---
+title: Harry Hogg
+full: Harry Hogg
+type: character
+group: House Shayland
+aliases: Harry, Barber Count, Vest
+summary: Count Vittor Shayland's barber and confidant in Waymar, and Joaquin's friend. He proved to be one of the few people able to use a Finger of Wilhelm. He died on the night of Iona's coup, and Joaquin used his hand to turn the tide of the battle.
+books: yanmejskaya-okhota, lyudi-i-bogi, ten-velikogo-dreva
+infobox:
+- Occupation: barber, trusted man of the count
+- Liege: [[vittor-shejland]]
+- Place: [[uejmar]]
+- Friend: [[dzhoakin|Joaquin Eve Hannah]]
+- Weapons: Wilhelm's Peer (on the night of the coup) ([[persty-vilgelma|Wilhelm's Fingers]])
+- First Appearance: "[[yanmejskaya-okhota|The Yanmei Hunt]]", chapter "Sword - 2"
+- Status: He died on May 27, 1775.
+---
+## Overview
+Harry Hog is the Waymar barber of Count [[vittor-shejland|Vittor Shayland]]. He described himself as: “The beard is a hedgehog, the mustache is a chic chic chic. I'm going to lick the wound, I'm going to bleed, I'm going to fix the joint." It was a chatty merry man, a connoisseur of all Waymar's tracts and gossip. Under the mask of a simpleton was hiding a trusted man of the count, his secret lieutenant and, as it turned out on the night of the coup, a finger-bearer. ([[perevorot-v-uejmare|Coup in Waymar]])
+
+## Appearance and Personality
+The name Hog Harry explained: “Well, like a boar at sunsets.” However, he did not look like a boar: he was thin and neat, without a shadow of a belly, and resembled a boar with only a slightly swollen nose. When asked about the nickname, he snorted softly. He was walking a seedling walk. Joaquin at first mentally called him the Vest. Harry's chatter flowed "like music", and Joe she did not tire, but entertained.
+
+Harry was loyal to the count in his own way and resented being spoken of badly. He didn’t think he was a murderer: “I’m a murderer, am I? Am I like Seymour?” At the same time, he knew how to stand up for himself in a fight, and in the last fight, in boyish contentment, he counted the killed kairs aloud.
+
+## Biography
+### Meet Joaquin
+In May 1775, [[iona-oridzhin|Iona Origin]] brought captive [[dzhoakin|Joaquin Eve Hannah]] to Waymar and then released him. The count sent Harry to catch up with Joaquin and apologize: My lady, they say, "did not do well." Harry caught up with him on the street in philistine wooden shoes and vests, brought money to the road and a place in the stagecoach. Joe initially refused and even threatened him, but Harry did not lag behind and volunteered to escort him to the port. On the way, when Joe asked about a good inn, the barber talked about a dozen Waymar establishments, including the "Dead Baron" with a skeleton in armor. He brought Joaquin to the veterans' inn, where all the blades were stacked in a barrel. There they played worms for count money, and Harry insisted that Joe's honor winnings. He called Joaquin “brother.”
+
+The barber shared with Joaquin gossip about the owners. According to him, Minerva lived in the castle, who left after some quarrel, and Iona locked Martin. The first month after the wedding between the count and the countess, "such sweetness reigned," but then Iona cooled down, and more than a year later they never had a child. The count, Harry assured, loves his wife “honestly”. When Joaquin called anyone who fell in love with a lady from the Agatha family a fool, Harry jumped up and knocked over the cup, but then made peace with it.
+
+Between May 15 and 20, Joaquin traded in the Waymar market with Louise. ([[luiza|Louisa]]) On their last day in the city, Harry found him at the counter and was surprised: he heard that my lady had kept Joe in prison for a week, and he turned out to be a "simple salesman". Harry himself noticed that his uncle was also behind the counter. At the same time, he said that the count defiled ivy from the walls of the castle and doubled the garrison so that everything that grew up in the First Winter of Iona was “like in the North.” The barber assured that it worked: my lady often looked at her husband and asked about him. Joaquin warned, “The agate is nice when she needs something.”
+
+### Fight at the One-Eyed
+On Joaquin's last evening in Waymar, around May 20, 1775, they met in the basement of the One-Eyed Inn, where they held rat races and a card game. There came [[sejmur-stil|Seymour Steel]]'s cairn with a hailstorm: Iona ordered Joaquin to be taken to the castle. When Gray kicked Joe, Harry rose from the table, "Our count is Vittor Shayland! “The North is not ours!” Together with the bonder Bram and the cardholders, he stood up for his friend and knocked out the grey. Seymour responded by killing several people. Harry got away too, but he managed to slip away. Iona later believed that Seymour knew him in the face and therefore did not touch him. The barber rushed into the castle, right into the count's office, and Vittor immediately sent a soldier. Iona later noticed that the barber knew where the count was sitting, although the office windows from the yard were not visible. Her suspicions about Harry only grew stronger.
+
+### Apprentice
+While the battered Joaquin lay in Shayland's bank tower, Harry visited him. He showed a copy of Erwin's pigeon letter to his sister: "Detain him and don't let him go. Find out everything he knows about the Bright Sphere.” Where the count got this copy, Harry did not explain. The barber offered Joaquin to be his apprentice. Then Joaquin would be considered a man of the count, and Iona would not dare to touch him.
+
+At the same time, Harry admitted that he was not just a barber, but a trusted man of the count. If my lord needs to do the deed "quickly, reliably and without too much noise", he entrusts him not to the knights and barons, but to Harry, who "does not attract the eyes much". Harry explained it this way: “I’m a barber, every morning I hold a blade at my lord’s neck. If he trusts me with his life without fear, then everything else is even worse.” He invented Joaquin himself, not the count. The reason made both of them laugh: Joaquin was the Duchess of Almer's personal assistant, and Harry wanted to have an assistant "like the Dukes".
+
+Harry cut about thirty important people of Waymar: the top of the bank, the castellan, the mayor, the sheriff, the port chiefs. The haircut was an occasion to convey the words of the Count. Some he praised in the name of my lord and gifted. Others, as the manager of Almer's affairs of the bank, made it clear that the count knew about their tricks: after the robbery of the Almer branches by the Shavans, some of the money disappeared, and the manager was told to find it in a week. Harry said of himself, "Here I am for him - an extra pair of hands." After lunch, he performed other errands of the count, sometimes strange and even absurd. Joaquin, on his assignment, scouted the security of the old monastery, where the underground passage from the castle went. It turned out that Iona had put her men there.
+
+### Iona's Suspicions
+Harry once brought Iona a note from his husband. Remembering the advice of [[otets-david|Father David]] not to take letters in his hands, Iona forced the barber to pick up the note, read it and lick the paper on both sides. She threatened that if he refused, she would kill him, and by the standards of her homeland it would be commonplace. Harry, white as snow, obeyed. There was no poison. Then Iona questioned him about the fight with One-Eyed and how he knew where the count was. He answered evasively.
+
+### Gift's resting place
+On the day of the coup, Harry and Joaquin accompanied General Orice's envoys from the Sunset Coast, [[khash-ejlish|Hash Eilish]] and Lacht Mies, to the bed of the Seventeenth Gift. Harry introduced himself as the count's barber and asked not to be offended by his low rank: the count trusts him. He recommended Joaquin as a former assistant to the Duchess of Almer, and now his own. Iona, meeting the guests at the secret passage, threw them: “You are accompanied by a barber and a deserter.”
+
+### Death
+On the evening of May 27, 1775, Iona rebelled in the castle. Vittor, Joaquin, Harry and the sunsets were dining in the count's office on the fourth floor of the donjon, cut off by a fire on the stairs. When the kairs began to take the yard, the count, throwing a bottle into the portrait of his father, pulled a transparent glowing stone from a secret niche in the floor and threw it to the barber: “Harry, in battle!” Harry put his hand directly into the stone, and it flowed up the forearm, freezing with a wide arm. It was Wilhelm's Perst. ([[persty-vilgelma|Wilhelm's Fingers]]) Joaquin was shocked: a friend owned Objects.
+
+From the count's balcony, Harry killed three kairs on the wall, saying: "Second!.. Three already!" By order of the count, he shot fireballs at Iona's very feet to frighten her. Iona went through the gaps to the backup phalanx. Joaquin, realizing that the soldiers would obey her, demanded to kill her. The count blurted out something indistinct, and at that instant the arrow of Stevens's kair entered Harry's collarbone. Vittor abandoned the wounded and fled. Joaquin refused to give Perst, explaining that he needed special blood.
+
+Joaquin's back on the balcony. The sunsets briefly brought Harry to his senses, though they said he was no longer a fighter. Joe picked him up on the balustrade, tipped his hand and whispered to the teams. The dying, no longer seeing anything, Harry shot several times: Seymour Steel was burned through the cyre, Brandon was decapitated, and the gray, once kicked by Joaquin, lost his leg; several more northerners were burned. The second arrow hit Harry in the chest. Soon the fire dried up: the barber died, “and with him the Perst.” But the North did not know it, and Iona surrendered.
+
+### Funeral and inheritance
+After the fight, Joaquin and the knight [[ajvi|Ivy]] took Harry's body to [[master-sajrus|Master Cyrus]] and testified to his identity. The finger was no longer on the hand: the count took the weapon. Joaquin demanded a better funeral for his friend, as Harry "possessed the Perst and fought like a lion." Cyrus replied that the barber was a servant and would lie down among the servants, but expressed his respect to him "as a master master." Joaquin later received Harry Hog from the Earl of Perth, and Martin Shayland made Joaquin his assistant instead of the deceased barber.
+
+### Legacy
+The death of a friend left Joaquin alone. Helping to bind the wounded after the coup, he bitterly asked himself why the count managed to save Iona, and Harry Hoga did not: is the “traitor viper” more valuable to him than a faithful servant and defender. He involuntarily compared the approximate Count [[perkins|Perkins]] with the barber: the same unpretentious appearance, the same smart eyes, the same trusting shortness with the owner. At the beginning of June, Joaquin had no one to share the feelings that overwhelmed him after the shooting from Perst: “Harry Hog would understand, because he himself wore Perst.” Before the count, he claimed that the gods had given him Harry Hog as a friend and extended his life by a few minutes so that Joaquin could shoot with a Feather put on his friend's arm. On June 9–10, the Earl gave him the "Harry Hog's Ring" for training under the command of [[rikhard-oridzhin|Ice]]. When the kairs stormed Waymar in June, Joaquin recalled the barber’s tales of the ever-wet streets beneath Castle Mountain. In Shadow of the Great Tree, he still regretted that Harry didn't shoot Iona when he could, and even more so Harry himself: "Glorious was the guy, a reliable friend!" ([[ten-velikogo-dreva|The Shadow of the Great Tree]]) In October 1775, [[martin-shejland|Martin Shayland]] recalled the night of the coup: "Harry in her Perstom - and she goes like an enchanted, not even shudder!"
+
+## Relationships
+- [[dzhoakin|Joaquin Eve Hannah]] is a friend and "brother." Harry rescued him from One-Eyed and took an apprenticeship. Joaquin mourned him and felt lonely for a long time.
+- [[vittor-shejland|Vittor Shayland]] is the host. Harry trusted him unconditionally and called him “my lord” and “master”. The Count trusted him with Perst, but abandoned him in battle.
+- [[iona-oridzhin|Iona Origin]] suspected him of being her husband's spy and gave him a note check.
+
+## Trivia
+- Using Wilhelm's Feather in front of Joaquin and the sunsets, Harry revealed that the Earl of Shayland owned such Items.
+- Vittor claimed that only a person with special blood could control the Perstom. This motive is related to primrose. ([[pervokrov|Firstblood]])

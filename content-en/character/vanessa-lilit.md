@@ -1,0 +1,65 @@
+---
+title: Vanessa-Lilith
+full: Vanessa-Lilith
+type: character
+group: Characters from the Interludes
+aliases: Vanessa-Lilith, Vanessa, Lily, Lady Vanessa, White Blooded Vanessa
+summary: A white-blooded noblewoman of Lyudmila's lineage from Laem, wife of the matchmaker Onoriko-Maysor. She threw her husband out of the house over his debts. In the spring of 1775, Moger Buckley's men stabbed Rico to death before her eyes, then locked her, her children, and Harmon in a cellar without water; Niza rescued them. In Fantasies, the widow continues her husband's business and becomes Laem's most successful matchmaker.
+books: nebesnyj-korabl-i-devushka, yanmejskaya-okhota, ten-velikogo-dreva, fantazii
+infobox:
+- Origins: White-blooded noblewoman [[shimmeri|Shimmery]], daughter of Arctin-Lyon, “granddaughter of Pramatery Lyudmila”
+- City: Laham; the house in Laham belonged to her since she was a virgin ("Vanessa's house") ([[lajem|Laem]])
+- Husband: Onorico Maisor (Rico), matchmaker, below her kind; stabbed in the spring of 1775 ([[onoriko|Onoriko-Maysor]])
+- Children: Sirena's daughter and son Aldo
+- Relatives: older sister; cousin of sister's husband - confidante of a noble lady from Pentago
+- Servants: old Elio (1774); in 1775 Buckley's men killed both of her servants
+- Status at the End of the Series: alive, widow, lives in Laem
+- In Fantasies: A matchmaker who continued her husband's business
+---
+## Who She Is
+
+Vanessa-Lilit is a white-blooded noblewoman from [[lajem|Laem]], the wife of Onoriko-Meysor's matchmaker. ([[onoriko|Onoriko-Maysor]]) She called herself “the daughter of the glorious Arctin-Lyon, the granddaughter of Pramatery Lyudmila.” Rico was inferior to her, and her parents arranged the marriage. Vanessa recalled that at first she was offended and did not want to marry him, not knowing yet "how caring and passionate Onorico will be." They had two children: "baby" Siren and "tear" Aldo. The house where the family lived belonged to Vanessa since her virginity, and in the city he was called “Vanessa’s house”. Therefore, Rico could not pawn it.
+
+Vanessa was very beautiful: Rico called her “unpretentious, eye candy and the moon of the heart”, and he himself sucked at his wife. When [[moger-bakli|Moger Buckley]]’s men came to her, she held out with an icy dignity, so even the thug Eight backed down: “It hurts angry.” The lack of money humiliated her. In the closet she had only three dresses worthy of a lady, and all the ladies of the city knew them by heart. There was no money for the covered crew, and under her umbrella, the skin on her shoulders began to darken: “I am so white now.”
+
+## "The Skyship and the Girl" (August 1774)
+
+Rico brought what he thought was a wealthy northern merchant, Horam, into the house. It was actually [[kharmon|Harmon Paula]]. Vanessa met the guest in a white dress with a necklace of black pearls, knelt down in front of her husband and helped him to take off, and at the table she filled the cups herself. She asked Horam why he was not married, and together with her husband explained to him why Shimmery needed altess: for conversations, for going out into the light, when the wife is on a trip, to help her wife around the house. ([[alter|Alter and Altessa]]) “Even if she is a mistress, what is it?”
+
+As soon as the guest left, Vanessa caused her husband a scandal. For the sake of the guest, she had to dress up at the behest of a beggar messenger, and she “is a real lady.” Horam, in her opinion, was poor: “All his clothes are not worth it and are green.” When Rico asked to buy the althes shavanka Nisa, Vanessa cut off: “So that I, a white-blooded lady of the Ludmila family, would be jealous of the horse?! ” ([[niza|Niza]]) It wasn't about jealousy, it was about money. Until she has a covered crew, dozens of new outfits and babysitters, Rico did not dare to "even stutter about althess."
+
+Horam bought Niza for five ephesas at the auction, and Rico's tithe was four silver deer. Vanessa called the purchase "the cheapest whore in the whole Shimmery kingdom." The family had debts of thirty ephes. Rico announced that he and Horam would buy a celestial ship and sell it to the emperor. Vanessa found out that he was going to mortgage her house, and kicked her husband out: “Learn how to make money like a man. Pay off your debts. I’ll put you back on the doorstep.”
+
+## Without a husband (Autumn 1774 - Spring 1775)
+
+Rico left to serve Harmon in Melison and put almost all his salary in a chest for his wife. Her husband's creditors paid a water truck, a greengrocer, a gatekeeper and a gardener from her street to watch the house and track down Rico. In March 1775, Buckley's men sought out Rico at her home. She herself pointed them to these spies, reminded them that according to Shimmeri's laws, the wife was not responsible for her husband's debts, and left. Rico, she said, hasn't appeared since September. The hired killer Rodrigo noticed that the white-blooded woman often comes out with children, in new dresses and hats, and decided that her husband secretly sends her money. Harmon also suspected that Rico was giving away a portion of his salary to his family.
+
+In March, Harmon gave Rico a hundred ephes. Rico had to approve Vanessa with gifts and through the cousin of her older sister's husband, the consort of a noble lady from Pentago, to get a reception from the Second of the Five. ([[kuindar|Quindar]])
+
+## The Abduction and the Basement (Spring 1775)
+
+On Spring Break, Buckley's men broke into Vanessa's house from the back door as she was having breakfast with the children. Vanessa called her name and gender and threatened them. The old servant rushed to the defense with a poker, and he was hit with his head against the wall, and the servant was slaughtered. Vanessa grabbed the knife, was disarmed and brought to her knees. Buckley began to bend the fingers of little Sirene, threatening to break them. At that moment, Rico knocked on the door, all in white, with a bouquet of roses and a box of gifts. Vanessa screamed, “Rico, run! Call the sheriff!" but she was punched face against the table and Rico was dragged into the house.
+
+The related Rico, Vanessa, and children were brought to Harmon's Melison estate. Buckley told Rodrigo to prove the seriousness of killing Vanessa. The killer requested a hundred ephesas: the white-blooded noblewoman is "dear game", as are her children. Then they bargained for fifteen ephesses for Rico, and Rodrigo cut his throat in front of his wife and children.
+
+Vanessa with the children and Harmon were thrown without water into the basement under the barn in one of the towns near Laham. Harmon recalled these two days as the worst thing he had ever seen in his life. On the first day, they both called for help, tried to raise the hatch and scratched the walls with their nails. The children cried endlessly, and the mother comforted them, then she howled herself, tearing her hair and banging her head against a stone. At the end of the second day, the son asked when his father would come, and Vanessa could not stand it: “They killed his father! You saw it all yourself!” Then she beat the boy in a frenzy. When Harmon swore aloud to the gods to change his life, she threw him, "You dragged Rico into your mud! He was killed because of you!” Harmon agreed that he deserved the punishment, but they did not, and said that the gods would save them.
+
+Moments later, the hatch opened to Nisa. ([[niza|Niza]]) Vanessa only lingered to squeeze her hand, ask for a name, and say, “I’ll never forget what you did for us.” Then she and her kids rushed for help. Meanwhile, Deputy Laema Halintor had already gone to Buckley: “On the third day, the white-blooded Vanessa Lilith with her children disappeared, both of her servants were found dead.” Buckley fled Shimmery. The Miral-Senelius Marquis, sent by the Second of Five, later told Harmon that he had learned of the attack on Vanessa's house at the sheriff's office.
+
+In July 1775, in Labelin, Harmon sent four hundred Hilt to Laem "for Vanessa Lilith, widow of Onoriko-Meysor." He later recalled how Rico “cut his throat in front of his wife and children.”
+
+## In "Fantasies"
+
+In the fantasy "Amicable", one of the possible future, in the summer of 1776, Vanessa-Lilit is the celebrity of Laam. Her tragedy shocked the city: “a white-blooded southern woman was tortured.” Half Laam sympathized with her, the other stuffed in the groom. The widow took advantage of this and continued her husband’s work. Onoriko was a mediocre pimp, and Vanessa, thanks to her fame and feminine flair, achieved much more: “five prominent nobles said goodbye to bachelor life, and two dozen got tasty althes”. Sheriff Halintor said that the money of Harmon Paula helped the family to survive the loss of the breadwinner and get back on their feet.
+
+Before the arrival of the Northerners, Vanessa visited Princess Demeter Nellis-Lyon, the bride of Jemis Lilliday. She reported that there were "several pearls" on the ship of Ganth Farhan and that there would be big trades tomorrow, and Prince Hector was giving a dinner in honor of the guests. She also hinted that the bride, not daring to resist the will of her father, could “allow herself slight quirks” so that the groom himself would leave, slamming the door. At a dinner at Prince Hector's, Vanessa whispered to him about the bidding, and the prince drove the northern guests there. ([[gektor|Hector of Shimmery]]) At the auction, [[hajder-lid|Hyder Leed]] found out his nephew Barney among the captives, but the boy was already taken away by a buyer in a white cloak.
+
+[[dzhemis-lillidej|Jemis Lilliday]] recalled that Harmon and Henry Horton told him about "a certain Vanessa from Laham." ([[sorok-dva|Forty-Two]]) He decided that Barney's buyer was a woman, and with Demeter came to the widow. There was also Sheriff Halintor; according to rumors, Vanessa “finally found the alter,” and Jemis considered him her lover. Jemis said that Harmon asked to visit her and see if the children were okay. Vanessa said: “He really saved us in a difficult moment.” On the story of Jemis, as if Hyder Leed asked Moger Buckley to death, she replied only: “I’m glad that this villain flew to the Star...”. Jemis saw her as a "real snake" and suspected that she and the sheriff kidnapped the boy to quarrel North with South.
+
+In fact, as Jemis solved, Vanessa told Demeter that Leed's nephew would be sold at auction, and bought Barney Demeter herself to test the groom. When the secret was revealed, Vanessa brought Barney to the palace and returned it to his uncle.
+
+## Trivia
+
+- Vanessa would bury her eyes to make them shine when she met a guest.
+- Timerett's pimp told Buckley that after the deal with Niza, Vanessa kicked Rico out and "won't let him on the doorstep."
+- In Fantasies, Jemis calls her a "white-blooded bitch", though he later finds out that Barney's kidnapping was intended by Demeter.

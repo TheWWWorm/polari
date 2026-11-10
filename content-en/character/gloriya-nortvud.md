@@ -1,0 +1,64 @@
+---
+title: Gloria Northwood
+full: Gloria Sybil Dorina Susan, Lady Northwood
+type: character
+group: House Northwood
+aliases: Gloria, Lady Gloria, False Minerva, "Minerva Stagforth"
+summary: The daughter of Countess Sybil Northwood and, secretly, Priarch Gallard Almera. As part of her mother's scheme, she lived at court under Minerva Stagfort's name and became Emperor Adrian's bride-to-be. After the deception was exposed, she was executed by being walled into the foundations of a gazebo beside the Farewell Temple.
+books: strela-moneta-iskra, lish-odna-zvezda, kukla-na-trone, yanmejskaya-okhota, lyudi-i-bogi, ten-velikogo-dreva
+infobox:
+- House: House of Northwood, Susan's birth ([[dom-nortvud]])
+- Mother: [[sibil-nortvud|Sybil Northwood]]
+- Father: formally Count [[elias-nortvud|Elias Northwood]]; in fact [[gallard-almera|Gallard Almera]]
+- Brothers: [[krejg-nortvud|Craig]], Horace and Donald (sons of Elias from his first marriage)
+- Appearance: by nature red, green-eyed, freckled
+- Birth: 1757 (begotten in August 1756, according to the calculations of Navi); the same age as Minerva
+- Education: three years in the boarding house of Elena-u-Lake ([[pansion-eleny-u-ozera|Elena-by-the-Lake Boarding School]])
+- Under an Assumed Name: Minerva Stagforth, [[adrian|Adrian]]'s fiancée
+- First Appearance: [[strela-moneta-iskra|Arrow, Coin, Spark]], The Bear's Fang (March 1774)
+- Status: executed in the autumn of 1774 by order of Adrian
+---
+## Origins
+
+Gloria is the daughter of Countess [[sibil-nortvud|Sybil Northwood]]. Formally, her father was considered the old Count Elias, and she was the only child of Elias and Sybil: in the year of the wedding, the count turned sixty. ([[elias-nortvud|Elias Northwood]]) In fact, the girl was born from a secret relationship between her mother and [[gallard-almera|Gallard Almera]]. [[minerva|Mira]] learned about this in the summer of 1774, when Sybil swore "the life of our daughter" in the presence of the priest. According to [[navi|Navi]]'s calculations, Gloria was conceived in that month and year when the nobles gathered in [[uejmar|Waymar]] for the celebration of the Seventeenth Gift, that is, in August 1756: then at a feast at the young Vittor Shayland, Bishop Gallard "ripped" to the young countess and led her in a dance. Navi noticed that the daughter was named "ambitious" - in honor of the Pramatery, whose name is consonant with Gallard.
+
+Gloria was the same age as Mira and even resembled her addition. Early feeling power, she grew up rude and capricious: as a child, she loved to torment servants with ridiculous errands - for example, to tell them to tie three cats by the tails and throw them on the dining table among the guests - and after another scoundrel watched as the countess punishes the maids; Sybil was ready to blame anyone, but not her beloved daughter. [[ervin-oridzhin|Erwin Origin]] recalled how as a child, when he was visiting the Northwoods, the “noble Lady Gloria” pushed him from the porch into a huge snowdrift, confident that this would impress the guest, and then Countess Sybil soldered the soaked boy with an orge. Soberly appreciating her temper, her mother gave Gloria to the boarding house of Elena-u-Lake, the best school of brides in the empire, teaching girls and the skill of the ruler. There, according to the boarding school, Gloria studied three years out of four (Mira believed that all four): her mother took her after the third course, in the winter of 1773/74, and she returned to the Bear Fang; there she was remembered as a frivolous, good dancer and rider, but not at all as visionary - at least this was how she appeared to [[mark-voron|Mark]] from the pansy. Mira, who knew Gloria by the Bear Fang, recalled her as a red-haired green-eyed girl, selfish and stupid, with freckles, "looked more like the miller's daughter than the count." ([[klyk-medvedya|Bear's Fang]]) The mother, who lost her memory in the hospital, remembered her singing, laughing, flirting with guests and dancing “chain”.
+
+## Biography
+
+### In "Arrow, Coin, Spark"
+
+In March 1774, Gloria lived in [[klyk-medvedya|Bear's Fang]] when the orphaned World was brought there. Having met the guest, she politely bowed down “without a drop of former arrogance”, and Mira decided that the boarding house had done its job. Gloria was present when Sybil explained to Mira that she was the heiress to the throne and the target of the conspirators; she was the first to burn out that they wanted to kill Mira, not her father, and "bloodthirsty" added that the murders would be "not one". When Mira asked if Gloria would go to the capital, Count Elias said that he and his children were waiting for him at the wedding in the First Winter; the Countess refused to go there and took Mira to Faunterra herself.
+
+In the spring of 1774, Sybil played a substitution. Mira, repainted in red and with eyes dyed with the juice of the marina and the Shimmery locket, appeared at court in May as “Lady Gloria Northwood”: the countess hoped that no one knew the real Gloria in the capital - she had never been to Faunterra, and even the servants of the capital’s Northwood mansion took Mira for a daughter without a host. The real Gloria, meanwhile, remained in the North, and Count Elias and his sons went to the wedding of Iona Origin in the First Winter - Gloria did not go there, otherwise Iona and Vittor would have recognized the substitution. In mid-June, the real Gloria, with dark brown hair, gray eyes and freckles hidden under the powder, arrived in the capital by morning train and appeared before [[adrian|Adrian]] as [[minerva|Minerva]] Stagforth - a distant relative of the lord, miraculously survived after the murder of her father. She was restrained, spoke in an even, "rolled-up" voice, even adopted the habit of Mira to tilt her head to the left, asked to allow her to investigate the murder of her father and stood up for the Countess of Northwood. Adrian placed her in the [[dvorets-pera-i-mecha|Palace of Pen and Sword]] under the protection of the azure guard. When Mira asked Sybil why Gloria came to the capital, the countess replied that her daughter was an independent girl and could decide for herself, “or Elias convinced her,” and Gloria “always loved changing clothes.” Later, when after three months of separation, Sybil met her daughter at the gazebo in the imperial garden, Gloria bowed to her “own mother” as a stranger, and as if the World did not notice at all; Mira was amazed at the change and not without envy admitted that Gloria is “a great actress”. In early July, Mira realized that Gloria had arrived before her mother's letter could reach, which means that the substitution was planned in advance; realizing that she herself was being poisoned, she exposed Sybil and Gallard, but was exiled to a monastery, and Minerva remained at the court.
+
+### In "Only One Star"
+
+In the summer and fall of 1774, Minerva Stagforth was [[adrian|Adrian]]'s bride; at one time, Gloria Bear, then considered Minerva, was the center of the court's attention. The observant Catherine Catherine found her empty behind impeccable manners. Meanwhile, [[itan|Ethan]]'s secretary, who is in love with "Lady Gloria" (in fact, Miru), after her sudden departure to the monastery, persuaded [[mark-voron|Mark]] to deal with her fate. In early September, they arrived at the boarding house of Elena-u-Lake, and the graduates described Gloria as a fancy pacifier who loves dancing and racing, does not play stratem, does not drink coffee ("bitter southern trash") and is not able to solve the conspiracy; this contradicted everything that was known about the perceptive "Gloria" in the capital. On the portrait of the course with the caption "Gloria Sybil Dorin R. Susan, Inf. Northwood, 1772" Mark established a substitution: Minerva lived in the court under the name of Gloria, and the real Gloria pretended to be Minerva. Realizing that the countess could prepare a regicide so that the throne under the name of Minerva would be inherited by Gloria, Mark hurried with a report to the lord. On October 14, [[itan|Ethan]]’s report was read aloud in the Ladies’ Party hall. Sybil tried to make a joke, but Gloria turned white and gave herself up; both were arrested right in the palace. On November 2, the Supreme Court sentenced Gloria for deceiving the emperor to life imprisonment, the place of which was to be determined by the lord himself. Her formal brother [[krejg-nortvud|Craig]] found out about the arrest in Waymar from [[vittor-shejland|Vittor Shayland]] and was outraged: is Gloria not good enough for Adrian? He brought Northwood's army to help the Origin rebellion to make it to Faunterra "before Adrian would kill Sybil and Gloria", and in Labelin he was hastening Erwin to attack so that the "damn capital court" would not have time to execute them. ([[myatezh-oridzhina|Northern Uprising]])
+
+Unaware of her death, the northerners long sought the release of Gloria. At the end of February 1775, Lord Chancellor Erwin submitted to Minerva two ready-made letters of pardon, in the name of Sybil Dorina Denisa and Gloria Sybil Dorina, explaining this in the interests of Northwood. The bears were camping on Canaan, demanding that Sybil and Gloria be returned to them, and Craig roared at Erwin, "You promised Gloria - where is she?!!"
+
+### Death
+
+On November 8, 1774, the sentence was carried out, but in fact Gloria was executed. Navi explained it this way: Adrian conducted interrogations and followed the legal procedure until he received the news that the stepsons of the Countess had joined the mutiny; then the girl was killed. Later, under torture, Sybil gave away the last secret - that Gloria was the daughter of a priest - but by that time Gloria was already dead. Navi believed that the execution was classified, and the page from the court case was removed so that Gallard did not learn about the death of his daughter and did not hit Adrian's troops in the back.
+
+As Mark found out, Adrian ordered to seal the girl in the stone base of the gazebo at the Ardennes temple Farewell, next to the tomb of the emperors: “the one who tried to become the mistress” lay near the lords. Navi put it more bluntly: Gloria tricked Adrian into joining the Dynasty, and "entered...in a way." In November 1774, third-party masons were commissioned to plaster the base of this gazebo - Navi learned about this from masters working in Arden. In the hospital lost memory Sybil had a nightmare in which a mercury hand broke off the head of a doll - a red girl in a green dress.
+
+In the summer of 1775, a mother searching for Gloria throughout the Ardennes learned the truth from Major Backfield, who had been ambushed, and at night opened the base of the gazebo. ([[krojdon-bekfild|Croydon Beckfield]]) Navi knew what she was going to find, and he counted the odds out loud until the second she screamed. Immediately, Sybil and her companions were arrested by Mark's men. Mark reported to Minerva that Gloria Northwood was buried in the basement of the gazebo, executed on Adrian's orders. In the fall of 1775, Sybil told Karen about Adrian: "He's a murderer. Buried Gloria alive. He was funny.” Karen, warning Minerva before Adrian's return, reminded of Gloria as proof that Adrian, like his father, does not forgive anyone.
+
+## Image in Propaganda
+
+In the fall of 1774, [[ervin-oridzhin|Erwin]] composed an agitational play for his troops, where Gloria is depicted as a "debel peasant" who rips off Minerva's hair net and takes her place at the throne.
+
+## Relationships
+
+- **[[sibil-nortvud|Sybil]]** is the mother for whose sake and by whose will Gloria became Minerva. Love for her daughter remained in Sybil until the end: losing her memory, she thought about the “daughter” and pulled out memories of her, and when she learned the truth, she rushed to see the body in despair.
+- **[[minerva|Minerva]]** is a rival, whose place Gloria took at the court; Mira despised her, but recognized her acting talent.
+- **[[gallard-almera|Gallard Almera]]** is the real father. Mira understood this by the reservation of Sybil (“I swear by the life of our daughter”) and the fierce gaze of the priest. Whether he found out about the death of his daughter is unknown.
+- **[[elias-nortvud|Elias Northwood]]**, the formal father Gloria was considered his only child by Sybil.
+- **[[krejg-nortvud|Craig]]** is a formal brother resenting her arrest ("Is Gloria not good enough for him?") and demanding that Erwin return Sybil and Gloria.
+- **[[adrian|Adrian]]** is the groom who sent her to a secret execution.
+
+## Note
+
+In the Western Soul interlude, Becca Litland refers to her friend Gloria, but this is Mira, who lived at court under the name Gloria, not the real daughter Sybil. ([[rebekka-litlend|Rebecca Litland]])

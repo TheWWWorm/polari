@@ -1,0 +1,74 @@
+---
+title: Hope
+full: The Duchy of Hope
+type: place
+group: Hope
+aliases: Hope, the Duchy of Hope
+summary: A vast, arid duchy in the centre of the continent, with prairies, gold-bearing streams, and a poisonous desert. Formerly the domain of the ancient House Lightheart, it has belonged to the Farways since the Jesters' Conspiracy. Its capital is the impregnable fortress of Heart of Light.
+books: strela-moneta-iskra, lish-odna-zvezda, kukla-na-trone, vrata-doveriya, khochu-poni, yanmejskaya-okhota, lyudi-i-bogi, ten-velikogo-dreva, fantazii
+infobox:
+- Type: Duchy
+- Ruling House: Lighthart House (until 1755); ([[dom-lajthart|House Lightheart]]) Farway (from 1755) ([[dom-farvej|House Farway]])
+- Head: [[henri-farvej|Henry Farway]]
+- Capital: [[serdtse-sveta|Heart of Light]]
+- Largest Cities: Heart of Light, Farway, Leonhard
+- Location: the center of the mainland, between Almera, Crown, [[litlend|Litland]] and Shepherd's Meadows ([[almera-zemlya|Duchy of Almera]]; [[zemli-korony|Crownlands]])
+- Climate: warm continental, windy, dry
+- Economy: gold and copper; two spark shops, textiles, pastures, equestrian plants
+- Coat of Arms: Bone and Shining Cup
+- In Fantasies: Farway Promises to Return the Heart of Light to Lighthart (1776)
+---
+## Geography
+According to the Polari Land Guide, Hope lies in the center of the mainland between Almera, the Crown, Litland, and the Shepherd's Meadows. These are plains, steppes and deserts with a warm continental, windy and dry climate.
+
+The border with the Crownlands is "frighteningly clear". When Adrian’s army entered Hope in 1774, the forests of the Crown disappeared, “as if someone had cut them off with a single stroke of a fiery sword.” Behind the groves, fields and ridges of rocky hills began a deserted prairie with shrubs and crooked trees, whose flat crowns are like roofs. The western winds bring warmth, and the winter here resembles October in Faunterra. According to legend, the people who lived here before the Descent, something angered the gods. The sacred [[kholliwell|Hollywell]] River, feeding the Shepherds of the Meadow, Almera, Reis, and Litland, curves westward and bypasses Hope. The Duchy remained a dry prairie, where each well is someone’s property, and the stream or lake is a strategic point. Later, the gods took pity and scattered gold-bearing sand on this land.
+
+### Poisonous Desert
+The coast of Hope by the sea of Mason passes into the desert - the "kingdom of dunes". Its sand has a lilac tint from poisonous impurities. Not a single bush grows there, even where there is moisture. A pinch of swallowed sand is not dangerous, but a sandstorm can poison the lungs. Standing water is even more dangerous: in desert puddles and lakes, it collects so much poison that it kills with a few sips. Passing routes from spring to spring are marked on the maps of the thin web of lines. From the coast of Mason Bay to the Heart of the World, the rail road runs nearly a hundred miles through the clayy brown desert without a single station.
+
+Eastern Hope, according to the impressions of the Shavan-Satellite, “is one big hole under the isch tail.” This is a barren land with rare springs that harbor a handful of shacks. The silver agates there are an unprecedented wealth, and the peasants, when asked about the Lord's castle, nod to a common thin barn.
+
+## Cities
+- The heart of the Light is the ancient capital and strongest fortress of the Empire, surrounded by three belts of fortifications, about one hundred and twenty thousand inhabitants. ([[serdtse-sveta|Heart of Light]]) For five centuries it was taken only once: the army of Darian the Bad besieged the city for a year. According to the Shavan legend, the goddess of sleep fell in love with the shepherd, and when he died, her heart burst with light all around. So at the house of the shepherd there was an oasis, in the place of which the city stands. According to Shavan Neymir, in the Heart of Light stands a fifty-foot statue of the goddess of dreams made of pure silver.
+- **Farway** is a city where Duke Henry has a residence. Here, in December 1773, he received Erwin.
+- Leonhard is the third largest city and the "Sea Gate of Hope". It is met by granite fangs of piers, a colonnade of the temple of Elena-Na-Wave and the Three-Eyed Lighthouse. The ruler of Leonhard was the Earl of Lighthart. Traders praise the five-year-old “amino from Leonhard” as the best.
+- Fort Big Luck is the middle of a deserted rail race to Mason's Bay, a former gold prospector's village at Curve Creek. There was once found gold, “there are nuggets”. A century later, one of the surviving buildings was occupied by the caretakers of the tracks, who live in the desert for six months, receiving water and food from trains.
+
+## Economy
+According to the “Guide”, the economy of Hope relies on the extraction of gold and copper. There are two spark shops, textile factories, pastures and horse factories, but the main source of income remains gold mines. In the novel, Hope is the "golden central" duchy, and Hope's "golden mines" are mentioned among the Empire's major riches. Hope fiercely competes with Almera and in the last two decades loses. The Farway develop industry, but are forced to spend a lot of effort to keep the vassals, Lightharts and Flames in submission. ([[dom-lajthart|House Lightheart]])
+
+The Duchy is connected by rails to Faunterra (Harmon, looking at the train at one of the stations, spoke of six hundred miles to the Heart of the World) and to Aleridan. In the spring of 1775, Almera and Hope announced the doubling of the road between the Heart of Light and Aleridan. The Ministry of Railways introduced the signal system slowly, and Henry Farway, "a lover of all sorts of precautions", has already introduced it on the three main roads of Hope. The instrument in the train sends a train code every minute over the wires, and if the signal is interrupted, the stations will immediately learn about the trouble.
+
+According to Lady [[karen|Karen]], by the time of the Northern Outbreak, Hope followed Almera in replacing the poll tax with an income tax. ([[almera-zemlya|Duchy of Almera]])
+
+## People and Customs
+The Guidebook describes Hope as a spacious and sparsely populated land. The lion’s share of its territory is barren, and the villages are divided by large deserted spaces. Therefore, the motives of loneliness, separation and sadness, the insignificance of a person before the universe and the invincibility of death are strong in this art. Another motive born of gold mining is luck, risk, and sudden happiness. Luck in Hope is considered a trait of character, like courage or intelligence. Hence the special duel "to sweep black bones": duelists raise one crossbow and throw bones, and the thrower gets the right to shoot more. Persistence, luck and pride were considered features of the ancient Lighthart house. ([[dom-lajthart|House Lightheart]]) Farway, on the other hand, is known for caution and the ability to avoid direct conflicts.
+
+The inhabitants of the Heart of Light, according to the story of Telurian, are “proud courageous people, hardened in many privations.” After the conspiracy, they would not recognize any authority other than the Lightharts or their first vassals, the Counts of Flame and Farway.
+
+## Ruling House
+Previously, Hope was owned by the Great House of Lighthart, the oldest of the Brilliant Dynasty itself. ([[dom-lajthart|House Lightheart]]) In those days, it was the richest land of the Empire, surpassing both Shimmery and the Southern Way (in early media - "even Almer"). After the Shutov plot, Lightharts were executed or deprived of power. ([[shutovskoj-zagovor|Jesters' Conspiracy]]) Telurian chose a new ruler from two counts. Flame, who was stronger, understood the allusion to “a weighty proof of devotion,” but did not fulfill the desire of the lord. Henry Farway presented the emperor with an hilt from a tightly stuffed purse: this, he said, was the proportion of taxes that traitors paid to the Crown. Then he gave the entire purse, having previously scooped up a handful of coins. A month later, he received the Heart of Light and the title of Duke. Then he had only three thousand soldiers, and the Crown was thinking of completely abolishing the duchy and handing out pieces. However, Farway held out for twenty years, raised Hope so that it was second only to Almera and Origin, and was considered, in Erwin's opinion, a very cautious and visionary politician. The secret was simple: Farway never missed his gain.
+
+Many subjects still remembered the power of the Lightharts, and the Flames sympathized with them. The flag of Hope, according to the "Traveler", carries a bone - a symbol of suicidal perseverance - and a shining cup, a symbol of luck.
+
+## History
+### Origin of the name
+According to the "Guide", the name is not associated with gold miners, as is commonly thought. During the first gold rushes of the 11th and 12th centuries, two separate counties lay on these lands, Nearer and Farer. The Duchy of Hope appeared only in the 16th century, when both lands ravaged by the [[loshadinye-vojny|Horse Wars]] were restored under a single power. The name comes from the saying about the capital: “The Heart of Light stands — the living hope.”
+
+### The Horse Wars and After
+In the 16th century, the Heart of Light delayed the advance of the army of nomads for a whole year. Darian the Wicked was unable to take the city by storm, and a third of the besiegers died of disease and wounds. Help from Faunterra never came, and the city fell. Less than half of the inhabitants survived. The novel says that then “the barbarians seized the duchy of Hope”: the landowner died in battle, and his two brothers who fled to Faunterra, on the orders of Vladyka Evrian, were slaughtered by the guards in the throne room. Lady [[karen|Karen]] in the collector's edition of Arrow, Coin, Spark reproaches the author that he "cracked" this story. ([[strela-moneta-iskra-kollektsionnoe|Arrow, Coin, Spark (Collector's Edition)]]) According to her, the Duke of Lighthart did not die in battle, but was locked in the besieged Heart of Light. His brothers with two regiments went to Evrian to ask for troops. The emperor was afraid to release the army from the capital and accused the brothers of cowardice. They drew their swords and died in the throne room, taking with them at least half a dozen guardsmen. The Duke lasted another year and died when the city fell, but the siege so bloodied the horde that Darian did not venture to storm Faunterra and made peace. Hope later became the site of the Golden March against the rebel counts. Around 1750, the Lightharts attacked Almera and seized some of its lands (the [[zolotaya-vojna|Golden War]]). ([[dom-lajthart|House Lightheart]]) Hope long feuded with neighboring Almera. ([[almera-zemlya|Duchy of Almera]])
+
+## In the Novels
+### 1773–1774
+In December 1773 at Farway, [[ervin-oridzhin|Erwin]] made an alliance with Henry, although Henry had warned in advance that he was loyal to the emperor and was bound by an alliance with Almera. In Arrow, Coin, Spark, Hope did not support the Lord’s reforms. In November 1774, [[adrian|Adrian]] led an army along the shore through the prairies of Hope to Litland. On the way back, after defeating Steppe Fire, he approached the Heart of Light with a night throw. The duke did not wait for the lord: only the outer gate was locked, and Adrian and General Gore approached them and demanded to open it. Vladyka took the Duke's grandchildren, [[laura-farvej|Laura]] and [[dzheremi-farvej|Jeremy]], hostages. The Prophet [[frantsisk-ilian|Francis-Ilian]] passed through Leonhard and the Heart of Light and found the Duke "in deep spiritual confusion" due to the loss of his beloved grandchildren.
+
+### 1775 year
+In the summer of 1775, [[paul|Paul]]'s brigade with the captive [[alanis-almera|Alanis]] landed on the coast of Hope five miles from Leongard and captured a train going to the Heart of the World. Thanks to the signal system of Farway, the missing composition was noticed. Three companies of Hope's horse archers attacked the train, but a sandstorm began, and the heretics went on foot into the desert. At the same time, the army of Hope under Count [[edgar-flejm|Edgar Flame]] entered Almera. Five regiments occupied [[aleridan|Aleridan]], and the only battalion of the archpriest laid down his arms. The Flame, on behalf of Farway, warned Erwin that Hope was holding "the crossroads of paths from south to north and from east to west."
+
+In the fall of 1775, the Duke's granddaughter, Gallard's widow, called herself [[laura-farvej|Laura]] Almera and marched north with the Cuchowd's army; she was killed by [[martin-shejland|Martin Shayland]] in October. Henry made another bet. The horde, retreating from Faunterra, plundered Almera for a month, and then the Ganta Court made an alliance with Farway. ([[ganta-kort|Ganta Kort]]) Court declared himself chief of the county of Reis and Farway the ruler of Almera, and the union was sealed by the marriage of the daughter of the Ganta to Farway's grandson. When the Virginia General Horton asked the ships to sail to the aid of his lord, Farway gave him a fleet: thus he withdrew five battalions of kire from Almera, and at the same time sent Edgar's regiment, whose loyalty was not sure. These troops stood on the Upper Twin in the rear of Adrian's army, and Adrian accused Lady Karen Lighthart of treason.
+
+## In "Fantasies"
+In Fantasia, which the author calls possible futures, by the summer of 1776, Henry Farway ruled both Hope and Almera. ([[fantazii|Fantasies]]) The Almeran lords did not submit all, and he moved with the army to Aleridan. According to the story "The Sad Little Things", Farway vowed to return Lighthart to their ancestral domain, Heart of Light, if Edgar's daughter [[nekseya-flejm|Nexia]] would marry Erwin Origin and bring Farway support to the Northerners. ([[dom-lajthart|House Lightheart]]) Nexia quarreled with Minerva and was sent by the ambassador to the central lands, and Farway postponed the execution of the deal. [[edgar-flejm|Edgar]] borrows three thousand ephes per month in a bank on his regiment: without the Heart of Light, his property will go under the hammer. The Duke's grandson Jeremy married the daughter of a ganta and lives in Rei-Roy, and the widowed daughter Evelyn, a mother of four, Farway betrothed to the young Lord [[albert-almera|Albert Almera]]. Another account says that in the summer of 1776, Nexia was summoned from the First Winter to the Heart of Light.
+
+## Trivia
+- According to the “Guide”, the Heart of Light is the only city-hundred thousand strong, strengthened by all the rules of the castle fortification. About the months of the siege, the surviving townspeople were silent, and only one phrase entered the ballad: “Death devoured our bones.”

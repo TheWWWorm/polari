@@ -1,0 +1,51 @@
+---
+title: Master Cyrus
+full: Master Cyrus - Funeral Master and Warden of Waymar's Prison
+type: character
+group: House Shayland
+aliases: Cyrus, Cyrus, Cyrus, Cyrus, Master Cyrus, Master Cyrus, Master Cyrus, Master Cyrus, Cyrus the Undertaker
+summary: Waymar Castle's undertaker and keeper of its dungeon, obsessed with ‘keeping things tidy’. He told Mira about deaths in the castle and guided her through the dungeon, told Iona about a prisoner's escape and the old count's death, and buried the fallen after the coup in Waymar.
+books: lish-odna-zvezda, yanmejskaya-okhota, lyudi-i-bogi, ten-velikogo-dreva
+infobox:
+- Position: Funeral master of [[uejmar|Waymar]] Castle («garrison funeral attendant»); later and the caretaker of the dungeon
+- Liege: Earls of Shayland - [[vinsent-shejland|Vincent]], then [[vittor-shejland|Vittor]]
+- Associated With: [[minerva|Minerva]], [[iona-oridzhin|Iona]], [[irving|Irving]], [[dzhoakin|Joaquin]], Harry Hog, [[martin-shejland|Martin Shayland]] ([[garri-khog|Harry Hogg]])
+- Distinguishing Features: not young, the veiner and the knot, shuffles with his right foot, a golden tooth; sayings of "order" and "he-he"
+- First Appearance: "[[lish-odna-zvezda|Only One Star]]," Chapter 26 "The Spark"
+- Status: Living (last appeared in the summer of 1775)
+---
+**Master Cyrus** is the funeral director of the Count's Castle in [[uejmar|Waymar]]. Later he became the keeper of the castle dungeon, because “the dungeon, the young lady, is the refuge of death.” Every case Cyrus performs on points, and any deviation from the rules is called “disorder”. He appears in several books of the cycle, but always in one role: he disposes of the dead.
+
+## In "Only One Star"
+### Questions of Peace
+In the fall of 1774, Lindsay's servant disappeared, and [[minerva|Mira]] began to look for her. A friend of Lindsay Bernadette said that she could not die in the castle: “the master Cyrus would certainly know and tell me.” Mira came to the master, without naming herself, and listened to a long lecture on the funeral “order”. First, you need to make sure that the deceased “is completely dead, or so, for the sake of appearance.” Then two witnesses have to give his name, then the body is washed, changed and buried in order. The servant is placed on a guesthouse under the castle wall, the knight is sent to his native estate in an ice cart, the lord is sent to the crypt. The master was proud that he was not a gravedigger and not a gravedigger, but a funeral master: “almost ten years each - every one! - the dead in the lock passes through these hands.”
+
+From his story, Mira learned that during the autumn in the castle died only crooked groom and old woman Lisbeth from the kitchen, and in the summer the dogs of Lord Martin bit the boy. ([[martin-shejland|Martin Shayland]]) Unnamed prisoners of the dungeon ("impersonalities") are buried right in the dungeon, and the deceased is not buried in a deaf cell at all: "Just fry the clay window through which food was served - and it is ready." In the end, the master admitted that he had forgotten the name of the “lady”: “The living, you know, I hardly remember the profession imposes...”
+
+### In the underground
+When Mira decided to examine the dungeon, [[iona-oridzhin|Iona]] gave it to Cyrus. He calmly led her through the upper and lower circles, told how many years each prisoner was sitting, and offered to look at the torture department. At the destroyed cell, he told that the prisoner who had been sitting there for ten years had already escaped under Count Vittor. According to the master, the prisoner “made a deal with the Dark Ido”, broke down the wall with his bare hands and killed two jailers. Cyrus saw the bodies himself. Then Mira locked herself behind an iron door in a dead end and found a secret passage to Vittor's office there. Cyrus and the sentries, terrified, were waiting for her at the door. Upon learning who she was, the master angrily stated: “Your highness in my dungeon can neither disappear nor die. I can't, I forbid it!" Mira later joked that she had won from the master and sentries in hiding.
+
+## The “Yanmei Hunt”
+In May 1775, Iona investigated the history of the same prisoner. It turned out that there were no individual jailers in the castle: Cyrus was responsible for the order in the dungeon, and the garrison soldiers were guarding the prisoners. The master ran to the crash, which Irving picked up at the destroyed camera, and admitted that he was afraid: “Is he really back?”
+
+Upstairs, Kire [[irving|Irving]] questioned him. Cyrus told me how he got into the castle. He had just joined the funeral guild when he was entrusted with the funeral of the burgomaster's mother-in-law. They were honored by the old count, and he liked it so much that he called the young master to his garrison funeral. Cyrus himself did not see the prisoner: he became the keeper of the prison later, after the death of the former keeper "at the end of the ninth year". And he described in detail the killed guards: one was twisted his neck, the second was strangled, and there was no blood next to him. According to the master, four jailers and a caretaker served in the prison under the old count. The last of them, Lard, left the service and became a carpenter in Cold City. Cyrus argued with the soldier about what had happened before, and stood on his own: the count died in mid-summer, and the prisoner fled a month later, “when the apples were already bearing fruit.” Irving told him to write down the death dates of the count and the jailers from the funeral log.
+
+Iona asked how the old count died. Cyrus told me how he was called into the office last night. The count sat in a chair, staring at the wall, and there was a doctor and both sons. ([[vinsent-shejland|Vincent Shayland]]) The doctor said that the heart could not withstand the heat. The dead man’s fingers clung to the armrests so much that Martin had to unbutton them, and Vittor closed his father’s eyes. Irving later concluded that Cyrus' recordings matched Lard's.
+
+## In "Humans and Gods"
+### Funeral after the coup
+On the night of May 28, 1775, Iona tried to break through the castle and was defeated. Cyrus made a dead woman under a canopy at the entrance to the dungeon. For each body, he demanded two witnesses, laid out the dead in rows (“one row for servants, another for soldiers, a third for northerners”) and entered them in the magazine. [[dzhoakin|Joaquin]] and knight [[ajvi|Ivy]] brought him Harry Hog's body and testified to his identity. ([[garri-khog|Harry Hogg]]) Joaquin asked for the best funeral for a friend, but the master objected that the barber was a servant and lay in his line of servants.
+
+The funeral master arranged flawlessly: overnight he got the coffins, granite tombstones, mourners, candles and even flowers. Cyrus then asked the count how to bury the northerners according to their custom. Vittor shouted, "Throw them to the pigs!" and then, at Martin's suggestion, ordered the bodies to be hung on posts along the moat. Cyrus objected: so the souls of the dead will be offended, "this is the worst violation of the order!" The count did not break the master, because he was needed and together with Martin "maintained complete calm these days, giving the whole castle an example of perseverance." They only agreed to hang twelve kairs. Cyrus "hard heartedly" admitted that the cairns deserved a posthumous punishment, but graying "he definitely will not give offense."
+
+### Later
+Joaquin liked the master, but “ever started talking about the funeral — and thus reminded of the death of a friend.” In June 1775, Joaquin found Wittor and Martin in a cold cellar, in Cyrus's possession, over a torn corpse. The master pushed the bodyguards, and he only shook his head: “Oh, mess...”
+
+In Faunterra, Mira and Becca joked about how enemies would kill each other. ([[rebekka-litlend|Rebecca Litland]]) In their fantasy, Martin wins and becomes a count, but then Cyrus comes in, sees that everyone is dead, and Martin walks alive, and announces: "Disorder."
+
+## The Shadow of the Great Tree
+At the beginning of August 1775, a marshman was killed in the castle, pretending to be a sentinel, and Vittor told Joaquin to call Cyrus: "let him take care of the dead." With the funeral of the parish of Gallard, whose body was infested with parasites, “even the experienced master Cyrus could not find what to do,” and the body was burned with the Rings. ([[gallard-almera|Gallard Almera]]) When the crippled [[alanis-almera|Alanis]] was carried through the yard under the sackcloth, Cyrus decided she was dead: "Stayed, hearty." Then [[paul|Paul]] threw away the sack and bowed over Alanis (Holy Mothers), the undertaker dropped. Martin exclaimed, “Hey, you can’t kiss!” and Cyrus grumbled, “Dirty.” His story was spread around the castle. In September, Martin boasted to Joaquin that he had fed Iona in a cage: "Everything is fine, as Master Cyrus says."
+
+## Trivia
+- Cyrus believes that death is his legitimate office. He is in charge of the dungeon because the dungeon is “a place of death”, and he could not see the guard killed by the prisoner “if they died”.
+- The escape of the prisoner Cyrus explained the deal with the Dark Ido and when he was mentioned he created a sacred spiral. The world did not believe in magic and from his story realized that there is a second way out of the prison.

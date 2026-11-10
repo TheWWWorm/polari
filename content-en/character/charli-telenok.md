@@ -1,0 +1,34 @@
+---
+title: Charlie the Calf
+full: Charlie the calf, who appeared in the army of Charlie the Bull
+type: character
+group: Commoners and Merchants
+aliases: Charlie the Calf, Charlie Calf, Charlie Calf, Charlie the Bull, Charlie the Bull
+summary: A tanner's son who joined the Snowdrops' army. A member of Dodge's hand-picked hundred, he fired a spark weapon at Joaquin during Salem's arrest; that night, at gunpoint, he helped Joaquin kill the guards around the wagon in which Salem was being held.
+books: kukla-na-trone
+infobox:
+- Occupation: apprentice under the father-skinner; infantryman of the [[podsnezhniki|Snowdrops]], a watch from the selected hundred Doge's Hands ([[ruka-dodzh|Hand Dodge]])
+- Family: father - tanner Harry Bull; mother
+- Associated With: [[zub|Tooth]], [[ruka-dodzh|Hand Dodge]], [[salem|Salem]], [[dzhoakin|Joaquin]] (Three Fingered)
+- First Appearance: "[[kukla-na-trone|A Doll on the Throne]]," Chapter 25, "Sword 4"
+- Status: lives after a night in the chapter "Sword - 5" (deafened by Joaquin); further fate is unknown
+---
+**Charlie the Calf**, in the army calling himself Charlie the Bull, is a guy from the tanner's family, who went on a campaign of [[podsnezhniki|Snowdrops]]. The chapter "Sword - 5" "Dolls on the throne" is partly told by his eyes. ([[kukla-na-trone|A Doll on the Throne]]) Charlie fired a spark at Joaquin, and at night, the same Joaquin held him at gunpoint while they released [[salem|Salem]]. ([[dzhoakin|Joaquin Eve Hannah]])
+
+## "A Doll on the Throne"
+### Harry the Bull 's
+Charlie's father, Harry Bull's tanner, was silent and demanded "iron submission". From a pair of words "stripped through his teeth", the son had to guess his will, otherwise he received beatings. Charlie was with his father as a kind of apprentice, but he did not become a master: his father considered him a “beautiful fool”. His father’s words were often misunderstood. Once Harry said about the daughter of a passing merchant "Nothing girl", and Charlie took it as an order: lured the girl into the backyard and "arrived". His father beat him severely. As it turned out, he ordered something else, but what, Charlie never found out.
+
+Then the collectors beat his father and took his leather jacket. “Damned bastards,” the Bull poked out, and the son understood this as a clear order. There was a fight on the square, and the dentist Zub shouted “Strike the bastards!” Charlie pulled the crossbow pickers out of the van and smashed his head against the pavement. He returned the jacket to his father, taking at the same time a couple of silver cups. But his father beat him again, this time, as it seemed to Charlie, for nothing. Then Charlie decided that his father would appreciate it only if his son did “something like that.” In the morning, neighbors called Harry on the march: the peasants of the way and the burghers of Lowville went to ask the mistress to lower the tax. Their father drove them away, and Charlie decided that he would secretly be glad if his son went and “ask the mistress for some tax there.” He climbed out the window and went west with Salem's army.
+
+### Young Tooth
+In the campaign, Charlie immediately called himself the Bull instead of the Calf and posed as an apprentice who passes the exam in the Guild in the summer. Two guys who laughed at his torn pants, he stabbed. Sergeant [[ruka-dodzh|Hand Dodge]] said, "Strong bull! You will be a good infantryman!” — and took him to his chosen hundred. He was taught the spear by Joaquin, nicknamed the Three-Fingered One. Charlie, who longed for his father, was looking for a similar leader. Salem appeared to him as a "underdog", and Trihpaliy as an incomprehensible lordenish. But the Tooth liked it: “Everything is like a father, only more understandable.” The tooth promised its “young people” a share of the donated gold and instructed: “You, most importantly, do not let Salem spoil everything.”
+
+In March 1775, Charlie with Bald John stood on the clock at the gold donated to the Snowdrops and did not let Joaquin in: "The order is the order." Hampton's Tooth and Dodge fired spark-shots at General Gore's parliamentarians. Salem ordered the gunmen to be captured, and Dodge ordered Salem arrested. Joaquin drew his sword, and then Charlie acted “like Tooth, his second father”: he lowered the spring of the self-shooter, and the spark hit Joaquin in the stomach. Later, he felt uneasy: “It was too much like witchcraft, such things surely anger the gods.”
+
+### Night at the Van
+At night, Charlie and the other guys guarded the van in which the tied Salem was lying and there was a chest of gold. There was a whistle from the darkness. Bald John called Charlie a coward, he went to check, and behind the cart he met the edge of the sword. Three-toed and four in black masks. He was disarmed and told to return to the bonfire and lure the others away: “Scream, you will die.” For the first time in his life, Charlie felt the look of death, he “stuck like an icicle” in his back. Stuttering, he conveyed the fiction that Tooth had sent a scribe to check the guard's vigilance. Mick was going to wake the sleepers, and Charlie hissed at him, "Shut up, you bastard! Orders are orders! “Don’t wake me up, you bastard!” Bald John noticed that Charlie had urinated, and Fred exhaled: “There is no scribe...” Out of the darkness, three gunshots clicked, and Fred, Mick, and Bald John fell. To save himself, Charlie punched the guy from Niar, who was already going to scream. "Good job," whispered the Three-Fingered One. Charlie asked me not to kill him. "Whatever you say," Joaquin replied, and stunned him with a handshake. Out of a dozen guards, ten survived, they were tied up, and Salem was released.
+
+## Trivia
+- He changed his nickname from his father: Harry was called Bull, and his son was called the same. Dodge, not knowing it himself, beat it in praise of "Strong Bull!".
+- About his father, Charlie thought that he still loves him: “Once drunk, Harry even said it out loud.”

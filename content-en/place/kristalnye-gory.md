@@ -1,0 +1,60 @@
+---
+title: Crystal Mountains
+full: Crystal Mountains - the mountain range of Origin on the isthmus between Polaris and the Beyond
+type: place
+group: Origin
+aliases: Crystal Mountains, Crystal, Mount Origina
+summary: A mountain range in the northeast of the Empire. It covers the narrow isthmus connecting Polaris to the Beyond and occupies about forty per cent of Origin's territory. According to legend, the Foremothers spent their first days in the world beneath the moon here, making the mountains the foremost holy destination for pilgrims. Erwin Origin's explorada crossed them in the spring of 1774.
+books: strela-moneta-iskra, lish-odna-zvezda, kukla-na-trone, lyudi-i-bogi, ten-velikogo-dreva, fantazii
+infobox:
+- Type: the Mountain Range
+- Location: The isthmus between Polaris and Beyond ([[oridzhin-zemlya|Lands of Origin]])
+- Area: about 40% of the land of Origin (and about 40% - hilly foothills)
+- Peaks and Places: Peak Servant with glacial plateau Hem Servants; Glacier Tears Ulyana; Gorge Skvorki Sky ([[stvorki-neba|Gates of Heaven]])
+- Settlements: Lead, Mine, Steel (silver mines); The [[pervaya-zima|first winter]] in the valley; behind the mountains - Spot settlement
+- Holy Sites and Relics: place of the first days of the Mothers; a font at the Skvorok of Heaven; a cave monastery with a Sacred Object ([[pramateri|Foremothers]])
+- Economy: silver, iron, granite, pastures for sheep
+---
+The **Crystal Mountains** are a mountain range in the northeast of Polaris, in the possession of the [[dom-oridzhin|House Origin]]. It covers a narrow isthmus connecting Polaris with the vast, wild and cold continent of the Beyond. The mountains are considered holy: according to all beliefs, it was here that the [[pramateri|Foremothers]] spent their first days in the underworld.
+
+## Geography
+According to the "Guide to the lands of Polari", the land of the Mountaineer: about forty percent of its area is occupied by the Crystal Mountains, and about forty - hilly foothills. Therefore, there are few fertile lands here, although the duchy is extensive. Behind the mountains, by the sea, lies the border village of [[spot|Spot]], the extreme settlement of the empire. (In the early media it is said in more detail: to the west of the mountains - millions of acres of land of the Origins, the mountains themselves "rocky, majestic and cold" also belong to them, to the east of the mountains there is only Spot with two hundred fishermen and hunters, and the border of the Duchy and the Empire goes along the river Lydyanka.)
+
+The rocks look fragile, as if “an unknown force struck them and split them, crushed them like glass.” The gorges are littered with debris ranging in size from a pinky to a watchtower, and turbulent rivers run along the bottom. Sometimes only one rider can pass on the trails. Above the travelers stands the mighty peak of the Servant, so named because of the adjoining plateau, white, "like the apron of a maid." It is a plateau, the hem of a servant, almost entirely occupied by a glacier. Another glacier, Ulyana Tears, lies in the saddle between the two peaks. In summer, its middle melts and turns into a lake of “diamond purity”. The extreme ridge of the mountains descends directly into the Northwood forest. Ice winds descend from the Crystal Mountains in winter to the south, and the Guidebook adds that the mountains trap clouds going from south to north. From beyond to the mountains occasionally come predatory fangs.
+
+## Sacred Mountains
+Which way the Forebears came to the sublunar world remains a mystery. According to the canonical version, the gods opened a tunnel from the Under Kingdom to them. Some philosophers say that they came down from the Star. The Northern Stunners believe that the Foremothers came out of the Bottomless Lake beyond [[reka|the River]]. But all the beliefs agree on one thing: the first secular days of the Pramati spent in the Crystal Mountains. Therefore, the mountains are strewn with beads of legends: here Forefather Wilhelm hunted the roe deer, there Maximian collected edelweiss for Lucia.
+
+The most famous legend is about the Yangmei Mercy Bridge. ([[pramater-yanmej|Yanmei the Merciful]]) To escape the avalanche, she built a bridge of ice and pressed snow in fifteen minutes with the help of the Glove of Power. ([[perchatka-mogushchestva|Glove of Might]]) It was half the flight of an arrow and crossed a gorge so deep that it was impossible to look down without dizziness. Descending from the mountains, the Foremothers spent the first winter in the valley, which was named First Winter in honor of this. ([[pervaya-zima|First Winter]]) Then they went south.
+
+No other place in the empire attracted so many pilgrims. Blessed, sick, foolish, and desperate people “from time immemorial flocked to the Crystal Mountains” to kiss the holy stones and wash themselves in the holy font at the Skulls of Heaven. ([[stvorki-neba|Gates of Heaven]]) At the edge of the mountains stands a cave monastery, where [[kharmon|Harmon]] prayed for one of the Sacred Objects he had seen. In the foothills is the boarding house of Elena-u-Lake, where noble girls studied, including [[alanis-almera|Alanis Almera]] and [[gloriya-nortvud|Gloria Northwood]] (according to Mark, Gloria studied there for three years out of four). ([[pansion-eleny-u-ozera|Elena-by-the-Lake Boarding School]]) When the guest house of the boarding house was not occupied by nobles, it was opened for pilgrims, and the steward Francesca showed their students as an example of those who need help; the young Alanis answered that “to help ugly people means to multiply ugliness.” Mira, posing as Gloria, was preparing to paint them as “the most beautiful terrain in the entire Empire” and snowy peaks, but she never saw the mountains.
+
+## Development and management
+According to the "Traveler", people began to explore the mountains early, in the III century, thanks to the accurate maps of the Mother of Elena-Traveler with marked silver deposits. The first northern cities appeared on the mines: [[lid|Leed]] and Main in the III century, Steel in the IV century. After the silver miners came the shepherds, because the valleys and plateaus of the mountains were “a paradise for the sheep.” The first winter itself originated as a shepherd village. The basis of the economy of Origin and in the XVIII century were sheep's wool, steel, iron and silver. The miners of the Crystal Mountains, according to one legend, “did not see the light of day.” Only here you can get granite for large dams. Therefore, [[ervin-oridzhin|Erwin]] immediately realized that a spark dam on the River three hundred miles from the mountains could not be built. The port of [[uindli|Windley]], according to Erwin, lies "in the foothills of the Crystal Mountains".
+
+## History
+### Order of the Light-Bearers
+According to the "Guide", in 572, in the Crystal Mountains, in the Grotto of Cosuli, a meeting was held between the abbot of Valencia, the head of the largest Agath monastery, and the Leed baron Arthur Agatha, a fanatic admirer of Agatha the Radiant. ([[grot-kosuli|Roe Deer Grotto]]) Returning, the abbot proclaimed the creation of the monastic-knightly Order of the Light-Bearers. Baron Mein joined the order and made an alliance with the former enemy Leed, and Baron Steel was forced to accept vassalage, and the centuries-old wars for silver mines ceased: "a strong peace reigned in the Crystal Mountains."
+
+### Explorada of 1774
+In the spring of 1774, a group of forty men led by Erwin Origin moved across the mountains to the Beyond (see Explorada for the River). ([[ekspedicija|Expedition beyond the River]]) It included eleven kairs with greys, mechanic [[luis-mariya|Louis Maria]] and imperial observer Baron [[filipp-loufert|Philip Lowfert]]. The Duke of [[desmond-oridzhin|Desmond]] had hoped to build a railroad through the mountains, and Louis made measurements without end. Two weeks later, the unit entered a little-known part of the mountains, where it had to go on a map compiled more than a century ago. The paths on it were littered, and the river bed was depicted incorrectly. Erwin took the map from Louis and began to correct it himself.
+
+It was in the mountains that Erwin caught a cold, and the soldiers called him Nezhenka. Here, "as in the Crystal Mountains, at the first meeting," began his stubborn skirmishes with Kair [[dzhemis-lillidej|Jemis]]. On the edge of Podol Servants at night an avalanche passed by the detachment. In the morning, in a hundred steps in the west, the snow wall grew higher than human growth. The next day, the detachment descended from Podol Servants to the border village of Spot, where it was greeted as a miracle: the locals bowed to Baron Lowfert at his feet.
+
+### Desmond's Last Stand
+In 1775, the Kairs of Desmond Origin, leaving the trap in Waymar, retreated towards the Crystal Mountains, exhausting the army of the Puppeteer with ambushes and traps. According to the plan, the enemy had to pursue them until the First Winter and find themselves in the winter among the snowy mountains, in the worst conditions for the offensive. However, when [[krejg-nortvud|Craig Northwood]] with ten thousand "bears" decided to return to Desmond, the Duke retreated from the plan and took the fight ahead of time, in the woods of Northwood. The battle was lost, and Craig died; according to Kuclaw, the North lost four thousand kairs. In October, [[rikhard-oridzhin|Richard Origin]], fighting on Vittor's side, showed Joaquin the mountains from the castle's loophole:
+> "Desmond Origin's Last Stand. We beat kires on Halliwell and in Waymar and in Northwood. There's nowhere else to go."
+
+In September 1775, [[minerva|Minerva]] flew over the mountains on a sky schooner. She said to put the ship in the lake on the glacier of Ulyana Tears, dived into the ice water and immediately exclaimed that she knew how to win. The team followed her example and dived into the lake naked. At sunset, the schooner descended on the lake at the foot of the castle of the First Winter, and the mistress announced to the townspeople that by her decree the capital of the empire had been transferred to the First Winter. Newspapers, meanwhile, wondered whether Minerva would carry the ship “over the Crystal Mountains”, because the First Winter has no water connection with the Smokey Dahlia.
+
+At the end of November 1775, [[dzhoakin|Joaquin]], on his way from Leed to the First Winter, noticed that the mountains seemed to be more beautiful: before they were striking only in size, and now he saw "the proud elegance of the ledges and the sacred whiteness of the peaks."
+
+## In "Fantasies"
+In [[fantazii|Fantasies]], tales of a possible future, the 1775 war is remembered from the point of view of the Shavans: the northern half of the great horde led by the Ganta Gnome crossed the Smokey Dahl, the Northwood forests and the Crystal Mountains, having traveled more than a thousand miles, and was defeated under the walls of the First Winter. Retreating in winter through the lands devastated by it, the horde lost people from hunger, frost and night raids of kairs.
+
+## Trivia
+- The nomads of antiquity, according to legend, roamed the Beyond, but in the end “gathered with the spirit, crossed the Crystal Mountains” and settled in Polaris.
+- Baron Lawfert assured that after the Descent the mountains were "filled with the power of love", and talked about his first visit here with a girl named Wilhelmina.
+- [[magda-labelin|Magda Labelin]] frightened the allies by the fact that Origin "brings to the Crystal Mountains" to their rear if they stick to the walls of the First Winter.
+- The [[ded|grandfather]], a retired northern judge, told [[mark-voron|Mark]] a parable about a robber from the Crystal Mountains, who killed six travelers: they were a peasant whose house was burned kairs in the mansion of the lords.
+- In the autumn of 1774, [[dzhoakin|Joaquin]] naively imagined Alanis’ triumph: the repentant Vladyka Adrian “in a sign of repentance” makes a foot pilgrimage to the Crystal Mountains.

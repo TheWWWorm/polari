@@ -1,0 +1,284 @@
+---
+title: Grandfather's Parables
+full: Proverbs of Deda - stories with which the northern judge answers questions
+type: concept
+group: General
+aliases: Parables of Grandfather, Grandfather's Stories, Grandfather 's, The Judge's Parable, Skipper 's, Jack the carpenter
+summary: The parables, tales, and riddles that the retired northern judge called Grandfather tells Mark, Erwin, Lady Sophia, and others instead of giving a direct answer: from the chest of faith and the devil Hen to the craftsman from Toystone, mice used to test a cat, and the locked room. The listener usually works out the meaning, and the parable often proves the key to a mystery in the plot.
+books: kukla-na-trone, yanmejskaya-okhota, lyudi-i-bogi, ten-velikogo-dreva, fantazii
+infobox:
+- Narrator: [[ded|Grandfather]] - retired northern judge, aka Sedoy and Skipper
+- Listeners: [[mark-voron|Mark]], Granddaughter, [[ervin-oridzhin|Erwin]], Lady Sophia, Lady Mireille, General Davey, Earl of [[erroubek|Arrowback]], [[iona-oridzhin|Iona]], Sea Arrow Sailors ([[vnuchok|Grandson]]; [[sofiya-oridzhin|Sophia Jessica Augusta]]; [[mirej-nen-kler|Mireille Nen-Clair]]; [[uiljam-dejvi|William Davy]])
+- Recurring Character: Jack the carpenter and his quarrelsome wife
+- Manner: the meaning is almost never explained; the answer is often accompanied by a melody on the chimbuck
+- First Parable: "The Box with Faith" ("A Doll on the Throne", "Pero - 1")
+- Last Parable: A parable for Iona (“Fantasies”, “Let’s catch him”)
+---
+Deda's Proverbs - stories by which Grandpa, a retired judge from the North and a confidant of [[ervin-oridzhin|Erwin Origin]], answers almost any question. ([[ded|Grandfather]]) Twelve years he was a judge, then made a vow eight years not to name his name and became just a grandfather: on behalf of Erwin, he was a guard and accompanied [[mark-voron|Mark the Raven]], then became an assistant to the head of the patronage, and in the summer of 1775 went with Lady Sophia on a sea voyage to the Folta and to the Metka Islands. ([[protektsiya|The Protection]]; [[sofiya-oridzhin|Sophia Jessica Augusta]])
+
+The narrator in "A Doll on the Throne" says that Grandfather knew stories of "innumerable numbers" - about peasants and bishops, sailors and warriors, old women and babies - and could begin the story at any moment, even the most inappropriate. Most often, he answers the parable to a direct question, and the meaning does not explain: the listener must come up with it himself. Grandfather himself believes that "music and fairy tales convey thoughts better than direct speech", especially in complex cases. His main listeners are Mark and the disciple Grandson (he “carefully wound up” every parable). Then Erwin and his vassals, Lady Sophia, Lady Mirai Nan-Claire, and the sailors of the Sea Arrow, nicknamed him Skipper, were added to them. ([[mirej-nen-kler|Mireille Nen-Clair]]) Grandfather tells many parables not for the sake of morality: they hide a clue to the investigation or to a political decision, and do not immediately understand it.
+
+The following parables are listed in order of reading: first the main cycle, then "[[fantazii|Fantasies]]".
+
+## "A Doll on the Throne"
+
+### Chest of Faith
+
+Where and to whom: "Pero - 1", Faunterra, early 1775. The parable opens the chapter, and at the end of the chapter, Grandpa tells it to Mark when Erwin instructs them to find the stolen Dynasty Items and Lady [[sibil-nortvud|Sybil Northwood]]. ([[svyashchennye-predmety|Sacred Objects]])
+
+**Story.** The peasant from the mountain village is not helped by Pramateri: the priest says that he lacks faith. The peasant asks the priest for faith, tries to buy it from the abbot, and then carries a purse with all the money to the bishop in the [[pervaya-zima|First Winter]]. The bishop refuses: his faith is paid for by “suffering, experience and wisdom”, and there is not enough money for it. In the evening, the servant sent by the bishop for gloria shows the peasant a “bounty chest with faith” in the cathedral. The peasant secretly draws from an empty chest a handful of invisible faith, presses it to the heart and forehead - and since then Pramateri helps him.
+
+**Meaning.** Mark, who had just received what he believed to be a hopeless assignment, realized from the parable that they were “in their ass.” Grandfather replied that Mark wanted to understand this - and understood. You can read the parable as follows: faith in success is not bought or borrowed, it needs to be “stolen” from yourself, and then help begins. Grandfather promised to "work a little" on the case, which Mark considered impossible, and at the end of the book, the Raven really restored almost the entire picture of the abduction. Six months later, Grandfather was still telling this parable on the ship; Lady Sophia knew it by heart.
+
+### Jack the carpenter and the flies
+
+Where and to whom: "Pero - 1"; Mark, yearning in the old house of the Origins on Milky Avenue, asks how long they still have to sit.
+
+**Story.** The wife does not let Jack the carpenter sleep in the afternoon: catches two dozen flies and releases them over her husband's head - let them wake up. After an hour, the flies sleep on Jack's chest, and he refuses to get up: "it's embarrassing for friends", move - wake everyone up.
+
+**Meaning.** Mark did not get a direct answer to the question: Grandpa just played on a tambourine. Apparently, the parable advises not to rush: the one who is trying to slow down, will find a good reason to stay in place, and the wait goes on. Erwin didn't really show up until a few days later. This is the first of many stories about Jack the carpenter.
+
+### Jack the carpenter in the well
+
+Where and to whom: "Pero - 1", ibid; Mark wants to know if he's a prisoner or not, and how long to wait.
+
+**Story.** Jack falls into the well and refuses to get out until he understands why he fell. By evening, the moon is reflected in the water, and he remembers that he recently dropped two agates there. When he delivers the coins, he praises himself: “fell with meaning.” The wife asks why he dropped the money, and Jack answers that this was the point - you just need to think for an hour.
+
+**Meaning.** Before the parable, Grandfather tells Mark that he is not held by locked doors, but by an unwillingness to leave: “If you want freedom, take it.” The parable teaches to look for meaning in one's own position, even ridiculous. Later, Mark applied it to the case: the owner of the Perstov made a strange mistake, as if “fell into a well”, and he should unravel its meaning, Mark. This idea led him to the main guess “Dolls on the throne”.
+
+### Pipe Cleaner and Bull
+
+Where and to whom: "Pero - 1"; Mark says he doesn't want to run.
+
+**Story.** Pipe cleaners from the [[zakatnyj-bereg|Sunset Coast]] are called to the old house, and in place of the fireplace there is a bull. Then the story ends: the next day, the Lord Chancellor himself comes to Mark.
+
+**Meaning.** The end of the story did not appear in the book. Her grandfather began it "satisfied" as soon as Mark admitted that he remained of his own free will.
+
+### Painted Cow
+
+Where and to whom: "Pero - 3", under Orwell. Mark, Grandpa, Granddaughter and Agent [[ryzhij|Red]] inspect the scene of the train robbery. Mark himself asks the story of “how one thought at first, and turned out to be another.”
+
+**Story.** In the [[yuzhnyj-put|Southern Way]], they believe that spotted cows give good fertiliser. The peasant draws white spots on his black cow and brings it to the water: look, you are a burenka now. Seeing the spots, the cow and completely stops giving milk. Why, “Who knows?”
+
+**Meaning.** The parable sounds the minute Mark decides to go back to the forest from where they came, instead of following the kidnappers. There he finds traces of horses: the gang got off the train at the guards behind his back, and everything did not turn out as it looked. You can understand the parable and more broadly: to paint something from the outside does not change its essence. On the same trip, Grandfather told a couple of parables, but they are not in the text.
+
+### Altessa Jack - carpenter
+
+Where and to whom: "Pero - 4", County Arrowback. Mark triumphs: he “successfully passed the test” — The items, in his version, were kidnapped by Erwin himself, and the search was an exam.
+
+**Story.** To prove to his wife that he has an althessa, Jack brings home the arranged maidens, but the wife exposes them with a question about her husband's mole on his ass. Jack and the cuma look at the mole in the bath with two mirrors, and then the wife enters. Altessa's gone, but now Jack knows where the mole is.
+
+**Meaning.** The grandson offered his moral: if the Duke needed to see the mole on his own ass, he would call someone “beautiful”. Grandfather's response was not limited. He said that the words “cannot be” people deny the obvious, and three arguments broke the version of Mark. The Duke would send kairs, not bandits. The Cairos wouldn't spend the night in a hotel. Finally, Erwin would have put the mayor and lieutenant on trial long ago. Apparently, the parable ridicules the “proof” that a person builds for self-love: in the end, he learns the truth about himself, not what he wanted to prove.
+
+### The Wounded Duchess and the Warrior in Love
+
+Where and to whom: "Pero - 4", the road through [[almera-zemlya|Almera]]; Mark rides in a dark silence.
+
+**Story.** A wounded young duchess flees from enemies with one warrior. He loves her, protects and obeys her every whim, and she mocks him. The gods send her rotten blood, the warrior raises her, confesses his love - and the Duchess hated him.
+
+**Meaning.** This time, the grandfather, contrary to custom, explained the morality: “humiliation and love are incompatible.” He said he didn’t say it for morals. The heroes of the parable wandered around Almera, and they all the time met the soldiers of the parish, the count, the sheriff, so Almera is a "very bad place to hide." This is a clue to the investigation: why did the gang of kidnappers go to Almera? Mark was offended that Grandfather explained the meaning, and he apologized: “my mistake.” The story of Alanis Almer and [[dzhoakin|Joaquin]] in the autumn of 1774 is not difficult to learn. ([[alanis-almera|Alanis Almera]])
+
+### Sleepy Baby
+
+Where and to whom: "Pero - 4", [[bek-most|Beck]] Castle. Count [[erroubek|Arrowback]] irritably questions whether the guests have a letter or an oral word from Erwin.
+
+**Story.** The mother is afraid that her son sleeps all the time, and reads over him the alphabet, the Holy Scripture, solves problems - let him learn in a dream. In despair, she wakes up the baby, and he asks his mother to give peace to himself and him: “Sleep at last!”
+
+**Meaning.** The Count demanded an explanation, and Mark interpreted the parable for Grandfather: you do not need to wait for letters from the Duke while he is “sleeping”, and even more so to teach him to read and write. Arrowback hastened to assure that he was not in a hurry to the Duke. Later, Grandfather pointed out to Mark exactly this: the count, apparently, is waiting for Origin to pay for some service. This idea got into the list of suspicions of the Crow.
+
+### The Rich Man Who Laughed at Peasants
+
+Where and to whom: "Pero - 4", ibid. Arrowback dismisses rumors that the gang is sacrificing people to the [[temnyj-ido|Dark Ido]]: "Peasant nonsense!"
+
+**Story.** The rich man always laughed at the shepherds and milkmaids, “but here once...” The Count breaks the story.
+
+**Meaning.** Arrowback himself concluded for Grandfather: at such a time, “peasant tales” become a “severe fact.” After that, the count gave Mark tax books, which managed to trace the gang.
+
+### Fish, bird and lion
+
+Where and to whom: "Pero - 5", on the way to the burned-out inn "[[dzhek-bakler|Jack Buckler]]". Mark is at a dead end: all known facts add up to a “devilishness”.
+
+**Story.** The girl says to the guy on the fishing trip, “I am your fish.” He asks her to wave fins, she does not get out, and he leaves. In the woods, she calls herself a bird, but she can't sing a nightingale. When a guy comes back from the hunt with a rich booty, the girl waits for him on the porch: “You are my lion. Snorts!" He roars, he likes, and they stay together.
+
+**Meaning.** To explain the Grandfather refused: “Think with your mind.” Mark went over several interpretations: to look at the case from the back, "bird" in plain sight, an absurd decision. In "Pero - 9" he found the main thing. "You are my lion, poruchy" - these are the words of the Lord of the Rings to Erwin: he pushed the Duke into rebellion, allowed him to take the capital, Erwin liked to "scream", and the Master himself remained in the shadows, like a girl from a fairy tale. The suspects do not fit, as did not fit the "fish" and "bird". Mark later told Grandpa, "You were damn right in your story. You have to think the opposite!” This story, as well as “the box with faith”, Grandfather later told Mireille, and Sofia could not resist and burned out for him: “You are my lion. Come on, poop!"
+
+### Damn Hyun.
+
+Where and to whom: "Pero - 8", compartment of a train from Aleridan to the capital, March 1775. History opens the chapter.
+
+**Story.** The kid from the outskirts of the Empire goes a long way, and he is tied up by the suburban devil Hyun, who manages luck. The guy is lucky: he gets out of the mire, the snake does not sting him, the lord forgives. He never notices the devil, and at home he boasts of his own bridle. Then Hyun snaps his fingers, and the kid chokes on an apple. Everyone's screaming he's got a hell of a job, and Hyun's barely carrying his hooves.
+
+**Meaning.** He said he gave Mark “food for thought” for four days. Enough food. In [[uitmor|Whitmore]]’s estate, Mark admitted that this fairy tale gave him the most. The owner of the Perstov always followed the lucky duke, like Hen for the boy, and remained invisible until the duke "choked an apple" - stolen Items. The question is, when did the owner decide to steal? And the answer: back when I was planning the whole Northern rebellion. The mutiny proved to be a distraction, and the real target was the Objects and [[absolyut|the Absolute]]. According to the author, in this story he put a brief summary of the unwritten interlude about the devil in the village of [[spot|Spot]] (see the word of the author). ([[slovo-avtora|The Author's Word]])
+
+### The Deaf Servant
+
+Where and to whom: "Pero - 8", ibid. Grandfather asks if he told Mark a story about a deaf servant.
+
+**Story.** Mark recounts it himself. Shimmery rich man ordered the deaf-eared servant to sweep the yard, and he instead painted the house. It turned out so well that the owner rewarded him.
+
+**Meaning.** Then Grandfather, according to him, “forgot to say” the main thing: such a story could happen only in the South. In the First Winter, the order is carried out exactly, and whined only on the orders of the Lord. Northerners do not forgive failure to obey orders, and cowardice is most strictly punished. The parable serves as an introduction to the fiercest conversation between Grandfather and Mark: The Crow is afraid, he needs a master, which means that he must answer the Duke three questions - who stole the Objects, where they were and what was on the scheme.
+
+### Robber and wine barrel
+
+Where and to whom: "Pero - 9", the estate of Captain Whitmore. The grandfather comes to the offended Mark to apologize for the reproach of cowardice.
+
+**Story.** A robber in the [[kristalnye-gory|Crystal Mountains]] killed six travelers. It turned out that it was a peasant whose kairs burned down a house and took a flock, and he robbed for the sake of five hungry children. The judge hanged him, and in the evening he got drunk in the inn. He opened the tap at the wine barrel, and the innkeeper immediately closed it: not for the sake of justice, but "so that it does not pour." The judge concluded: “We did what needed to be done. Is that fair?”
+
+**Meaning.** The grandfather himself translated the parable into direct language: yesterday on the train, he said what had to be said, but this does not make his act fair. Mark apologized. This is the most “judged” of the parables of Grandfather: it separates what is necessary from what is just. Here you can hear the personal confession of a person who has handed down sentences for twelve years (see [[ded|Grandfather]]). Immediately after that, Grandfather dropped the remark about "wheels in the mechanism", and it prompted Mark's last answer.
+
+### Master of Toystone
+
+Where and to whom: "Pero - 9", in the same place; the last story of "A Doll on the Throne". Mark called Lady [[iona-oridzhin|Iona]]'s possible Puppet Masters with her husband [[vittor-shejland|Vittor Shayland]] and [[alanis-almera|Alanis]], and Grandfather acknowledged that the version sounds absurd, but "just because" may be true. Mark asks whether to carry such conclusions to Erwin or Captain Whitmore — to call the Master of the Rings the mistress of the Duke or his sister? “What would you do if you were me, Grandpa?”
+
+**Story.** The master of hardware cases from Toystone in a dream is Agatha the Radiant and promises that one murder will get away with it. The master cannot choose a victim from three: an envious neighbor, an unjust guild elder, a quarrelsome wife. On the eve of the Day of Descent, he gives them three identical cups, one of which is poison, and he does not know in which one. Here the elder asks for forgiveness and gives a favorable order, the neighbor repays the debt with interest, and the wife promises not to saw her husband anymore and kisses him. All three bring cups to the lips, the master has the last second. The grandfather interrupts the story: “What do you think, what did the master do?”
+
+**Meaning.** There is no answer in the book: Grandfather returns the choice to Mark himself. The parallel is transparent. Raven has a deadly charge in his hands, and among those on whom it can fall are people close to Erwin. You can understand the parable this way. The poison is not returned, “impunity” is deceptive, and the one whom you consider an enemy, may at the last moment be a friend. It is necessary to decide before the cups are empty. In the Janmay Hunt, Mark did state his version to Erwin, and the Duke considered the judge "poisoned by Crow logic". ([[yanmejskaya-okhota|The Yanmei Hunt]]) Later it turned out that the Puppet Master was Vittor, and Iona was his victim, not an accomplice.
+
+## "The Yanmei Hunt"
+
+### Judge of Leed and “Your Honor”
+
+Where and to whom: Arrow-1, May 1775, at the palace. Cairo [[sorok-dva|Forty-Two]] at the sight of Grandfather mints "I wish you health, my lord judge!" and then "will honor" to work with him.
+
+**Story.** The judge from [[lid|Leed]] demanded that everyone - plaintiffs, servants, parents, wife - call him only "your honor". When it was time for his wife to give birth, he called a doctor and a midwife and told them... Erwin listened in half because he had known the story for a long time, and the end of the book is not given.
+
+**Meaning.** Grandfather began by saying that there is no need to talk too much about honor. Before that, he asked Kair not to call him a judge: “I am no longer a judge.” Apparently, this is a mockery of those who confuse honor with title. My grandfather also renounces titles and even on behalf of himself.
+
+### The Wolf and the Shepherd
+
+Where and to whom: "Arrow - 4". Erwin instructs Grandfather, Forty-Two, and Crow to intercept the letters of all the House Lords before the Census of Objects and orders that "near every dog" there be a wolf.
+
+**Story.** The wolf bites off the tail of the sleeping shepherd and carries it to the shepherd. The shepherd feeds the wolf and punishes the dog, because “the lazy watchman is more dangerous than the cunning thief.” But then the wolf is driven out of the pack, because “the hungry do not believe in satiety.”
+
+**Meaning.** The morality of the lazy watchman approves of Erwin's order: let the kairs-"wolves" guard the protection agents. The second half of the parable made Erwin think for the first time how the [[vittor-shejland|Puppeteer]] keeps his brigade. He is “satisfied,” that is, rich and powerful, and craves immortality only for himself, and his people are “hungry” and armed with the Rings. Why do they obey him?
+
+### The Wise Doctor
+
+Where and to whom: Arrow 5, night meeting at Erwin's. Mark, who was appointed prosecutor at Manson's trial, said seven of the nine judges remember the Shutov plot and would send a prankster on the first piece of evidence. ([[sud-nad-mensonom|Trial of Manson]]; [[shutovskoj-zagovor|Jesters' Conspiracy]]) Erwin replied that he wanted a fair trial, and Grandfather said that he was happy with his desire for justice. The parable is the answer to Erwin's question, what does Grandpa think about the case.
+
+**Story.** The doctor first questioned, examined and felt the patients. When he reached out, he stopped groping. When it got cold, I stopped undressing. When the patient cheated on him, he stopped asking. In the end, he makes a diagnosis by age and class - the lords have heart disease, the poor have intestines - and people praise him: "With half a word catches the essence - this is the master of his craft!"
+
+**Meaning.** This is a parable about the degeneration of the court: each nuisance weans the judge from the next part of a bona fide study. There is still a sentence on the estate and reputation, and the public also applauds. In the Manson case, that warning came true. Chairman [[albert-kantor|Cantor]] did not give Councillor Francis-Ilian time to prepare questions for witnesses, and the lords went to sleep in the belief that the jester was guilty. Here Erwin remembered another instruction of the Grandfather: if the judge falls asleep in doubt, in the morning he seeks the truth, and if with confidence he searches for a paper for a verdict. Before this parable, Grandfather began the story of a camel that expected to fall in the rain. Erwin postponed it “after the report”, and it is not in the text; apparently, so Grandfather responded to the requirement to find the “Apple” in two days instead of two weeks.
+
+### Two Defendants
+
+Where and to whom: “Arrow-8”, the break of the second hearing of the trial of Manson (May 21). Erwin asks what [[menson|Manson]] and his advisor [[frantsisk-ilian|Francis-Ilian]] are up to: They don’t seem to be trying to justify themselves.
+
+**Story.** This is not a parable, but two cases from the judicial practice of Grandfather. One defendant fainted and asked for a reprieve while his rich uncle was on his way to bribe the prosecutor. The other shone eloquence, because his beloved was sitting in the hall. But for the most part, Grandfather concludes, the defendants still want to justify themselves. Before that, he advised the prophet to shorten his beard - then the king will look like a king, not a good wizard - and noticed to Erwin that the conversation should begin with what you want to say.
+
+**Meaning.** The conduct at trial may have goals far removed from the prosecution itself. This is a direct introduction to the next parable.
+
+### Jack the carpenter buys mice
+
+Where and to whom: "Arrow - 8", ibid. Before answering, Grandpa asks if Erwin would be upset by the answer of the parable, because "we are in the House building."
+
+**Story.** Jack goes around the bazaar and wants to buy mice. He is offered a great cat, a docile dog, a beautiful goat, but he already has all this. Finally there is a merchant with a dozen mice that scrape, squeak and eat everything in a row. Jack pays, and to the question “Why do you need them?” he answers: he will release them at home and check the cat - “if he overfishes, he will know for good reason that he eats sour cream.”
+
+**Meaning.** The counselor does not defend Manson in the usual sense, but releases "mice" to test the "cat" - the power that judges. Erwin realized the meaning of the fable "in full" only later, at a meeting in the chapter "Arrow - 9", when the prophet began to interrogate him already - about the relationship with Alanis and why he covered it for a long time.
+
+### Ulyana's Dust
+
+Where and to whom: Arrow 10, May 26, 1775. Erwin is furious and demands one good news from the vassals. Grandfather insists on telling “just now”: the story comes to this minute and perhaps no other.
+
+**Story.** This is a legend about the object, the pollen of which the Foremothers wrote secret letters. Agatha asked Yangmei for a Glove of Power with a note written in pollen. The letter was read by Yangmei's apprentice Gavin: he poisoned two kair guards, stabbed a third and was captured by a fourth. At the trial, Foremother Yumin found out that the pollen is harmless to the Forebears, but suppresses the will of mortals and forces them to do what they write. Gavin was pardoned, and the Item was called Ulyana Dust. ([[ulyanina-pyl|Ulyana's Dust]]) At the end, Grandfather clarifies: The item looks like a silver apple. Before the Shutov conspiracy, it belonged to the Lightharts, and then passed to the Church, which was later headed by [[gallard-almera|Gallard Almera]]. ([[dom-lajthart|House Lightheart]])
+
+**Meaning.** Here, Grandfather does not speak in riddles: this is not a parable, but the result of a long search, dressed in a legend. He explains what is the mysterious “apple” that Erwin is looking for, and how you can force a person to act against his own will. So there is a key to Manson’s strange behavior: later the joker admitted that he was under the rule of Dust. The legend itself is also a story about the court, where the judge punishes not the perpetrator, but the one who ruled it.
+
+## "Humans and Gods"
+
+### Jack the carpenter and the flower
+
+Where and to whom: "Mask - 1", late May 1775, a train from Faunterra to the sea. Lady Sophia, sent by her son to Volta, depicts the grief of separation from a sick husband, and secretly rejoices in freedom. ([[folta|Folta]])
+
+**Story.** Jack goes out for a week with friends, and his wife asks if he loves her at all. At night, Jack puts her favorite flower on her pillow from the window sill, then on her stomach, then on her feet - and every time the wife screams. When the flower returns to the window, it calms down. Jack measures the distance with a ruler: “You love a flower four yards away, no closer.”
+
+**Meaning.** Grandfather delicately shows Sophia that he sees through her. You can love your husband and still enjoy the distance between you, and there is no sin in it. Sophia understood him without words, hugged the judge and decided that the journey would be wonderful.
+
+### Three Agates
+
+Where and to whom: "Mask - 1", schooner "Sea Arrow"; one of the stories that Skipper told the team.
+
+**Story.** The boy has only three agates for the gift of his beloved. The aunt is ready to give advice only for a mug of hanty and sends him to consult with the girl herself. The boy, without giving a name, asks the girl to help choose a gift "the best lady in the world." She turns her nose from any little thing and declares that without money, love is useless. The offended boy changes his mind to confess, and his aunt reminds him: three agates are intact - buy her a hanti for advice.
+
+**Meaning.** According to the narrator, Skipper's stories "never came to fruition", and the sailors scratched their heads. You can understand the story as follows: good advice is not always to get what you want - sometimes it opens your eyes to a person. My aunt was honest with her. Skipper himself liked to listen more: he caught every sailor’s fable and said that stories are valuable “not by any means with certainty”.
+
+### Racer and Rider
+
+Where and to whom: Mask 1, Maple, General William Davey's headquarters. ([[uiljam-dejvi|William Davy]]) The general is outraged that the "[[golos-korony|Voice of the Crown]]" attributed Melorang's salvation to Lady Minerva rather than to his regiment. ([[melorandzh|Melorange]])
+
+**Story.** The racer and the rider argue before the race which of them will come first to the finish line. After the start, the horse drops the rider, and he whips the horse and rips the tail. In an hour, both of them will collapse at the start.
+
+**Meaning.** Before the parable, Grandfather asked the general what he would say about a vassal contesting the fame of his own suzerain. The dispute about the glory between the commander and the mistress will destroy both, and no one will get victory. Davey, grumbling, admitted, "here's your truth." Then Sofia and the judge played a scene with masks of a hare and a sheep, showing that it is impossible to live in the capital without a mask. Before that, Grandfather told the general another parable "on occasion", to which he responded with "horse murmur"; there is no text in the book.
+
+### Signs of Destiny
+
+Where and to whom: "Mask - 2", Maple, mid-June. Lady Mireille calls on Sophia to hunt for the gurken, and the sailors with the kairs dissuade the Duchess. Sophia asks the judge for advice.
+
+**Story.** A fortune teller told the boy to listen to the signs of fate. He followed each sign and eventually gained a lot of silver and gold and a maiden of wonderful beauty, but lost his eyes, ear, five teeth and male dignity along the way.
+
+**Meaning.** In Sofia’s opinion, the judge replied with a “very ambiguous” melody: understand, say, whatever you want. The parable honestly describes the price of risk: there will be a treasure, but you will have to pay. Sophia chose the sign - Jungi's tale of the sea snake - and accepted the invitation. Swimming in the “deadly waters” really turned out to be both a great discovery and a difficult test: the squadron was tormented by monsters, poisonous bubbles and scurvy, and a tooth fell out of Skipper himself.
+
+### Stones instead of potatoes
+
+Where and to whom: "Mask - 3", the end of June; the third day of a fruitless chase for a humpback whale. Kyr Glenn offers to turn back.
+
+**Story.** A peasant woman mistakenly plants stones instead of potatoes and does not listen to a neighbor. She waters the bed, rejoices in the grass that has risen, and in the autumn digs out the same stones, breaks a knife about them and almost breaks a tooth - and throws stones at the neighbor's hut: "Take your stones, the cursed witch, and give me back the potatoes!"
+
+**Meaning.** The judge himself explained what the parable is: we need to wait until the Voltians realize that the hunt did not succeed. To leave first is impolite, and to convince a man of the futility of his cause is a "hopeless undertaking": he will accuse the one who was right. This is the same rule that Grandfather had earlier opened to Mark: not to object or argue, but to let the person prove himself.
+
+### Elena's pension
+
+Where and to whom: "Mask - 3", immediately after that. The judge suggests that Mireille, who is constantly questioning Erwin, conceived the matchmaking. Sophia objected: Mireille is twenty years older than Erwin. “Seventeen,” the judge corrects: such a gap is not an obstacle to marriage.
+
+**Story.** "One kid served in the guard of the boarding house Elena..." - here Jung flies into the salon with the cry "Gurken!", and the story that Grandfather "has not yet told" remains untold. ([[pansion-eleny-u-ozera|Elena-by-the-Lake Boarding School]])
+
+**Meaning.** Apparently, this is a love story with a big age difference. The irony is that later Sofia will try on the same difference to herself and the judge (see below, “Fantasies”).
+
+### The Mystery of the Locked Room
+
+Where and to whom: "Mask - 3", the island of East Mark. Sofia, the judge, and Mireille stand over the skeleton of a sailor at a carved map: The marks mark the boundary of the "water of death" surrounding the entire Polaris. Our continent, says Mireille, is “an island of order surrounded on all sides by chaos.” Unwilling to disturb the dead man's sleep with music, the judge puzzles out.
+
+**Story.** The girl lives with her parents in a large beautiful house, where on the upper floor there is a room without windows, always locked. Only the parents have the key, and the girl is not allowed to enter. One day, when her parents leave, she opens the door with a pin and is deeply shocked. Question: What did the girl see?
+
+**Meaning.** No one says the answer, but Lady Mireille tearfully thanks: “You have no idea how right you are.” The mystery falls exactly into the secret that Mireille keeps as a consecrator of the secret order. ([[sadovniki|Gardeners]]) “Parents”-Forebears have locked the truth about the world from people, and the one who recognizes it is shocked. Soon Sophia herself learned the secret of the Great Tree: Polaris once swarmed with monsters and was made suitable for people only by the First Tree. The judge and Mireille vowed to reveal the secret if the Duchess were to die.
+
+## "The Shadow of the Great Tree"
+
+### Stories that stay behind the scenes
+
+The chapter "Mask" briefly recounts the end of the voyage, and the parables are only mentioned in it:
+- **History for this occasion.** On the island of South Marks, after disastrous waters, scurvy and monsters, Sofia asks: “Are we saved?” Skipper, straightening the rattling tooth, answers that he has a story to the occasion, but she "does not have the strength."
+- **The story of glowing beetles.** In the South-Eastern Mark, sailors found out that at night not skeletons crawl ashore, but glowing beetles living in them, and “the judge made up the story.” This is the only time that it is said that Grandfather wrote the story himself, and did not remember.
+- **A story where everyone died.** On the hard mountain path to the [[pervaya-zima|First Winter]], where two grays broke, and the exhausted Mireille was carried in his arms, the judge stopped playing the tune and told the story, at the end of which everyone died, and the last girl “fell crying and hanged herself”. This is probably the darkest of his stories, and it sounds in the darkest moment of the hike. In the first winter, Sophia found out that [[desmond-oridzhin|Desmond]] had died.
+
+## "Fantasies"
+
+### The Parable of Iona and the Story of the Widow
+
+Where and to whom: the fantasy "Let's catch him", July 1776. [[iona-oridzhin|Iona]] willingly speaks only to his brother, and Lady Sophia sends a judge to reconcile her with the family.
+
+**Story.** Grandfather tells Iona a parable "on occasion" about a misunderstanding with the family; her text is not given. Iona thanks (‘The Perfect Parable, My Lord,’ as always) and responds with her own story, heard in wanderings, about an elderly widow who decided to remarry. Grandfather admits the story is excellent and reports to Sofia: “It’s complicated, you need a different approach.”
+
+**Meaning.** For the first time, the parable of Grandfather is answered by a parable, and the master retreats. The story of Iona is a hint at Sophia herself, who, after being widowed, “fed some dreams” about the judge. At a spiritualistic session, Iona blurted out, “And will you cancel your engagement to the judge?!!” After the appearance of Desmond’s spirit, Sophia postponed her dreams “for a year, if not more.”
+
+## Grandfather's Sayings
+
+In addition to the parables, the grandfather has short sayings, which he drops in the course of the case:
+- “If ‘needs’ and ‘cannots’ meet, ‘needs’ prevail, because being is more valuable than non-being” - Mark, who decided to violate Erwin’s ban for the sake of investigation (Pero - 2).
+- “The river flows, the horse gallops”—a western saying spoken to [[inzhi-prajs|Inzhi Price]], whom Grandfather had once sentenced to the galleys: everything changes, and Grandfather is no longer a judge (“Pen — 6”).
+- From fire and ore comes a sword, from man and woman - a child, from thief and coin - a crime, "from judge and villain - justice" - about the fact that something new can be collected from Objects ("The Yanmei Hunt", "Arrow - 1").
+- If the judge falls asleep in doubt, in the morning he seeks the truth, and if with confidence - the paper for the sentence, so the defendant should sow doubt "especially in the evening" ("The Yanmei Hunt").
+- “Facts are one thing, stories are another. The stories are not valuable by any means with certainty" - to Captain Bamber ("Humans and Gods", "Mask - 1"). ([[dzheff-bamber|Jeff Bamber]])
+
+Once Mark tried to compose a parable himself - about a curious cat stuck in a pipe and a curious dog who ate it - to get rid of the Granddaughter's questions. The grandchild drew a serious moral out of her, and Mark gave up, "Well, I don't know how to make up parables!"
+
+## Common motives
+
+- **Justice and justice.** The most frequent subject of parables is the court: a hanged robber and a barrel of wine, a Leed judge with his "your honor", a doctor who makes a diagnosis according to the class, mice to check the cat, Gavin and Pramatery Yumin. Grandfather does not believe that to do what is necessary is to do justice. He remembers that judges are vain, lazy and biased, and honestly admits that he learned impartiality for twelve years and "never mastered skill." In these stories, his own experience is heard: the judge, who visited the open meeting in Melorange, left there gloomy and immediately decided that it was time to “get down to business.”
+- **Choice and its price.** The master from Toystone with three cups, the boy who follows the signs of fate, Jack falling into the well "with meaning" - in all these stories, the listener himself makes the decision. Grandfather almost never says what to do, and leaves the final open. Having once explained the morals to Mark, he apologized for it as a mistake.
+- **Power, glory and shadow.** Damn Hen, who secretly leads a lucky hero, a "lion" who is made to roar, a horse and a rider who destroy each other in a dispute about fame, a wolf that the hungry do not believe, are parables about who actually controls events and what other people's glory is worth. It was they who helped Mark to see the Puppeteer behind Erwin.
+- **Visibility and substance.** A painted cow, Jack's "althess", a maiden posing as a fish, a bird, a locked room: the appearance is cheating, and behind the door there may be something that changes the picture of the world.
+- **Not to argue, but to show up.** A peasant woman with stones and a sleeping baby describe a rule that Grandfather openly called Mark: "not to object or argue", but to agree with the person and see where it will lead. This is how an experienced judge behaves, who does not convince the defendant, but allows him to reveal his character.
+- **Jack the carpenter.** Through comic hero: lazy, stubborn and in his own way wise husband of a quarrelsome wife. He appears in stories about flies, wells, althess, mice, and flowers. Through Jack's ridiculous actions, Grandfather talks about the serious: about waiting, about finding meaning, about self-love, about checking power and about love at a distance.
+
+The author admitted that Deda partly composed the parables in advance, and then specifically looked for where to insert them - for him this is a rare case of blanks (see Word of the author). ([[slovo-avtora|The Author's Word]]) Many of the sayings of Grandfather are also collected in the article Quotes. ([[tsitaty|Quotations]])
