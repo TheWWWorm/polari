@@ -350,7 +350,7 @@
   },
   "map": {
     "title": "Map of Polari",
-    "sub": "Select a marker to read about a place. Use the timeline to explore events or follow a character’s route.",
+    "sub": "Select a marker to read about a place. Use the timeline to explore events or follow a character’s route. The original map image has Russian labels.",
     "image": "img/map-polari.jpg",
     "w": 3200,
     "h": 2410,

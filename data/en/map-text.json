@@ -1,0 +1,362 @@
+{
+  "places": {
+    "arden": "Arden",
+    "majn": "Main",
+    "grejs": "Grace",
+    "lejksiti": "Lake City",
+    "oruell": "Orwell",
+    "ruajld": "Rouaillde",
+    "rej-roj": "Rei-Roy",
+    "nen-kler": "Nen-Clair",
+    "fejris": "Fairis",
+    "dar-17": "Seventeenth Gift landing site",
+    "dar-18": "Eighteenth Gift landing site",
+    "mon-ulyany": "Monastery of Ulyana the Sorrowful",
+    "mon-mareka": "Monastery of Marek and Simeon",
+    "granenye": "Faceted Islands",
+    "korden": "Corden",
+    "sajlens": "Silence",
+    "khempton": "Hampton",
+    "bejvind": "Baywind",
+    "kejsvort": "Caseworth",
+    "leongard": "Leongard",
+    "bukhta-sekret": "Secret Bay",
+    "mejpl": "Maple",
+    "kolmin": "Colmin",
+    "syurlion": "Surlion",
+    "najtrok": "Nightrock",
+    "overon": "Overon",
+    "tojstoun": "Toystone",
+    "klermi": "Clermy",
+    "laksett": "Lacsett",
+    "yulianin-most": "Yuliana’s Bridge",
+    "olviya": "Olvia",
+    "pentago": "Pentago",
+    "orkada": "Orcada",
+    "minnis": "Minnis",
+    "ofert": "Ofert",
+    "mes-si": "Mes Si",
+    "dolina": "The Valley",
+    "yanmejskij-most": "Yanmei Bridge",
+    "lovushka-vetra": "Wind Trap",
+    "govoryashchie-martyshki": "Talking Monkeys",
+    "livnevyj-les": "Rainstorm Forest",
+    "louvill": "Louville",
+    "birbis": "Birbis",
+    "farvej-gorod": "Farway",
+    "dvorets-tishiny": "Palace of Silence",
+    "sobor-agaty": "Cathedral of Agatha the Radiant",
+    "sobor-vodnyh": "Cathedral of the Water Deities",
+    "lvinye-vrata": "Lion Gates",
+    "oazis": "That Very Oasis",
+    "topi": "Marshes of the Dark Kings",
+    "sinskie": "Sin Islands",
+    "tysyacha-oskolkov": "Thousand Shards",
+    "roshcha-brabusov": "Brabus Grove",
+    "pastushi-luga": "Shepherds’ Meadows",
+    "chasovnya-patrika": "Patrick’s Chapel",
+    "myagkie-polya": "Soft Fields"
+  },
+  "events": {
+    "0036-05-02/faunterra": {
+      "label": "36",
+      "t": "Agatha’s dilemma: the Shavans break into Faunterra, and Wilhelm turns the Fingers against people for the first time."
+    },
+    "0572-01-01/grot-kosuli": {
+      "label": "572",
+      "t": "Baron Arthur Agatha meets Abbot Valensius at the Roe Deer Grotto: the beginning of the rise of Agatha’s North."
+    },
+    "0735-01-01/yuzhnyj-put": {
+      "label": "735",
+      "t": "The Lightbearers seize the whole northern part of the Southern Way in four months."
+    },
+    "1500-01-01/serdtse-sveta": {
+      "label": "16th century",
+      "t": "The Horse Wars: Heart of Light holds off Darian the Vile’s army for a year. The Duchy of Hope emerges after the wars."
+    },
+    "1750-01-01/almera-zemlya": {
+      "label": "c. 1750",
+      "t": "The Golden War: House Lightheart attacks Almera."
+    },
+    "1755-10-26/faunterra": {
+      "label": "October 1755",
+      "t": "The Jester’s Conspiracy fails: Manson loses his rank and House Lightheart falls."
+    },
+    "1756-08-01/dar-17": {
+      "label": "August 1756",
+      "t": "The Seventeenth Gift lands near Weimar: a dead goddess is found at the landing site, and Paul emerges from the lava."
+    },
+    "1772-01-01/aleridan": {
+      "label": "1772",
+      "t": "Ulyana’s Dust is taken from the vault of the cathedral in Aleridan. Richard Origin disappears at sea around the same time."
+    },
+    "1773-06-01/aleridan": {
+      "label": "Summer 1773",
+      "t": "Tournament at the Aleridan arena."
+    },
+    "1774-03-21/smolden": {
+      "label": "21 March 1774",
+      "t": "Harmon hires a guard: the merchant takes on Joaquin Eve Hanna. Sir Clive Stagforth is killed in the Forest Edge that same day."
+    },
+    "1774-03-22/klyk-medvedya": {
+      "label": "22 March 1774",
+      "t": "Sybil takes in Mira: she tells the orphaned girl that she is fourth in line to the throne."
+    },
+    "1774-03-22/pervaya-zima": {
+      "label": "22 March 1774",
+      "t": "Erwin proposes a coalition: Desmond sends him away with the expedition as punishment."
+    },
+    "1774-03-28/pervaya-zima": {
+      "label": "Late March 1774",
+      "t": "Iona Origin marries Vittor Shayland."
+    },
+    "1774-04-12/izluchina": {
+      "label": "12–13 April 1774",
+      "t": "Harmon receives a letter from Weimar: he meets Father David and takes refugees from Niar into his caravan, Polly among them."
+    },
+    "1774-04-28/spot": {
+      "label": "Late April 1774",
+      "t": "The expedition reaches Spot: Erwin has caught a cold by the time he arrives."
+    },
+    "1774-05-07/faunterra": {
+      "label": "7 May 1774",
+      "t": "Mira reaches the capital by train under the name Gloria Northwood."
+    },
+    "1774-05-08/uejmar": {
+      "label": "8–9 May 1774",
+      "t": "Vittor commissions a secret sale: he asks Harmon to sell the Light Sphere."
+    },
+    "1774-05-15/reka": {
+      "label": "14–15 May 1774",
+      "t": "Jamis’s mutiny: Erwin suppresses the revolt in the marshes of Soft Fields."
+    },
+    "1774-05-28/soltaun": {
+      "label": "Late May 1774",
+      "t": "Harmon bargains over the Sphere with the Saltown buyers."
+    },
+    "1774-06-08/dar-18": {
+      "label": "8 June 1774",
+      "t": "The Eighteenth Gift: the expedition finds the emptied landing site. Luis stabs Erwin that night, and the camp is massacred."
+    },
+    "1774-06-24/labelin": {
+      "label": "24 June 1774",
+      "t": "Maurice Labelin buys the Sphere: the duke pays Harmon 36,000 hilts, but it is a counterfeit."
+    },
+    "1774-07-01/mon-mareka": {
+      "label": "1 July 1774",
+      "t": "Harmon takes back the real Sphere: Doxet dies, and Harmon’s shot kills Snipe and Polly."
+    },
+    "1774-07-04/faunterra": {
+      "label": "4 July 1774",
+      "t": "Mira discovers the poisoning: she realizes Sybil and Gallard are poisoning her and bargains for her life and exile to a monastery."
+    },
+    "1774-07-08/reka": {
+      "label": "6–11 July 1774",
+      "t": "Erwin and Jamis see Wilhelm’s Fingers in action and find hundreds dead beyond the River."
+    },
+    "1774-08-10/mon-ulyany": {
+      "label": "August 1774",
+      "t": "Crybaby meets “Mia,” actually Mira, at the monastery of Ulyana the Sorrowful."
+    },
+    "1774-08-12/zemli-korony": {
+      "label": "August 1774",
+      "t": "The ambush at Lacey: Becca Litland unwittingly saves Moran."
+    },
+    "1774-08-14/lajem": {
+      "label": "August 1774",
+      "t": "“Horam” buys Niza: at an auction in Laem he buys the Shavan woman and dreams of a balloon."
+    },
+    "1774-08-30/pervaya-zima": {
+      "label": "30 August 1774",
+      "t": "Erwin returns: Desmond, ravaged by stone sickness, hands power over to him."
+    },
+    "1774-09-02/almera-zemlya": {
+      "label": "Night before 2 September 1774",
+      "t": "The fall of Evergard: the Fingers burn the castle, Aiden Almera dies, and Joaquin rescues the badly burned Alanis."
+    },
+    "1774-09-10/pervaya-zima": {
+      "label": "10 September 1774",
+      "t": "The Northern Flash begins: it is Erwin’s last day before marching south."
+    },
+    "1774-09-20/uindli": {
+      "label": "September 1774",
+      "t": "The Northerners win at Windley and take the Saltown merchants’ gold."
+    },
+    "1774-10-01/more-ldov": {
+      "label": "Early October 1774",
+      "t": "Fleming’s fleet sails into the Sea of Ice with Jamis and Mark, who was taken aboard in secret."
+    },
+    "1774-10-05/uejmar": {
+      "label": "Early October 1774",
+      "t": "Inge Price brings the freed Mira to Weimar."
+    },
+    "1774-10-14/faunterra": {
+      "label": "14 October 1774",
+      "t": "The brides’ substitution is exposed: Ethan’s letter reveals it, and Sybil and Gloria are arrested."
+    },
+    "1774-10-16/dojl": {
+      "label": "15–16 October 1774",
+      "t": "Doyle surrenders without a siege after Erwin executes twenty-five prisoners."
+    },
+    "1774-10-20/melorandzh": {
+      "label": "October 1774",
+      "t": "Moran Steppe Fire falls on Litland."
+    },
+    "1774-11-03/labelin": {
+      "label": "Early November 1774",
+      "t": "Erwin’s army holds the Southerners at gunpoint outside Labelin without firing; the “X” fighters win the mounted contest."
+    },
+    "1774-11-26/uejmar": {
+      "label": "26 November 1774",
+      "t": "Ethan and Shatterhand free Mira from Martin Shayland’s dungeon."
+    },
+    "1774-12-02/piksi": {
+      "label": "2 December 1774",
+      "t": "The Battle of Pixie: Alexis Smile routs the Northerners, and Craig Northwood is taken prisoner."
+    },
+    "1774-12-02/melorandzh": {
+      "label": "2 December 1774",
+      "t": "Adrian and Prince Hector drive off the Shavans near Melorange."
+    },
+    "1774-12-07/faunterra": {
+      "label": "Night before 7 December 1774",
+      "t": "The Northerners seize the Imperial Citadel and the Palace of Pen and Sword."
+    },
+    "1774-12-08/labelin": {
+      "label": "December 1774",
+      "t": "Night in Labelin: Alexis’s army perishes in the city."
+    },
+    "1774-12-22/bek-most": {
+      "label": "Dawn on 22 December 1774",
+      "t": "The Bek bridge collapses under the imperial train, and Manson stabs Adrian with a dagger."
+    },
+    "1774-12-26/faunterra": {
+      "label": "24–28 December 1774",
+      "t": "Mira is proclaimed empress: with the Glove of Power, she makes peace with Erwin."
+    },
+    "1775-01-15/faunterra": {
+      "label": "January 1775",
+      "t": "Minerva is crowned in the half-ruined palace, and Erwin becomes lord chancellor."
+    },
+    "1775-02-25/nen-kler": {
+      "label": "Late February 1775",
+      "t": "Francis-Ilian and a beggar who turns out to be Manson undergo the Lady in the Dark’s trials."
+    },
+    "1775-03-15/faunterra": {
+      "label": "Spring 1775",
+      "t": "The standoff on Holy Field: Minerva pardons the Snowdrops, and Erwin’s trap fails."
+    },
+    "1775-03-20/lajem": {
+      "label": "March 1775",
+      "t": "Moger Buckley arrives in Laem with the Labelin fleet, tracking Harmon."
+    },
+    "1775-04-15/ostrov-faradeya-rajli": {
+      "label": "Spring 1775",
+      "t": "Sybil lives at the sanatorium under the name Dorothy Sly, alongside Navi and Karen."
+    },
+    "1775-05-06/marengo": {
+      "label": "6–7 May 1775",
+      "t": "Minerva tests Erwin with Shavans at Marengo."
+    },
+    "1775-05-17/faunterra": {
+      "label": "17–29 May 1775",
+      "t": "Manson’s trial: on 29 May he shouts that Adrian is alive, and the Chamber deposes Adrian."
+    },
+    "1775-05-19/ruajld": {
+      "label": "18–22 May 1775",
+      "t": "Dorothy, Karen, and Navi flee the island and land at Rouaillde."
+    },
+    "1775-05-21/bezdonnaya-propast": {
+      "label": "20–28 May 1775",
+      "t": "Harmon’s balloon is shot down over the Bottomless Abyss; the Hunter, the surviving Adrian, takes Quindar’s Abbey."
+    },
+    "1775-05-27/uejmar": {
+      "label": "27 May 1775",
+      "t": "Iona raises a rebellion at Weimar Castle: Vittor gives a Finger to Harry Hogg, and the Northerners die."
+    },
+    "1775-05-28/arden": {
+      "label": "28 May 1775",
+      "t": "Erwin’s ambush in the temple of Farewell: Paul’s brigade takes the Drop of the Sun."
+    },
+    "1775-06-07/bek-most": {
+      "label": "6–7 June 1775",
+      "t": "Erwin defeats General Wexler’s ambush near Bek Castle."
+    },
+    "1775-06-10/uejmar": {
+      "label": "9–10 June 1775",
+      "t": "Ice reaches Weimar with the Drop of the Sun: Iona recognizes her brother Richard."
+    },
+    "1775-06-19/fliss": {
+      "label": "14–19 June 1775",
+      "t": "Fighting near Fliss: Gordon Sue’s kairs hold at the Battle of the Cliff."
+    },
+    "1775-06-21/uejmar": {
+      "label": "20–22 June 1775",
+      "t": "Joaquin shoots into the clouds: the slopes of Castle Hill vanish along with the besiegers."
+    },
+    "1775-06-28/rej-roj": {
+      "label": "Late June 1775",
+      "t": "Paul declares himself a god, freezes Moran, and hands Fingers to the Shavans. Erwin’s horse Rain dies."
+    },
+    "1775-07-15/fliss": {
+      "label": "July 1775",
+      "t": "At the gates of Fliss, Paul kills Mother Cordelia, and Gallard joins him."
+    },
+    "1775-08-02/uejmar": {
+      "label": "2 August 1775",
+      "t": "Alanis stabs Paul with a stiletto and poisons Vittor and Gallard. Vittor returns to life and declares himself the Chosen One."
+    },
+    "1775-08-15/faunterra": {
+      "label": "August 1775",
+      "t": "Adrian returns to the capital without a fight and marries Magda Labelin; Minerva leaves with the treasury."
+    },
+    "1775-08-30/pervaya-zima": {
+      "label": "Late August 1775",
+      "t": "Minerva arrives at First Winter and declares it the capital."
+    },
+    "1775-09-15/fejris": {
+      "label": "September 1775",
+      "t": "Erwin crosses the County of the Mills as far as Fairis."
+    },
+    "1775-10-03/lisij-dol": {
+      "label": "Early October 1775",
+      "t": "Richard’s ambush at Fox Hollow: Craig Northwood dies."
+    },
+    "1775-10-15/granenye": {
+      "label": "October 1775",
+      "t": "Erwin’s fleet drifts in the Sea of Ice near the Faceted Islands for a week."
+    },
+    "1775-11-05/belomorye": {
+      "label": "Early November 1775",
+      "t": "Erwin takes Count Fleming’s family hostage."
+    },
+    "1775-11-20/lid": {
+      "label": "November 1775",
+      "t": "The Horde sacks Leed and Gwenda dies. Erwin and Hyder Leed slip into the city and free Iona."
+    },
+    "1775-11-22/majn": {
+      "label": "November 1775",
+      "t": "In Main, Adrian tells Manson and Magda his plans for the Great Tree."
+    },
+    "1775-12-02/pervaya-zima": {
+      "label": "2 December 1775",
+      "t": "The Battle for First Winter: the Chosen One’s army is trapped in an ice maze, and Erwin is gravely wounded."
+    },
+    "1775-12-02/grot-kosuli": {
+      "label": "2 December 1775",
+      "t": "At the Roe Deer Grotto, Paul dies by his own deconstructor, and Navi falls into the chasm."
+    },
+    "1775-12-03/pervaya-zima": {
+      "label": "Night before 3 December 1775",
+      "t": "Richard kills Gordon Sue and Desmond; Erwin kills his brother in a duel."
+    },
+    "1775-12-04/majn": {
+      "label": "3–4 December 1775",
+      "t": "Adrian imprisons Vittor in the Womb."
+    },
+    "1775-12-20/pervaya-zima": {
+      "label": "December 1775",
+      "t": "Minerva sends the Bird Without Flesh toward the Star, and Navi discovers the truth about the Foremothers. “The choice is yours.”"
+    }
+  }
+}
